@@ -1,0 +1,62 @@
+/* ============================================================
+   West Coast RV Camping — Design Tokens
+   Single source of truth for all CSS custom properties.
+   Edit here → every page inherits the change immediately.
+   ============================================================ */
+
+:root {
+  /* Greens */
+  --forest:         #1B3329;
+  --forest-mid:     #2C5040;
+  --forest-light:   #4A8C6A;
+  --forest-pale:    #EBF3EE;
+
+  /* Blues */
+  --lake:           #3A6E8A;
+
+  /* Earths */
+  --earth:          #8B6840;
+  --earth-light:    #B08D60;
+
+  /* Golds  ← change palette here */
+  --gold:           #F0A800;
+  --gold-light:     #F5BE3D;
+  --gold-pale:      #FFF8E0;
+
+  /* Neutrals */
+  --cream:          #F5F0E6;
+  --parchment:      #EBE3D0;
+  --tan:            #D4C5A4;
+  --tan-mid:        #C2B28C;
+
+  /* Text */
+  --text:           #1A1A1A;
+  --text-mid:       #454545;
+  --text-muted:     #7A7A7A;
+  --white:          #FFFFFF;
+
+  /* Alerts */
+  --warn:           #C08030;
+  --danger:         #A83020;
+
+  /* Typography */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-sans:    'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Radii */
+  --r-sm:  4px;
+  --r-md:  8px;
+  --r-lg:  14px;
+  --r-xl:  20px;
+  --r-pill: 100px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,.07);
+  --shadow-md: 0 4px 20px rgba(0,0,0,.1);
+  --shadow-lg: 0 12px 48px rgba(0,0,0,.15);
+
+  /* Layout */
+  --max-w:     1160px;
+  --gutter:    clamp(20px, 5vw, 56px);
+  --section-v: clamp(60px, 8vw, 100px);
+}

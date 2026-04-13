@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Washington RV Camping — 110 Campgrounds, Researched for Your Rig</title>
+  <meta name="description" content="The most complete guide to RV camping in Washington State. 110 campgrounds reviewed and rated by drive time from Seattle, hookup type, and rig size.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://warvcamp.com/">
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Washington RV Camping — 110 Campgrounds, Researched for Your Rig">
+  <meta property="og:description" content="The most complete guide to RV camping in Washington State. Filter by drive time from Seattle, hookup type, park type, and rig size.">
+  <meta property="og:image"       content="https://cdn.prod.website-files.com/698901ff108bba02ee79b263/699958895d9621a2a10254a9_fairholme-campground.jpg">
+  <meta property="og:url"         content="https://warvcamp.com/">
+  <meta property="og:site_name"   content="West Coast RV Camping">
+  <meta name="twitter:card"       content="summary_large_image">
+  <meta name="twitter:title"      content="Washington RV Camping — 110 Campgrounds, Researched for Your Rig">
+  <meta name="twitter:description" content="110 verified RV campgrounds in Washington. Filter by drive time, hookups, park type, and rig size.">
+  <meta name="twitter:image"      content="https://cdn.prod.website-files.com/698901ff108bba02ee79b263/699958895d9621a2a10254a9_fairholme-campground.jpg">
+  <!-- LCP preload: hero background image -->
+  <link rel="preload" as="image" href="https://cdn.prod.website-files.com/698901ff108bba02ee79b263/699958895d9621a2a10254a9_fairholme-campground.jpg" fetchpriority="high">
+  <!-- JSON-LD: WebSite + Sitelinks Searchbox -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "West Coast RV Camping",
+    "url": "https://warvcamp.com",
+    "description": "110 verified RV campgrounds in Washington State, researched for RV travelers",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://warvcamp.com/campgrounds?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <!-- JSON-LD: Organization (brand knowledge graph) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "West Coast RV Camping",
+    "url": "https://warvcamp.com",
+    "logo": "https://warvcamp.com/logo.png",
+    "description": "The most complete independent guide to RV camping in Washington State — 110 campgrounds reviewed for hookups, drive time, rig size, and family amenities.",
+    "areaServed": {
+      "@type": "State",
+      "name": "Washington",
+      "sameAs": "https://en.wikipedia.org/wiki/Washington_(state)"
+    },
+    "sameAs": [
+      "https://www.instagram.com/warvcamp",
+      "https://www.facebook.com/warvcamp"
+    ]
+  }
+  </script>
+  <!-- JSON-LD: BreadcrumbList (homepage — single item) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://warvcamp.com/" }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+  <!-- Shared nav (single source of truth) -->
+  <link rel="stylesheet" href="assets/nav.css">
+  <!-- Shared assets (single source of truth) -->
+  <link rel="stylesheet" href="assets/tokens.css">
+  <link rel="stylesheet" href="assets/base.css">
+  <link rel="stylesheet" href="assets/footer.css">
+  <style>/* ═══════════════════════════════════════════════════════════════
+       RESET & BASE
+    ═══════════════════════════════════════════════════════════════ */
+    button { cursor: pointer; border: none; background: none; font-family: inherit; font-size: inherit; }
+    ul, ol { list-style: none; }
+
+    /* Nav → assets/nav.css */
+
+    /* ═══════════════════════════════════════════════════════════════
+       HERO
+    ═══════════════════════════════════════════════════════════════ */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      max-height: 960px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://cdn.prod.website-files.com/698901ff108bba02ee79b263/699958895d9621a2a10254a9_fairholme-campground.jpg');
+      background-size: cover;
+      background-position: center 38%;
+      will-change: transform;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        168deg,
+        rgba(5,14,10,.55) 0%,
+        rgba(5,14,10,.35) 35%,
+        rgba(5,14,10,.78) 65%,
+        rgba(5,14,10,.96) 100%
+      );
+    }
+    /* Subtle topo texture overlay */
+    .hero-texture {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://cdn.prod.website-files.com/69891628ece7ff793d5421f8/699bd1a7cea4b6c93eef00ea_699958895d9621a2a10254a9_fairholme-campground.jpeg');
+      background-size: cover;
+      background-position: center;
+      opacity: .04;
+      mix-blend-mode: overlay;
+    }
+
+    .hero-content {
+      position: relative;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: var(--sp-12) var(--gutter) var(--sp-10);
+      max-width: var(--max-w);
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11.5px;
+      font-weight: 600;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 20px;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 1.5px;
+      background: var(--gold);
+    }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(40px, 6.5vw, 80px);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.05;
+      letter-spacing: -1.5px;
+      max-width: 820px;
+      margin-bottom: 22px;
+    }
+    .hero h1 em {
+      font-style: italic;
+      font-weight: 400;
+      color: rgba(255,255,255,.75);
+    }
+
+    .hero-sub {
+      font-size: clamp(15px, 1.8vw, 18px);
+      color: rgba(255,255,255,.72);
+      max-width: 540px;
+      line-height: 1.6;
+      margin-bottom: var(--sp-6);
+    }
+
+    /* Drive time filter */
+    .drive-filter {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: var(--sp-5);
+    }
+    .drive-filter-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .8px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.5);
+    }
+    .drive-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .drive-pill {
+      padding: 10px 18px;
+      border-radius: var(--r-pill);
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(255,255,255,.78);
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.18);
+      cursor: pointer;
+      transition: all .18s;
+      letter-spacing: .1px;
+    }
+    .drive-pill:hover {
+      background: rgba(255,255,255,.18);
+      color: var(--white);
+      border-color: rgba(255,255,255,.32);
+    }
+    .drive-pill.active {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--forest);
+      font-weight: 600;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: var(--sp-3);
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 26px;
+      border-radius: var(--r-pill);
+      font-size: 14.5px;
+      font-weight: 600;
+      letter-spacing: .1px;
+      transition: all .18s;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: var(--forest-light);
+      color: var(--white);
+    }
+    .btn-primary:hover {
+      background: #5BA07A;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(74,140,106,.4);
+    }
+    .btn-ghost {
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.25);
+      color: var(--white);
+    }
+    .btn-ghost:hover {
+      background: rgba(255,255,255,.18);
+    }
+    .btn-link {
+      color: rgba(255,255,255,.7);
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color .15s;
+    }
+    .btn-link:hover { color: var(--white); }
+
+    /* Hero scroll indicator */
+    .hero-scroll {
+      position: absolute;
+      bottom: 36px;
+      right: var(--gutter);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.35);
+      writing-mode: vertical-lr;
+    }
+    .hero-scroll::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 48px;
+      background: linear-gradient(to bottom, rgba(255,255,255,.3), transparent);
+      margin-top: 8px;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       TRUST STRIP
+    ═══════════════════════════════════════════════════════════════ */
+    .trust-strip {
+      background: var(--forest);
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .trust-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 var(--gutter);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .trust-item {
+      padding: 22px 0;
+      border-right: 1px solid rgba(255,255,255,.07);
+      padding-right: 24px;
+      padding-left: 24px;
+    }
+    .trust-item:first-child { padding-left: 0; }
+    .trust-item:last-child { border-right: none; }
+    .trust-num {
+      font-family: var(--font-display);
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .trust-label {
+      font-size: 12px;
+      color: rgba(255,255,255,.45);
+      letter-spacing: .2px;
+    }
+    @media (max-width: 640px) {
+      .trust-inner { grid-template-columns: repeat(2, 1fr); }
+      .trust-item:nth-child(2) { border-right: none; }
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       SECTION BROWSE
+    ═══════════════════════════════════════════════════════════════ */
+    .browse {
+      padding: clamp(56px, 7vw, 96px) var(--gutter);
+    }
+    .browse-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    .browse-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: var(--sp-3);
+      margin-bottom: var(--sp-5);
+      flex-wrap: wrap;
+    }
+    .eyebrow {
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: var(--earth);
+      margin-bottom: 6px;
+    }
+    .section-h2 {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 3.5vw, 42px);
+      font-weight: 700;
+      color: var(--forest);
+      line-height: 1.12;
+      letter-spacing: -.5px;
+    }
+    .view-all {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--forest-mid);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+      padding-bottom: 4px;
+      transition: color .15s, gap .15s;
+    }
+    .view-all:hover { color: var(--forest); gap: 10px; }
+
+    /* Filter row */
+    .filter-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: var(--sp-6);
+      padding-bottom: var(--sp-5);
+      border-bottom: 1px solid var(--tan);
+    }
+    .filter-chip {
+      padding: 7px 16px;
+      border-radius: var(--r-pill);
+      font-size: 13.5px;
+      font-weight: 500;
+      color: var(--text-mid);
+      background: var(--parchment);
+      border: 1px solid var(--tan);
+      cursor: pointer;
+      transition: all .15s;
+      letter-spacing: .1px;
+    }
+    .filter-chip:hover {
+      background: var(--tan);
+      color: var(--text);
+    }
+    .filter-chip.active {
+      background: var(--forest);
+      border-color: var(--forest);
+      color: var(--white);
+    }
+    .filter-sep {
+      width: 1px;
+      height: 34px;
+      background: var(--tan);
+      align-self: center;
+      flex-shrink: 0;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       CAMPGROUND GRID
+    ═══════════════════════════════════════════════════════════════ */
+    .camp-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .camp-grid .card:first-child {
+      grid-column: span 2;
+    }
+    @media (max-width: 960px) {
+      .camp-grid { grid-template-columns: repeat(2, 1fr); }
+      .camp-grid .card:first-child { grid-column: span 1; }
+    }
+    @media (max-width: 560px) {
+      .camp-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       CAMPGROUND CARD
+    ═══════════════════════════════════════════════════════════════ */
+    .card {
+      position: relative;
+      border-radius: var(--r-xl);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      transition: transform .25s cubic-bezier(.22,.61,.36,1), box-shadow .25s;
+      text-decoration: none;
+    }
+    .card:first-child { aspect-ratio: 16/9; }
+    @media (max-width: 960px) {
+      .card:first-child { aspect-ratio: 4/3; }
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-xl);
+    }
+    .card-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s cubic-bezier(.22,.61,.36,1);
+    }
+    .card:hover .card-img { transform: scale(1.04); }
+
+    /* Color overlay by park type */
+    .card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,.12) 0%,
+        rgba(0,0,0,.0) 35%,
+        rgba(0,0,0,.55) 65%,
+        rgba(0,0,0,.88) 100%
+      );
+      transition: opacity .25s;
+    }
+    .card:hover .card-overlay {
+      opacity: 1.1;
+    }
+    /* Park type tint */
+    .card[data-type="national"] .card-overlay {
+      background: linear-gradient(to bottom, rgba(27,51,41,.18) 0%, rgba(0,0,0,0) 35%, rgba(12,32,22,.6) 65%, rgba(12,32,22,.92) 100%);
+    }
+    .card[data-type="state"] .card-overlay {
+      background: linear-gradient(to bottom, rgba(58,110,138,.15) 0%, rgba(0,0,0,0) 35%, rgba(28,60,82,.55) 65%, rgba(28,60,82,.9) 100%);
+    }
+    .card[data-type="county"] .card-overlay {
+      background: linear-gradient(to bottom, rgba(139,104,64,.18) 0%, rgba(0,0,0,0) 35%, rgba(80,55,28,.6) 65%, rgba(80,55,28,.92) 100%);
+    }
+
+    /* Top badges */
+    .card-top {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      right: 16px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .card-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 11px;
+      border-radius: var(--r-pill);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .3px;
+      text-transform: uppercase;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .card-badge-type {
+      background: rgba(255,255,255,.18);
+      border: 1px solid rgba(255,255,255,.25);
+      color: var(--white);
+    }
+    .card-badge-drive {
+      background: rgba(0,0,0,.35);
+      border: 1px solid rgba(255,255,255,.12);
+      color: rgba(255,255,255,.9);
+    }
+    .card-badge-hookup {
+      background: rgba(74,140,106,.75);
+      border: 1px solid rgba(74,140,106,.5);
+      color: var(--white);
+    }
+
+    /* Bottom content */
+    .card-body {
+      position: relative;
+      padding: 20px 20px 22px;
+    }
+    .card-name {
+      font-family: var(--font-display);
+      font-size: clamp(17px, 2vw, 22px);
+      font-weight: 600;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 6px;
+      letter-spacing: -.2px;
+    }
+    .card:first-child .card-name {
+      font-size: clamp(20px, 2.5vw, 28px);
+    }
+    .card-desc {
+      font-size: 13px;
+      color: rgba(255,255,255,.68);
+      line-height: 1.5;
+      margin-bottom: 12px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .card-acts {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+    }
+    .card-act {
+      font-size: 16px;
+      opacity: .85;
+      line-height: 1;
+    }
+    .card-arrow {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--white);
+      transition: background .15s;
+    }
+    .card:hover .card-arrow { background: var(--gold); border-color: var(--gold); }
+
+    /* Empty state */
+    .no-results {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 64px 24px;
+      color: var(--text-muted);
+      font-size: 15px;
+      display: none;
+    }
+
+    /* Browse footer */
+    .browse-cta {
+      margin-top: var(--sp-6);
+      text-align: center;
+    }
+    .browse-cta a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 28px;
+      border-radius: var(--r-pill);
+      font-size: 15px;
+      font-weight: 600;
+      background: var(--forest);
+      color: var(--white);
+      transition: all .18s;
+    }
+    .browse-cta a:hover {
+      background: var(--forest-mid);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(27,51,41,.28);
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       HOW IT WORKS
+    ═══════════════════════════════════════════════════════════════ */
+    .about-strip {
+      background: var(--parchment);
+      border-top: 1px solid var(--tan);
+      border-bottom: 1px solid var(--tan);
+      padding: clamp(48px, 6vw, 80px) var(--gutter);
+    }
+    .about-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--sp-8);
+      align-items: center;
+    }
+    @media (max-width: 720px) {
+      .about-inner { grid-template-columns: 1fr; gap: var(--sp-5); }
+    }
+    .about-left .eyebrow { margin-bottom: var(--sp-1); }
+    .about-left .section-h2 { margin-bottom: var(--sp-3); }
+    .about-left p {
+      font-size: 16px;
+      color: var(--text-mid);
+      line-height: 1.75;
+    }
+    .about-left p + p { margin-top: var(--sp-2); }
+    .pillars {
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-3);
+    }
+    .pillar {
+      display: flex;
+      gap: var(--sp-3);
+      align-items: flex-start;
+    }
+    .pillar-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--r-md);
+      background: var(--forest);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    .pillar-text strong {
+      display: block;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 3px;
+    }
+    .pillar-text span {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       FIELD NOTES
+    ═══════════════════════════════════════════════════════════════ */
+    .field-notes {
+      padding: clamp(56px, 7vw, 96px) var(--gutter);
+    }
+    .field-notes-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+    .field-notes-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: var(--sp-5);
+      gap: var(--sp-3);
+    }
+    .fn-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+    .fn-grid .fn-card:first-child {
+      grid-column: span 2;
+    }
+    @media (max-width: 860px) {
+      .fn-grid { grid-template-columns: 1fr; }
+      .fn-grid .fn-card:first-child { grid-column: span 1; }
+    }
+
+    .fn-card {
+      background: var(--white);
+      border-radius: var(--r-xl);
+      overflow: hidden;
+      border: 1px solid var(--tan);
+      display: flex;
+      flex-direction: column;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .fn-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+    .fn-img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      background: var(--parchment);
+    }
+    .fn-card:first-child .fn-img { aspect-ratio: 21/9; }
+    @media (max-width: 860px) {
+      .fn-card:first-child .fn-img { aspect-ratio: 16/9; }
+    }
+    .fn-body {
+      padding: 22px 24px 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .fn-category {
+      display: inline-block;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--earth);
+      margin-bottom: 10px;
+    }
+    .fn-title {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.25;
+      margin-bottom: 10px;
+      letter-spacing: -.2px;
+    }
+    .fn-card:first-child .fn-title { font-size: 26px; }
+    .fn-summary {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      flex: 1;
+      margin-bottom: 18px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .fn-read {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--forest-mid);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: color .15s, gap .15s;
+      margin-top: auto;
+    }
+    .fn-card:hover .fn-read { color: var(--forest); gap: 8px; }
+
+    /* ═══════════════════════════════════════════════════════════════
+       FOOTER
+    ═══════════════════════════════════════════════════════════════ */
+    @media (max-width: 720px) {
+    }
+    @media (max-width: 480px) {
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
+       UTILITIES
+    ═══════════════════════════════════════════════════════════════ */
+    .hidden { display: none !important; }
+
+    /* Card reveal animation */
+    .card { animation: fadeUp .35s ease both; }
+    .card:nth-child(1) { animation-delay: .05s; }
+    .card:nth-child(2) { animation-delay: .1s; }
+    .card:nth-child(3) { animation-delay: .15s; }
+    .card:nth-child(4) { animation-delay: .2s; }
+    .card:nth-child(5) { animation-delay: .25s; }
+    .card:nth-child(6) { animation-delay: .3s; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Transition for filtering */
+    .card {
+      transition: transform .25s cubic-bezier(.22,.61,.36,1),
+                  box-shadow .25s,
+                  opacity .2s,
+                  display 0s;
+    }
+    .card.fade-out {
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body
+  data-nav-cta-text="Browse all 110 →"
+  data-nav-cta-url="/campgrounds">
+
+<!-- ──────────────────────────────────────────────────────────────
+     NAV
+─────────────────────────────────────────────────────────────── -->
+
+<!-- ──────────────────────────────────────────────────────────────
+     HERO
+─────────────────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-texture"></div>
+
+  <div class="hero-content">
+    <span class="hero-eyebrow">Washington State · RV Camping Guide</span>
+    <h1>Find your next<br><em>Washington</em> camp.</h1>
+    <p class="hero-sub">110 campgrounds, verified and rated for RV travelers. Filter by drive time from Seattle, hookups, and rig size.</p>
+
+    <div class="drive-filter">
+      <span class="drive-filter-label">How far are you willing to drive?</span>
+      <div class="drive-pills">
+        <button class="drive-pill active" data-drive="all">Any distance</button>
+        <button class="drive-pill" data-drive="under-1">Under 1 hr</button>
+        <button class="drive-pill" data-drive="1-2">1–2 hrs</button>
+        <button class="drive-pill" data-drive="2-3">2–3 hrs</button>
+        <button class="drive-pill" data-drive="3-4">3–4 hrs</button>
+        <button class="drive-pill" data-drive="4plus">4+ hrs</button>
+      </div>
+    </div>
+
+    <div class="hero-actions">
+      <a href="#browse" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="4.5"/><path d="m11 11 2.5 2.5"/></svg>
+        Browse campgrounds
+      </a>
+      <a href="/field-notes" class="btn-link">
+        Field Notes
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5"/></svg>
+      </a>
+    </div>
+  </div>
+  <span class="hero-scroll">Scroll</span>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────────
+     TRUST STRIP
+─────────────────────────────────────────────────────────────── -->
+<div class="trust-strip">
+  <div class="trust-inner">
+    <div class="trust-item">
+      <div class="trust-num">110</div>
+      <div class="trust-label">Verified campgrounds</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-num">5</div>
+      <div class="trust-label">Park types covered</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-num">54</div>
+      <div class="trust-label">Data points per camp</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-num">&lt;1–4+</div>
+      <div class="trust-label">Hours from Seattle</div>
+    </div>
+  </div>
+</div>
+
+<!-- ──────────────────────────────────────────────────────────────
+     BROWSE
+─────────────────────────────────────────────────────────────── -->
+<section class="browse" id="browse">
+  <div class="browse-inner">
+
+    <div class="browse-header">
+      <div>
+        <span class="eyebrow">Browse</span>
+        <h2 class="section-h2">Featured campgrounds</h2>
+      </div>
+      <a href="/campgrounds" class="view-all">
+        View all 110
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </a>
+    </div>
+
+    <!-- Filter chips -->
+    <div class="filter-row" id="filterRow">
+      <button class="filter-chip active" data-filter="all">All</button>
+      <div class="filter-sep"></div>
+      <button class="filter-chip" data-filter="under-1">Under 1 hr</button>
+      <button class="filter-chip" data-filter="1-2">1–2 hrs</button>
+      <button class="filter-chip" data-filter="2-3">2–3 hrs</button>
+      <button class="filter-chip" data-filter="3-4">3–4 hrs</button>
+      <button class="filter-chip" data-filter="4plus">4+ hrs</button>
+      <div class="filter-sep"></div>
+      <button class="filter-chip" data-filter-type="national">National Park</button>
+      <button class="filter-chip" data-filter-type="state">State Park</button>
+      <button class="filter-chip" data-filter-hookup="full">Full Hookups</button>
+    </div>
+
+    <!-- Camp Cards -->
+    <div class="camp-grid" id="campGrid">
+
+      <!-- 1. Fairholme — National Park, 3-4hrs, No hookups -->
+      <a class="card" href="/campground/fairholme-campground"
+         data-type="national" data-drive="3-4"
+         data-hookup="none" data-park="national">
+        <img class="card-img"
+             src="https://cdn.prod.website-files.com/69891628ece7ff793d5421f8/699bd1a7cea4b6c93eef00ea_699958895d9621a2a10254a9_fairholme-campground.jpeg"
+             alt="Fairholme Campground" loading="lazy">
+        <div class="card-overlay"></div>
+        <div class="card-top">
+          <span class="card-badge card-badge-type">National Park</span>
+          <span class="card-badge card-badge-drive">~3 hr 15 min</span>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Fairholme Campground</div>
+          <div class="card-desc">Lake Crescent shoreline in Olympic National Park — old-growth forest, mountain reflections, and easy water recreation.</div>
+          <div class="card-footer">
+            <div class="card-acts">
+              <span class="card-act" title="Hiking">🥾</span>
+              <span class="card-act" title="Fishing">🎣</span>
+              <span class="card-act" title="Kayaking">🚣</span>
+              <span class="card-act" title="Beach">🏖️</span>
+            </div>
+            <div class="card-arrow">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5"/></svg>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 2. Wenberg County Park — County, under 1hr, Full hookups -->
+      <a class="card" href="/campground/wenberg-county-park"
+         data-type="county" data-drive="under-1"
+         data-hookup="full" data-park="county">
+        <img class="card-img"
+             src="https://cdn.prod.website-files.com/69891628ece7ff793d5421f8/699bd1b3c51ee878bda8255f_69995900b0e534a0ab5b9e1f_wenberg-county-park.jpeg"
+             alt="Wenberg County Park" loading="lazy">
+        <div class="card-overlay"></div>
+        <div class="card-top">
+          <span class="card-badge card-badge-type">County Park</span>
+          <span class="card-badge card-badge-drive">~1 hr</span>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Wenberg County Park</div>
+          <div class="card-desc">Full-hookup lakeside camp on Lake Goodwin — 70 sites, 45ft max, playgrounds, and swimming.</div>
+          <div class="card-footer">
+            <div class="card-acts">
+              <span class="card-act" title="Fishing">🎣</span>
+              <span class="card-act" title="Swimming">🏊</span>
+              <span class="card-act" title="Kayaking">🚣</span>
+              <span class="card-act" title="Playground">🛝</span>
+            </div>
+            <div class="card-badge card-badge-hookup" style="font-size:10px; padding:4px 10px;">Full hookups</div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 3. Verlot Campground — National Park, 1-2hrs, No hookups -->
+      <a class="card" href="/campground/verlot-campground"
+         data-type="national" data-drive="1-2"
+         data-hookup="none" data-park="national">
+        <img class="card-img"
+             src="https://cdn.prod.website-files.com/69891628ece7ff793d5421f8/699bd1af11c7e2acf5afcbfe_699958fb7c7393405edcc4a5_verlot-campground.jpeg"
+             alt="Verlot Campground" loading="lazy">
+        <div class="card-overlay"></div>
+        <div class="card-top">
+          <span class="card-badge card-badge-type">National Forest</span>
+          <span class="card-badge card-badge-drive">~1 hr 30 min</span>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Verlot Campground</div>
+          <div class="card-desc">Riverside camp in the Mt. Baker-Snoqualmie Forest — 26 sites, max 35ft, classic PNW forest setting.</div>
+          <div class="card-footer">
+            <div class="card-acts">
+              <span class="card-act" title="Hiking">🥾</span>
+              <span class="card-act" title="Fishing">🎣</span>
+              <span class="card-act" title="Swimming">🏊</span>
+            </div>
+            <div class="card-arrow">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5"/></svg>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 4. Twin Harbors State Park — State, 2-3hrs, Full hookups -->
+      <a class="card" href="/campground/twin-harbors-state-park"
+         data-type="state" data-drive="2-3"
+         data-hookup="full" data-park="state">
+        <img class="card-img"
+             src="https://cdn.prod.website-files.com/69891628ece7ff793d5421f8/699bd1b2494e03388ee79c80_699958f9b0e534a0ab5b99ca_twin-harbors-state-park.jpeg"
+             alt="Twin Harbors State Park" loading="lazy">
+        <div class="card-overlay"></div>
+        <div class="card-top">
+          <span class="card-badge card-badge-type">State Park</span>
+          <span class="card-badge card-badge-drive">~2 hr 30 min</span>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Twin Harbors State Park</div>
+          <div class="card-desc">Pacific coast dunes camp with beach access, 42 full-hookup sites, and Gray's Harbor wildlife.</div>
+          <div class="card-footer">
+            <div class="card-acts">
+              <span class="card-act" title="Beach">🏖️</span>
+              <span class="card-act" title="Fishing">🎣</span>
+            </div>
+            <div class="card-badge card-badge-hookup" style="font-size:10px; padding:4px 10px;">Full hookups</div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 5. Twanoh State Park — State, 1-2hrs, Full hookups -->
+      <a class="card" href="/campground/twanoh-state-park"
+         data-type="state" data-drive="1-2"
+         data-hookup="full" data-park="state">
+        <img class="card-img"
+             src="https://cdn.prod.website-files.com/69891628ece7ff793d5421f8/699bd1aa8317a32ea5e8f2c5_699958f6b0e534a0ab5b98d9_twanoh-state-park.jpeg"
+             alt="Twanoh State Park" loading="lazy">
+        <div class="card-overlay"></div>
+        <div class="card-top">
+          <span class="card-badge card-badge-type">State Park</span>
+          <span class="card-badge card-badge-drive">~1 hr 45 min</span>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Twanoh State Park</div>
+          <div class="card-desc">Hood Canal with 47 full-hookup sites, tidal beach swimming, and kayak access. Great for families.</div>
+          <div class="card-footer">
+            <div class="card-acts">
+              <span class="card-act" title="Hiking">🥾</span>
+              <span class="card-act" title="Swimming">🏊</span>
+              <span class="card-act" title="Kayaking">🚣</span>
+              <span class="card-act" title="Beach">🏖️</span>
+            </div>
+            <div class="card-badge card-badge-hookup" style="font-size:10px; padding:4px 10px;">Full hookups</div>
+          </div>
+        </div>
+      </a>
+
+      <!-- 6. Walupt Lake — National, 3-4hrs, No hookups -->
+      <a class="card" href="/campground/walupt-lake-campground"
+         data-type="national" data-drive="3-4"
+         data-hookup="none" data-park="national">
+        <img class="card-img"
+             src="https://cdn.prod.website-files.com/69891628ece7ff793d5421f8/699bd1b3a4303fa9159d04fc_699958fc368e69fcd7b26ddb_walupt-lake-campground.jpeg"
+             alt="Walupt Lake Campground" loading="lazy">
+        <div class="card-overlay"></div>
+        <div class="card-top">
+          <span class="card-badge card-badge-type">National Forest</span>
+          <span class="card-badge card-badge-drive">~3 hr 30 min</span>
+        </div>
+        <div class="card-body">
+          <div class="card-name">Walupt Lake Campground</div>
+          <div class="card-desc">Remote Gifford Pinchot lake camp — 42 sites, crystal-clear alpine water, hiking and kayaking.</div>
+          <div class="card-footer">
+            <div class="card-acts">
+              <span class="card-act" title="Hiking">🥾</span>
+              <span class="card-act" title="Fishing">🎣</span>
+              <span class="card-act" title="Kayaking">🚣</span>
+            </div>
+            <div class="card-arrow">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5"/></svg>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- No results -->
+      <div class="no-results" id="noResults">
+        No campgrounds match that filter. Try a different drive time or <a href="/campgrounds" style="color:var(--forest-light); font-weight:600;">browse all 110 →</a>
+      </div>
+    </div>
+
+    <div class="browse-cta">
+      <a href="/campgrounds">
+        Browse all 110 campgrounds
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────────
+     ABOUT / HOW IT WORKS
+─────────────────────────────────────────────────────────────── -->
+<div class="about-strip">
+  <div class="about-inner">
+    <div class="about-left">
+      <span class="eyebrow">Why this guide</span>
+      <h2 class="section-h2">Built for your rig,<br>not just any camper.</h2>
+      <p>Most camping guides were written for tent campers. We built this one specifically for RV travelers — every campground is rated by max rig length, maneuverability, hookup type, and generator policy. No vague descriptions, no outdated info.</p>
+      <p>Every data point is verified directly from the park, Recreation.gov, or a first-hand visit. If we couldn't verify it, we don't publish it.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pillar-icon">📏</div>
+        <div class="pillar-text">
+          <strong>Rig-specific data</strong>
+          <span>Max length, maneuverability rating, site surface, and pull-through availability for every camp.</span>
+        </div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">⏱️</div>
+        <div class="pillar-text">
+          <strong>Drive time from Seattle</strong>
+          <span>Real-world drive times, not map distances. Sorted into five ranges so you can plan for your weekend.</span>
+        </div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🔌</div>
+        <div class="pillar-text">
+          <strong>Hookup clarity</strong>
+          <span>Full hookups, electric-only, water & electric, or dry camping — always clearly labeled, never guessed.</span>
+        </div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">📡</div>
+        <div class="pillar-text">
+          <strong>Cell coverage rating</strong>
+          <span>Know before you go whether you'll have signal. Three-tier rating based on on-the-ground reports.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ──────────────────────────────────────────────────────────────
+     FIELD NOTES
+─────────────────────────────────────────────────────────────── -->
+<section class="field-notes">
+  <div class="field-notes-inner">
+    <div class="field-notes-header">
+      <div>
+        <span class="eyebrow">Field Notes</span>
+        <h2 class="section-h2">Guides worth reading</h2>
+      </div>
+      <a href="/field-notes" class="view-all">
+        All articles
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </a>
+    </div>
+
+    <div class="fn-grid">
+      <!-- Featured Field Note -->
+      <a class="fn-card" href="/field-notes/best-western-washington-rv-camping-in-march-5-parks-that-are-actually-worth-it">
+        <img class="fn-img"
+             src="https://cdn.prod.website-files.com/69891628ece7ff793d5421f8/699e8c0db6adc020960673f6_best-western-wa-march-camping-hero.webp"
+             alt="Best Western West Coast RV Camping in March" loading="lazy">
+        <div class="fn-body">
+          <span class="fn-category">Seasonal Guide</span>
+          <div class="fn-title">Best Western Washington RV Camping in March: 5 Parks That Are Actually Worth It</div>
+          <p class="fn-summary">Five inland western Washington state parks worth hitting in March — all verified open, all with hookups, all within 3 hours of Seattle. No snow risk, no beach wind.</p>
+          <span class="fn-read">
+            Read the guide
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 6.5h9M7.5 3l3.5 3.5L7.5 10"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <!-- Placeholder Field Notes (show what the grid looks like with more posts) -->
+      <a class="fn-card" href="/field-notes/full-hookup-rv-parks-near-seattle">
+        <div class="fn-img" style="background: linear-gradient(135deg, var(--forest) 0%, var(--forest-mid) 100%); display:flex; align-items:center; justify-content:center; font-size:40px;">⚡</div>
+        <div class="fn-body">
+          <span class="fn-category">Trip Planning</span>
+          <div class="fn-title">Every Full Hookup RV Park Within 2 Hours of Seattle</div>
+          <p class="fn-summary">Fourteen parks with water, electric, and sewer — all within a comfortable two-hour drive from the city. Sorted by drive time.</p>
+          <span class="fn-read">
+            Read the guide
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 6.5h9M7.5 3l3.5 3.5L7.5 10"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a class="fn-card" href="/field-notes/olympic-peninsula-rv-route">
+        <div class="fn-img" style="background: linear-gradient(135deg, #2C5F6A 0%, #1a3a45 100%); display:flex; align-items:center; justify-content:center; font-size:40px;">🗺️</div>
+        <div class="fn-body">
+          <span class="fn-category">Destination Guide</span>
+          <div class="fn-title">The Olympic Peninsula RV Loop</div>
+          <p class="fn-summary">A 5-day loop taking in rainforest, coastline, and mountain lake camping. Four campgrounds, one route, zero ferry required.</p>
+          <span class="fn-read">
+            Read the guide
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 6.5h9M7.5 3l3.5 3.5L7.5 10"/></svg>
+          </span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────────
+     FOOTER
+─────────────────────────────────────────────────────────────── -->
+
+
+<!-- ──────────────────────────────────────────────────────────────
+     JAVASCRIPT
+─────────────────────────────────────────────────────────────── -->
+<script>
+  // ─── Sticky nav ───────────────────────────────────────────────
+  const nav = document.getElementById('nav');
+  let lastY = 0;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    nav.classList.toggle('scrolled', y > 60);
+    lastY = y;
+  }, { passive: true });
+
+  // ─── Hero parallax ────────────────────────────────────────────
+  const heroBg = document.getElementById('heroBg');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY < window.innerHeight) {
+      heroBg.style.transform = `translateY(${window.scrollY * 0.3}px)`;
+    }
+  }, { passive: true });
+
+  // ─── Drive pill → jump to browse + pre-filter ─────────────────
+  document.querySelectorAll('.drive-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      const drive = pill.dataset.drive;
+      // Update hero pills
+      document.querySelectorAll('.drive-pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      // Sync filter chips
+      document.querySelectorAll('.filter-chip[data-filter]').forEach(c => {
+        c.classList.toggle('active', c.dataset.filter === drive);
+      });
+      // Scroll to browse
+      document.getElementById('browse').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // Run filter
+      setTimeout(() => filterCards(drive, null, null), 400);
+    });
+  });
+
+  // ─── Filter chips ─────────────────────────────────────────────
+  let activeFilter   = 'all';
+  let activeType     = null;
+  let activeHookup   = null;
+
+  document.querySelectorAll('.filter-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      if ('filter' in chip.dataset) {
+        activeFilter = chip.dataset.filter;
+        document.querySelectorAll('.filter-chip[data-filter]').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        // Sync hero pills
+        document.querySelectorAll('.drive-pill').forEach(p => {
+          p.classList.toggle('active', p.dataset.drive === activeFilter);
+        });
+      } else if ('filterType' in chip.dataset) {
+        if (activeType === chip.dataset.filterType) {
+          activeType = null;
+          chip.classList.remove('active');
+        } else {
+          activeType = chip.dataset.filterType;
+          document.querySelectorAll('.filter-chip[data-filter-type]').forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+        }
+      } else if ('filterHookup' in chip.dataset) {
+        if (activeHookup === chip.dataset.filterHookup) {
+          activeHookup = null;
+          chip.classList.remove('active');
+        } else {
+          activeHookup = chip.dataset.filterHookup;
+          document.querySelectorAll('.filter-chip[data-filter-hookup]').forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+        }
+      }
+      filterCards(activeFilter, activeType, activeHookup);
+    });
+  });
+
+  function filterCards(drive, type, hookup) {
+    const cards = document.querySelectorAll('.camp-grid .card');
+    let visible = 0;
+    cards.forEach(card => {
+      const matchDrive  = !drive  || drive  === 'all' || card.dataset.drive  === drive;
+      const matchType   = !type   || card.dataset.park   === type;
+      const matchHookup = !hookup || card.dataset.hookup === hookup;
+      const show = matchDrive && matchType && matchHookup;
+      card.classList.toggle('hidden', !show);
+      if (show) visible++;
+    });
+    // Handle first-card spanning
+    const firstCard = document.querySelector('.camp-grid .card:not(.hidden)');
+    document.querySelectorAll('.camp-grid .card').forEach(c => c.style.gridColumn = '');
+    if (firstCard && drive === 'all' && !type && !hookup) {
+      firstCard.style.gridColumn = 'span 2';
+    }
+    document.getElementById('noResults').style.display = visible === 0 ? 'block' : 'none';
+  }
+</script>
+
+<script src="assets/nav.js"></script>
+<script src="assets/footer.js"></script>
+</body>
+</html>

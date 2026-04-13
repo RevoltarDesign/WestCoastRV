@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design System — West Coast RV Camping</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+  <!-- Load real shared assets so previews reflect what's actually deployed -->
+  <link rel="stylesheet" href="assets/tokens.css">
+  <link rel="stylesheet" href="assets/base.css">
+  <link rel="stylesheet" href="assets/nav.css">
+  <link rel="stylesheet" href="assets/footer.css">
+  <style>
+    /* ── Tool chrome (not part of the design system itself) ──── */
+    :root {
+      --ds-bg:      #0F0F0F;
+      --ds-surface: #1A1A1A;
+      --ds-border:  rgba(255,255,255,.08);
+      --ds-text:    rgba(255,255,255,.85);
+      --ds-muted:   rgba(255,255,255,.38);
+      --ds-accent:  var(--gold);
+    }
+
+    body { background: var(--ds-bg); color: var(--ds-text);
+           font-family: var(--font-sans); margin: 0; }
+
+    /* ── Top toolbar ──────────────────────────────────────────── */
+    .toolbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 500;
+      height: 56px; background: #111; border-bottom: 1px solid var(--ds-border);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 28px; gap: 16px;
+    }
+    .toolbar-brand { display: flex; align-items: center; gap: 10px; }
+    .toolbar-logo { font-family: var(--font-display); font-size: 15px;
+      font-weight: 600; color: var(--white); }
+    .toolbar-badge { font-size: 10px; font-weight: 700; letter-spacing: .8px;
+      text-transform: uppercase; background: var(--gold); color: var(--forest);
+      padding: 3px 8px; border-radius: 4px; }
+    .toolbar-actions { display: flex; gap: 10px; }
+    .btn-tool {
+      padding: 7px 16px; border-radius: 6px; font-size: 13px; font-weight: 600;
+      cursor: pointer; border: none; display: flex; align-items: center; gap: 6px;
+      transition: opacity .15s;
+    }
+    .btn-tool:hover { opacity: .85; }
+    .btn-reset  { background: rgba(255,255,255,.08); color: var(--ds-text); }
+    .btn-copy   { background: rgba(255,255,255,.12); color: var(--ds-text); }
+    .btn-dl     { background: var(--gold); color: var(--forest); }
+    .saved-msg { font-size: 12px; color: var(--gold); opacity: 0;
+      transition: opacity .3s; }
+    .saved-msg.show { opacity: 1; }
+
+    /* ── Layout ───────────────────────────────────────────────── */
+    .ds-layout { display: grid; grid-template-columns: 220px 1fr;
+      min-height: 100vh; padding-top: 56px; }
+
+    /* ── Sidebar nav ──────────────────────────────────────────── */
+    .ds-sidebar {
+      position: sticky; top: 56px; height: calc(100vh - 56px);
+      overflow-y: auto; background: var(--ds-surface);
+      border-right: 1px solid var(--ds-border);
+      padding: 24px 0;
+    }
+    .ds-sidebar-section { font-size: 10px; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; color: var(--ds-muted);
+      padding: 16px 20px 8px; }
+    .ds-sidebar a { display: block; padding: 7px 20px; font-size: 13px;
+      color: var(--ds-muted); transition: color .12s, background .12s; border-radius: 0; }
+    .ds-sidebar a:hover { color: var(--white); background: rgba(255,255,255,.05); }
+    .ds-sidebar a.active { color: var(--white); border-left: 2px solid var(--gold);
+      padding-left: 18px; background: rgba(255,255,255,.04); }
+
+    /* ── Main content ─────────────────────────────────────────── */
+    .ds-main { padding: 40px 48px 80px; max-width: 1000px; }
+    @media (max-width: 800px) { .ds-layout { grid-template-columns: 1fr; }
+      .ds-sidebar { display: none; } .ds-main { padding: 24px; } }
+
+    .ds-section { margin-bottom: 64px; scroll-margin-top: 72px; }
+    .ds-section-title {
+      font-family: var(--font-display); font-size: 26px; font-weight: 700;
+      color: var(--white); letter-spacing: -.3px; margin-bottom: 6px;
+    }
+    .ds-section-desc { font-size: 13.5px; color: var(--ds-muted); margin-bottom: 28px;
+      line-height: 1.6; border-bottom: 1px solid var(--ds-border); padding-bottom: 20px; }
+
+    /* ── Color grid ───────────────────────────────────────────── */
+    .color-group-label { font-size: 10.5px; font-weight: 700; letter-spacing: .8px;
+      text-transform: uppercase; color: var(--ds-muted); margin: 24px 0 12px; }
+    .color-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 12px; }
+    .color-card {
+      background: var(--ds-surface); border: 1px solid var(--ds-border);
+      border-radius: 10px; overflow: hidden; cursor: pointer;
+      transition: border-color .15s;
+    }
+    .color-card:hover { border-color: rgba(255,255,255,.2); }
+    .color-swatch { height: 72px; width: 100%; position: relative; }
+    .color-picker-input {
+      position: absolute; inset: 0; opacity: 0; width: 100%; height: 100%;
+      cursor: pointer; border: none;
+    }
+    .color-info { padding: 10px 12px; }
+    .color-name { font-size: 12px; font-weight: 600; color: var(--ds-text);
+      margin-bottom: 2px; }
+    .color-token { font-size: 10.5px; color: var(--ds-muted); font-family: monospace; margin-bottom: 6px; }
+    .color-hex-input {
+      width: 100%; background: rgba(255,255,255,.06); border: 1px solid var(--ds-border);
+      border-radius: 4px; color: var(--ds-text); font-size: 12px; font-family: monospace;
+      padding: 4px 8px; outline: none; transition: border-color .15s;
+    }
+    .color-hex-input:focus { border-color: var(--gold); }
+
+    /* ── Typography ───────────────────────────────────────────── */
+    .type-sample { background: var(--ds-surface); border: 1px solid var(--ds-border);
+      border-radius: 10px; padding: 24px 28px; margin-bottom: 16px; }
+    .type-label { font-size: 10.5px; font-weight: 700; letter-spacing: .8px;
+      text-transform: uppercase; color: var(--ds-muted); margin-bottom: 16px; }
+    .type-display-xl { font-family: var(--font-display); font-size: 60px;
+      font-weight: 700; color: var(--white); line-height: 1.1; letter-spacing: -1.5px; }
+    .type-display-lg { font-family: var(--font-display); font-size: 40px;
+      font-weight: 700; color: var(--white); line-height: 1.15; letter-spacing: -.8px; }
+    .type-display-md { font-family: var(--font-display); font-size: 28px;
+      font-weight: 600; color: var(--white); line-height: 1.2; }
+    .type-display-italic { font-family: var(--font-display); font-size: 40px;
+      font-weight: 400; font-style: italic; color: var(--gold-light); line-height: 1.15; }
+    .type-body-lg { font-size: 18px; color: rgba(255,255,255,.7); line-height: 1.75; }
+    .type-body    { font-size: 15px; color: rgba(255,255,255,.6); line-height: 1.7; }
+    .type-label-text { font-size: 11px; font-weight: 700; letter-spacing: 1.2px;
+      text-transform: uppercase; color: var(--gold-light); }
+    .type-meta { font-size: 12.5px; font-weight: 500; color: rgba(255,255,255,.45);
+      letter-spacing: .3px; }
+
+    /* ── Tokens table ─────────────────────────────────────────── */
+    .token-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .token-table th { text-align: left; padding: 8px 12px; font-size: 10.5px;
+      font-weight: 700; letter-spacing: .8px; text-transform: uppercase;
+      color: var(--ds-muted); border-bottom: 1px solid var(--ds-border); }
+    .token-table td { padding: 10px 12px; border-bottom: 1px solid var(--ds-border);
+      color: var(--ds-text); vertical-align: middle; }
+    .token-table tr:last-child td { border-bottom: none; }
+    .token-name { font-family: monospace; font-size: 12px; color: var(--gold-light); }
+    .token-preview { display: inline-flex; align-items: center; gap: 8px; }
+    .radius-box { background: rgba(255,255,255,.12); width: 36px; height: 36px; flex-shrink: 0; }
+    .shadow-box { background: var(--white); width: 60px; height: 36px; flex-shrink: 0; }
+
+    /* ── Component previews ───────────────────────────────────── */
+    .component-frame {
+      background: var(--cream);
+      border: 1px solid var(--ds-border);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+    .component-label {
+      background: #111; padding: 8px 16px;
+      font-size: 11px; font-weight: 600; letter-spacing: .5px;
+      text-transform: uppercase; color: var(--ds-muted);
+      border-bottom: 1px solid var(--ds-border);
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .component-label span { color: rgba(255,255,255,.3); font-weight: 400;
+      font-size: 10.5px; text-transform: none; letter-spacing: 0; }
+    .component-body { padding: 32px; }
+    .component-body.dark { background: var(--forest); }
+    .component-body.forest { background: var(--forest); padding: 0; }
+    .component-body.cream  { background: var(--cream); }
+
+    /* Button row */
+    .btn-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+    .btn-primary { display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 24px; border-radius: var(--r-pill);
+      background: var(--gold); color: var(--forest);
+      font-size: 14px; font-weight: 700; cursor: pointer; border: none;
+      transition: background .15s, transform .15s; }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+    .btn-outline-forest { display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 24px; border-radius: var(--r-pill);
+      background: transparent; color: var(--forest);
+      border: 1.5px solid var(--forest); font-size: 14px; font-weight: 600;
+      cursor: pointer; transition: background .15s; }
+    .btn-outline-forest:hover { background: var(--forest-pale); }
+    .btn-outline-white { display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 24px; border-radius: var(--r-pill);
+      background: rgba(255,255,255,.08); color: rgba(255,255,255,.85);
+      border: 1px solid rgba(255,255,255,.2); font-size: 14px; font-weight: 600;
+      cursor: pointer; transition: background .15s; }
+    .btn-outline-white:hover { background: rgba(255,255,255,.15); }
+    .btn-sm { padding: 7px 16px; font-size: 13px; }
+
+    /* Badges */
+    .badge-row { display: flex; flex-wrap: wrap; gap: 8px; }
+    .badge-sample { display: inline-flex; align-items: center; gap: 5px;
+      padding: 6px 13px; border-radius: var(--r-pill); font-size: 12px; font-weight: 600;
+      letter-spacing: .3px; text-transform: uppercase; }
+    .badge-nat  { background: rgba(255,255,255,.12); color: rgba(255,255,255,.85); }
+    .badge-state { background: var(--forest-mid); color: rgba(255,255,255,.85); }
+    .badge-gold { background: var(--gold); color: var(--forest); }
+    .badge-drive { background: rgba(255,255,255,.08); color: rgba(255,255,255,.75);
+      border: 1px solid rgba(255,255,255,.12); }
+
+    /* Stat bar preview */
+    .stat-bar-preview { background: var(--forest); display: flex; }
+    .stat-preview { flex: 1; padding: 20px 18px; border-right: 1px solid rgba(255,255,255,.09);
+      text-align: center; }
+    .stat-preview:last-child { border-right: none; }
+    .stat-preview-label { font-size: 10px; font-weight: 700; letter-spacing: .8px;
+      text-transform: uppercase; color: rgba(255,255,255,.42); margin-bottom: 6px; }
+    .stat-preview-val { font-size: 21px; font-weight: 700; color: var(--white); line-height: 1; }
+    .stat-preview-sub { font-size: 11px; color: rgba(255,255,255,.4); margin-top: 4px; }
+
+    /* Card preview */
+    .card-preview {
+      background: var(--white); border: 1px solid var(--tan);
+      border-radius: var(--r-xl); overflow: hidden;
+      box-shadow: var(--shadow-md); max-width: 320px;
+    }
+    .card-preview-img { height: 160px; background: var(--forest); display: flex;
+      align-items: center; justify-content: center; font-size: 40px; }
+    .card-preview-body { padding: 18px 20px; }
+    .card-preview-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: .8px;
+      text-transform: uppercase; color: var(--earth); margin-bottom: 6px; }
+    .card-preview-title { font-family: var(--font-display); font-size: 18px;
+      font-weight: 700; color: var(--forest); line-height: 1.25; margin-bottom: 8px; }
+    .card-preview-desc { font-size: 13.5px; color: var(--text-muted); line-height: 1.6; }
+
+    /* Nav preview */
+    .nav-preview {
+      height: 68px; background: var(--forest); display: flex; align-items: center;
+      justify-content: space-between; padding: 0 28px;
+      box-shadow: 0 1px 0 rgba(255,255,255,.06);
+    }
+    .nav-preview-logo { display: flex; align-items: center; gap: 10px; }
+    .nav-preview-logo img { height: 36px; width: auto; }
+    .nav-preview-links { display: flex; gap: 24px; list-style: none; }
+    .nav-preview-links li a { font-size: 13px; font-weight: 500;
+      color: rgba(255,255,255,.65); }
+    .nav-preview-btn { background: var(--gold); color: var(--forest);
+      padding: 8px 18px; border-radius: var(--r-pill); font-size: 13px; font-weight: 600; }
+
+    /* Footer preview */
+    .footer-preview { background: var(--forest); padding: 32px 28px 24px; }
+    .footer-preview-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 32px; padding-bottom: 24px;
+      border-bottom: 1px solid rgba(255,255,255,.07); margin-bottom: 20px; }
+    .footer-preview-logo { font-family: var(--font-display); font-size: 16px;
+      font-weight: 600; color: var(--white); margin-bottom: 8px; }
+    .footer-preview-desc { font-size: 12.5px; color: rgba(255,255,255,.4); line-height: 1.65; }
+    .footer-preview-col h4 { font-size: 10px; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; color: rgba(255,255,255,.3); margin-bottom: 10px; }
+    .footer-preview-col a { display: block; font-size: 12.5px;
+      color: rgba(255,255,255,.5); margin-bottom: 6px; }
+    .footer-preview-bottom { font-size: 12px; color: rgba(255,255,255,.25); }
+
+    /* ── Misc ─────────────────────────────────────────────────── */
+    .changed-badge { display: inline-block; margin-left: 6px; font-size: 9px;
+      background: var(--gold); color: var(--forest); padding: 1px 5px;
+      border-radius: 3px; font-weight: 700; letter-spacing: .3px;
+      vertical-align: middle; opacity: 0; transition: opacity .2s; }
+    .changed-badge.show { opacity: 1; }
+    .reset-link { font-size: 11px; color: var(--ds-muted); cursor: pointer;
+      text-decoration: underline; margin-left: 8px; }
+    .reset-link:hover { color: var(--white); }
+    hr.ds-rule { border: none; border-top: 1px solid var(--ds-border); margin: 40px 0; }
+  </style>
+</head>
+<body>
+
+<!-- ── Toolbar ─────────────────────────────────────────────── -->
+<div class="toolbar">
+  <div class="toolbar-brand">
+    <span class="toolbar-logo">West Coast RV Camping</span>
+    <span class="toolbar-badge">Design System</span>
+  </div>
+  <div style="display:flex; align-items:center; gap:12px;">
+    <span class="saved-msg" id="savedMsg">✓ Copied!</span>
+    <div class="toolbar-actions">
+      <button class="btn-tool btn-reset" onclick="resetAll()">↺ Reset</button>
+      <button class="btn-tool btn-copy"  onclick="copyTokens()">⎘ Copy CSS</button>
+      <button class="btn-tool btn-dl"    onclick="downloadTokens()">↓ Download tokens.css</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Layout ──────────────────────────────────────────────── -->
+<div class="ds-layout">
+
+  <!-- Sidebar -->
+  <nav class="ds-sidebar">
+    <div class="ds-sidebar-section">Foundations</div>
+    <a href="#colors"     class="active" onclick="setActive(this)">Colors</a>
+    <a href="#typography" onclick="setActive(this)">Typography</a>
+    <a href="#space"      onclick="setActive(this)">Space & Shape</a>
+    <a href="#shadows"    onclick="setActive(this)">Shadows</a>
+    <div class="ds-sidebar-section">Components</div>
+    <a href="#nav"      onclick="setActive(this)">Navigation</a>
+    <a href="#buttons"  onclick="setActive(this)">Buttons</a>
+    <a href="#badges"   onclick="setActive(this)">Badges & Stats</a>
+    <a href="#cards"    onclick="setActive(this)">Cards</a>
+    <a href="#footer"   onclick="setActive(this)">Footer</a>
+    <div class="ds-sidebar-section">Assets</div>
+    <a href="#assets"   onclick="setActive(this)">Logo & Files</a>
+  </nav>
+
+  <!-- Main -->
+  <main class="ds-main">
+
+    <!-- ── COLORS ───────────────────────────────────────────── -->
+    <section class="ds-section" id="colors">
+      <h2 class="ds-section-title">Colors</h2>
+      <p class="ds-section-desc">
+        Edit any swatch below — changes cascade live across all component previews on this page.
+        When you're happy, click <strong>Download tokens.css</strong> and drop the file into
+        <code style="color:var(--gold-light)">site/assets/</code>. Every page on the site picks
+        it up instantly with zero regeneration needed.
+      </p>
+
+      <div class="color-group-label">Greens</div>
+      <div class="color-grid" id="grid-greens"></div>
+
+      <div class="color-group-label">Golds</div>
+      <div class="color-grid" id="grid-golds"></div>
+
+      <div class="color-group-label">Neutrals</div>
+      <div class="color-grid" id="grid-neutrals"></div>
+
+      <div class="color-group-label">Text</div>
+      <div class="color-grid" id="grid-text"></div>
+
+      <div class="color-group-label">Accents & Alerts</div>
+      <div class="color-grid" id="grid-accents"></div>
+    </section>
+
+    <hr class="ds-rule">
+
+    <!-- ── TYPOGRAPHY ───────────────────────────────────────── -->
+    <section class="ds-section" id="typography">
+      <h2 class="ds-section-title">Typography</h2>
+      <p class="ds-section-desc">
+        Two families: <strong>Playfair Display</strong> for headings and display text,
+        <strong>DM Sans</strong> for everything else. Both loaded from Google Fonts.
+      </p>
+
+      <div class="type-sample">
+        <div class="type-label">Display — Playfair Display 700, 60px</div>
+        <div class="type-display-xl">Find your next camp.</div>
+      </div>
+      <div class="type-sample">
+        <div class="type-label">Display Italic — Playfair Display 400i, 40px</div>
+        <div class="type-display-italic">Washington</div>
+      </div>
+      <div class="type-sample">
+        <div class="type-label">Heading — Playfair Display 700, 28px</div>
+        <div class="type-display-md">Olympic National Park</div>
+      </div>
+      <div class="type-sample">
+        <div class="type-label">Body Large — DM Sans 400, 18px</div>
+        <div class="type-body-lg">Full-hookup sites with stunning mountain views, 45-minute drive from Port Angeles. Reservations open 6 months out and fill within hours.</div>
+      </div>
+      <div class="type-sample">
+        <div class="type-label">Body — DM Sans 400, 15px</div>
+        <div class="type-body">The campground sits at 1,800 ft elevation, giving most sites a clear sight line toward the glacier. Cell signal is weak but the host has wifi available at the check-in station.</div>
+      </div>
+      <div class="type-sample">
+        <div class="type-label">Eyebrow — DM Sans 700, 11px / letter-spacing 1.2px</div>
+        <div class="type-label-text">Washington State · RV Camping Guide</div>
+      </div>
+      <div class="type-sample">
+        <div class="type-label">Meta / Caption — DM Sans 500, 12.5px</div>
+        <div class="type-meta">Last verified March 2026 · Recreation.gov · Walk-in available</div>
+      </div>
+    </section>
+
+    <hr class="ds-rule">
+
+    <!-- ── SPACE & SHAPE ─────────────────────────────────────── -->
+    <section class="ds-section" id="space">
+      <h2 class="ds-section-title">Space & Shape</h2>
+      <p class="ds-section-desc">Border radii used across the system.</p>
+      <table class="token-table">
+        <thead>
+          <tr><th>Token</th><th>Value</th><th>Preview</th><th>Usage</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="token-name">--r-sm</td>
+            <td>4px</td>
+            <td><div class="token-preview"><div class="radius-box" style="border-radius:4px;"></div></div></td>
+            <td style="color:var(--ds-muted);font-size:12px;">Hex inputs, small chips</td>
+          </tr>
+          <tr>
+            <td class="token-name">--r-md</td>
+            <td>8px</td>
+            <td><div class="token-preview"><div class="radius-box" style="border-radius:8px;"></div></div></td>
+            <td style="color:var(--ds-muted);font-size:12px;">Nav mark, icon containers</td>
+          </tr>
+          <tr>
+            <td class="token-name">--r-lg</td>
+            <td>14px</td>
+            <td><div class="token-preview"><div class="radius-box" style="border-radius:14px;"></div></div></td>
+            <td style="color:var(--ds-muted);font-size:12px;">Cards, method steps</td>
+          </tr>
+          <tr>
+            <td class="token-name">--r-xl</td>
+            <td>20px</td>
+            <td><div class="token-preview"><div class="radius-box" style="border-radius:20px;"></div></div></td>
+            <td style="color:var(--ds-muted);font-size:12px;">Featured cards, modals</td>
+          </tr>
+          <tr>
+            <td class="token-name">--r-pill</td>
+            <td>100px</td>
+            <td><div class="token-preview"><div class="radius-box" style="border-radius:100px; width:72px;"></div></div></td>
+            <td style="color:var(--ds-muted);font-size:12px;">Buttons, badges, tags</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr class="ds-rule">
+
+    <!-- ── SHADOWS ───────────────────────────────────────────── -->
+    <section class="ds-section" id="shadows">
+      <h2 class="ds-section-title">Shadows</h2>
+      <p class="ds-section-desc">Three elevation levels used across cards and surfaces.</p>
+      <table class="token-table">
+        <thead>
+          <tr><th>Token</th><th>Value</th><th>Preview</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="token-name">--shadow-sm</td>
+            <td style="font-size:11.5px;color:var(--ds-muted)">0 2px 8px rgba(0,0,0,.07)</td>
+            <td><div class="shadow-box" style="border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,.07);"></div></td>
+          </tr>
+          <tr>
+            <td class="token-name">--shadow-md</td>
+            <td style="font-size:11.5px;color:var(--ds-muted)">0 4px 20px rgba(0,0,0,.1)</td>
+            <td><div class="shadow-box" style="border-radius:8px; box-shadow:0 4px 20px rgba(0,0,0,.1);"></div></td>
+          </tr>
+          <tr>
+            <td class="token-name">--shadow-lg</td>
+            <td style="font-size:11.5px;color:var(--ds-muted)">0 12px 48px rgba(0,0,0,.15)</td>
+            <td><div class="shadow-box" style="border-radius:8px; box-shadow:0 12px 48px rgba(0,0,0,.15);"></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr class="ds-rule">
+
+    <!-- ── NAV ──────────────────────────────────────────────── -->
+    <section class="ds-section" id="nav">
+      <h2 class="ds-section-title">Navigation</h2>
+      <p class="ds-section-desc">Rendered from <code style="color:var(--gold-light)">assets/nav.css</code> + <code style="color:var(--gold-light)">assets/nav.js</code>. Edit those files to change nav behaviour.</p>
+      <div class="component-frame">
+        <div class="component-label">Nav — solid state <span>Campground detail pages start transparent, scroll to solid</span></div>
+        <div class="nav-preview">
+          <div class="nav-preview-logo">
+            <img src="assets/west-coast-rv-logo-mark.png" alt="West Coast RV Camping" height="36" onerror="this.style.display='none';this.nextSibling.style.display='block'">
+            <span style="display:none;font-family:var(--font-display);font-size:15px;font-weight:700;color:var(--white);">West Coast RV Camping</span>
+          </div>
+          <ul class="nav-preview-links">
+            <li><a href="#">Campgrounds</a></li>
+            <li><a href="#">Field Notes</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+          <div class="nav-preview-btn">Browse all 110 →</div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="ds-rule">
+
+    <!-- ── BUTTONS ───────────────────────────────────────────── -->
+    <section class="ds-section" id="buttons">
+      <h2 class="ds-section-title">Buttons</h2>
+      <p class="ds-section-desc">Three button styles used across the site. All use <code style="color:var(--gold-light)">--r-pill</code> for border-radius.</p>
+
+      <div class="component-frame">
+        <div class="component-label">On cream / light backgrounds</div>
+        <div class="component-body cream">
+          <div class="btn-row">
+            <button class="btn-primary">Reserve a Site</button>
+            <button class="btn-primary btn-sm">Browse all 110 →</button>
+            <button class="btn-outline-forest">Get Directions</button>
+            <button class="btn-outline-forest btn-sm">Learn more</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="component-frame">
+        <div class="component-label">On dark / forest backgrounds</div>
+        <div class="component-body dark">
+          <div class="btn-row">
+            <button class="btn-primary">Reserve a Site</button>
+            <button class="btn-outline-white">Get Directions</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="ds-rule">
+
+    <!-- ── BADGES & STATS ────────────────────────────────────── -->
+    <section class="ds-section" id="badges">
+      <h2 class="ds-section-title">Badges & Stats Bar</h2>
+      <p class="ds-section-desc">Badges appear in hero sections and campground cards. The stats bar sits directly below the campground hero.</p>
+
+      <div class="component-frame">
+        <div class="component-label">Park type badges</div>
+        <div class="component-body dark">
+          <div class="badge-row">
+            <span class="badge-sample badge-nat">★ National Park</span>
+            <span class="badge-sample badge-state">★ State Park</span>
+            <span class="badge-sample badge-gold">★ Full Hookups</span>
+            <span class="badge-sample badge-drive">⏱ ~2 hr from Seattle</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="component-frame">
+        <div class="component-label">Stats bar</div>
+        <div class="component-body" style="padding:0; background:var(--forest);">
+          <div class="stat-bar-preview">
+            <div class="stat-preview">
+              <div class="stat-preview-label">RV Sites</div>
+              <div class="stat-preview-val">32</div>
+              <div class="stat-preview-sub">total sites</div>
+            </div>
+            <div class="stat-preview">
+              <div class="stat-preview-label">Max Length</div>
+              <div class="stat-preview-val">38 ft</div>
+              <div class="stat-preview-sub">full hookups</div>
+            </div>
+            <div class="stat-preview">
+              <div class="stat-preview-label">Hookups</div>
+              <div class="stat-preview-val">Full</div>
+              <div class="stat-preview-sub">water + electric + sewer</div>
+            </div>
+            <div class="stat-preview">
+              <div class="stat-preview-label">Surface</div>
+              <div class="stat-preview-val">Gravel</div>
+              <div class="stat-preview-sub">site surface</div>
+            </div>
+            <div class="stat-preview">
+              <div class="stat-preview-label">Dump Station</div>
+              <div class="stat-preview-val">On-site</div>
+              <div class="stat-preview-sub">all campers</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="ds-rule">
+
+    <!-- ── CARDS ─────────────────────────────────────────────── -->
+    <section class="ds-section" id="cards">
+      <h2 class="ds-section-title">Cards</h2>
+      <p class="ds-section-desc">Campground listing cards used on the browse page.</p>
+      <div class="component-frame">
+        <div class="component-label">Campground card</div>
+        <div class="component-body cream" style="display:flex; gap:20px; flex-wrap:wrap;">
+          <div class="card-preview">
+            <div class="card-preview-img">🏔️</div>
+            <div class="card-preview-body">
+              <div class="card-preview-eyebrow">National Park · 2 hr 15 min</div>
+              <div class="card-preview-title">Fairholme Campground</div>
+              <div class="card-preview-desc">88 sites on Lake Crescent with full hookup options. Max 21 ft for pull-throughs.</div>
+            </div>
+          </div>
+          <div class="card-preview">
+            <div class="card-preview-img">🌲</div>
+            <div class="card-preview-body">
+              <div class="card-preview-eyebrow">State Park · 1 hr 45 min</div>
+              <div class="card-preview-title">Deception Pass State Park</div>
+              <div class="card-preview-desc">167 sites with electric hookups, stunning bridge views. Book 9 months ahead.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="ds-rule">
+
+    <!-- ── FOOTER ─────────────────────────────────────────────── -->
+    <section class="ds-section" id="footer">
+      <h2 class="ds-section-title">Footer</h2>
+      <p class="ds-section-desc">Rendered from <code style="color:var(--gold-light)">assets/footer.css</code> + <code style="color:var(--gold-light)">assets/footer.js</code>. Edit those files to change footer content or layout.</p>
+      <div class="component-frame">
+        <div class="component-label">Footer — 4-column</div>
+        <div class="footer-preview">
+          <div class="footer-preview-top">
+            <div>
+              <div class="footer-preview-logo">West Coast RV Camping</div>
+              <div class="footer-preview-desc">The most complete independent guide to RV camping in Washington State — built for your rig, not a tent.</div>
+            </div>
+            <div class="footer-preview-col">
+              <h4>Explore</h4>
+              <a href="#">All Campgrounds</a>
+              <a href="#">National Parks</a>
+              <a href="#">State Parks</a>
+            </div>
+            <div class="footer-preview-col">
+              <h4>Info</h4>
+              <a href="#">About</a>
+              <a href="#">Methodology</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+          <div class="footer-preview-bottom">© 2026 West Coast RV Camping. Independent — no paid placements.</div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="ds-rule">
+
+    <!-- ── ASSETS ─────────────────────────────────────────────── -->
+    <section class="ds-section" id="assets">
+      <h2 class="ds-section-title">Logo & Assets</h2>
+      <p class="ds-section-desc">All shared files live in <code style="color:var(--gold-light)">site/assets/</code>.</p>
+      <div class="component-frame">
+        <div class="component-label">Logo mark <span>site/assets/west-coast-rv-logo-mark.png</span></div>
+        <div class="component-body dark" style="display:flex; gap:32px; align-items:center; flex-wrap:wrap;">
+          <div>
+            <div style="font-size:10px;color:var(--ds-muted);margin-bottom:8px;">44px (nav height)</div>
+            <img src="assets/west-coast-rv-logo-mark.png" alt="West Coast RV Camping" height="44" onerror="this.outerHTML='<div style=\'padding:12px 20px;background:rgba(255,255,255,.06);border-radius:6px;color:rgba(255,255,255,.3);font-size:12px;\'>⚠ Logo file not found at assets/west-coast-rv-logo-mark.png</div>'">
+          </div>
+          <div>
+            <div style="font-size:10px;color:var(--ds-muted);margin-bottom:8px;">88px (2× preview)</div>
+            <img src="assets/west-coast-rv-logo-mark.png" alt="West Coast RV Camping" height="88" onerror="this.style.display='none'">
+          </div>
+        </div>
+      </div>
+
+      <table class="token-table" style="margin-top:24px;">
+        <thead>
+          <tr><th>File</th><th>Purpose</th><th>Edit to change</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="token-name">assets/tokens.css</td><td>Colors, typography, spacing</td><td style="color:var(--ds-muted);font-size:12px;">This page → Download</td></tr>
+          <tr><td class="token-name">assets/base.css</td><td>Resets, body, img, a</td><td style="color:var(--ds-muted);font-size:12px;">Edit directly</td></tr>
+          <tr><td class="token-name">assets/nav.css</td><td>Nav layout & styles</td><td style="color:var(--ds-muted);font-size:12px;">Edit directly</td></tr>
+          <tr><td class="token-name">assets/nav.js</td><td>Nav HTML, active state, scroll</td><td style="color:var(--ds-muted);font-size:12px;">Edit directly</td></tr>
+          <tr><td class="token-name">assets/footer.css</td><td>Footer layout & styles</td><td style="color:var(--ds-muted);font-size:12px;">Edit directly</td></tr>
+          <tr><td class="token-name">assets/footer.js</td><td>Footer HTML, copyright year</td><td style="color:var(--ds-muted);font-size:12px;">Edit directly</td></tr>
+          <tr><td class="token-name">assets/west-coast-rv-logo-mark.png</td><td>Logo (nav + og:image)</td><td style="color:var(--ds-muted);font-size:12px;">Replace file (same name)</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+</div><!-- /ds-layout -->
+
+<script>
+/* ══════════════════════════════════════════════════════════════
+   Design token definitions
+   Values are read live from the loaded tokens.css via
+   getComputedStyle — so this always reflects what's deployed.
+══════════════════════════════════════════════════════════════ */
+
+const TOKEN_GROUPS = {
+  'grid-greens': [
+    { token: '--forest',       label: 'Forest' },
+    { token: '--forest-mid',   label: 'Forest Mid' },
+    { token: '--forest-light', label: 'Forest Light' },
+    { token: '--forest-pale',  label: 'Forest Pale' },
+  ],
+  'grid-golds': [
+    { token: '--gold',       label: 'Gold' },
+    { token: '--gold-light', label: 'Gold Light' },
+    { token: '--gold-pale',  label: 'Gold Pale' },
+  ],
+  'grid-neutrals': [
+    { token: '--cream',     label: 'Cream' },
+    { token: '--parchment', label: 'Parchment' },
+    { token: '--tan',       label: 'Tan' },
+    { token: '--tan-mid',   label: 'Tan Mid' },
+    { token: '--white',     label: 'White' },
+    { token: '--lake',      label: 'Lake' },
+  ],
+  'grid-text': [
+    { token: '--text',       label: 'Text' },
+    { token: '--text-mid',   label: 'Text Mid' },
+    { token: '--text-muted', label: 'Text Muted' },
+  ],
+  'grid-accents': [
+    { token: '--earth',       label: 'Earth' },
+    { token: '--earth-light', label: 'Earth Light' },
+    { token: '--warn',        label: 'Warn' },
+    { token: '--danger',      label: 'Danger' },
+  ],
+};
+
+// Read live value from computed style
+function readToken(token) {
+  return getComputedStyle(document.documentElement)
+    .getPropertyValue(token).trim();
+}
+
+// Store originals for reset
+const originals = {};
+
+// Convert any color to hex (handles rgb/rgba/hex)
+function toHex(color) {
+  if (!color) return '#000000';
+  if (color.startsWith('#')) {
+    if (color.length === 4)
+      return '#' + color[1]+color[1]+color[2]+color[2]+color[3]+color[3];
+    return color.substring(0, 7);
+  }
+  const d = document.createElement('div');
+  d.style.color = color;
+  document.body.appendChild(d);
+  const computed = getComputedStyle(d).color;
+  document.body.removeChild(d);
+  const m = computed.match(/\d+/g);
+  if (!m) return '#000000';
+  return '#' + m.slice(0,3).map(n => parseInt(n).toString(16).padStart(2,'0')).join('');
+}
+
+function updateToken(token, value) {
+  document.documentElement.style.setProperty(token, value);
+  // Show changed badge
+  const card = document.querySelector(`[data-token="${token}"]`);
+  if (card) {
+    const badge = card.querySelector('.changed-badge');
+    if (badge) badge.classList.add('show');
+  }
+}
+
+function buildColorCard(token, label, container) {
+  const rawVal  = readToken(token);
+  const hexVal  = toHex(rawVal) || rawVal;
+  originals[token] = hexVal;
+
+  const card = document.createElement('div');
+  card.className = 'color-card';
+  card.dataset.token = token;
+  card.innerHTML = `
+    <div class="color-swatch" style="background:var(${token})">
+      <input type="color" class="color-picker-input"
+             value="${hexVal}"
+             title="Pick color for ${token}"
+             data-token="${token}">
+    </div>
+    <div class="color-info">
+      <div class="color-name">${label} <span class="changed-badge">CHANGED</span></div>
+      <div class="color-token">${token}</div>
+      <input type="text" class="color-hex-input"
+             value="${hexVal}"
+             data-token="${token}"
+             maxlength="7"
+             spellcheck="false">
+    </div>`;
+
+  // Color picker → update
+  const picker = card.querySelector('.color-picker-input');
+  const hexInput = card.querySelector('.color-hex-input');
+  const swatch = card.querySelector('.color-swatch');
+
+  picker.addEventListener('input', e => {
+    const v = e.target.value;
+    hexInput.value = v;
+    swatch.style.background = v;
+    updateToken(token, v);
+  });
+
+  // Hex text → update
+  hexInput.addEventListener('input', e => {
+    const v = e.target.value;
+    if (/^#[0-9a-fA-F]{6}$/.test(v)) {
+      picker.value = v;
+      swatch.style.background = v;
+      updateToken(token, v);
+    }
+  });
+  hexInput.addEventListener('keydown', e => {
+    if (e.key === 'Enter') hexInput.blur();
+  });
+
+  container.appendChild(card);
+}
+
+// Build all grids
+Object.entries(TOKEN_GROUPS).forEach(([gridId, tokens]) => {
+  const container = document.getElementById(gridId);
+  if (container) {
+    tokens.forEach(({ token, label }) => buildColorCard(token, label, container));
+  }
+});
+
+/* ── Export ──────────────────────────────────────────────────── */
+function generateTokensCSS() {
+  const allTokens = Object.values(TOKEN_GROUPS).flat();
+  const lines = allTokens.map(({ token }) => {
+    const val = getComputedStyle(document.documentElement).getPropertyValue(token).trim();
+    const pad = ' '.repeat(Math.max(1, 18 - token.length));
+    return `  ${token}:${pad}${val};`;
+  });
+
+  return `/* ============================================================
+   West Coast RV Camping — Design Tokens
+   Single source of truth for all CSS custom properties.
+   Generated by _design-system.html on ${new Date().toLocaleDateString()}.
+   ============================================================ */
+
+:root {
+  /* Greens */
+${lines.slice(0, 4).join('\n')}
+
+  /* Golds */
+${lines.slice(4, 7).join('\n')}
+
+  /* Neutrals */
+${lines.slice(7, 13).join('\n')}
+
+  /* Text */
+${lines.slice(13, 16).join('\n')}
+
+  /* Accents & Alerts */
+${lines.slice(16).join('\n')}
+
+  /* Typography */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-sans:    'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Radii */
+  --r-sm:  4px;
+  --r-md:  8px;
+  --r-lg:  14px;
+  --r-xl:  20px;
+  --r-pill: 100px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,.07);
+  --shadow-md: 0 4px 20px rgba(0,0,0,.1);
+  --shadow-lg: 0 12px 48px rgba(0,0,0,.15);
+
+  /* Layout */
+  --max-w:     1160px;
+  --gutter:    clamp(20px, 5vw, 56px);
+  --section-v: clamp(60px, 8vw, 100px);
+}`;
+}
+
+function downloadTokens() {
+  const css = generateTokensCSS();
+  const blob = new Blob([css], { type: 'text/css' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'tokens.css';
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+}
+
+function copyTokens() {
+  navigator.clipboard.writeText(generateTokensCSS()).then(() => {
+    const msg = document.getElementById('savedMsg');
+    msg.classList.add('show');
+    setTimeout(() => msg.classList.remove('show'), 2000);
+  });
+}
+
+function resetAll() {
+  Object.entries(originals).forEach(([token, val]) => {
+    document.documentElement.style.setProperty(token, val);
+    const card = document.querySelector(`[data-token="${token}"]`);
+    if (card) {
+      card.querySelector('.color-picker-input').value = val;
+      card.querySelector('.color-hex-input').value = val;
+      card.querySelector('.color-swatch').style.background = val;
+      card.querySelector('.changed-badge').classList.remove('show');
+    }
+  });
+}
+
+/* ── Sidebar active state ─────────────────────────────────── */
+function setActive(el) {
+  document.querySelectorAll('.ds-sidebar a').forEach(a => a.classList.remove('active'));
+  el.classList.add('active');
+}
+
+// Update active link on scroll
+const sections = document.querySelectorAll('.ds-section');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const id = e.target.id;
+      document.querySelectorAll('.ds-sidebar a').forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+      });
+    }
+  });
+}, { rootMargin: '-30% 0px -60% 0px' });
+sections.forEach(s => observer.observe(s));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* ============================================================
+   West Coast RV Camping — Shared Nav
+   Single source of truth for all nav styles.
+   Referenced by nav.js which injects the nav HTML.
+   ============================================================ */
+
+.nav {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 200;
+  height: 68px;
+  padding: 0 var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background .25s, box-shadow .25s;
+}
+
+/* Gradient veil — only visible on transparent (hero-overlay) navs */
+.nav::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,.28) 0%, transparent 100%);
+  pointer-events: none;
+  transition: opacity .25s;
+}
+.nav.scrolled::after { opacity: 0; }
+
+/* Solid state — always applied on non-transparent pages,
+   applied on scroll for campground detail pages           */
+.nav.scrolled {
+  background: var(--forest);
+  box-shadow: 0 1px 0 rgba(255,255,255,.05), 0 4px 24px rgba(0,0,0,.22);
+}
+
+/* Logo */
+.nav-logo {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.nav-logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
+/* Right side wrapper */
+.nav-right {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: rgba(255,255,255,.7);
+  transition: color .15s;
+}
+.nav-links a:hover,
+.nav-links a.active { color: var(--white); }
+
+/* CTA button */
+.nav-btn {
+  background: var(--gold);
+  color: var(--forest);
+  padding: 9px 20px;
+  border-radius: var(--r-pill);
+  font-size: 13.5px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background .15s, transform .15s;
+}
+.nav-btn:hover {
+  background: var(--gold-light);
+  transform: translateY(-1px);
+}
+
+/* Mobile */
+@media (max-width: 720px) {
+  .nav-links { display: none; }
+}

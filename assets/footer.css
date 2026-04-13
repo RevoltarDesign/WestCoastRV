@@ -1,0 +1,90 @@
+/* ============================================================
+   West Coast RV Camping — Shared Footer
+   Edit here → every page inherits the change immediately.
+   ============================================================ */
+
+footer {
+  background: var(--forest);
+  padding: clamp(40px, 5vw, 64px) var(--gutter) 32px;
+  margin-top: 0;
+}
+
+.footer-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+/* ── Top grid ── */
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,.07);
+  margin-bottom: 28px;
+}
+@media (max-width: 880px) {
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+}
+@media (max-width: 480px) {
+  .footer-top { grid-template-columns: 1fr; gap: 28px; }
+}
+
+/* ── Brand column ── */
+.footer-logo {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+.footer-brand p {
+  font-size: 13.5px;
+  color: rgba(255,255,255,.42);
+  line-height: 1.7;
+  max-width: 280px;
+}
+
+/* ── Link columns ── */
+.footer-col h4 {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.32);
+  margin-bottom: 14px;
+}
+.footer-col a {
+  display: block;
+  font-size: 13.5px;
+  color: rgba(255,255,255,.52);
+  margin-bottom: 10px;
+  transition: color .15s;
+}
+.footer-col a:hover { color: var(--white); }
+
+/* ── Bottom row ── */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.footer-copy {
+  font-size: 12.5px;
+  color: rgba(255,255,255,.28);
+}
+.footer-note {
+  font-size: 12.5px;
+  color: rgba(255,255,255,.22);
+  font-style: italic;
+}
+.footer-disclaimer {
+  font-size: 11.5px;
+  color: rgba(255,255,255,.18);
+  line-height: 1.6;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,.05);
+}

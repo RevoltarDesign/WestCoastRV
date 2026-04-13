@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — West Coast RV Camping</title>
+  <meta name="description" content="West Coast RV Camping is an independent guide to RV camping in Washington State, built by a fellow Washingtonian who wanted this resource to exist. A work in progress, improving as we go.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://warvcamp.com/about">
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="About — West Coast RV Camping">
+  <meta property="og:description" content="An independent guide to RV camping in Washington State, built by a Washingtonian who wanted this to exist. Work in progress, improving over time.">
+  <meta property="og:url"         content="https://warvcamp.com/about">
+  <meta property="og:site_name"   content="West Coast RV Camping">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home",  "item": "https://warvcamp.com/" },
+      { "@type": "ListItem", "position": 2, "name": "About", "item": "https://warvcamp.com/about" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About West Coast RV Camping",
+    "url": "https://warvcamp.com/about",
+    "description": "An independent guide to RV camping in Washington State, built by a Washingtonian. Data sourced from official park agencies and actively being improved.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "West Coast RV Camping",
+      "url": "https://warvcamp.com",
+      "areaServed": { "@type": "State", "name": "Washington" },
+      "sameAs": [
+        "https://www.instagram.com/warvcamp",
+        "https://www.facebook.com/warvcamp"
+      ]
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+  <!-- Shared assets -->
+  <link rel="stylesheet" href="assets/nav.css">
+  <link rel="stylesheet" href="assets/tokens.css">
+  <link rel="stylesheet" href="assets/base.css">
+  <link rel="stylesheet" href="assets/footer.css">
+  <style>
+    /* ── Page layout ─────────────────────────────────────── */
+    .page-header {
+      background: var(--forest);
+      padding: calc(68px + 64px) var(--gutter) 60px;
+    }
+    .header-inner { max-width: 760px; margin: 0 auto; }
+    .breadcrumb { display: flex; align-items: center; gap: 8px; font-size: 12px;
+      color: rgba(255,255,255,.4); margin-bottom: 24px; }
+    .breadcrumb a { transition: color .15s; }
+    .breadcrumb a:hover { color: rgba(255,255,255,.75); }
+    .breadcrumb .sep { color: rgba(255,255,255,.2); }
+    .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 1.2px;
+      text-transform: uppercase; color: var(--gold-light);
+      display: block; margin-bottom: 12px; }
+    .page-header h1 { font-family: var(--font-display);
+      font-size: clamp(32px, 5vw, 52px); font-weight: 700;
+      color: var(--white); line-height: 1.1; letter-spacing: -.8px;
+      margin-bottom: 18px; }
+    .page-header .lede { font-size: clamp(15px, 1.8vw, 18px);
+      color: rgba(255,255,255,.58); line-height: 1.7; max-width: 560px; }
+
+    /* ── Body ────────────────────────────────────────────── */
+    .content { max-width: 760px; margin: 0 auto;
+      padding: clamp(48px, 7vw, 88px) var(--gutter); }
+
+    .prose p { font-size: 16.5px; color: var(--text-mid); line-height: 1.8;
+      margin-bottom: 22px; }
+    .prose p:last-child { margin-bottom: 0; }
+    .prose a { color: var(--forest); font-weight: 600;
+      text-decoration: underline; text-underline-offset: 3px; }
+    .prose a:hover { color: var(--forest-mid); }
+
+    /* ── Section heading ─────────────────────────────────── */
+    .section-head { display: flex; align-items: center; gap: 14px;
+      margin: 52px 0 20px; }
+    .section-head h2 { font-family: var(--font-display); font-size: 22px;
+      font-weight: 700; color: var(--forest); letter-spacing: -.3px; }
+    .section-head::after { content:''; flex:1; height:1px; background:var(--tan); }
+
+    /* ── Principles ──────────────────────────────────────── */
+    .principles { display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+      margin-top: 4px; }
+    @media (max-width: 560px) { .principles { grid-template-columns: 1fr; } }
+    .principle { background: var(--white); border: 1px solid var(--tan);
+      border-radius: var(--r-lg); padding: 22px 20px;
+      display: flex; gap: 14px; align-items: flex-start; }
+    .principle-icon { font-size: 22px; flex-shrink: 0; margin-top: 1px; }
+    .principle h3 { font-family: var(--font-display); font-size: 16px;
+      font-weight: 700; color: var(--forest); margin-bottom: 6px; }
+    .principle p { font-size: 13.5px; color: var(--text-mid); line-height: 1.65; }
+
+    /* ── Disclaimer box ──────────────────────────────────── */
+    .disclaimer {
+      background: var(--gold-pale);
+      border: 1px solid rgba(192,154,66,.25);
+      border-radius: var(--r-lg);
+      padding: 24px 26px;
+      margin-top: 52px;
+    }
+    .disclaimer-label { font-size: 10.5px; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; color: var(--earth); margin-bottom: 8px; }
+    .disclaimer p { font-size: 14px; color: var(--text-mid); line-height: 1.72; }
+    .disclaimer p + p { margin-top: 10px; }
+
+    /* ── Contact ─────────────────────────────────────────── */
+    .contact-row { display: flex; align-items: center; gap: 16px;
+      flex-wrap: wrap; margin-top: 52px; }
+    .contact-row p { font-size: 15px; color: var(--text-mid); line-height: 1.6; }
+    .contact-btn { display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 22px; border-radius: var(--r-pill);
+      background: var(--forest); color: var(--white);
+      font-size: 14px; font-weight: 600; transition: background .15s; flex-shrink: 0; }
+    .contact-btn:hover { background: var(--forest-mid); }
+  </style>
+</head>
+<body
+  data-nav-cta-text="Browse Campgrounds →"
+  data-nav-cta-url="/campgrounds">
+
+<!-- ── PAGE HEADER ────────────────────────────────────────── -->
+<header class="page-header">
+  <div class="header-inner">
+    <nav class="breadcrumb">
+      <a href="/">Home</a>
+      <span class="sep">/</span>
+      <span>About</span>
+    </nav>
+    <span class="eyebrow">About this site</span>
+    <h1>Washington has incredible campgrounds.<br>Finding them shouldn't be hard.</h1>
+    <p class="lede">We were new RV owners ready to explore the state. We spent hours researching a campground, only to find out it didn't allow RVs. Or had no electrical hookups. Or no water. We built this so that doesn't happen to you.</p>
+  </div>
+</header>
+
+<!-- ── CONTENT ────────────────────────────────────────────── -->
+<main class="content">
+
+  <div class="prose">
+    <p>We're a family new to RVing, and Washington is our home. The Pacific Northwest has some of the most incredible camping in the country — but figuring out which campgrounds actually work for your rig is its own project. Tabs open across Recreation.gov, park websites, Reddit threads, and old blog posts, trying to piece together whether a site even allows RVs, has electrical hookups, or has water.</p>
+    <p>West Coast RV Camping exists to fix that. One place where you can find what actually matters for your rig: hookup levels, max RV length, dump stations, surface type, cell signal, and reservation windows. Organized consistently across every campground so you can actually compare your options before you commit.</p>
+    <p>This is a work in progress. We're adding detail, fixing errors, and improving coverage over time. We're fellow campers, not a travel agency, and we're building this the same way we'd want someone to build it for us.</p>
+  </div>
+
+  <div class="section-head"><h2>What we care about</h2></div>
+  <div class="principles">
+    <div class="principle">
+      <div class="principle-icon">🔍</div>
+      <div>
+        <h3>No paid placements</h3>
+        <p>Campgrounds can't pay to appear higher in results or in any featured section. Rankings are based on data, not dollars.</p>
+      </div>
+    </div>
+    <div class="principle">
+      <div class="principle-icon">📍</div>
+      <div>
+        <h3>Official sources first</h3>
+        <p>Data starts at Recreation.gov, Washington State Parks, and the National Park Service. Not user reviews or aggregator sites.</p>
+      </div>
+    </div>
+    <div class="principle">
+      <div class="principle-icon">🔄</div>
+      <div>
+        <h3>Improving over time</h3>
+        <p>We're actively adding detail and correcting errors. If something looks wrong, we want to know. That's how this gets better.</p>
+      </div>
+    </div>
+    <div class="principle">
+      <div class="principle-icon">🚐</div>
+      <div>
+        <h3>RV-first perspective</h3>
+        <p>We focus on what matters to RVers: rig size limits, hookup levels, surface type, maneuverability. Not just "camping" in general.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Disclaimer -->
+  <div class="disclaimer">
+    <div class="disclaimer-label">A note on accuracy</div>
+    <p>Campground information on this site is sourced from official park agencies and publicly available data. Not every detail has been personally verified on-site. Conditions change: fees, hookup availability, seasonal dates, and policies can all shift between seasons.</p>
+    <p><strong>Always confirm details directly with the campground or park before your visit</strong>, especially for reservations, road access, and anything time-sensitive. Treat this site as a starting point for planning, not a substitute for checking with the source.</p>
+  </div>
+
+  <!-- Contact -->
+  <div class="contact-row">
+    <p>Found something wrong? Have a campground we should add? We genuinely want to hear it.</p>
+    <a href="mailto:hello@westcoastrvcamping.com" class="contact-btn">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      Get in touch
+    </a>
+  </div>
+
+</main>
+
+<script src="assets/nav.js"></script>
+<script src="assets/footer.js"></script>
+</body>
+</html>
