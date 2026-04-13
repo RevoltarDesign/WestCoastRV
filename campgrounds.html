@@ -111,7 +111,7 @@
     .ph-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
     .ph-pill{padding:5px 13px;border-radius:var(--r-pill);font-size:12px;font-weight:600;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.75)}
 
-    /* FILTER BAR */
+    /* ── FILTER BAR — Two-row layout ── */
     .filter-bar{
       position:sticky;top:var(--nav-h);z-index:200;
       background:var(--white);
@@ -119,56 +119,31 @@
       box-shadow:0 2px 12px rgba(0,0,0,.06)}
     .filter-bar-inner{
       max-width:var(--max-w);margin:0 auto;padding:0 var(--gutter);
-      display:flex;align-items:center;
-      height:var(--filter-h);
-      gap:0;
-      /* Allow gentle scroll only as last resort on very small screens */
-      overflow-x:auto;scrollbar-width:none}
-    .filter-bar-inner::-webkit-scrollbar{display:none}
+      display:flex;flex-direction:column}
 
-    /* Search — compact, fixed width */
-    .search-wrap{position:relative;flex-shrink:0;margin-right:14px}
+    /* Row 1: Search + Sort + Count */
+    .filter-row-1{
+      display:flex;align-items:center;gap:10px;
+      height:50px;
+      border-bottom:1px solid rgba(212,197,164,.5)}
+    .search-wrap{position:relative;flex:1;max-width:340px}
     .search-input{
-      height:36px;padding:0 12px 0 34px;
+      height:34px;padding:0 12px 0 34px;
       border:1px solid var(--tan);border-radius:var(--r-pill);
       background:var(--parchment);font-family:var(--font-sans);font-size:13px;
-      color:var(--text);width:160px;transition:border-color .15s,width .18s,background .15s;
-      outline:none}
-    .search-input:focus{border-color:var(--forest-light);background:var(--white);width:190px}
+      color:var(--text);width:100%;
+      transition:border-color .15s,background .15s;outline:none}
+    .search-input:focus{border-color:var(--forest-light);background:var(--white)}
     .search-input::placeholder{color:var(--text-muted)}
     .search-icon{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--text-muted);pointer-events:none}
-    @media(max-width:640px){.search-wrap{display:none}}
+    @media(max-width:480px){.search-wrap{max-width:none;flex:1}}
 
-    /* Filter divider — tighter */
-    .f-sep{width:1px;height:24px;background:var(--tan);flex-shrink:0;margin:0 10px}
-
-    /* Filter groups — no text labels, just pills */
-    .f-group{display:flex;align-items:center;gap:4px;flex-shrink:0}
-    .f-group-label{
-      font-size:10.5px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;
-      color:var(--text-muted);white-space:nowrap;margin-right:4px;
-      /* Hide labels on medium screens to save space */
-    }
-    @media(max-width:1100px){.f-group-label{display:none}}
-
-    /* Filter pills — compact */
-    .fp{
-      padding:5px 11px;border-radius:var(--r-pill);
-      font-size:13px;font-weight:500;white-space:nowrap;
-      color:var(--text-mid);background:var(--parchment);
-      border:1px solid var(--tan);
-      transition:all .15s;cursor:pointer}
-    .fp:hover{background:var(--tan);color:var(--text)}
-    .fp.active{background:var(--forest);border-color:var(--forest);color:var(--white);font-weight:600}
-    .fp.active-soft{background:var(--forest-pale);border-color:var(--forest-light);color:var(--forest)}
-
-    /* Sort + count — pinned right, compact */
+    /* Row 1 right side */
     .filter-right{
       margin-left:auto;display:flex;align-items:center;
-      gap:12px;flex-shrink:0;padding-left:12px;
-      border-left:1px solid var(--tan)}
+      gap:12px;flex-shrink:0}
     .sort-select{
-      height:34px;padding:0 26px 0 10px;
+      height:32px;padding:0 26px 0 10px;
       border:1px solid var(--tan);border-radius:var(--r-md);
       background:var(--parchment) url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"><path d="M0 0l5 6 5-6z" fill="%237A7A7A"/></svg>') no-repeat right 8px center;
       font-family:var(--font-sans);font-size:13px;color:var(--text-mid);
@@ -177,11 +152,43 @@
     .sort-select:focus{border-color:var(--forest-light)}
     .result-count{font-size:13px;font-weight:600;color:var(--text-muted);white-space:nowrap}
     .result-count strong{color:var(--forest);font-size:14px}
-
-    /* Clear filters */
     .clear-btn{font-size:12.5px;font-weight:600;color:var(--earth);cursor:pointer;white-space:nowrap;display:none;background:none;border:none;padding:0;transition:color .15s}
     .clear-btn:hover{color:var(--text)}
     .clear-btn.visible{display:block}
+
+    /* Row 2: Scrollable pill groups with fade-out edge */
+    .filter-row-2-wrap{position:relative}
+    .filter-row-2-wrap::after{
+      content:'';position:absolute;right:0;top:0;bottom:0;width:52px;
+      background:linear-gradient(to left,var(--white) 40%,transparent);
+      pointer-events:none;z-index:1}
+    .filter-row-2{
+      display:flex;align-items:center;gap:0;
+      height:44px;
+      overflow-x:auto;scrollbar-width:none;
+      padding-right:52px}
+    .filter-row-2::-webkit-scrollbar{display:none}
+
+    /* Filter divider */
+    .f-sep{width:1px;height:22px;background:var(--tan);flex-shrink:0;margin:0 10px}
+
+    /* Filter groups */
+    .f-group{display:flex;align-items:center;gap:4px;flex-shrink:0}
+    .f-group-label{
+      font-size:10px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;
+      color:var(--text-muted);white-space:nowrap;margin-right:5px}
+    @media(max-width:900px){.f-group-label{display:none}}
+
+    /* Filter pills */
+    .fp{
+      padding:5px 12px;border-radius:var(--r-pill);
+      font-size:13px;font-weight:500;white-space:nowrap;
+      color:var(--text-mid);background:var(--parchment);
+      border:1px solid var(--tan);
+      transition:all .15s;cursor:pointer}
+    .fp:hover{background:var(--tan);color:var(--text)}
+    .fp.active{background:var(--forest);border-color:var(--forest);color:var(--white);font-weight:600}
+    .fp.active-soft{background:var(--forest-pale);border-color:var(--forest-light);color:var(--forest)}
 
     /* MAIN GRID */
     .main{padding:clamp(32px,4vw,56px) var(--gutter)}
@@ -273,60 +280,64 @@
 <div class="filter-bar" id="filterBar" role="search" aria-label="Filter campgrounds">
   <div class="filter-bar-inner">
 
-    <div class="search-wrap">
-      <svg class="search-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6.5" cy="6.5" r="4"/><path d="m10 10 2.5 2.5"/></svg>
-      <input class="search-input" type="search" id="searchInput" placeholder="Search camps..." aria-label="Search campgrounds">
+    <!-- Row 1: Search + Sort + Count -->
+    <div class="filter-row-1">
+      <div class="search-wrap">
+        <svg class="search-icon" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6.5" cy="6.5" r="4"/><path d="m10 10 2.5 2.5"/></svg>
+        <input class="search-input" type="search" id="searchInput" placeholder="Search campgrounds..." aria-label="Search campgrounds">
+      </div>
+      <div class="filter-right">
+        <button class="clear-btn" id="clearBtn" onclick="clearFilters()" aria-label="Clear all filters">Clear all</button>
+        <select class="sort-select" id="sortSelect" aria-label="Sort campgrounds">
+          <option value="drive">Drive time</option>
+          <option value="name">Name A–Z</option>
+          <option value="sites">Most sites</option>
+          <option value="len">Max RV length</option>
+        </select>
+        <span class="result-count" id="resultCount" aria-live="polite"><strong>110</strong> camps</span>
+      </div>
     </div>
 
-    <div class="f-sep"></div>
-    <div class="f-group" role="group" aria-label="Filter by drive time">
-      <span class="f-group-label">Drive</span>
-      <button class="fp active" data-band="all">Any</button>
-      <button class="fp" data-band="under-1">&lt;1 hr</button>
-      <button class="fp" data-band="1-2">1–2 hrs</button>
-      <button class="fp" data-band="2-3">2–3 hrs</button>
-      <button class="fp" data-band="3-4">3–4 hrs</button>
-      <button class="fp" data-band="4plus">4+ hrs</button>
+    <!-- Row 2: Filter pills (scrollable) -->
+    <div class="filter-row-2-wrap">
+      <div class="filter-row-2">
+        <div class="f-group" role="group" aria-label="Filter by drive time">
+          <span class="f-group-label">Drive</span>
+          <button class="fp active" data-band="all">Any</button>
+          <button class="fp" data-band="under-1">&lt;1 hr</button>
+          <button class="fp" data-band="1-2">1–2 hrs</button>
+          <button class="fp" data-band="2-3">2–3 hrs</button>
+          <button class="fp" data-band="3-4">3–4 hrs</button>
+          <button class="fp" data-band="4plus">4+ hrs</button>
+        </div>
+        <div class="f-sep"></div>
+        <div class="f-group" role="group" aria-label="Filter by park type">
+          <span class="f-group-label">Type</span>
+          <button class="fp" data-type="national">National Park</button>
+          <button class="fp" data-type="state">State Park</button>
+          <button class="fp" data-type="county">County</button>
+          <button class="fp" data-type="private">Private</button>
+        </div>
+        <div class="f-sep"></div>
+        <div class="f-group" role="group" aria-label="Filter by hookups">
+          <span class="f-group-label">Hookups</span>
+          <button class="fp" data-hookup="full">Full</button>
+          <button class="fp" data-hookup="water-electric">W+E</button>
+          <button class="fp" data-hookup="electric">Electric</button>
+          <button class="fp" data-hookup="none">Dry</button>
+        </div>
+        <div class="f-sep"></div>
+        <div class="f-group" role="group" aria-label="Filter by activities">
+          <span class="f-group-label">Activity</span>
+          <button class="fp" data-act="hiking">🥾 Hiking</button>
+          <button class="fp" data-act="fishing">🎣 Fishing</button>
+          <button class="fp" data-act="swim">🏊 Swimming</button>
+          <button class="fp" data-act="kayak">🚣 Kayaking</button>
+          <button class="fp" data-act="beach">🏖️ Beach</button>
+        </div>
+      </div>
     </div>
 
-    <div class="f-sep"></div>
-    <div class="f-group" role="group" aria-label="Filter by park type">
-      <span class="f-group-label">Type</span>
-      <button class="fp" data-type="national">National Park</button>
-      <button class="fp" data-type="state">State Park</button>
-      <button class="fp" data-type="county">County</button>
-      <button class="fp" data-type="private">Private</button>
-    </div>
-
-    <div class="f-sep"></div>
-    <div class="f-group" role="group" aria-label="Filter by hookups">
-      <span class="f-group-label">Hookups</span>
-      <button class="fp" data-hookup="full">Full</button>
-      <button class="fp" data-hookup="water-electric">W+E</button>
-      <button class="fp" data-hookup="electric">Electric</button>
-      <button class="fp" data-hookup="none">Dry</button>
-    </div>
-
-    <div class="f-sep"></div>
-    <div class="f-group" role="group" aria-label="Filter by activities">
-      <span class="f-group-label">Activity</span>
-      <button class="fp" data-act="hiking">🥾 Hiking</button>
-      <button class="fp" data-act="fishing">🎣 Fishing</button>
-      <button class="fp" data-act="swim">🏊 Swimming</button>
-      <button class="fp" data-act="kayak">🚣 Kayaking</button>
-      <button class="fp" data-act="beach">🏖️ Beach</button>
-    </div>
-
-    <div class="filter-right">
-      <button class="clear-btn" id="clearBtn" onclick="clearFilters()" aria-label="Clear all filters">Clear all</button>
-      <select class="sort-select" id="sortSelect" aria-label="Sort campgrounds">
-        <option value="drive">Drive time</option>
-        <option value="name">Name A–Z</option>
-        <option value="sites">Most sites</option>
-        <option value="len">Max RV length</option>
-      </select>
-      <span class="result-count" id="resultCount" aria-live="polite"><strong>110</strong> camps</span>
-    </div>
   </div>
 </div>
 
