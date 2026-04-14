@@ -109,31 +109,23 @@
         </div>
 
         <div class="footer-col">
-          <h4>Explore</h4>
+          <h4>Campgrounds</h4>
           <a href="/campgrounds">All Campgrounds</a>
+          <a href="/near-seattle">Near Seattle</a>
           <a href="/campgrounds?type=national">National Parks</a>
           <a href="/campgrounds?type=state">State Parks</a>
           <a href="/campgrounds?hookup=full">Full Hookups</a>
         </div>
 
         <div class="footer-col">
-          <h4>Field Notes</h4>
-          <a href="/field-notes">All Articles</a>
-          <a href="/field-notes?cat=seasonal">Seasonal Guides</a>
-          <a href="/field-notes?cat=destination">Destination Guides</a>
-          <a href="/field-notes?cat=gear">RV Gear</a>
-        </div>
-
-        <div class="footer-col">
           <h4>Info</h4>
+          <a href="/field-notes">Field Notes</a>
           <a href="/about">About</a>
-          <a href="/about#methodology">Our Methodology</a>
-          <a href="mailto:andysantosjohnson@gmail.com">Contact</a>
         </div>
 
       </div>
       <div class="footer-bottom">
-        <span class="footer-copy">© ${new Date().getFullYear()} West Coast RV Camping. Independent — no paid placements.</span>
+        <span class="footer-copy">© ${new Date().getFullYear()} West Coast RV Camping. No paid placements.</span>
         ${note ? `<span class="footer-note">${note}</span>` : ''}
       </div>
       <p class="footer-disclaimer">Campground information is sourced from official park agencies and publicly available data. Always confirm details directly with the campground before your visit — fees, availability, and conditions change.</p>

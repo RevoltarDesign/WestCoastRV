@@ -67,13 +67,7 @@
     .page-header h1 { font-family: var(--font-display); font-size: clamp(36px, 5vw, 60px);
       font-weight: 700; color: var(--white); line-height: 1.1; letter-spacing: -1px; margin-bottom: 16px; }
     .page-header .subtitle { font-size: clamp(15px, 1.8vw, 18px); color: rgba(255,255,255,.6);
-      max-width: 580px; line-height: 1.65; margin-bottom: 32px; }
-    .header-tags { display: flex; flex-wrap: wrap; gap: 8px; }
-    .header-tag { padding: 6px 14px; border-radius: var(--r-pill); font-size: 12.5px; font-weight: 500;
-      background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12);
-      color: rgba(255,255,255,.7); cursor: pointer; transition: all .15s; }
-    .header-tag:hover, .header-tag.active { background: var(--gold); border-color: var(--gold);
-      color: var(--forest); font-weight: 600; }
+      max-width: 580px; line-height: 1.65; }
 
     /* MAIN GRID */
     .main { padding: clamp(48px, 6vw, 80px) var(--gutter); }
@@ -190,18 +184,6 @@
       color: var(--forest); margin-bottom: 6px; }
     .coming-notice p { font-size: 14.5px; color: var(--text-muted); line-height: 1.65; }
 
-    /* TOPIC GRID */
-    .topics { margin-bottom: 56px; }
-    .topic-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-    @media (max-width: 760px) { .topic-grid { grid-template-columns: repeat(2, 1fr); } }
-    .topic-card { background: var(--white); border: 1px solid var(--tan); border-radius: var(--r-xl);
-      padding: 22px 20px; text-align: center; transition: all .18s; cursor: pointer; }
-    .topic-card:hover { background: var(--forest); border-color: var(--forest); color: var(--white); transform: translateY(-2px); }
-    .topic-icon { font-size: 28px; margin-bottom: 10px; }
-    .topic-name { font-size: 14px; font-weight: 600; color: var(--forest); margin-bottom: 4px; }
-    .topic-card:hover .topic-name { color: var(--white); }
-    .topic-count { font-size: 12px; color: var(--text-muted); }
-    .topic-card:hover .topic-count { color: rgba(255,255,255,.55); }
 
     /* NEWSLETTER CTA */
     .newsletter {
@@ -252,14 +234,6 @@
     <span class="eyebrow">From the road</span>
     <h1>Field Notes</h1>
     <p class="subtitle">Seasonal guides, campground roundups, and route planning for Washington RV travelers. Written against real data — every campground mentioned links to a verified listing.</p>
-    <div class="header-tags">
-      <button class="header-tag active">All</button>
-      <button class="header-tag">Seasonal</button>
-      <button class="header-tag">Roundups</button>
-      <button class="header-tag">Route Planning</button>
-      <button class="header-tag">National Parks</button>
-      <button class="header-tag">State Parks</button>
-    </div>
   </div>
 </header>
 
@@ -301,41 +275,69 @@
       </a>
     </div>
 
+    <!-- POST GRID -->
+    <div class="post-grid">
+
+      <!-- Full Hookup Guide -->
+      <a href="/field-note-full-hookup" class="post-card">
+        <div class="post-card-img">
+          <img src="https://cdn.prod.website-files.com/698901ff108bba02ee79b263/699958f6b0e534a0ab5b98d9_twanoh-state-park.jpg"
+               alt="Twanoh State Park on Hood Canal — full hookup RV camping" loading="lazy">
+          <span class="post-card-tag">Full Hookup Guide</span>
+        </div>
+        <div class="post-card-body">
+          <p class="post-card-eyebrow">Full Hookup Guide</p>
+          <h3>The Best Full Hookup RV Campgrounds in Washington State</h3>
+          <p>6 verified parks with water, electric, and sewer at every site — from a 1-hour county park to a beachfront fort in Port Townsend.</p>
+        </div>
+        <div class="post-card-foot">
+          <span class="post-card-date">April 10, 2026</span>
+          <span class="post-card-arrow">
+            Read
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6.5h9M8 3l3 3.5L8 10"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <!-- Coming soon cards -->
+      <div class="post-card">
+        <div class="post-card-img">
+          <div class="coming-soon"><span class="cs-icon">🏔️</span><span class="cs-text">Coming soon</span></div>
+        </div>
+        <div class="post-card-body">
+          <p class="post-card-eyebrow">Destination Guide</p>
+          <h3>Olympic Peninsula RV Camping: The Complete Loop Route</h3>
+          <p>A verified 7-day loop hitting all four corners of the peninsula with hookup options at every stop.</p>
+        </div>
+        <div class="post-card-foot">
+          <span class="post-card-date">Coming soon</span>
+          <span class="post-card-arrow">—</span>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <div class="post-card-img">
+          <div class="coming-soon"><span class="cs-icon">🌊</span><span class="cs-text">Coming soon</span></div>
+        </div>
+        <div class="post-card-body">
+          <p class="post-card-eyebrow">Roundup</p>
+          <h3>Best RV Campgrounds on Puget Sound</h3>
+          <p>Saltwater access, ferry views, and beach walks — the best waterfront RV sites around the Sound, ranked by hookup availability.</p>
+        </div>
+        <div class="post-card-foot">
+          <span class="post-card-date">Coming soon</span>
+          <span class="post-card-arrow">—</span>
+        </div>
+      </div>
+
+    </div>
+
     <!-- COMING SOON NOTICE -->
     <div class="coming-notice">
       <div class="coming-notice-icon">📝</div>
       <div>
         <h3>New guides publishing monthly</h3>
-        <p>We're writing against the full 110-campground database — every guide links verified listings with real specs. Up next: Olympic Peninsula loop routes, best full-hookup state parks by region, and a guide to shoulder-season camping in the Cascades.</p>
-      </div>
-    </div>
-
-    <!-- TOPICS -->
-    <div class="topics">
-      <div class="section-label">
-        <h3>Browse by Topic</h3>
-      </div>
-      <div class="topic-grid">
-        <div class="topic-card">
-          <div class="topic-icon">📅</div>
-          <div class="topic-name">Seasonal Guides</div>
-          <div class="topic-count">Spring, Summer, Fall</div>
-        </div>
-        <div class="topic-card">
-          <div class="topic-icon">🗺️</div>
-          <div class="topic-name">Route Planning</div>
-          <div class="topic-count">Loops & multi-stop trips</div>
-        </div>
-        <div class="topic-card">
-          <div class="topic-icon">🏔️</div>
-          <div class="topic-name">National Parks</div>
-          <div class="topic-count">Olympic, Rainier, NCNP</div>
-        </div>
-        <div class="topic-card">
-          <div class="topic-icon">🏕️</div>
-          <div class="topic-name">State Parks</div>
-          <div class="topic-count">48 parks in the database</div>
-        </div>
+        <p>We're writing against the full 110-campground database — every guide links verified listings with real specs. Up next: Olympic Peninsula loop routes and the best Puget Sound waterfront RV parks.</p>
       </div>
     </div>
 

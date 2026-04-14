@@ -55,6 +55,20 @@
   --shadow-md: 0 4px 20px rgba(0,0,0,.1);
   --shadow-lg: 0 12px 48px rgba(0,0,0,.15);
 
+  /* Spacing scale (4px base) */
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  20px;
+  --sp-6:  24px;
+  --sp-7:  28px;
+  --sp-8:  32px;
+  --sp-9:  36px;
+  --sp-10: 40px;
+  --sp-11: 44px;
+  --sp-12: 48px;
+
   /* Layout */
   --max-w:     1160px;
   --gutter:    clamp(20px, 5vw, 56px);
