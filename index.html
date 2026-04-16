@@ -725,81 +725,12 @@
       .fn-grid .fn-card:first-child { grid-column: span 1; }
     }
 
-    .fn-card {
-      background: var(--white);
-      border-radius: var(--r-xl);
-      overflow: hidden;
-      border: 1px solid var(--tan);
-      display: flex;
-      flex-direction: column;
-      transition: transform .2s, box-shadow .2s;
-    }
-    .fn-card:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-md);
-    }
-    .fn-img {
-      width: 100%;
-      aspect-ratio: 16/9;
-      object-fit: cover;
-      background: var(--parchment);
-    }
+    /* fn-card component CSS lives in assets/base.css */
     .fn-card:first-child .fn-img { aspect-ratio: 21/9; }
+    .fn-card:first-child .fn-title { font-size: 26px; }
     @media (max-width: 860px) {
       .fn-card:first-child .fn-img { aspect-ratio: 16/9; }
     }
-    .fn-body {
-      padding: 22px 24px 24px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
-    .fn-category {
-      display: inline-block;
-      font-size: 10.5px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: var(--earth);
-      margin-bottom: 6px;
-    }
-    .fn-meta {
-      font-size: 12px;
-      color: var(--text-muted);
-      margin-bottom: 10px;
-    }
-    .fn-title {
-      font-family: var(--font-display);
-      font-size: 20px;
-      font-weight: 600;
-      color: var(--text);
-      line-height: 1.25;
-      margin-bottom: 10px;
-      letter-spacing: -.2px;
-    }
-    .fn-card:first-child .fn-title { font-size: 26px; }
-    .fn-summary {
-      font-size: 14px;
-      color: var(--text-muted);
-      line-height: 1.6;
-      flex: 1;
-      margin-bottom: 18px;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-    .fn-read {
-      font-size: 13.5px;
-      font-weight: 600;
-      color: var(--forest-mid);
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      transition: color .15s, gap .15s;
-      margin-top: auto;
-    }
-    .fn-card:hover .fn-read { color: var(--forest); gap: 8px; }
 
     /* ═══════════════════════════════════════════════════════════════
        NEWSLETTER
@@ -1297,7 +1228,7 @@
       </a>
 
       <a class="fn-card" href="/field-notes/best-full-hookup-rv-campgrounds-washington-state">
-        <div class="fn-img" style="background: linear-gradient(135deg, var(--forest) 0%, var(--forest-mid) 100%); display:flex; align-items:center; justify-content:center; font-size:40px;">⚡</div>
+        <img class="fn-img" src="https://cdn.prod.website-files.com/698901ff108bba02ee79b263/699958f6b0e534a0ab5b98d9_twanoh-state-park.jpg" alt="Twanoh State Park on Hood Canal — full hookup RV camping" loading="lazy">
         <div class="fn-body">
           <span class="fn-category">Trip Planning</span>
           <div class="fn-meta">6 parks · verified 2026 · 6 min read</div>
@@ -1311,7 +1242,7 @@
       </a>
 
       <a class="fn-card" href="/field-notes/olympic-peninsula-rv-loop-beginners">
-        <div class="fn-img" style="background: linear-gradient(135deg, #2C5F6A 0%, #1a3a45 100%); display:flex; align-items:center; justify-content:center; font-size:40px;">🗺️</div>
+        <img class="fn-img" src="https://cdn.prod.website-files.com/698901ff108bba02ee79b263/699958895d9621a2a10254a9_fairholme-campground.jpg" alt="Lake Crescent on the Olympic Peninsula — RV camping loop" loading="lazy">
         <div class="fn-body">
           <span class="fn-category">Destination Guide</span>
           <div class="fn-meta">4 campgrounds · 7–10 days · verified 2026</div>
@@ -1325,7 +1256,7 @@
       </a>
 
       <a class="fn-card" href="/field-notes/best-rv-campgrounds-near-seattle">
-        <div class="fn-img" style="background: linear-gradient(135deg, #3a6b8a 0%, #1e4460 100%); display:flex; align-items:center; justify-content:center; font-size:40px;">🌊</div>
+        <img class="fn-img" src="https://cdn.prod.website-files.com/698901ff108bba02ee79b263/69995880c94adf7de68f979d_deception-pass-state-park.jpg" alt="Deception Pass State Park — best RV campgrounds near Seattle" loading="lazy">
         <div class="fn-body">
           <span class="fn-category">Trip Planning</span>
           <div class="fn-meta">6 parks · under 2 hrs · verified 2026</div>
