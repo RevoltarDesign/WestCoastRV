@@ -1,4 +1,27 @@
 /* ============================================================
+   West Coast RV Camping — Google Analytics 4
+   ─────────────────────────────────────────────────────────────
+   TODO: Replace GA_ID with your real Measurement ID from:
+         analytics.google.com → Admin → Data Streams → your stream
+
+   The snippet will NOT fire while GA_ID is the placeholder value,
+   so no junk data accumulates. Just swap in the real ID and push.
+   ============================================================ */
+(function () {
+  var GA_ID = 'G-XXXXXXXXXX'; // ← replace this
+  if (GA_ID === 'G-XXXXXXXXXX') return;
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('js', new Date());
+  gtag('config', GA_ID);
+})();
+
+/* ============================================================
    West Coast RV Camping — Shared Nav
    Single source of truth for nav HTML + behaviour.
 

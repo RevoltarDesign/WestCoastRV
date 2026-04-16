@@ -98,6 +98,110 @@
 
   const note = document.body.dataset.footerNote || '';
 
+  /* ── Newsletter styles (injected once) ───────────────────── */
+  const nlStyle = document.createElement('style');
+  nlStyle.textContent = `
+    .footer-newsletter {
+      background: var(--forest);
+      padding: 40px var(--gutter);
+    }
+    .footer-newsletter-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .footer-nl-copy { flex: 1; min-width: 220px; }
+    .footer-nl-copy h3 {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--white);
+      margin: 0 0 6px;
+    }
+    .footer-nl-copy p {
+      font-size: 14px;
+      color: rgba(255,255,255,.7);
+      margin: 0;
+      line-height: 1.5;
+    }
+    .footer-nl-form {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      flex-shrink: 0;
+    }
+    .footer-nl-input {
+      padding: 10px 16px;
+      border-radius: var(--r-pill);
+      border: 1.5px solid rgba(255,255,255,.25);
+      background: rgba(255,255,255,.12);
+      color: var(--white);
+      font-size: 14px;
+      width: 240px;
+      outline: none;
+      transition: border-color .15s;
+    }
+    .footer-nl-input::placeholder { color: rgba(255,255,255,.5); }
+    .footer-nl-input:focus { border-color: rgba(255,255,255,.6); }
+    .footer-nl-btn {
+      padding: 10px 22px;
+      border-radius: var(--r-pill);
+      background: var(--white);
+      color: var(--forest);
+      font-size: 14px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: opacity .15s;
+    }
+    .footer-nl-btn:hover { opacity: .9; }
+    .footer-nl-thanks {
+      font-size: 14px;
+      color: rgba(255,255,255,.85);
+      display: none;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 0;
+    }
+    @media (max-width: 600px) {
+      .footer-nl-input { width: 100%; }
+      .footer-nl-form  { width: 100%; }
+      .footer-nl-btn   { width: 100%; text-align: center; }
+    }
+  `;
+  document.head.appendChild(nlStyle);
+
+  /* ── Newsletter strip ─────────────────────────────────────── */
+  const nlStrip = document.createElement('div');
+  nlStrip.className = 'footer-newsletter';
+  nlStrip.innerHTML = `
+    <div class="footer-newsletter-inner">
+      <div class="footer-nl-copy">
+        <h3>Get the field notes</h3>
+        <p>New guides, campground additions, and seasonal picks — straight to your inbox.</p>
+      </div>
+      <div>
+        <!-- TODO: Replace this form action with your newsletter platform embed (Beehiiv, Mailchimp, etc.) -->
+        <form class="footer-nl-form" onsubmit="(function(e){
+          e.preventDefault();
+          var f=e.target; var inp=f.querySelector('.footer-nl-input');
+          if(!inp.value||!inp.value.includes('@'))return;
+          f.style.display='none';
+          f.nextElementSibling.style.display='flex';
+        })(event)">
+          <input class="footer-nl-input" type="email" placeholder="your@email.com" required>
+          <button class="footer-nl-btn" type="submit">Subscribe</button>
+        </form>
+        <div class="footer-nl-thanks">
+          <span>✓</span> <span>You're on the list — talk soon.</span>
+        </div>
+      </div>
+    </div>`;
+
   const footer = document.createElement('footer');
   footer.innerHTML = `
     <div class="footer-inner">
@@ -131,7 +235,8 @@
       <p class="footer-disclaimer">Campground information is sourced from official park agencies and publicly available data. Always confirm details directly with the campground before your visit — fees, availability, and conditions change.</p>
     </div>`;
 
-  /* Insert just before </body> */
+  /* Insert newsletter strip + footer just before </body> */
+  document.body.appendChild(nlStrip);
   document.body.appendChild(footer);
 
 })();

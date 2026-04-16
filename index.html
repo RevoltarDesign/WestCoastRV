@@ -802,6 +802,98 @@
     .fn-card:hover .fn-read { color: var(--forest); gap: 8px; }
 
     /* ═══════════════════════════════════════════════════════════════
+       NEWSLETTER
+    ═══════════════════════════════════════════════════════════════ */
+    .hp-newsletter {
+      background: var(--forest);
+      padding: clamp(56px, 7vw, 80px) var(--gutter);
+    }
+    .hp-newsletter-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: clamp(32px, 5vw, 80px);
+      flex-wrap: wrap;
+    }
+    .hp-nl-copy { flex: 1; min-width: 260px; }
+    .hp-nl-h2 {
+      font-family: var(--font-display);
+      font-size: clamp(24px, 3.5vw, 36px);
+      font-weight: 700;
+      color: var(--white);
+      margin: 8px 0 14px;
+      letter-spacing: -.3px;
+      line-height: 1.2;
+    }
+    .hp-nl-sub {
+      font-size: 16px;
+      color: rgba(255,255,255,.72);
+      line-height: 1.6;
+      margin: 0;
+    }
+    .hp-nl-right { flex-shrink: 0; min-width: 280px; }
+    .hp-nl-form {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+    .hp-nl-input {
+      flex: 1;
+      min-width: 200px;
+      padding: 12px 18px;
+      border-radius: var(--r-pill);
+      border: 1.5px solid rgba(255,255,255,.25);
+      background: rgba(255,255,255,.12);
+      color: var(--white);
+      font-size: 15px;
+      outline: none;
+      transition: border-color .15s;
+    }
+    .hp-nl-input::placeholder { color: rgba(255,255,255,.45); }
+    .hp-nl-input:focus { border-color: rgba(255,255,255,.6); background: rgba(255,255,255,.18); }
+    .hp-nl-btn {
+      padding: 12px 26px;
+      border-radius: var(--r-pill);
+      background: var(--white);
+      color: var(--forest);
+      font-size: 15px;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: opacity .15s, transform .1s;
+    }
+    .hp-nl-btn:hover { opacity: .92; transform: translateY(-1px); }
+    .hp-nl-thanks {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--white);
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 12px;
+      padding: 12px 0;
+    }
+    .hp-nl-check {
+      width: 28px; height: 28px;
+      background: rgba(255,255,255,.2);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; flex-shrink: 0;
+    }
+    .hp-nl-fine {
+      font-size: 12.5px;
+      color: rgba(255,255,255,.45);
+      margin: 0;
+    }
+    @media (max-width: 640px) {
+      .hp-nl-input { min-width: 100%; }
+      .hp-nl-btn   { width: 100%; }
+    }
+
+    /* ═══════════════════════════════════════════════════════════════
        FOOTER
     ═══════════════════════════════════════════════════════════════ */
     @media (max-width: 720px) {
@@ -1245,6 +1337,37 @@
           </span>
         </div>
       </a>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────────
+     NEWSLETTER
+─────────────────────────────────────────────────────────────── -->
+<section class="hp-newsletter">
+  <div class="hp-newsletter-inner">
+    <div class="hp-nl-copy">
+      <span class="eyebrow" style="color:rgba(255,255,255,.6);">Stay in the loop</span>
+      <h2 class="hp-nl-h2">New guides, before they get crowded</h2>
+      <p class="hp-nl-sub">Campground additions, seasonal picks, and field notes — straight to your inbox. No ads, no spam.</p>
+    </div>
+    <div class="hp-nl-right">
+      <!-- TODO: Replace with your newsletter platform embed (Beehiiv, Mailchimp, etc.) -->
+      <form class="hp-nl-form" onsubmit="(function(e){
+        e.preventDefault();
+        var f=e.target; var inp=f.querySelector('.hp-nl-input');
+        if(!inp.value||!inp.value.includes('@'))return;
+        f.style.display='none';
+        document.getElementById('hp-nl-thanks').style.display='flex';
+      })(event)">
+        <input class="hp-nl-input" type="email" placeholder="your@email.com" required>
+        <button class="hp-nl-btn" type="submit">Subscribe free</button>
+      </form>
+      <div class="hp-nl-thanks" id="hp-nl-thanks" style="display:none;">
+        <span class="hp-nl-check">✓</span>
+        <span>You're on the list — talk soon.</span>
+      </div>
+      <p class="hp-nl-fine">No spam. Unsubscribe anytime.</p>
     </div>
   </div>
 </section>
