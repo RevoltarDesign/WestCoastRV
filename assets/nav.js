@@ -45,9 +45,8 @@
   const ctaUrl       = body.dataset.navCtaUrl  || '/campgrounds';
   const ctaExternal  = body.hasAttribute('data-nav-cta-external');
 
-  /* ── Asset path (pages in /campground/ are one level deeper) */
-  const inSubdir     = window.location.pathname.includes('/campground/');
-  const assetRoot    = inSubdir ? '../assets/' : 'assets/';
+  /* ── Asset path — always root-relative so it works at any depth ── */
+  const assetRoot    = '/assets/';
 
   /* ── Active link detection ────────────────────────────────── */
   const p = window.location.pathname;

@@ -1,4 +1,11 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/field-note-full-hookup",
+      "destination": "/field-notes/best-full-hookup-rv-campgrounds-washington-state",
+      "permanent": true
+    }
+  ]
 }
