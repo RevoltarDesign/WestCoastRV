@@ -8,7 +8,7 @@
    so no junk data accumulates. Just swap in the real ID and push.
    ============================================================ */
 (function () {
-  var GA_ID = 'G-XXXXXXXXXX'; // ← replace this
+  var GA_ID = 'G-9HJLVP3QNJ';
   if (GA_ID === 'G-XXXXXXXXXX') return;
   var s = document.createElement('script');
   s.async = true;
