@@ -120,7 +120,7 @@
     .hero-texture {
       position: absolute;
       inset: 0;
-      background-image: url('https://cdn.prod.website-files.com/69891628ece7ff793d5421f8/699bd1a7cea4b6c93eef00ea_699958895d9621a2a10254a9_fairholme-campground.jpeg');
+      background-image: url('https://cdn.prod.website-files.com/698901ff108bba02ee79b263/699958895d9621a2a10254a9_fairholme-campground.jpg');
       background-size: cover;
       background-position: center;
       opacity: .04;
@@ -819,6 +819,11 @@
       color: rgba(255,255,255,.45);
       margin: 0;
     }
+    .hp-nl-error {
+      font-size: 13px;
+      color: #FFB3B3;
+      margin-bottom: 8px;
+    }
     @media (max-width: 640px) {
       .hp-nl-input { min-width: 100%; }
       .hp-nl-btn   { width: 100%; }
@@ -974,7 +979,7 @@
          data-type="national" data-drive="3-4"
          data-hookup="none" data-park="national">
         <img class="card-img"
-             src="https://cdn.prod.website-files.com/69891628ece7ff793d5421f8/699bd1a7cea4b6c93eef00ea_699958895d9621a2a10254a9_fairholme-campground.jpeg"
+             src="https://cdn.prod.website-files.com/698901ff108bba02ee79b263/699958895d9621a2a10254a9_fairholme-campground.jpg"
              alt="Fairholme Campground" loading="lazy">
         <div class="card-overlay"></div>
         <div class="card-top">
@@ -1003,7 +1008,7 @@
          data-type="county" data-drive="under-1"
          data-hookup="full" data-park="county">
         <img class="card-img"
-             src="https://cdn.prod.website-files.com/69891628ece7ff793d5421f8/699bd1b3c51ee878bda8255f_69995900b0e534a0ab5b9e1f_wenberg-county-park.jpeg"
+             src="https://cdn.prod.website-files.com/698901ff108bba02ee79b263/69995900b0e534a0ab5b9e1f_wenberg-county-park.jpg"
              alt="Wenberg County Park" loading="lazy">
         <div class="card-overlay"></div>
         <div class="card-top">
@@ -1030,7 +1035,7 @@
          data-type="national" data-drive="1-2"
          data-hookup="none" data-park="national">
         <img class="card-img"
-             src="https://cdn.prod.website-files.com/69891628ece7ff793d5421f8/699bd1af11c7e2acf5afcbfe_699958fb7c7393405edcc4a5_verlot-campground.jpeg"
+             src="https://cdn.prod.website-files.com/698901ff108bba02ee79b263/699958fb7c7393405edcc4a5_verlot-campground.jpg"
              alt="Verlot Campground" loading="lazy">
         <div class="card-overlay"></div>
         <div class="card-top">
@@ -1058,7 +1063,7 @@
          data-type="state" data-drive="2-3"
          data-hookup="full" data-park="state">
         <img class="card-img"
-             src="https://cdn.prod.website-files.com/69891628ece7ff793d5421f8/699bd1b2494e03388ee79c80_699958f9b0e534a0ab5b99ca_twin-harbors-state-park.jpeg"
+             src="https://cdn.prod.website-files.com/698901ff108bba02ee79b263/699958f9b0e534a0ab5b99ca_twin-harbors-state-park.jpg"
              alt="Twin Harbors State Park" loading="lazy">
         <div class="card-overlay"></div>
         <div class="card-top">
@@ -1083,7 +1088,7 @@
          data-type="state" data-drive="1-2"
          data-hookup="full" data-park="state">
         <img class="card-img"
-             src="https://cdn.prod.website-files.com/69891628ece7ff793d5421f8/699bd1aa8317a32ea5e8f2c5_699958f6b0e534a0ab5b98d9_twanoh-state-park.jpeg"
+             src="https://cdn.prod.website-files.com/698901ff108bba02ee79b263/699958f6b0e534a0ab5b98d9_twanoh-state-park.jpg"
              alt="Twanoh State Park" loading="lazy">
         <div class="card-overlay"></div>
         <div class="card-top">
@@ -1110,7 +1115,7 @@
          data-type="national" data-drive="3-4"
          data-hookup="none" data-park="national">
         <img class="card-img"
-             src="https://cdn.prod.website-files.com/69891628ece7ff793d5421f8/699bd1b3a4303fa9159d04fc_699958fc368e69fcd7b26ddb_walupt-lake-campground.jpeg"
+             src="https://cdn.prod.website-files.com/698901ff108bba02ee79b263/699958fc368e69fcd7b26ddb_walupt-lake-campground.jpg"
              alt="Walupt Lake Campground" loading="lazy">
         <div class="card-overlay"></div>
         <div class="card-top">
@@ -1213,8 +1218,8 @@
       <!-- Featured Field Note -->
       <a class="fn-card" href="/field-notes/best-western-washington-rv-camping-in-march-5-parks-that-are-actually-worth-it">
         <img class="fn-img"
-             src="https://cdn.prod.website-files.com/69891628ece7ff793d5421f8/699e8c0db6adc020960673f6_best-western-wa-march-camping-hero.webp"
-             alt="Best Western West Coast RV Camping in March" loading="lazy">
+             src="/assets/images/blog/best-western-washington-rv-camping-march.webp"
+             alt="Best Western Washington RV Camping in March — Millersylvania State Park" loading="lazy">
         <div class="fn-body">
           <span class="fn-category">Seasonal Guide</span>
           <div class="fn-meta">5 parks · verified 2026 · 7 min read</div>
@@ -1283,20 +1288,16 @@
       <p class="hp-nl-sub">Campground additions, seasonal picks, and field notes — straight to your inbox. No ads, no spam.</p>
     </div>
     <div class="hp-nl-right">
-      <!-- TODO: Replace with your newsletter platform embed (Beehiiv, Mailchimp, etc.) -->
-      <form class="hp-nl-form" onsubmit="(function(e){
-        e.preventDefault();
-        var f=e.target; var inp=f.querySelector('.hp-nl-input');
-        if(!inp.value||!inp.value.includes('@'))return;
-        f.style.display='none';
-        document.getElementById('hp-nl-thanks').style.display='flex';
-      })(event)">
-        <input class="hp-nl-input" type="email" placeholder="your@email.com" required>
-        <button class="hp-nl-btn" type="submit">Subscribe free</button>
+      <form class="hp-nl-form" id="hp-nl-form" novalidate>
+        <input class="hp-nl-input" type="email" placeholder="your@email.com" required autocomplete="email">
+        <button class="hp-nl-btn" type="submit" id="hp-nl-btn">Subscribe free</button>
       </form>
       <div class="hp-nl-thanks" id="hp-nl-thanks" style="display:none;">
         <span class="hp-nl-check">✓</span>
         <span>You're on the list — talk soon.</span>
+      </div>
+      <div class="hp-nl-error" id="hp-nl-error" style="display:none;">
+        <span>Something went wrong — please try again.</span>
       </div>
       <p class="hp-nl-fine">No spam. Unsubscribe anytime.</p>
     </div>
@@ -1408,5 +1409,54 @@
 
 <script src="assets/nav.js"></script>
 <script src="assets/footer.js"></script>
+
+<!-- ── SUBSCRIBE HANDLER ────────────────────────────────────── -->
+<script>
+  // ─────────────────────────────────────────────────────────────────
+  //  BEEHIIV CONFIGURATION
+  //  1. Create a free account at beehiiv.com
+  //  2. Settings → Embed & API → copy your Publication ID (pub_xxxxx)
+  //  3. Paste it below
+  // ─────────────────────────────────────────────────────────────────
+  const BEEHIIV_PUB_ID = 'pub_907bb1b8-916e-4f8b-9e45-3b9f55ce0688'; // e.g. 'pub_a1b2c3d4-...'
+
+  (function () {
+    const form   = document.getElementById('hp-nl-form');
+    const btn    = document.getElementById('hp-nl-btn');
+    const thanks = document.getElementById('hp-nl-thanks');
+    const errBox = document.getElementById('hp-nl-error');
+    if (!form) return;
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const email = form.querySelector('input[type="email"]').value.trim();
+      if (!email) return;
+
+      // Loading state
+      btn.textContent = 'Subscribing…';
+      btn.disabled = true;
+      errBox.style.display = 'none';
+
+      try {
+        const res = await fetch('https://embeds.beehiiv.com/embed/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: `email=${encodeURIComponent(email)}&pub_id=${encodeURIComponent(BEEHIIV_PUB_ID)}`,
+        });
+
+        if (res.ok || res.status === 201) {
+          form.style.display = 'none';
+          thanks.style.display = 'flex';
+        } else {
+          throw new Error('Subscribe failed');
+        }
+      } catch (err) {
+        btn.textContent = 'Subscribe free';
+        btn.disabled = false;
+        errBox.style.display = 'block';
+      }
+    });
+  })();
+</script>
 </body>
 </html>

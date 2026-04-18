@@ -6,6 +6,11 @@
       "source": "/field-note-full-hookup",
       "destination": "/field-notes/best-full-hookup-rv-campgrounds-washington-state",
       "permanent": true
+    },
+    {
+      "source": "/field-note",
+      "destination": "/field-notes/best-western-washington-rv-camping-in-march-5-parks-that-are-actually-worth-it",
+      "permanent": true
     }
   ]
 }

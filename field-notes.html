@@ -10,11 +10,11 @@
   <meta property="og:type"        content="website">
   <meta property="og:title"       content="Field Notes — RV Camping Guides for Washington State">
   <meta property="og:description" content="Seasonal guides, route planning, and insider tips for RV camping in Washington. Written from the road, verified against real campground data.">
-  <meta property="og:image"       content="https://cdn.prod.website-files.com/69891628ece7ff793d5421f8/699e8c0db6adc020960673f6_best-western-wa-march-camping-hero.webp">
+  <meta property="og:image"       content="https://westcoastrvcamping.com/assets/images/blog/best-western-washington-rv-camping-march.jpg">
   <meta property="og:url"         content="https://warvcamp.com/field-notes">
   <meta property="og:site_name"   content="West Coast RV Camping">
   <meta name="twitter:card"       content="summary_large_image">
-  <meta name="twitter:image"      content="https://cdn.prod.website-files.com/69891628ece7ff793d5421f8/699e8c0db6adc020960673f6_best-western-wa-march-camping-hero.webp">
+  <meta name="twitter:image"      content="https://westcoastrvcamping.com/assets/images/blog/best-western-washington-rv-camping-march.jpg">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -243,9 +243,9 @@
 
     <!-- FEATURED POST -->
     <div class="featured">
-      <a href="/field-note" class="featured-card">
+      <a href="/field-notes/best-western-washington-rv-camping-in-march-5-parks-that-are-actually-worth-it" class="featured-card">
         <div class="featured-img">
-          <img src="https://cdn.prod.website-files.com/69891628ece7ff793d5421f8/699e8c0db6adc020960673f6_best-western-wa-march-camping-hero.webp"
+          <img src="/assets/images/blog/best-western-washington-rv-camping-march.webp"
                alt="Western Washington state park in March">
           <span class="featured-img-badge">Featured</span>
         </div>
@@ -360,10 +360,17 @@
         <p class="nl-sub">One email per guide, no filler. Unsubscribe any time.</p>
       </div>
       <div>
-        <form class="nl-form" onsubmit="return false;">
-          <input class="nl-input" type="email" placeholder="your@email.com" aria-label="Email address">
-          <button class="nl-btn" type="submit">Notify me</button>
+        <form class="nl-form" id="fn-nl-form" novalidate>
+          <input class="nl-input" type="email" placeholder="your@email.com" aria-label="Email address" autocomplete="email">
+          <button class="nl-btn" type="submit" id="fn-nl-btn">Notify me</button>
         </form>
+        <div id="fn-nl-thanks" style="display:none; align-items:center; gap:10px; color:var(--white); font-size:15px; font-weight:600; padding:8px 0;">
+          <span style="color:var(--gold-light); font-size:20px;">✓</span>
+          <span>You're on the list — talk soon.</span>
+        </div>
+        <div id="fn-nl-error" style="display:none; font-size:13px; color:#FFB3B3; margin-top:8px;">
+          Something went wrong — please try again.
+        </div>
       </div>
     </div>
 
@@ -375,5 +382,51 @@
 
 <script src="assets/nav.js"></script>
 <script src="assets/footer.js"></script>
+
+<!-- ── SUBSCRIBE HANDLER ───────────────────────────────────── -->
+<script>
+  // ─────────────────────────────────────────────────────────────────
+  //  BEEHIIV CONFIGURATION — same ID as index.html
+  //  Paste your Beehiiv Publication ID here: Settings → Embed & API
+  // ─────────────────────────────────────────────────────────────────
+  const BEEHIIV_PUB_ID = 'pub_907bb1b8-916e-4f8b-9e45-3b9f55ce0688'; // e.g. 'pub_a1b2c3d4-...'
+
+  (function () {
+    const form   = document.getElementById('fn-nl-form');
+    const btn    = document.getElementById('fn-nl-btn');
+    const thanks = document.getElementById('fn-nl-thanks');
+    const errBox = document.getElementById('fn-nl-error');
+    if (!form) return;
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const email = form.querySelector('input[type="email"]').value.trim();
+      if (!email) return;
+
+      btn.textContent = 'Subscribing…';
+      btn.disabled = true;
+      errBox.style.display = 'none';
+
+      try {
+        const res = await fetch('https://embeds.beehiiv.com/embed/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: `email=${encodeURIComponent(email)}&pub_id=${encodeURIComponent(BEEHIIV_PUB_ID)}`,
+        });
+
+        if (res.ok || res.status === 201) {
+          form.style.display = 'none';
+          thanks.style.display = 'flex';
+        } else {
+          throw new Error('Subscribe failed');
+        }
+      } catch (err) {
+        btn.textContent = 'Notify me';
+        btn.disabled = false;
+        errBox.style.display = 'block';
+      }
+    });
+  })();
+</script>
 </body>
 </html>
