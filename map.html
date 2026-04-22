@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campground Map — West Coast RV Camping (Internal)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --forest: #0F2B1E;
+      --forest-mid: #1A4A30;
+      --forest-light: #4A8C6A;
+      --gold: #C09A42;
+      --gold-light: #E0BC6A;
+      --parchment: #F5F0E8;
+      --tan: #DDD5C0;
+      --white: #FFFFFF;
+      --text: #1A1A1A;
+      --text-mid: #3D3D3D;
+      --text-muted: #888;
+      --np: #2D7D46;
+      --sp: #1A6FA8;
+      --prv: #C07A20;
+      --cty: #6B4CA8;
+    }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--forest); color: var(--white); height: 100vh; display: flex; flex-direction: column; }
+
+    /* ── HEADER ── */
+    .header {
+      background: var(--forest);
+      border-bottom: 1px solid rgba(255,255,255,.1);
+      padding: 0 20px;
+      display: flex; align-items: center; gap: 20px;
+      height: 56px; flex-shrink: 0;
+    }
+    .header-logo {
+      font-size: 15px; font-weight: 700; color: var(--gold-light); white-space: nowrap;
+      letter-spacing: -.2px;
+    }
+    .header-title { font-size: 13px; color: rgba(255,255,255,.5); }
+    .header-divider { width: 1px; height: 20px; background: rgba(255,255,255,.1); }
+    .header-count { font-size: 13px; color: rgba(255,255,255,.4); margin-left: auto; }
+    #visibleCount { color: var(--gold-light); font-weight: 600; }
+
+    /* ── FILTER BAR ── */
+    .filterbar {
+      background: var(--forest-mid);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      padding: 10px 20px;
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+      flex-shrink: 0;
+    }
+    .filterbar-label { font-size: 11px; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; color: rgba(255,255,255,.4); margin-right: 4px; }
+    .filter-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 5px 12px; border-radius: 20px;
+      font-size: 12.5px; font-weight: 600;
+      border: 1.5px solid transparent;
+      cursor: pointer; transition: all .15s; white-space: nowrap;
+      background: rgba(255,255,255,.07); color: rgba(255,255,255,.6);
+    }
+    .filter-btn .dot {
+      width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+    }
+    .filter-btn.active { color: var(--white); }
+    .filter-btn[data-type="all"].active { background: rgba(255,255,255,.15); border-color: rgba(255,255,255,.3); }
+    .filter-btn[data-type="National Park"].active { background: rgba(45,125,70,.3); border-color: #2D7D46; color: #7DD4A0; }
+    .filter-btn[data-type="State Park"].active { background: rgba(26,111,168,.3); border-color: #1A6FA8; color: #7BB8E8; }
+    .filter-btn[data-type="Private Campground"].active { background: rgba(192,122,32,.3); border-color: #C07A20; color: #E8B870; }
+    .filter-btn[data-type="County Campground"].active { background: rgba(107,76,168,.3); border-color: #6B4CA8; color: #B8A0E0; }
+
+    .search-wrap { margin-left: auto; position: relative; }
+    .search-wrap svg { position: absolute; left: 9px; top: 50%; transform: translateY(-50%); color: rgba(255,255,255,.3); pointer-events: none; }
+    #searchBox {
+      background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12);
+      border-radius: 20px; padding: 5px 12px 5px 30px;
+      font-size: 12.5px; color: var(--white); width: 200px;
+      outline: none; transition: border-color .15s;
+    }
+    #searchBox::placeholder { color: rgba(255,255,255,.3); }
+    #searchBox:focus { border-color: rgba(255,255,255,.3); }
+
+    /* ── MAP ── */
+    #map { flex: 1; }
+
+    /* ── LEGEND ── */
+    .legend {
+      position: absolute; bottom: 28px; right: 10px; z-index: 1000;
+      background: rgba(15,43,30,.92); border: 1px solid rgba(255,255,255,.1);
+      border-radius: 10px; padding: 12px 14px; backdrop-filter: blur(8px);
+      font-size: 12px;
+    }
+    .legend-title { font-size: 10px; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; color: rgba(255,255,255,.4); margin-bottom: 10px; }
+    .legend-row { display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,.75); margin-bottom: 6px; }
+    .legend-row:last-child { margin-bottom: 0; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .legend-count { margin-left: auto; padding-left: 16px; color: rgba(255,255,255,.35); font-size: 11px; }
+
+    /* ── LEAFLET POPUP ── */
+    .leaflet-popup-content-wrapper {
+      background: var(--forest) !important;
+      border: 1px solid rgba(255,255,255,.12) !important;
+      border-radius: 10px !important;
+      box-shadow: 0 8px 24px rgba(0,0,0,.5) !important;
+      padding: 0 !important;
+    }
+    .leaflet-popup-content { margin: 0 !important; width: 240px !important; }
+    .leaflet-popup-tip { background: var(--forest) !important; }
+    .leaflet-popup-close-button { color: rgba(255,255,255,.4) !important; top: 10px !important; right: 10px !important; font-size: 16px !important; }
+    .leaflet-popup-close-button:hover { color: var(--white) !important; }
+    .popup-header { padding: 14px 16px 10px; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .popup-type { font-size: 10px; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; margin-bottom: 4px; }
+    .popup-name { font-size: 14px; font-weight: 700; color: var(--white); line-height: 1.3; }
+    .popup-body { padding: 10px 16px 14px; }
+    .popup-row { display: flex; align-items: center; gap: 7px; font-size: 12px; color: rgba(255,255,255,.55); margin-bottom: 5px; }
+    .popup-row:last-of-type { margin-bottom: 0; }
+    .popup-link {
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+      margin-top: 12px; padding: 7px 14px; border-radius: 20px;
+      background: var(--forest-light); color: var(--white);
+      font-size: 12px; font-weight: 600; text-decoration: none;
+      transition: background .15s;
+    }
+    .popup-link:hover { background: #5A9C7A; }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <span class="header-logo">West Coast RV Camping</span>
+  <div class="header-divider"></div>
+  <span class="header-title">Campground Map · Internal</span>
+  <span class="header-count"><span id="visibleCount">111</span> of 111 campgrounds</span>
+</div>
+
+<div class="filterbar">
+  <span class="filterbar-label">Filter</span>
+  <button class="filter-btn active" data-type="all">
+    <span class="dot" style="background:rgba(255,255,255,.4)"></span> All
+  </button>
+  <button class="filter-btn" data-type="National Park">
+    <span class="dot" style="background:#2D7D46"></span> National Park
+  </button>
+  <button class="filter-btn" data-type="State Park">
+    <span class="dot" style="background:#1A6FA8"></span> State Park
+  </button>
+  <button class="filter-btn" data-type="Private Campground">
+    <span class="dot" style="background:#C07A20"></span> Private
+  </button>
+  <button class="filter-btn" data-type="County Campground">
+    <span class="dot" style="background:#6B4CA8"></span> County
+  </button>
+  <div class="search-wrap">
+    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="5.5" cy="5.5" r="4"/><path d="M9 9l2.5 2.5"/></svg>
+    <input id="searchBox" type="text" placeholder="Search campgrounds…">
+  </div>
+</div>
+
+<div id="map"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const CAMPS = [{"name": "Fairholme Campground", "slug": "fairholme-campground", "type": "National Park", "town": "Port Angeles", "drive": "~3 hr 15 min from Seattle", "hookups": "No hookups", "lat": 48.0617, "lon": -123.9301}, {"name": "Heart O' the Hills Campground", "slug": "heart-o-the-hills-campground", "type": "National Park", "town": "Port Angeles", "drive": "~3 hr from Seattle", "hookups": "No hookups", "lat": 47.9946, "lon": -123.4268}, {"name": "Hoh Campground", "slug": "hoh-campground", "type": "National Park", "town": "Forks", "drive": "~4 hr from Seattle", "hookups": "No hookups", "lat": 47.8597, "lon": -123.9341}, {"name": "Kalaloch Campground", "slug": "kalaloch-campground", "type": "National Park", "town": "Forks", "drive": "~4 hr 15 min from Seattle", "hookups": "No hookups", "lat": 47.6099, "lon": -124.3751}, {"name": "Mora Campground", "slug": "mora-campground", "type": "National Park", "town": "Forks", "drive": "~4 hr 15 min from Seattle", "hookups": "No hookups", "lat": 47.9158, "lon": -124.5973}, {"name": "Ozette Campground", "slug": "ozette-campground", "type": "National Park", "town": "Forks", "drive": "~3 hr 45 min from Seattle", "hookups": "No hookups", "lat": 48.1547, "lon": -124.6577}, {"name": "Sol Duc Campground", "slug": "sol-duc-campground", "type": "National Park", "town": "Port Angeles", "drive": "~3 hr 30 min from Seattle", "hookups": "No hookups", "lat": 47.9702, "lon": -123.8499}, {"name": "South Beach Campground", "slug": "south-beach-campground", "type": "National Park", "town": "Forks", "drive": "~4 hr 30 min from Seattle", "hookups": "No hookups", "lat": 47.5868, "lon": -124.3667}, {"name": "Staircase Campground", "slug": "staircase-campground", "type": "National Park", "town": "Shelton", "drive": "~2 hr 15 min from Seattle", "hookups": "No hookups", "lat": 47.5136, "lon": -123.3285}, {"name": "Graves Creek Campground", "slug": "graves-creek-campground", "type": "National Park", "town": "Aberdeen", "drive": "~3 hr 45 min from Seattle", "hookups": "No hookups", "lat": 47.5726, "lon": -123.5879}, {"name": "Cougar Rock Campground", "slug": "cougar-rock-campground", "type": "National Park", "town": "Eatonville", "drive": "~1 hr 45 min from Seattle", "hookups": "No hookups", "lat": 46.7515, "lon": -121.7371}, {"name": "Ohanapecosh Campground", "slug": "ohanapecosh-campground", "type": "National Park", "town": "Packwood", "drive": "~2 hr 20 min from Seattle", "hookups": "No hookups", "lat": 46.7357, "lon": -121.5696}, {"name": "White River Campground", "slug": "white-river-campground", "type": "National Park", "town": "Enumclaw", "drive": "~1 hr 45 min from Seattle", "hookups": "No hookups", "lat": 46.9004, "lon": -121.6396}, {"name": "Newhalem Creek Campground", "slug": "newhalem-creek-campground", "type": "National Park", "town": "Sedro-Woolley", "drive": "~2 hr 25 min from Seattle", "hookups": "No hookups", "lat": 48.6694, "lon": -121.2434}, {"name": "Goodell Creek Campground", "slug": "goodell-creek-campground", "type": "National Park", "town": "Sedro-Woolley", "drive": "~2 hr 25 min from Seattle", "hookups": "No hookups", "lat": 48.6736, "lon": -121.2508}, {"name": "Colonial Creek South Campground", "slug": "colonial-creek-south-campground", "type": "National Park", "town": "Sedro-Woolley", "drive": "~2 hr 45 min from Seattle", "hookups": "No hookups", "lat": 48.7041, "lon": -121.0885}, {"name": "Colonial Creek North Campground", "slug": "colonial-creek-north-campground", "type": "National Park", "town": "Sedro-Woolley", "drive": "~2 hr 45 min from Seattle", "hookups": "No hookups", "lat": 48.708, "lon": -121.087}, {"name": "Hozomeen Campground", "slug": "hozomeen-campground", "type": "National Park", "town": "Hope, BC (Canada)", "drive": "~3 hr 30 min from Seattle (via Canada)", "hookups": "No hookups", "lat": 48.9958, "lon": -120.9031}, {"name": "Deception Pass State Park", "slug": "deception-pass-state-park", "type": "State Park", "town": "Oak Harbor", "drive": "~1 hr 35 min from Seattle", "hookups": "2", "lat": 48.4074, "lon": -122.643}, {"name": "Larrabee State Park", "slug": "larrabee-state-park", "type": "State Park", "town": "Bellingham", "drive": "~1 hr 45 min from Seattle", "hookups": "3", "lat": 48.6551, "lon": -122.4968}, {"name": "Birch Bay State Park", "slug": "birch-bay-state-park", "type": "State Park", "town": "Blaine", "drive": "~1 hr 50 min from Seattle", "hookups": "2", "lat": 48.9003, "lon": -122.7641}, {"name": "Camano Island State Park", "slug": "camano-island-state-park", "type": "State Park", "town": "Stanwood", "drive": "~1 hr 20 min from Seattle", "hookups": "No hookups", "lat": 48.1168, "lon": -122.5009}, {"name": "Fort Ebey State Park", "slug": "fort-ebey-state-park", "type": "State Park", "town": "Coupeville", "drive": "~1 hr 45 min from Seattle", "hookups": "2", "lat": 48.22, "lon": -122.7667}, {"name": "Fort Casey Historical State Park", "slug": "fort-casey-historical-state-park", "type": "State Park", "town": "Coupeville", "drive": "~1 hr 45 min from Seattle", "hookups": "2", "lat": 48.1608, "lon": -122.6833}, {"name": "Dungeness Recreation Area", "slug": "dungeness-recreation-area", "type": "County Campground", "town": "Sequim", "drive": "~2 hr 30 min from Seattle", "hookups": "No hookups", "lat": 48.1476, "lon": -123.1855}, {"name": "Sequim Bay State Park", "slug": "sequim-bay-state-park", "type": "State Park", "town": "Sequim", "drive": "~2 hr 30 min from Seattle", "hookups": "3", "lat": 48.0441, "lon": -123.0441}, {"name": "Fort Worden Historical State Park", "slug": "fort-worden-historical-state-park", "type": "State Park", "town": "Port Townsend", "drive": "~2 hr from Seattle", "hookups": "3", "lat": 48.133, "lon": -122.7636}, {"name": "Potlatch State Park", "slug": "potlatch-state-park", "type": "State Park", "town": "Hoodsport", "drive": "~1 hr 45 min from Seattle", "hookups": "2", "lat": 47.5615, "lon": -123.1427}, {"name": "Twanoh State Park", "slug": "twanoh-state-park", "type": "State Park", "town": "Union", "drive": "~1 hr 45 min from Seattle", "hookups": "3", "lat": 47.3778, "lon": -123.0021}, {"name": "Belfair State Park", "slug": "belfair-state-park", "type": "State Park", "town": "Belfair", "drive": "~1 hr 45 min from Seattle", "hookups": "3", "lat": 47.4285, "lon": -122.8738}, {"name": "Jarrell Cove State Park", "slug": "jarrell-cove-state-park", "type": "State Park", "town": "Shelton", "drive": "~2 hr from Seattle", "hookups": "2", "lat": 47.307, "lon": -122.8763}, {"name": "Penrose Point State Park", "slug": "penrose-point-state-park", "type": "State Park", "town": "Lakebay", "drive": "~1 hr 30 min from Seattle", "hookups": "No hookups", "lat": 47.2629, "lon": -122.732}, {"name": "Illahee State Park", "slug": "illahee-state-park", "type": "State Park", "town": "Bremerton", "drive": "~1 hr via ferry from Seattle", "hookups": "3", "lat": 47.5803, "lon": -122.5839}, {"name": "Saltwater State Park", "slug": "saltwater-state-park", "type": "State Park", "town": "Des Moines", "drive": "~30 min from Seattle", "hookups": "No hookups", "lat": 47.3796, "lon": -122.3337}, {"name": "Dash Point State Park", "slug": "dash-point-state-park", "type": "State Park", "town": "Federal Way", "drive": "~40 min from Seattle", "hookups": "1", "lat": 47.3286, "lon": -122.4133}, {"name": "Schafer State Park", "slug": "schafer-state-park", "type": "State Park", "town": "Elma", "drive": "~2 hr from Seattle", "hookups": "2", "lat": 47.1826, "lon": -123.4699}, {"name": "Rainbow Falls State Park", "slug": "rainbow-falls-state-park", "type": "State Park", "town": "Chehalis", "drive": "~2 hr from Seattle", "hookups": "2", "lat": 46.628, "lon": -123.2384}, {"name": "Lewis and Clark State Park", "slug": "lewis-and-clark-state-park", "type": "State Park", "town": "Chehalis", "drive": "~2 hr from Seattle", "hookups": "3", "lat": 46.5734, "lon": -122.7451}, {"name": "Seaquest State Park", "slug": "seaquest-state-park", "type": "State Park", "town": "Castle Rock", "drive": "~2 hr 30 min from Seattle", "hookups": "3", "lat": 46.2771, "lon": -122.8272}, {"name": "Battle Ground Lake State Park", "slug": "battle-ground-lake-state-park", "type": "State Park", "town": "Battle Ground", "drive": "~2 hr 45 min from Seattle", "hookups": "1", "lat": 45.8341, "lon": -122.4818}, {"name": "Beacon Rock State Park", "slug": "beacon-rock-state-park", "type": "State Park", "town": "North Bonneville", "drive": "~3 hr from Seattle", "hookups": "3", "lat": 45.6276, "lon": -121.9783}, {"name": "Lake Easton State Park", "slug": "lake-easton-state-park", "type": "State Park", "town": "Cle Elum", "drive": "~1 hr 15 min from Seattle", "hookups": "3", "lat": 47.2436, "lon": -121.1809}, {"name": "Ginkgo Petrified Forest State Park", "slug": "ginkgo-petrified-forest-state-park", "type": "State Park", "town": "Vantage", "drive": "~2 hr from Seattle", "hookups": "3", "lat": 46.945, "lon": -119.976}, {"name": "Potholes State Park", "slug": "potholes-state-park", "type": "State Park", "town": "Moses Lake", "drive": "~3 hr 15 min from Seattle", "hookups": "3", "lat": 46.9928, "lon": -119.3423}, {"name": "Columbia Hills Historical State Park", "slug": "columbia-hills-historical-state-park", "type": "State Park", "town": "Lyle", "drive": "~2 hr 45 min from Seattle", "hookups": "2", "lat": 45.702, "lon": -121.2848}, {"name": "Maryhill State Park", "slug": "maryhill-state-park", "type": "State Park", "town": "Goldendale", "drive": "~3 hr from Seattle", "hookups": "3", "lat": 45.6957, "lon": -120.8137}, {"name": "Brooks Memorial State Park", "slug": "brooks-memorial-state-park", "type": "State Park", "town": "Goldendale", "drive": "~3 hr 15 min from Seattle", "hookups": "3", "lat": 45.9456, "lon": -120.6535}, {"name": "Wenatchee Confluence State Park", "slug": "wenatchee-confluence-state-park", "type": "State Park", "town": "Wenatchee", "drive": "~2 hr 45 min from Seattle", "hookups": "3", "lat": 47.4321, "lon": -120.3296}, {"name": "Lincoln Rock State Park", "slug": "lincoln-rock-state-park", "type": "State Park", "town": "East Wenatchee", "drive": "~2 hr 45 min from Seattle", "hookups": "3", "lat": 47.54, "lon": -120.3079}, {"name": "Daroga State Park", "slug": "daroga-state-park", "type": "State Park", "town": "Wenatchee", "drive": "~2 hr 45 min from Seattle", "hookups": "2", "lat": 47.739, "lon": -120.1807}, {"name": "Alta Lake State Park", "slug": "alta-lake-state-park", "type": "State Park", "town": "Pateros", "drive": "~2 hr 45 min from Seattle", "hookups": "3", "lat": 48.019, "lon": -119.978}, {"name": "Lake Wenatchee State Park", "slug": "lake-wenatchee-state-park", "type": "State Park", "town": "Leavenworth", "drive": "~2 hr 15 min from Seattle", "hookups": "2", "lat": 47.8124, "lon": -120.7394}, {"name": "Pearrygin Lake State Park", "slug": "pearrygin-lake-state-park", "type": "State Park", "town": "Winthrop", "drive": "~4 hr from Seattle", "hookups": "3", "lat": 48.5152, "lon": -120.1234}, {"name": "Osoyoos Lake Veterans Memorial State Park", "slug": "osoyoos-lake-veterans-memorial-state-park", "type": "State Park", "town": "Oroville", "drive": "~4 hr from Seattle", "hookups": "3", "lat": 48.9286, "lon": -119.4378}, {"name": "Curlew Lake State Park", "slug": "curlew-lake-state-park", "type": "State Park", "town": "Republic", "drive": "~4 hr 30 min from Seattle", "hookups": "2", "lat": 48.7196, "lon": -118.6823}, {"name": "Steamboat Rock State Park", "slug": "steamboat-rock-state-park", "type": "State Park", "town": "Electric City", "drive": "~3 hr 30 min from Seattle", "hookups": "3", "lat": 47.871, "lon": -119.098}, {"name": "Sun Lakes-Dry Falls State Park", "slug": "sun-lakes-dry-falls-state-park", "type": "State Park", "town": "Coulee City", "drive": "~3 hr 30 min from Seattle", "hookups": "3", "lat": 47.6042, "lon": -119.401}, {"name": "Lake Chelan State Park", "slug": "lake-chelan-state-park", "type": "State Park", "town": "Chelan", "drive": "~3 hr from Seattle", "hookups": "3", "lat": 47.8452, "lon": -120.1268}, {"name": "Twenty-Five Mile Creek State Park", "slug": "twenty-five-mile-creek-state-park", "type": "State Park", "town": "Chelan", "drive": "~3 hr 15 min from Seattle", "hookups": "2", "lat": 48.0002, "lon": -120.2165}, {"name": "Riverside State Park", "slug": "riverside-state-park", "type": "State Park", "town": "Spokane", "drive": "~5 hr from Seattle", "hookups": "2", "lat": 47.782, "lon": -117.5007}, {"name": "Tinkham Campground", "slug": "tinkham-campground", "type": "National Park", "town": "North Bend", "drive": "~1 hr from Seattle", "hookups": "No hookups", "lat": 47.3803, "lon": -121.5607}, {"name": "Kachess Campground", "slug": "kachess-campground", "type": "National Park", "town": "Easton", "drive": "~1 hr 30 min from Seattle", "hookups": "No hookups", "lat": 47.3311, "lon": -121.2283}, {"name": "Verlot Campground", "slug": "verlot-campground", "type": "National Park", "town": "Granite Falls", "drive": "~1 hr 30 min from Seattle", "hookups": "No hookups", "lat": 48.0683, "lon": -121.733}, {"name": "Gold Basin Campground", "slug": "gold-basin-campground", "type": "National Park", "town": "Granite Falls", "drive": "~1 hr 30 min from Seattle", "hookups": "No hookups", "lat": 48.0834, "lon": -121.7756}, {"name": "Turlo Campground", "slug": "turlo-campground", "type": "National Park", "town": "Granite Falls", "drive": "~1 hr 30 min from Seattle", "hookups": "No hookups", "lat": 48.0842, "lon": -121.7831}, {"name": "Bedal Campground", "slug": "bedal-campground", "type": "National Park", "town": "Darrington", "drive": "~2 hr from Seattle", "hookups": "No hookups", "lat": 48.0767, "lon": -121.4684}, {"name": "Horseshoe Cove Campground", "slug": "horseshoe-cove-campground", "type": "National Park", "town": "Concrete", "drive": "~1 hr 45 min from Seattle", "hookups": "No hookups", "lat": 48.6537, "lon": -121.6774}, {"name": "Shannon Creek Campground", "slug": "shannon-creek-campground", "type": "National Park", "town": "Concrete", "drive": "~2 hr from Seattle", "hookups": "No hookups", "lat": 48.7204, "lon": -121.6872}, {"name": "Douglas Fir Campground", "slug": "douglas-fir-campground", "type": "National Park", "town": "Glacier", "drive": "~1 hr 45 min from Seattle", "hookups": "No hookups", "lat": 48.8832, "lon": -122.0099}, {"name": "Silver Fir Campground", "slug": "silver-fir-campground", "type": "National Park", "town": "Glacier", "drive": "~2 hr from Seattle", "hookups": "No hookups", "lat": 48.9008, "lon": -121.8264}, {"name": "Seal Rock Campground", "slug": "seal-rock-campground", "type": "National Park", "town": "Brinnon", "drive": "~2 hr from Seattle", "hookups": "No hookups", "lat": 47.6847, "lon": -122.8871}, {"name": "Big Creek Campground", "slug": "big-creek-campground", "type": "National Park", "town": "Hoodsport", "drive": "~1 hr 45 min from Seattle", "hookups": "No hookups", "lat": 47.4893, "lon": -123.1975}, {"name": "Coho Campground", "slug": "coho-campground", "type": "National Park", "town": "Montesano", "drive": "~2 hr 30 min from Seattle", "hookups": "No hookups", "lat": 47.3746, "lon": -123.5533}, {"name": "Eightmile Campground", "slug": "eightmile-campground", "type": "National Park", "town": "Leavenworth", "drive": "~2 hr 15 min from Seattle", "hookups": "No hookups", "lat": 47.5594, "lon": -120.7478}, {"name": "Johnny Creek Campground", "slug": "johnny-creek-campground", "type": "National Park", "town": "Leavenworth", "drive": "~2 hr 30 min from Seattle", "hookups": "No hookups", "lat": 47.5434, "lon": -120.6584}, {"name": "Nason Creek Campground", "slug": "nason-creek-campground", "type": "National Park", "town": "Leavenworth", "drive": "~2 hr 45 min from Seattle", "hookups": "No hookups", "lat": 47.7889, "lon": -120.6736}, {"name": "Bonaparte Lake Campground", "slug": "bonaparte-lake-campground", "type": "National Park", "town": "Tonasket", "drive": "~4 hr 30 min from Seattle", "hookups": "No hookups", "lat": 48.8162, "lon": -119.0612}, {"name": "Swan Lake Campground", "slug": "swan-lake-campground", "type": "National Park", "town": "Republic", "drive": "~5 hr from Seattle", "hookups": "No hookups", "lat": 48.8024, "lon": -118.9834}, {"name": "East Sullivan Campground", "slug": "east-sullivan-campground", "type": "National Park", "town": "Metaline Falls", "drive": "~5 hr 30 min from Seattle", "hookups": "No hookups", "lat": 48.8584, "lon": -117.2982}, {"name": "Noisy Creek Campground", "slug": "noisy-creek-campground", "type": "National Park", "town": "Metaline Falls", "drive": "~5 hr 30 min from Seattle", "hookups": "No hookups", "lat": 48.8382, "lon": -117.2958}, {"name": "Iron Creek Campground", "slug": "iron-creek-campground", "type": "National Park", "town": "Randle", "drive": "~3 hr from Seattle", "hookups": "No hookups", "lat": 46.5041, "lon": -121.9721}, {"name": "Takhlakh Lake Campground", "slug": "takhlakh-lake-campground", "type": "National Park", "town": "Randle", "drive": "~3 hr 15 min from Seattle", "hookups": "No hookups", "lat": 46.2726, "lon": -121.5893}, {"name": "Walupt Lake Campground", "slug": "walupt-lake-campground", "type": "National Park", "town": "Randle", "drive": "~3 hr 30 min from Seattle", "hookups": "No hookups", "lat": 46.4162, "lon": -121.4709}, {"name": "Millersylvania State Park", "slug": "millersylvania-state-park", "type": "State Park", "town": "Olympia (12 mi)", "drive": "~1 hr 20 min from Seattle", "hookups": "1", "lat": 46.9072, "lon": -122.9088}, {"name": "Ike Kinswa State Park", "slug": "ike-kinswa-state-park", "type": "State Park", "town": "Morton (12 mi)", "drive": "~2 hr from Seattle", "hookups": "3", "lat": 46.6107, "lon": -122.3636}, {"name": "Yakima Sportsman State Park", "slug": "yakima-sportsman-state-park", "type": "State Park", "town": "Yakima (3 mi)", "drive": "~2 hr 30 min from Seattle", "hookups": "3", "lat": 46.5914, "lon": -120.5302}, {"name": "Bridgeport State Park", "slug": "bridgeport-state-park", "type": "State Park", "town": "Bridgeport (2 mi)", "drive": "~3 hr 30 min from Seattle", "hookups": "2", "lat": 47.9996, "lon": -119.6814}, {"name": "Twin Harbors State Park", "slug": "twin-harbors-state-park", "type": "State Park", "town": "Westport (2 mi)", "drive": "~2 hr 30 min from Seattle", "hookups": "3", "lat": 46.887, "lon": -124.1004}, {"name": "Grayland Beach State Park", "slug": "grayland-beach-state-park", "type": "State Park", "town": "Westport (8 mi)", "drive": "~2 hr 45 min from Seattle", "hookups": "3", "lat": 46.7872, "lon": -124.0882}, {"name": "Cape Disappointment State Park", "slug": "cape-disappointment-state-park", "type": "State Park", "town": "Ilwaco (2 mi)", "drive": "~3 hr from Seattle", "hookups": "3", "lat": 46.2956, "lon": -124.0574}, {"name": "Flowing Lake County Park", "slug": "flowing-lake-county-park", "type": "County Campground", "town": "Snohomish (10 mi)", "drive": "~45 min from Seattle", "hookups": "2", "lat": 47.9107, "lon": -121.9218}, {"name": "Kayak Point Regional Park", "slug": "kayak-point-regional-park", "type": "County Campground", "town": "Stanwood (6 mi)", "drive": "~1 hr from Seattle", "hookups": "2", "lat": 48.131, "lon": -122.3645}, {"name": "Wenberg County Park", "slug": "wenberg-county-park", "type": "County Campground", "town": "Stanwood (4 mi)", "drive": "~1 hr from Seattle", "hookups": "3", "lat": 48.2051, "lon": -122.3494}, {"name": "Silver Lake Park", "slug": "silver-lake-park", "type": "County Campground", "town": "Maple Falls (2 mi)", "drive": "~1 hr 45 min from Seattle", "hookups": "2", "lat": 48.9241, "lon": -122.0699}, {"name": "Pine Village KOA Holiday", "slug": "pine-village-koa-holiday", "type": "Private Campground", "town": "Leavenworth (3 mi)", "drive": "~2 hr 30 min from Seattle", "hookups": "3", "lat": 47.5901, "lon": -120.7015}, {"name": "Thousand Trails Leavenworth", "slug": "thousand-trails-leavenworth", "type": "Private Campground", "town": "Leavenworth (5 mi)", "drive": "~2 hr 30 min from Seattle", "hookups": "2", "lat": 47.6612, "lon": -120.7045}, {"name": "Tall Chief RV Park & Campground", "slug": "tall-chief-rv-park-campground", "type": "Private Campground", "town": "Fall City (1 mi)", "drive": "~30 min from Seattle", "hookups": "2", "lat": 47.5605, "lon": -121.9007}, {"name": "Packwood RV Park & Campground", "slug": "packwood-rv-park-campground", "type": "Private Campground", "town": "Packwood (0 mi \u2013 in town)", "drive": "~2 hr 15 min from Seattle", "hookups": "3", "lat": 46.6085, "lon": -121.6702}, {"name": "American Heritage Campground", "slug": "american-heritage-campground", "type": "Private Campground", "town": "Olympia (8 mi)", "drive": "~1 hr 20 min from Seattle", "hookups": "3", "lat": 47.0015, "lon": -122.9316}, {"name": "Andersen's Oceanside RV Park", "slug": "andersens-oceanside-rv-park", "type": "Private Campground", "town": "Long Beach (1 mi)", "drive": "~3 hr from Seattle", "hookups": "3", "lat": 46.352, "lon": -124.0593}, {"name": "Beachside RV Park", "slug": "beachside-rv-park", "type": "Private Campground", "town": "Birch Bay (0 mi)", "drive": "~1 hr 30 min from Seattle", "hookups": "3", "lat": 48.9095, "lon": -122.7584}, {"name": "Sunnyside RV Park", "slug": "sunnyside-rv-park", "type": "Private Campground", "town": "Sunnyside (0 mi)", "drive": "~2 hr 45 min from Seattle", "hookups": "3", "lat": 46.3234, "lon": -119.8995}, {"name": "Denny Creek Campground", "slug": "denny-creek-campground", "type": "National Park", "town": "North Bend", "drive": "~46 min from Seattle", "hookups": "1", "lat": 47.4121, "lon": -121.4422}, {"name": "Salmon La Sac Campground", "slug": "salmon-la-sac-campground", "type": "National Park", "town": "Cle Elum", "drive": "~2 hr from Seattle", "hookups": "No hookups", "lat": 47.4036, "lon": -121.0987}, {"name": "Bumping Lake Campground", "slug": "bumping-lake-campground", "type": "National Park", "town": "Naches", "drive": "~2 hr 30 min from Seattle", "hookups": "No hookups", "lat": 46.8601, "lon": -121.2838}, {"name": "La Wis Wis Campground", "slug": "la-wis-wis-campground", "type": "National Park", "town": "Packwood", "drive": "~2 hr 30 min from Seattle", "hookups": "No hookups", "lat": 46.6737, "lon": -121.5879}, {"name": "Lower Falls Campground", "slug": "lower-falls-campground", "type": "National Park", "town": "Cougar", "drive": "~3 hr from Seattle", "hookups": "No hookups", "lat": 46.1566, "lon": -121.8785}, {"name": "Peterson Prairie Campground", "slug": "peterson-prairie-campground", "type": "National Park", "town": "Trout Lake", "drive": "~3 hr from Seattle", "hookups": "No hookups", "lat": 45.9997, "lon": -121.6198}, {"name": "Panorama Point Campground", "slug": "panorama-point-campground", "type": "National Park", "town": "Concrete", "drive": "~2 hr from Seattle", "hookups": "No hookups", "lat": 48.7241, "lon": -121.6727}, {"name": "Beckler River Campground", "slug": "beckler-river-campground", "type": "National Park", "town": "Skykomish", "drive": "~1 hr 30 min from Seattle", "hookups": "No hookups", "lat": 47.7476, "lon": -121.3756}, {"name": "Salt Creek Recreation Area", "slug": "salt-creek-recreation-area", "type": "County Campground", "town": "Port Angeles", "drive": "~3 hr 15 min from Seattle", "hookups": "2", "lat": 48.1659423, "lon": -123.7042522}];
+
+// ── MAP INIT ──────────────────────────────────────────────────────────────
+const map = L.map('map', {
+  center: [47.4, -121.5],
+  zoom: 7,
+  zoomControl: true,
+});
+
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/attributions">CARTO</a>',
+  subdomains: 'abcd',
+  maxZoom: 19
+}).addTo(map);
+
+// ── COLORS ───────────────────────────────────────────────────────────────
+const TYPE_CONFIG = {
+  'National Park':      { color: '#2D7D46', label: 'National Park' },
+  'State Park':         { color: '#1A6FA8', label: 'State Park' },
+  'Private Campground': { color: '#C07A20', label: 'Private' },
+  'County Campground':  { color: '#6B4CA8', label: 'County' },
+};
+const fallbackColor = '#888';
+
+function makeIcon(color) {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="30" viewBox="0 0 22 30">
+    <path d="M11 0C4.925 0 0 4.925 0 11c0 8.25 11 19 11 19s11-10.75 11-19C22 4.925 17.075 0 11 0z" fill="${color}" stroke="rgba(0,0,0,0.25)" stroke-width="1"/>
+    <circle cx="11" cy="11" r="4.5" fill="rgba(255,255,255,0.9)"/>
+  </svg>`;
+  return L.divIcon({
+    html: svg,
+    className: '',
+    iconSize: [22, 30],
+    iconAnchor: [11, 30],
+    popupAnchor: [0, -28],
+  });
+}
+
+// ── POPUP HTML ────────────────────────────────────────────────────────────
+function popupHTML(c) {
+  const cfg = TYPE_CONFIG[c.type] || { color: fallbackColor, label: c.type };
+  const hookupIcon = c.hookups === 'No hookups' ? '⚡' : c.hookups.includes('Full') ? '🔌' : '🔌';
+  const hookupStyle = c.hookups === 'No hookups' ? 'color:rgba(255,255,255,.35)' : 'color:rgba(144,210,160,.9)';
+  return `
+    <div class="popup-header">
+      <div class="popup-type" style="color:${cfg.color}">${cfg.label}</div>
+      <div class="popup-name">${c.name}</div>
+    </div>
+    <div class="popup-body">
+      <div class="popup-row">📍 ${c.town}</div>
+      <div class="popup-row">🚗 ${c.drive}</div>
+      <div class="popup-row" style="${hookupStyle}">${hookupIcon} ${c.hookups}</div>
+      <a class="popup-link" href="/campground/${c.slug}" target="_blank">
+        View listing
+        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 5.5h7M6 2.5l3 3-3 3"/></svg>
+      </a>
+    </div>`;
+}
+
+// ── BUILD MARKERS ─────────────────────────────────────────────────────────
+const markers = [];
+const layerGroups = {};
+Object.keys(TYPE_CONFIG).forEach(t => { layerGroups[t] = L.layerGroup().addTo(map); });
+
+const typeCounts = {};
+CAMPS.forEach(c => {
+  const cfg = TYPE_CONFIG[c.type];
+  const color = cfg ? cfg.color : fallbackColor;
+  const marker = L.marker([c.lat, c.lon], { icon: makeIcon(color) })
+    .bindPopup(popupHTML(c), { maxWidth: 260 });
+  const group = layerGroups[c.type];
+  if (group) group.addLayer(marker);
+  else marker.addTo(map);
+  markers.push({ marker, camp: c, group });
+  typeCounts[c.type] = (typeCounts[c.type] || 0) + 1;
+});
+
+// ── LEGEND ────────────────────────────────────────────────────────────────
+const legendControl = L.control({ position: 'bottomright' });
+legendControl.onAdd = () => {
+  const div = L.DomUtil.create('div', 'legend');
+  div.innerHTML = `<div class="legend-title">Campground Type</div>` +
+    Object.entries(TYPE_CONFIG).map(([type, cfg]) =>
+      `<div class="legend-row">
+        <span class="legend-dot" style="background:${cfg.color}"></span>
+        ${cfg.label}
+        <span class="legend-count">${typeCounts[type] || 0}</span>
+      </div>`
+    ).join('');
+  return div;
+};
+legendControl.addTo(map);
+
+// ── FILTER LOGIC ──────────────────────────────────────────────────────────
+let activeType = 'all';
+let searchQuery = '';
+
+function applyFilters() {
+  let count = 0;
+  markers.forEach(({ marker, camp, group }) => {
+    const typeMatch = activeType === 'all' || camp.type === activeType;
+    const searchMatch = !searchQuery || camp.name.toLowerCase().includes(searchQuery) || camp.town.toLowerCase().includes(searchQuery);
+    const visible = typeMatch && searchMatch;
+    if (visible) {
+      if (group && !group.hasLayer(marker)) group.addLayer(marker);
+      else if (!group) marker.addTo(map);
+      count++;
+    } else {
+      if (group) group.removeLayer(marker);
+      else map.removeLayer(marker);
+    }
+  });
+  document.getElementById('visibleCount').textContent = count;
+}
+
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeType = btn.dataset.type;
+    applyFilters();
+  });
+});
+
+document.getElementById('searchBox').addEventListener('input', e => {
+  searchQuery = e.target.value.toLowerCase().trim();
+  applyFilters();
+});
+</script>
+</body>
+</html>
