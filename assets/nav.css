@@ -93,3 +93,26 @@
 @media (max-width: 720px) {
   .nav-links { display: none; }
 }
+
+/* Compact navigation keeps every destination available on phones. */
+.nav-toggle { display:none; }
+.nav a:focus-visible, .nav button:focus-visible { outline:3px solid var(--gold); outline-offset:3px; }
+.nav-btn { min-height:44px; display:inline-flex; align-items:center; justify-content:center; }
+@media (max-width:720px) {
+  .nav { padding:0 16px; }
+  .nav-right { gap:8px; position:static; }
+  .nav-logo-img { height:36px; }
+  .nav-btn { padding:9px 12px; font-size:12px; }
+  .nav-toggle { display:block; min-height:44px; padding:0 10px; border:1px solid #81988A; border-radius:8px; background:var(--forest); color:#fff; font:inherit; font-size:13px; cursor:pointer; }
+  .nav.menu-open { background:var(--forest); }
+  .nav.menu-open .nav-links { display:flex; position:absolute; top:68px; left:0; right:0; flex-direction:column; align-items:stretch; gap:0; padding:8px 16px 16px; background:var(--forest); box-shadow:0 12px 20px #0003; }
+  .nav-links a { display:flex; align-items:center; min-height:44px; padding:8px 12px; }
+}
+@media (max-width:360px) {
+  .nav-logo-img { height:30px; }
+  .nav-right { gap:5px; }
+  .nav-btn { padding:9px 8px; font-size:11px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  *, *::before, *::after { scroll-behavior:auto !important; transition:none !important; animation:none !important; }
+}

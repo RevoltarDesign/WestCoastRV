@@ -178,12 +178,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
   <!-- Shared nav styles (single source of truth) -->
-  <link rel="stylesheet" href="../assets/nav.css">
+  <link rel="stylesheet" href="../assets/nav.css?v=20260906c">
   <!-- Shared assets (single source of truth) -->
   <link rel="stylesheet" href="../assets/tokens.css">
   <link rel="stylesheet" href="../assets/base.css">
   <link rel="stylesheet" href="../assets/footer.css">
-  <style>/* Nav styles live in assets/nav.css — see that file to edit */
+  <style>/* Nav styles live in assets/nav.css?v=20260906c — see that file to edit */
 
     /* HERO */
     .hero { position: relative; height: calc(100svh - 90px); min-height: 520px; max-height: 820px;
@@ -340,7 +340,8 @@
     /* NEARBY SERVICES */
     .services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
     @media (max-width: 720px) { .services-grid { grid-template-columns: 1fr; gap: 48px; } }
-    .services-table { width: 100%; border-collapse: collapse; }
+    .services-grid > div { min-width:0; }
+    .services-table { width: 100%; border-collapse: collapse; table-layout:fixed; overflow-wrap:anywhere; }
     .services-table tr { border-bottom: 1px solid var(--tan); transition: background .15s; }
     .services-table tr:last-child { border-bottom: none; }
     .services-table tr:hover { background: var(--parchment); }
@@ -762,17 +763,13 @@
 
 
 <script>
-  const nav = document.getElementById('nav');
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 60);
-  }, { passive: true });
   const heroImg = document.getElementById('heroImg');
   window.addEventListener('scroll', () => {
-    if (window.scrollY < window.innerHeight + 100)
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && window.scrollY < window.innerHeight + 100)
       heroImg.style.transform = `translateY(${window.scrollY * 0.28}px)`;
   }, { passive: true });
 </script>
-<script src="../assets/nav.js"></script>
-<script src="../assets/footer.js"></script>
+<script src="../assets/nav.js?v=20260906c"></script>
+<script src="../assets/footer.js?v=20260906c"></script>
 </body>
 </html>

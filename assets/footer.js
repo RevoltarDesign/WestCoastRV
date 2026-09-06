@@ -185,20 +185,7 @@
         <p>New guides, campground additions, and seasonal picks — straight to your inbox.</p>
       </div>
       <div>
-        <!-- TODO: Replace this form action with your newsletter platform embed (Beehiiv, Mailchimp, etc.) -->
-        <form class="footer-nl-form" onsubmit="(function(e){
-          e.preventDefault();
-          var f=e.target; var inp=f.querySelector('.footer-nl-input');
-          if(!inp.value||!inp.value.includes('@'))return;
-          f.style.display='none';
-          f.nextElementSibling.style.display='flex';
-        })(event)">
-          <input class="footer-nl-input" type="email" placeholder="your@email.com" required>
-          <button class="footer-nl-btn" type="submit">Subscribe</button>
-        </form>
-        <div class="footer-nl-thanks">
-          <span>✓</span> <span>You're on the list — talk soon.</span>
-        </div>
+        <a class="footer-nl-btn" href="/field-notes#email-signup" style="display:inline-flex;align-items:center;min-height:44px;text-decoration:none;">Email signup →</a>
       </div>
     </div>`;
 

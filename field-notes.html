@@ -39,7 +39,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
   <!-- Shared nav (single source of truth) -->
-  <link rel="stylesheet" href="assets/nav.css">
+  <link rel="stylesheet" href="assets/nav.css?v=20260906c">
   <!-- Shared assets (single source of truth) -->
   <link rel="stylesheet" href="assets/tokens.css">
   <link rel="stylesheet" href="assets/base.css">
@@ -219,7 +219,7 @@
   </style>
 </head>
 <body
-  data-nav-cta-text="Browse all 110 →"
+  data-nav-cta-text="Browse all 118 →"
   data-nav-cta-url="/campgrounds">
 
 
@@ -353,7 +353,7 @@
     </div>
 
     <!-- NEWSLETTER -->
-    <div class="newsletter">
+    <div class="newsletter" id="email-signup">
       <div>
         <p class="nl-eyebrow">Stay in the loop</p>
         <h2 class="nl-title">New Field Notes, when they publish</h2>
@@ -361,7 +361,7 @@
       </div>
       <div>
         <form class="nl-form" id="fn-nl-form" novalidate>
-          <input class="nl-input" type="email" placeholder="your@email.com" aria-label="Email address" autocomplete="email">
+          <input class="nl-input" type="email" required placeholder="your@email.com" aria-label="Email address" autocomplete="email">
           <button class="nl-btn" type="submit" id="fn-nl-btn">Notify me</button>
         </form>
         <div id="fn-nl-thanks" style="display:none; align-items:center; gap:10px; color:var(--white); font-size:15px; font-weight:600; padding:8px 0;">
@@ -380,8 +380,8 @@
 <!-- FOOTER -->
 
 
-<script src="assets/nav.js"></script>
-<script src="assets/footer.js"></script>
+<script src="assets/nav.js?v=20260906c"></script>
+<script src="assets/footer.js?v=20260906c"></script>
 
 <!-- ── SUBSCRIBE HANDLER ───────────────────────────────────── -->
 <script>
@@ -401,7 +401,7 @@
     form.addEventListener('submit', async function (e) {
       e.preventDefault();
       const email = form.querySelector('input[type="email"]').value.trim();
-      if (!email) return;
+      if (!form.reportValidity()) return;
 
       btn.textContent = 'Subscribing…';
       btn.disabled = true;

@@ -26,7 +26,7 @@
       --prv: #C07A20;
       --cty: #6B4CA8;
     }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--forest); color: var(--white); height: 100vh; display: flex; flex-direction: column; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--forest); color: var(--white); height: 100vh; height: 100dvh; display: flex; flex-direction: column; }
 
     /* ── HEADER ── */
     .header {
@@ -84,7 +84,7 @@
     #searchBox:focus { border-color: rgba(255,255,255,.3); }
 
     /* ── MAP ── */
-    #map { flex: 1; }
+    #map { flex: 1; min-height: 300px; }
 
     /* ── LEGEND ── */
     .legend {
@@ -111,23 +111,36 @@
     .leaflet-popup-tip { background: var(--forest) !important; }
     .leaflet-popup-close-button { color: rgba(255,255,255,.4) !important; top: 10px !important; right: 10px !important; font-size: 16px !important; }
     .leaflet-popup-close-button:hover { color: var(--white) !important; }
-    .popup-header { padding: 14px 16px 10px; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .popup-header { padding: 14px 42px 10px 16px; border-bottom: 1px solid rgba(255,255,255,.08); }
     .popup-type { font-size: 10px; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; margin-bottom: 4px; }
     .popup-name { font-size: 14px; font-weight: 700; color: var(--white); line-height: 1.3; }
     .popup-body { padding: 10px 16px 14px; }
-    .popup-row { display: flex; align-items: center; gap: 7px; font-size: 12px; color: rgba(255,255,255,.55); margin-bottom: 5px; }
+    .popup-row { display: flex; align-items: center; gap: 7px; font-size: 12px; color: #C8D7CD; margin-bottom: 5px; }
     .popup-row:last-of-type { margin-bottom: 0; }
-    .popup-link {
+    .leaflet-container a.popup-link {
       display: flex; align-items: center; justify-content: center; gap: 6px;
       margin-top: 12px; padding: 7px 14px; border-radius: 20px;
-      background: var(--forest-light); color: var(--white);
+      background: var(--gold); color: var(--forest); min-height: 44px;
       font-size: 12px; font-weight: 600; text-decoration: none;
       transition: background .15s;
     }
-    .popup-link:hover { background: #5A9C7A; }
+    .leaflet-container a.popup-link:hover { background: var(--gold-light); color: var(--forest); }
   a { color:inherit; text-decoration:none; }
     .header-title { color:#eee; white-space:nowrap; }
+    a:focus-visible, button:focus-visible, input:focus-visible { outline:3px solid var(--gold); outline-offset:3px; }
+    .filter-btn { min-height:44px; }
+    .filter-btn[data-type="National Forest"].active { background:#324F38; border-color:#A7D6B4; color:#D6ECD9; }
+    .leaflet-container a.leaflet-popup-close-button { width:32px; height:32px; line-height:32px; top:4px !important; right:4px !important; color:#C8D7CD !important; }
+    #searchBox { min-height:44px; }
+    #searchBox::placeholder { color:#BCCBC2; }
     @media(max-width:600px){
+      .filterbar { gap:6px; padding:8px 12px; }
+      .filterbar-label { display:none; }
+      .filter-btn { flex:1 0 auto; font-size:12px; padding:5px 9px; }
+      .search-wrap { width:100%; margin:0; }
+      #searchBox { width:100%; font-size:16px; }
+      .legend { display:none; } /* Type names and colors remain in the filter bar. */
+
       .header { height:auto; min-height:76px; flex-wrap:wrap; gap:6px 14px; padding:12px 16px; }
       .header-logo { font-size:14px; }
       .header-divider { display:none; }
@@ -141,7 +154,7 @@
   <a class="header-logo" href="/">West Coast RV Camping</a>
   <div class="header-divider"></div>
   <a class="header-title" href="/campgrounds">← Back to list</a>
-  <span class="header-count"><span id="visibleCount">111</span> of 118 campgrounds</span>
+  <span class="header-count"><span id="visibleCount">118</span> of 118 campgrounds</span>
 </div>
 
 <div class="filterbar">
@@ -214,17 +227,17 @@ function makeIcon(color) {
 function popupHTML(c) {
   const cfg = TYPE_CONFIG[c.type] || { color: fallbackColor, label: c.type };
   const hookupIcon = c.hookups === 'No hookups' ? '⚡' : c.hookups.includes('Full') ? '🔌' : '🔌';
-  const hookupStyle = c.hookups === 'No hookups' ? 'color:rgba(255,255,255,.35)' : 'color:rgba(144,210,160,.9)';
+  const hookupStyle = c.hookups === 'No hookups' ? 'color:#C8D7CD' : 'color:rgba(144,210,160,.9)';
   return `
     <div class="popup-header">
-      <div class="popup-type" style="color:${cfg.color}">${cfg.label}</div>
+      <div class="popup-type" style="color:#A7D6B4">${cfg.label}</div>
       <div class="popup-name">${c.name}</div>
     </div>
     <div class="popup-body">
       <div class="popup-row">📍 ${c.town}</div>
       <div class="popup-row">🚗 ${c.drive}</div>
       <div class="popup-row" style="${hookupStyle}">${c.rvAccess==='no'?'Tent only · no RV access':hookupIcon+' '+c.hookups}</div>
-      <a class="popup-link" href="/campground/${c.slug}" target="_blank">
+      <a class="popup-link" href="/campground/${c.slug}" >
         View listing
         <svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 5.5h7M6 2.5l3 3-3 3"/></svg>
       </a>
@@ -240,7 +253,7 @@ const typeCounts = {};
 CAMPS.forEach(c => {
   const cfg = TYPE_CONFIG[c.type];
   const color = cfg ? cfg.color : fallbackColor;
-  const marker = L.marker([c.lat, c.lon], { icon: makeIcon(color) })
+  const marker = L.marker([c.lat, c.lon], { icon: makeIcon(color), title: c.name, alt: c.name })
     .bindPopup(popupHTML(c), { maxWidth: 260 });
   const group = layerGroups[c.type];
   if (group) group.addLayer(marker);
@@ -271,6 +284,7 @@ let searchQuery = '';
 
 function applyFilters() {
   let count = 0;
+  const visiblePoints = [];
   markers.forEach(({ marker, camp, group }) => {
     const typeMatch = activeType === 'all' || camp.type === activeType;
     const searchMatch = !searchQuery || camp.name.toLowerCase().includes(searchQuery) || camp.town.toLowerCase().includes(searchQuery);
@@ -279,17 +293,22 @@ function applyFilters() {
       if (group && !group.hasLayer(marker)) group.addLayer(marker);
       else if (!group) marker.addTo(map);
       count++;
+      visiblePoints.push([camp.lat, camp.lon]);
     } else {
       if (group) group.removeLayer(marker);
       else map.removeLayer(marker);
     }
   });
   document.getElementById('visibleCount').textContent = count;
+  map.closePopup();
+  if (visiblePoints.length) map.fitBounds(visiblePoints, { padding:[36,36], maxZoom:10, animate:false });
 }
 
 document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.setAttribute('aria-pressed', String(btn.classList.contains('active')));
   btn.addEventListener('click', () => {
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.filter-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
+    btn.setAttribute('aria-pressed','true');
     btn.classList.add('active');
     activeType = btn.dataset.type;
     applyFilters();

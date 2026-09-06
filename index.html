@@ -72,7 +72,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
   <!-- Shared nav (single source of truth) -->
-  <link rel="stylesheet" href="assets/nav.css">
+  <link rel="stylesheet" href="assets/nav.css?v=20260906c">
   <!-- Shared assets (single source of truth) -->
   <link rel="stylesheet" href="assets/tokens.css">
   <link rel="stylesheet" href="assets/base.css">
@@ -83,7 +83,7 @@
     button { cursor: pointer; border: none; background: none; font-family: inherit; font-size: inherit; }
     ul, ol { list-style: none; }
 
-    /* Nav → assets/nav.css */
+    /* Nav → assets/nav.css?v=20260906c */
 
     /* ═══════════════════════════════════════════════════════════════
        HERO
@@ -1289,7 +1289,7 @@
     </div>
     <div class="hp-nl-right">
       <form class="hp-nl-form" id="hp-nl-form" novalidate>
-        <input class="hp-nl-input" type="email" placeholder="your@email.com" required autocomplete="email">
+        <input class="hp-nl-input" type="email" aria-label="Email address" placeholder="your@email.com" required autocomplete="email">
         <button class="hp-nl-btn" type="submit" id="hp-nl-btn">Subscribe free</button>
       </form>
       <div class="hp-nl-thanks" id="hp-nl-thanks" style="display:none;">
@@ -1313,19 +1313,10 @@
      JAVASCRIPT
 ─────────────────────────────────────────────────────────────── -->
 <script>
-  // ─── Sticky nav ───────────────────────────────────────────────
-  const nav = document.getElementById('nav');
-  let lastY = 0;
-  window.addEventListener('scroll', () => {
-    const y = window.scrollY;
-    nav.classList.toggle('scrolled', y > 60);
-    lastY = y;
-  }, { passive: true });
-
   // ─── Hero parallax ────────────────────────────────────────────
   const heroBg = document.getElementById('heroBg');
   window.addEventListener('scroll', () => {
-    if (window.scrollY < window.innerHeight) {
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && window.scrollY < window.innerHeight) {
       heroBg.style.transform = `translateY(${window.scrollY * 0.3}px)`;
     }
   }, { passive: true });
@@ -1407,8 +1398,8 @@
   }
 </script>
 
-<script src="assets/nav.js"></script>
-<script src="assets/footer.js"></script>
+<script src="assets/nav.js?v=20260906c"></script>
+<script src="assets/footer.js?v=20260906c"></script>
 
 <!-- ── SUBSCRIBE HANDLER ────────────────────────────────────── -->
 <script>
@@ -1430,7 +1421,7 @@
     form.addEventListener('submit', async function (e) {
       e.preventDefault();
       const email = form.querySelector('input[type="email"]').value.trim();
-      if (!email) return;
+      if (!form.reportValidity()) return;
 
       // Loading state
       btn.textContent = 'Subscribing…';

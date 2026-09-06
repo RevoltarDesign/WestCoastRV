@@ -67,7 +67,8 @@
            width="155" height="44">
     </a>
     <div class="nav-right">
-      <ul class="nav-links">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">Menu</button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="/campgrounds"${active('campground')}>Campgrounds</a></li>
         <li><a href="/map"${active('map')}>Map</a></li>
         <li><a href="/field-notes"${active('field-note')}>Field Notes</a></li>
@@ -82,6 +83,23 @@
 
   /* ── Inject before any other body content ─────────────────── */
   document.body.insertAdjacentElement('afterbegin', nav);
+
+  const toggle = nav.querySelector('.nav-toggle');
+  function closeMenu() {
+    nav.classList.remove('menu-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Open navigation');
+  }
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('menu-open');
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && nav.classList.contains('menu-open')) { closeMenu(); toggle.focus(); }
+  });
+  document.addEventListener('click', e => { if (!nav.contains(e.target)) closeMenu(); });
+  nav.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', closeMenu));
 
   /* ── Scroll → solid behaviour (transparent navs only) ─────── */
   if (transparent) {

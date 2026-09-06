@@ -57,7 +57,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
   <!-- Shared nav (single source of truth) -->
-  <link rel="stylesheet" href="assets/nav.css">
+  <link rel="stylesheet" href="assets/nav.css?v=20260906c">
   <!-- Shared assets (single source of truth) -->
   <link rel="stylesheet" href="assets/tokens.css">
   <link rel="stylesheet" href="assets/base.css">
@@ -544,7 +544,7 @@ for(const [attr,key] of [['type','types'],['hookup','hookups'],['act','acts']])
   document.querySelectorAll(`[data-${attr}]`).forEach(el=>el.classList.toggle('active-soft',state[key].has(el.dataset[attr])));
 render();
 </script>
-<script src="assets/nav.js"></script>
-<script src="assets/footer.js"></script>
+<script src="assets/nav.js?v=20260906c"></script>
+<script src="assets/footer.js?v=20260906c"></script>
 </body>
 </html>
