@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Silver Lake Park — County Campground, Maple Falls, WA | WA RV Camping</title>
-  <meta name="description" content="Silver Lake Park: 75 sites, 40ft max, water + electric hookups. ~1 hr 45 min from Seattle. Whatcom County park on Silver Lake with 75 water & electric sites (40">
+  <meta name="description" content="Silver Lake Park: water + electric. ~1 hr 45 min from Seattle. Whatcom County lake campground near Maple Falls with two water-and-electric RV areas, seasonal sh">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://westcoastrvcamping.com/campground/silver-lake-park">
   <!-- Open Graph -->
   <meta property="og:type"        content="website">
   <meta property="og:title"       content="Silver Lake Park — County Campground | WA RV Camping">
-  <meta property="og:description" content="75-site County Campground campground, 40ft max, water + electric hookups. ~1 hr 45 min from Seattle.">
+  <meta property="og:description" content="County Campground campground, water + electric. ~1 hr 45 min from Seattle.">
   <meta property="og:image"       content="https://westcoastrvcamping.com/assets/images/topo/silver-lake-park.jpg">
   <meta property="og:url"         content="https://westcoastrvcamping.com/campground/silver-lake-park">
   <meta property="og:site_name"   content="West Coast RV Camping">
   <meta name="twitter:card"       content="summary_large_image">
   <meta name="twitter:title"      content="Silver Lake Park — County Campground | WA RV Camping">
-  <meta name="twitter:description" content="75-site County Campground campground, 40ft max, water + electric hookups. ~1 hr 45 min from Seattle.">
+  <meta name="twitter:description" content="County Campground campground, water + electric. ~1 hr 45 min from Seattle.">
   <meta name="twitter:image"      content="https://westcoastrvcamping.com/assets/images/topo/silver-lake-park.jpg">
   <!-- LCP preload -->
   <link rel="preload" as="image" href="/assets/images/topo/silver-lake-park.jpg" fetchpriority="high">
@@ -71,7 +71,7 @@
       "name": "What is the maximum RV length at Silver Lake Park?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Reported maximum RV length at Silver Lake Park is 40 feet; confirm the individual site and vehicle rules."
+        "text": "Contact Silver Lake Park for current RV length restrictions."
       }
     },
     {
@@ -103,7 +103,7 @@
       "name": "How do I reserve a site at Silver Lake Park?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Silver Lake Park accepts reservations online. Reserving 6 months in advance."
+        "text": "Silver Lake Park accepts reservations online. Reservations for the next calendar year open the first business day of December."
       }
     }
   ]
@@ -118,7 +118,7 @@
     "TouristAttraction"
   ],
   "name": "Silver Lake Park",
-  "description": "Whatcom County park on Silver Lake with 75 water & electric sites (40 ft max) at the foot of Mt. Baker. Excellent fishing and paddling in a scenic mountain lake setting.",
+  "description": "Whatcom County lake campground near Maple Falls with two water-and-electric RV areas, seasonal showers, paddling, fishing, and forest trails.",
   "url": "https://westcoastrvcamping.com/campground/silver-lake-park",
   "image": "https://westcoastrvcamping.com/assets/images/topo/silver-lake-park.jpg",
   "amenityFeature": [
@@ -160,7 +160,6 @@
     "Kayakers",
     "Families"
   ],
-  "numberOfRooms": 75,
   "geo": {
     "@type": "GeoCoordinates",
     "latitude": 48.9241,
@@ -175,19 +174,19 @@
     "postalCode": "98266",
     "addressCountry": "US"
   },
-  "sameAs": "https://www.whatcomcounty.us/2784/Silver-Lake-Park"
+  "sameAs": "https://www.whatcomcounty.us/3517/Silver-Lake-Park"
 }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
   <!-- Shared nav styles (single source of truth) -->
-  <link rel="stylesheet" href="../assets/nav.css?v=20260906c">
+  <link rel="stylesheet" href="../assets/nav.css?v=20260906d">
   <!-- Shared assets (single source of truth) -->
   <link rel="stylesheet" href="../assets/tokens.css">
   <link rel="stylesheet" href="../assets/base.css">
   <link rel="stylesheet" href="../assets/footer.css">
-  <style>/* Nav styles live in assets/nav.css?v=20260906c — see that file to edit */
+  <style>/* Nav styles live in assets/nav.css?v=20260906d — see that file to edit */
 
     /* HERO */
     .hero { position: relative; height: calc(100svh - 90px); min-height: 520px; max-height: 820px;
@@ -365,8 +364,14 @@
     .nearby-camp-name { font-size: 15px; font-weight: 600; color: var(--text);
       white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .nearby-camp-meta { font-size: 13px; color: var(--text-muted); margin-top: 1px; }
+    .nearby-camp-reason { font-size: 12px; color: var(--forest); font-weight: 650; margin-top: 3px; }
     .nearby-camp-arrow { color: var(--text-muted); flex-shrink: 0; transition: transform .18s, color .18s; }
     .nearby-camp-link:hover .nearby-camp-arrow { transform: translateX(3px); color: var(--forest); }
+    .regional-guide-link { display:block; margin-top:14px; padding:14px 16px; border-radius:var(--r-lg);
+      background:var(--forest); color:var(--white); transition:background .18s, transform .18s; }
+    .regional-guide-link:hover { background:var(--forest-mid); transform:translateY(-1px); }
+    .regional-guide-link span { display:block; font-size:14px; font-weight:700; }
+    .regional-guide-link small { display:block; margin-top:3px; color:rgba(255,255,255,.68); line-height:1.4; }
 
     /* RESERVE CTA */
     .reserve-section { background: var(--gold-pale); border-top: 1px solid var(--tan); border-bottom: 1px solid var(--tan); }
@@ -398,9 +403,9 @@
 <body
   data-nav-transparent
   data-nav-cta-text="Booking details"
-  data-nav-cta-url="https://www.whatcomcounty.us/2784/Silver-Lake-Park"
+  data-nav-cta-url="https://www.whatcomcounty.us/3517/Silver-Lake-Park"
   data-nav-cta-external
-  data-footer-note="Record updated 2026-02-21 · Individual facts may need rechecking">
+  data-footer-note="Record updated 2026-09-06 · Individual facts may need rechecking">
 
 
 <!-- HERO -->
@@ -422,9 +427,9 @@
       </span>
     </div>
     <h1>Silver Lake Park</h1>
-    <p class="hero-desc">Whatcom County park on Silver Lake with 75 water &amp; electric sites (40 ft max) at the foot of Mt. Baker. Excellent fishing and paddling in a scenic mountain lake setting.</p>
+    <p class="hero-desc">Whatcom County lake campground near Maple Falls with two water-and-electric RV areas, seasonal showers, paddling, fishing, and forest trails.</p>
     <div class="hero-actions">
-      <a href="https://www.whatcomcounty.us/2784/Silver-Lake-Park" target="_blank" class="btn btn-gold">
+      <a href="https://www.whatcomcounty.us/3517/Silver-Lake-Park" target="_blank" class="btn btn-gold">
         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="11" height="9" rx="1"/><path d="M5 4V3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v1"/><line x1="7.5" y1="8" x2="7.5" y2="10"/><line x1="6" y1="9" x2="9" y2="9"/></svg>
         Booking details
       </a>
@@ -441,12 +446,12 @@
   <div class="stats-inner">
     <div class="stat">
       <div class="stat-label">RV Sites</div>
-      <div class="stat-val">75</div>
+      <div class="stat-val">—</div>
       <div class="stat-note">reported RV sites</div>
     </div>
     <div class="stat">
       <div class="stat-label">Max Length</div>
-      <div class="stat-val">40 ft</div>
+      <div class="stat-val">Not confirmed</div>
       <div class="stat-note">water & electric</div>
     </div>
     <div class="stat">
@@ -466,8 +471,8 @@
     </div>
     <div class="stat">
       <div class="stat-label">Reservation</div>
-      <div class="stat-val">6 mo.</div>
-      <div class="stat-note">books out fast</div>
+      <div class="stat-val">Reservations</div>
+      <div class="stat-note">availability varies</div>
     </div>
   </div>
 </div>
@@ -481,7 +486,7 @@
         <span class="eyebrow">Why Visit</span>
         <h2 class="section-title">Silver Lake Park</h2>
         <div class="overview-body">
-          <p>Silver Lake Park is Whatcom County&#x27;s flagship campground, set on a 140-acre lake surrounded by North Cascades foothills with dramatic views of Mt. Baker (10,781 ft) just 20 miles to the east. The 75 water-and-electric sites accommodate RVs up to 40 feet in a mix of open lakeside and forested settings. Silver Lake is a productive trout and bass fishery with a boat launch, swim beach, and on-site boat rentals. The park serves as an excellent staging ground for Mt. Baker Ski Area (snow sports Nov–May) and the Artist Point/Heather Meadows area for summer alpine hiking. Maple Falls (2 miles) has basic supplies; Bellingham offers full services and a Costco 25 miles west on WA-542.</p>
+          <p>Silver Lake Park is a 410-acre Whatcom County park in the Cascade foothills, about 40 minutes east of Bellingham. Maple Creek and Red Mountain are the park&#x27;s two RV campgrounds, both with water and electric hookups; a separate Cedar campground is intended for tents, cars, and vans, and a reservable group camp also accepts RVs. The lake has a boat launch and seasonal canoe, kayak, rowboat, pedal boat, and paddleboard rentals. Campground connector, forest canopy, and equestrian trails add options away from the water.</p>
         </div>
         <div class="divider"></div>
         <div class="overview-meta">
@@ -495,7 +500,7 @@
           </div>
           <div class="meta-row">
             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1.5" y="4" width="12" height="9" rx="1"/><path d="M5 4V3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v1"/></svg>
-            Online reservation · Reserving 6 months in advance
+            Online reservation · Reservations for the next calendar year open the first business day of December
           </div>
           <div class="meta-row">
             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7.5 1.5L9 5.5H13L9.8 8l1.2 4-3.5-2.3L4 12l1.2-4L2 5.5h4z"/></svg>
@@ -540,13 +545,13 @@
 
       <div class="spec-cell">
         <div class="spec-label">Cell Coverage</div>
-        <div class="spec-val">Good</div>
+        <div class="spec-val">Unknown</div>
         <div class="dots">
-          <div class="dot on-green"></div>
-          <div class="dot on-green"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
           <div class="dot"></div>
         </div>
-        <div class="spec-note" style="margin-top:7px;">Service generally reliable</div>
+        <div class="spec-note" style="margin-top:7px;">Check your carrier map</div>
       </div>
 
       <div class="spec-cell">
@@ -605,20 +610,19 @@
       <div class="acts-list-card">
         <h4>On-site &amp; nearby activities</h4>
         <ul>
-          <li>Fishing (trout, bass)</li>
-          <li>Boating</li>
-          <li>Swimming</li>
-          <li>Kayaking</li>
-          <li>Mt. Baker hiking &amp; skiing</li>
-          <li>Bird watching</li>
+          <li>Fishing for rainbow and coastal cutthroat trout</li>
+          <li>Boating with a 10-horsepower motor limit</li>
+          <li>Seasonal canoe, kayak, and paddleboard rentals</li>
+          <li>Swimming and lakeside picnics</li>
+          <li>Campground Connector and Canopy Loop trails</li>
+          <li>Black Mountain equestrian trail</li>
           <li>Playground</li>
-          <li>Heather Meadows alpine trails</li>
         </ul>
       </div>
       <div class="nature-card">
         <span class="nature-card-eyebrow">County Campground</span>
         <h3>Local parks, local character</h3>
-          <p>Silver Lake Park in Cowlitz County sits on a large, productive lake just 5 miles from the Mount St. Helens National Volcanic Monument visitor center, in the shadow of the volcano whose 1980 eruption deposited significant ash across the surrounding landscape. Silver Lake&#x27;s shallow, productive water supports exceptional warm-water fishing for bass and perch, and the adjacent wetlands provide critical waterfowl habitat in a landscape that has recovered dramatically from the 1980 eruption&#x27;s ashfall. Mount St. Helens&#x27; ongoing volcanic activity — the lava dome in the crater continues to grow incrementally — makes this one of the few places in the world where visitors can observe active volcanism from a comfortable campground just a few miles from the volcano.</p>
+          <p>Silver Lake Park covers 410 acres in Whatcom County&#x27;s Cascade foothills near Maple Falls. Its 5.75-mile trail system connects the lake, three campground areas, quiet forest canopy, meadows, and the base of Red Mountain. Silver Lake is a local fishing and boating destination for rainbow and coastal cutthroat trout, with a 10-horsepower motor limit that keeps the water oriented toward smaller craft.</p>
       </div>
     </div>
   </div>
@@ -659,7 +663,7 @@
         </div>
       </div>
     </div>
-    <div class="amenities-note">Flush toilets, showers, and drinking water are all on site. Every site includes a fire pit.</div>
+    <div class="amenities-note">Vault toilets are available in each campground. Maple Creek and Red Mountain add seasonal flush toilets and showers; drinking water and a seasonal dump station are available.</div>
   </div>
 </div>
 
@@ -670,11 +674,11 @@
     <div class="tips-left">
       <span class="eyebrow">Insider Knowledge</span>
       <h2>Site recommendations from the field</h2>
-      <p>Sourced from first-hand visits, park ranger notes, and RV community reports. Updated when conditions change.</p>
+      <p>Practical guidance assembled from current operator maps, park pages, and clearly identified community observations.</p>
     </div>
     <div class="tips-card">
       <div class="tips-icon">🗺️</div>
-      <p>Sites near Silver Lake (1–25) are the most popular. Full hookup sites available for extended stays. On clear days, Mt Baker is visible from the upper sites — a dramatic backdrop. Good value compared to the state parks in the area. Easy access from Hwy 542 heading toward Mt Baker ski area. The lake fishing is decent for trout and bass.</p>
+      <p>Choose Maple Creek for the easiest access to the boat launch, beach, picnic area, and playground. Red Mountain sits about three-quarters of a mile from the lake and suits campers who prefer woods, meadow edges, hiking, or equestrian access. Cedar Campground does not allow vehicles over 25 feet and is not recommended for RVs. Whatcom County reports no cell service or Wi-Fi, so save maps and reservation details before arrival.</p>
     </div>
   </div>
 </div>
@@ -709,6 +713,7 @@
             <div class="nearby-camp-info">
               <div class="nearby-camp-name">Douglas Fir Campground</div>
               <div class="nearby-camp-meta">National Forest · ~1 hr 45 min</div>
+              <div class="nearby-camp-reason">Fits listed rigs up to 32 ft</div>
             </div>
             <svg class="nearby-camp-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,3 11,8 6,13"/></svg>
           </a>
@@ -717,6 +722,7 @@
             <div class="nearby-camp-info">
               <div class="nearby-camp-name">Silver Fir Campground</div>
               <div class="nearby-camp-meta">National Forest · ~2 hr</div>
+              <div class="nearby-camp-reason">Fits listed rigs up to 30 ft</div>
             </div>
             <svg class="nearby-camp-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,3 11,8 6,13"/></svg>
           </a>
@@ -725,6 +731,7 @@
             <div class="nearby-camp-info">
               <div class="nearby-camp-name">Shannon Creek Campground</div>
               <div class="nearby-camp-meta">National Forest · ~2 hr</div>
+              <div class="nearby-camp-reason">Fits listed rigs up to 35 ft</div>
             </div>
             <svg class="nearby-camp-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,3 11,8 6,13"/></svg>
           </a>
@@ -733,10 +740,12 @@
             <div class="nearby-camp-info">
               <div class="nearby-camp-name">Panorama Point Campground</div>
               <div class="nearby-camp-meta">National Forest · ~2 hr</div>
+              <div class="nearby-camp-reason">Fits listed rigs up to 45 ft</div>
             </div>
             <svg class="nearby-camp-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,3 11,8 6,13"/></svg>
           </a>
         </div>
+
       </div>
 
     </div>
@@ -749,9 +758,9 @@
     <div>
       <p class="reserve-eyebrow">Ready to book?</p>
       <h2 class="reserve-title">Plan your visit to Silver Lake Park</h2>
-      <p class="reserve-sub">Reserving 6 months in advance. Confirm current rules, site dimensions, and conditions with the operator. Booking and availability are handled externally.</p>
+      <p class="reserve-sub">Reservations for the next calendar year open the first business day of December. Confirm current rules, site dimensions, and conditions with the operator. Booking and availability are handled externally.</p>
     </div>
-    <a href="https://www.whatcomcounty.us/2784/Silver-Lake-Park" target="_blank" class="reserve-btn">
+    <a href="https://www.whatcomcounty.us/3517/Silver-Lake-Park" target="_blank" class="reserve-btn">
       Booking details
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
     </a>
@@ -776,7 +785,7 @@
       heroImg.style.transform = `translateY(${window.scrollY * 0.28}px)`;
   }, { passive: true });
 </script>
-<script src="../assets/nav.js?v=20260906c"></script>
-<script src="../assets/footer.js?v=20260906c"></script>
+<script src="../assets/nav.js?v=20260906d"></script>
+<script src="../assets/footer.js?v=20260906d"></script>
 </body>
 </html>

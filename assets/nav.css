@@ -113,6 +113,9 @@
   .nav-right { gap:5px; }
   .nav-btn { padding:9px 8px; font-size:11px; }
 }
+@media (max-width:480px) {
+  .nav-btn { display:none; }
+}
 @media (prefers-reduced-motion:reduce) {
   *, *::before, *::after { scroll-behavior:auto !important; transition:none !important; animation:none !important; }
 }

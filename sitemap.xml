@@ -51,6 +51,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://westcoastrvcamping.com/field-notes/jefferson-county-rv-camping</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://westcoastrvcamping.com/campground/fairholme-campground</loc>
   </url>
   <url>
@@ -403,5 +408,11 @@
   </url>
   <url>
     <loc>https://westcoastrvcamping.com/campground/whidbey-island-fairgrounds-campground</loc>
+  </url>
+  <url>
+    <loc>https://westcoastrvcamping.com/campground/dosewallips-state-park</loc>
+  </url>
+  <url>
+    <loc>https://westcoastrvcamping.com/campground/fort-flagler-historical-state-park</loc>
   </url>
 </urlset>

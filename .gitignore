@@ -21,3 +21,5 @@ npm-debug.log*
 # Node (if ever added)
 node_modules/
 .vercel
+__pycache__/
+*.pyc

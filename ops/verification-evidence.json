@@ -1,0 +1,242 @@
+{
+  "schema_version": 2,
+  "purpose": "Field-level evidence. Existing CSV values and historical workbook passes are not automatically verified.",
+  "dataset_rules": [
+    {
+      "id": "washington-state-parks-reservation-window",
+      "scope": "Park Type = State Park",
+      "field": "reservation_method",
+      "checked_on": "2026-09-06",
+      "value": "Reservable up to 9 months in advance",
+      "source": {
+        "url": "https://parks.wa.gov/passes-permits/reservations/making-reservations",
+        "publisher": "Washington State Parks",
+        "source_family": "washington-state-parks-reservations",
+        "evidence": "Current statewide instructions specify a rolling nine-month reservation window."
+      }
+    }
+  ],
+  "observations": [
+    {
+      "slug": "graves-creek-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-05",
+      "summary": "Published directory calls this an RV campground with a 21-foot limit; NPS prohibits RVs and trailers.",
+      "proposed_value": false,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "evidence": "Graves Creek section says road conditions preclude RVs and trailers.",
+          "source_family": "nps-olympic"
+        }
+      ],
+      "resolution": "Corrected and deployed on 2026-09-06. Historical summary retained for traceability."
+    },
+    {
+      "slug": "sol-duc-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The page now distinguishes the 82 standard campsites from the separate 17-site water-and-electric RV area.",
+      "proposed_value": 2,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "evidence": "Sol Duc section describes 82 campground sites and a separate 17-site RV area with water and electric hookups.",
+          "source_family": "nps-olympic"
+        }
+      ],
+      "resolution": "Resolved 2026-09-06 by describing both facility types explicitly and applying the hookup value only to the dedicated RV area."
+    },
+    {
+      "slug": "sol-duc-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "Both the campground and dedicated RV area accept RV equipment, with site-specific limits.",
+      "proposed_value": true,
+      "sources": [{"url":"https://www.nps.gov/olym/planyourvisit/camping.htm","publisher":"National Park Service","source_family":"nps-olympic","evidence":"The current Sol Duc section publishes RV limits for both the campground and RV area."}]
+    },
+    {
+      "slug": "sol-duc-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The dedicated RV area has site groups up to 36 feet; campground pads are mostly shorter.",
+      "proposed_value": 36,
+      "sources": [{"url":"https://www.recreation.gov/camping/campgrounds/251906","publisher":"Recreation.gov","source_family":"recreation-gov-sol-duc","evidence":"Current inventory includes dedicated RV sites labeled for 20-, 26-, and 36-foot equipment."}]
+    },
+    {
+      "slug": "sol-duc-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current NPS page routes reservations to Recreation.gov up to six months ahead.",
+      "proposed_value": "Reservable up to 6 months in advance",
+      "sources": [{"url":"https://www.nps.gov/olym/planyourvisit/camping.htm","publisher":"National Park Service","source_family":"nps-olympic","evidence":"Current Sol Duc section says reservations are available through Recreation.gov up to six months ahead."}]
+    },
+    {
+      "slug": "sol-duc-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "NPS currently lists the facility as open with seasonal reservation dates and possible weather closures.",
+      "proposed_value": "open with seasonal reservation dates",
+      "sources": [{"url":"https://www.nps.gov/olym/planyourvisit/camping.htm","publisher":"National Park Service","source_family":"nps-olympic","evidence":"Current status is open; primitive camping may continue until the winter road closure, subject to severe weather."}]
+    },
+    {
+      "slug": "twanoh-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-05",
+      "summary": "Homepage says 47 full-hookup sites; directory and official source distinguish 22 full-hookup and 25 standard sites.",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/twanoh-state-park",
+          "publisher": "Washington State Parks",
+          "evidence": "Official park search result reports 25 standard and 22 full-hookup campsites; live directory agrees.",
+          "source_family": "washington-state-parks"
+        }
+      ],
+      "resolution": "Corrected and deployed on 2026-09-06. Historical summary retained for traceability."
+    },
+    {
+      "slug": "silver-lake-park",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "Whatcom County publishes an active 2026 camping season from April 10 through October 26.",
+      "proposed_value": "seasonal campground",
+      "sources": [{"url":"https://www.whatcomcounty.us/3517/Silver-Lake-Park","publisher":"Whatcom County Parks & Recreation","source_family":"whatcom-county-silver-lake","evidence":"Current park page lists the 2026 camping season and reservation information."}]
+    },
+    {
+      "slug": "silver-lake-park",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "Maple Creek and Red Mountain accept RVs; Cedar is not recommended for RVs and caps vehicles at 25 feet.",
+      "proposed_value": true,
+      "sources": [{"url":"https://www.whatcomcounty.us/3518/Camping-at-Silver-Lake-Park/messages","publisher":"Whatcom County Parks & Recreation","source_family":"whatcom-county-silver-lake","evidence":"Campground details explicitly identify the two RV campgrounds and Cedar's restriction."}]
+    },
+    {
+      "slug": "silver-lake-park",
+      "field": "max_rv_length",
+      "status": "unknown",
+      "checked_on": "2026-09-06",
+      "summary": "The current official campground details do not publish one park-wide RV maximum; Cedar's 25-foot rule does not apply to the RV campgrounds.",
+      "proposed_value": null,
+      "sources": [{"url":"https://www.whatcomcounty.us/3518/Camping-at-Silver-Lake-Park/messages","publisher":"Whatcom County Parks & Recreation","source_family":"whatcom-county-silver-lake","evidence":"Current page describes equipment types and Cedar's limit but gives no park-wide maximum for Maple Creek or Red Mountain."}]
+    },
+    {
+      "slug": "silver-lake-park",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "Both RV campgrounds provide water and electric hookups; the official page does not claim sewer at sites.",
+      "proposed_value": 2,
+      "sources": [{"url":"https://www.whatcomcounty.us/3518/Camping-at-Silver-Lake-Park/messages","publisher":"Whatcom County Parks & Recreation","source_family":"whatcom-county-silver-lake","evidence":"Maple Creek and Red Mountain details list water and electric service and amp ranges."}]
+    },
+    {
+      "slug": "silver-lake-park",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "Reservations for the next calendar year open on the first business day of December, with limited first-come sites.",
+      "proposed_value": "Reservations for the next calendar year open the first business day of December",
+      "sources": [{"url":"https://www.whatcomcounty.us/3517/Silver-Lake-Park","publisher":"Whatcom County Parks & Recreation","source_family":"whatcom-county-silver-lake","evidence":"Current reservation information gives the annual December opening and notes limited first-come availability."}]
+    },
+    {
+      "slug": "dosewallips-state-park",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The official park page describes a year-round camping park and publishes current 2026 alerts.",
+      "proposed_value": "open with seasonal service changes",
+      "sources": [{"url": "https://parks.wa.gov/find-parks/state-parks/dosewallips-state-park", "publisher": "Washington State Parks", "source_family": "washington-state-parks-dosewallips", "evidence": "Current park page describes year-round camping, winterized services, and current alerts."}]
+    },
+    {
+      "slug": "dosewallips-state-park",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The operator explicitly accepts RVs and combinations up to 40 feet.",
+      "proposed_value": true,
+      "sources": [{"url": "https://parks.wa.gov/find-parks/state-parks/dosewallips-state-park", "publisher": "Washington State Parks", "source_family": "washington-state-parks-dosewallips", "evidence": "Camping section says RVs and combinations of 40 feet or less are accommodated."}]
+    },
+    {
+      "slug": "dosewallips-state-park",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The published park-wide maximum is 40 feet; individual pads still vary.",
+      "proposed_value": 40,
+      "sources": [{"url": "https://parks.wa.gov/find-parks/state-parks/dosewallips-state-park", "publisher": "Washington State Parks", "source_family": "washington-state-parks-dosewallips", "evidence": "Camping section states a 40-foot maximum for RVs and combinations."}]
+    },
+    {
+      "slug": "dosewallips-state-park",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground map identifies full-hookup and water/electric site ranges.",
+      "proposed_value": 3,
+      "sources": [{"url": "https://parks.wa.gov/sites/default/files/2024-11/Dosewallips%20Campground%20Map%2010-24-24.pdf", "publisher": "Washington State Parks", "source_family": "washington-state-parks-dosewallips", "evidence": "Map labels full-hookup sites and separate water/electric ranges."}]
+    },
+    {
+      "slug": "dosewallips-state-park",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "Individual campsites are reservable and the statewide booking window is nine months.",
+      "proposed_value": "Reservable up to 9 months in advance",
+      "sources": [{"url": "https://parks.wa.gov/passes-permits/reservations/making-reservations", "publisher": "Washington State Parks", "source_family": "washington-state-parks-reservations", "evidence": "Statewide instructions specify a rolling nine-month reservation window."}, {"url": "https://parks.wa.gov/passes-permits/reservations/reservation-parks", "publisher": "Washington State Parks", "source_family": "washington-state-parks-reservations", "evidence": "Dosewallips is listed for reservable individual campsites."}]
+    },
+    {
+      "slug": "fort-flagler-historical-state-park",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The official park page and 2026 camping notice show active camping, with seasonal loop changes.",
+      "proposed_value": "open with seasonal loop changes",
+      "sources": [{"url": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park", "publisher": "Washington State Parks", "source_family": "washington-state-parks-fort-flagler", "evidence": "Current park page describes both active campgrounds and 2026 alerts."}, {"url": "https://parks.wa.gov/news/2025/book-beach-all-year-long-fort-flagler-historical-state-park", "publisher": "Washington State Parks", "source_family": "washington-state-parks-fort-flagler", "evidence": "Operator announces year-round reservations for the lower campground beginning January 2026."}]
+    },
+    {
+      "slug": "fort-flagler-historical-state-park",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The operator describes standard, partial, and full-hookup RV camping in two campgrounds.",
+      "proposed_value": true,
+      "sources": [{"url": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park", "publisher": "Washington State Parks", "source_family": "washington-state-parks-fort-flagler", "evidence": "Camping section describes level, spacious standard, partial, and full-hookup sites."}]
+    },
+    {
+      "slug": "fort-flagler-historical-state-park",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The official park brochure reports RV accommodation up to 50 feet.",
+      "proposed_value": 50,
+      "sources": [{"url": "https://parks.wa.gov/sites/default/files/2023-07/Fort%20Flagler%20State%20Park%20Brochure%2005-22-20%20Final%20Web%20SFS.pdf", "publisher": "Washington State Parks", "source_family": "washington-state-parks-fort-flagler", "evidence": "Official brochure states that full-hookup sites accommodate RVs up to 50 feet."}]
+    },
+    {
+      "slug": "fort-flagler-historical-state-park",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The official page lists partial and full-hookup sites in the lower campground.",
+      "proposed_value": 3,
+      "sources": [{"url": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park", "publisher": "Washington State Parks", "source_family": "washington-state-parks-fort-flagler", "evidence": "Camping section explicitly lists standard, partial, and full-hookup sites."}]
+    },
+    {
+      "slug": "fort-flagler-historical-state-park",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "Individual campsites are reservable, and the lower campground accepts year-round reservations in 2026.",
+      "proposed_value": "Reservable up to 9 months in advance",
+      "sources": [{"url": "https://parks.wa.gov/passes-permits/reservations/making-reservations", "publisher": "Washington State Parks", "source_family": "washington-state-parks-reservations", "evidence": "Statewide instructions specify a rolling nine-month window."}, {"url": "https://parks.wa.gov/news/2025/book-beach-all-year-long-fort-flagler-historical-state-park", "publisher": "Washington State Parks", "source_family": "washington-state-parks-fort-flagler", "evidence": "Lower campground reservations became year-round January 1, 2026."}]
+    }
+  ]
+}

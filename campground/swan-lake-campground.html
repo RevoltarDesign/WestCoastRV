@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Swan Lake Campground — National Forest, Republic, WA | WA RV Camping</title>
-  <meta name="description" content="Swan Lake Campground: 26 sites, 45ft max, none hookups. ~5 hr from Seattle. 26-site Colville NF alpine lake with pull-through sites for large RVs, nonmotorized ">
+  <meta name="description" content="Swan Lake Campground: 26 sites, 45ft max, no hookups. ~5 hr from Seattle. 26-site Colville NF alpine lake with pull-through sites for large RVs, nonmotorized fi">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://westcoastrvcamping.com/campground/swan-lake-campground">
   <!-- Open Graph -->
   <meta property="og:type"        content="website">
   <meta property="og:title"       content="Swan Lake Campground — National Forest | WA RV Camping">
-  <meta property="og:description" content="26-site National Forest campground, 45ft max, none hookups. ~5 hr from Seattle.">
+  <meta property="og:description" content="26-site National Forest campground, 45ft max, no hookups. ~5 hr from Seattle.">
   <meta property="og:image"       content="https://westcoastrvcamping.com/assets/images/topo/swan-lake-campground.jpg">
   <meta property="og:url"         content="https://westcoastrvcamping.com/campground/swan-lake-campground">
   <meta property="og:site_name"   content="West Coast RV Camping">
   <meta name="twitter:card"       content="summary_large_image">
   <meta name="twitter:title"      content="Swan Lake Campground — National Forest | WA RV Camping">
-  <meta name="twitter:description" content="26-site National Forest campground, 45ft max, none hookups. ~5 hr from Seattle.">
+  <meta name="twitter:description" content="26-site National Forest campground, 45ft max, no hookups. ~5 hr from Seattle.">
   <meta name="twitter:image"      content="https://westcoastrvcamping.com/assets/images/topo/swan-lake-campground.jpg">
   <!-- LCP preload -->
   <link rel="preload" as="image" href="/assets/images/topo/swan-lake-campground.jpg" fetchpriority="high">
@@ -182,12 +182,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
   <!-- Shared nav styles (single source of truth) -->
-  <link rel="stylesheet" href="../assets/nav.css?v=20260906c">
+  <link rel="stylesheet" href="../assets/nav.css?v=20260906d">
   <!-- Shared assets (single source of truth) -->
   <link rel="stylesheet" href="../assets/tokens.css">
   <link rel="stylesheet" href="../assets/base.css">
   <link rel="stylesheet" href="../assets/footer.css">
-  <style>/* Nav styles live in assets/nav.css?v=20260906c — see that file to edit */
+  <style>/* Nav styles live in assets/nav.css?v=20260906d — see that file to edit */
 
     /* HERO */
     .hero { position: relative; height: calc(100svh - 90px); min-height: 520px; max-height: 820px;
@@ -365,8 +365,14 @@
     .nearby-camp-name { font-size: 15px; font-weight: 600; color: var(--text);
       white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .nearby-camp-meta { font-size: 13px; color: var(--text-muted); margin-top: 1px; }
+    .nearby-camp-reason { font-size: 12px; color: var(--forest); font-weight: 650; margin-top: 3px; }
     .nearby-camp-arrow { color: var(--text-muted); flex-shrink: 0; transition: transform .18s, color .18s; }
     .nearby-camp-link:hover .nearby-camp-arrow { transform: translateX(3px); color: var(--forest); }
+    .regional-guide-link { display:block; margin-top:14px; padding:14px 16px; border-radius:var(--r-lg);
+      background:var(--forest); color:var(--white); transition:background .18s, transform .18s; }
+    .regional-guide-link:hover { background:var(--forest-mid); transform:translateY(-1px); }
+    .regional-guide-link span { display:block; font-size:14px; font-weight:700; }
+    .regional-guide-link small { display:block; margin-top:3px; color:rgba(255,255,255,.68); line-height:1.4; }
 
     /* RESERVE CTA */
     .reserve-section { background: var(--gold-pale); border-top: 1px solid var(--tan); border-bottom: 1px solid var(--tan); }
@@ -529,13 +535,13 @@
     <div class="specs-grid">
       <div class="spec-cell">
         <div class="spec-label">Maneuverability</div>
-        <div class="spec-val">Challenging</div>
+        <div class="spec-val">Easy</div>
         <div class="dots">
-          <div class="dot on-danger"></div>
-          <div class="dot on-danger"></div>
-          <div class="dot on-danger"></div>
+          <div class="dot on-green"></div>
+          <div class="dot on-green"></div>
+          <div class="dot on-green"></div>
         </div>
-        <div class="spec-note" style="margin-top:7px;">Tight loops — plan your approach</div>
+        <div class="spec-note" style="margin-top:7px;">Wide roads, easy to navigate</div>
       </div>
 
       <div class="spec-cell">
@@ -668,7 +674,7 @@
     <div class="tips-left">
       <span class="eyebrow">Insider Knowledge</span>
       <h2>Site recommendations from the field</h2>
-      <p>Sourced from first-hand visits, park ranger notes, and RV community reports. Updated when conditions change.</p>
+      <p>Practical guidance assembled from current operator maps, park pages, and clearly identified community observations.</p>
     </div>
     <div class="tips-card">
       <div class="tips-icon">🗺️</div>
@@ -707,6 +713,7 @@
             <div class="nearby-camp-info">
               <div class="nearby-camp-name">Bonaparte Lake Campground</div>
               <div class="nearby-camp-meta">National Forest · ~4 hr 30 min</div>
+              <div class="nearby-camp-reason">Fits listed rigs up to 45 ft</div>
             </div>
             <svg class="nearby-camp-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,3 11,8 6,13"/></svg>
           </a>
@@ -715,14 +722,16 @@
             <div class="nearby-camp-info">
               <div class="nearby-camp-name">Curlew Lake State Park</div>
               <div class="nearby-camp-meta">State Park · ~4 hr 30 min</div>
+              <div class="nearby-camp-reason">More services: Water + Electric</div>
             </div>
             <svg class="nearby-camp-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,3 11,8 6,13"/></svg>
           </a>
           <a href="/campground/osoyoos-lake-veterans-memorial-state-park" class="nearby-camp-link">
             <div class="nearby-camp-icon">⛰️</div>
             <div class="nearby-camp-info">
-              <div class="nearby-camp-name">Osoyoos Lake Veterans Memorial State Park</div>
-              <div class="nearby-camp-meta">State Park · ~4 hr</div>
+              <div class="nearby-camp-name">Osoyoos Lake Veteran&#x27;s Memorial Park</div>
+              <div class="nearby-camp-meta">City Campground · ~4 hr</div>
+              <div class="nearby-camp-reason">More services: Water + Electric</div>
             </div>
             <svg class="nearby-camp-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,3 11,8 6,13"/></svg>
           </a>
@@ -731,10 +740,12 @@
             <div class="nearby-camp-info">
               <div class="nearby-camp-name">Pearrygin Lake State Park</div>
               <div class="nearby-camp-meta">State Park · ~4 hr</div>
+              <div class="nearby-camp-reason">More services: Full Hookups</div>
             </div>
             <svg class="nearby-camp-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,3 11,8 6,13"/></svg>
           </a>
         </div>
+
       </div>
 
     </div>
@@ -774,7 +785,7 @@
       heroImg.style.transform = `translateY(${window.scrollY * 0.28}px)`;
   }, { passive: true });
 </script>
-<script src="../assets/nav.js?v=20260906c"></script>
-<script src="../assets/footer.js?v=20260906c"></script>
+<script src="../assets/nav.js?v=20260906d"></script>
+<script src="../assets/footer.js?v=20260906d"></script>
 </body>
 </html>

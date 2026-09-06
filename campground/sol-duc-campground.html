@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sol Duc Campground — National Park, Port Angeles, WA | WA RV Camping</title>
-  <meta name="description" content="Sol Duc Campground: 17 sites, 35ft max, none hookups. ~3 hr 30 min from Seattle. Forested RV campground in Olympic National Park with an easy waterfall trail an">
+  <meta name="description" content="Sol Duc Campground: 17 sites, 36ft max, water + electric. ~3 hr 30 min from Seattle. Olympic National Park resort campground with 82 standard sites plus a separ">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://westcoastrvcamping.com/campground/sol-duc-campground">
   <!-- Open Graph -->
   <meta property="og:type"        content="website">
   <meta property="og:title"       content="Sol Duc Campground — National Park | WA RV Camping">
-  <meta property="og:description" content="17-site National Park campground, 35ft max, none hookups. ~3 hr 30 min from Seattle.">
+  <meta property="og:description" content="17-site National Park campground, 36ft max, water + electric. ~3 hr 30 min from Seattle.">
   <meta property="og:image"       content="https://westcoastrvcamping.com/assets/images/topo/sol-duc-campground.jpg">
   <meta property="og:url"         content="https://westcoastrvcamping.com/campground/sol-duc-campground">
   <meta property="og:site_name"   content="West Coast RV Camping">
   <meta name="twitter:card"       content="summary_large_image">
   <meta name="twitter:title"      content="Sol Duc Campground — National Park | WA RV Camping">
-  <meta name="twitter:description" content="17-site National Park campground, 35ft max, none hookups. ~3 hr 30 min from Seattle.">
+  <meta name="twitter:description" content="17-site National Park campground, 36ft max, water + electric. ~3 hr 30 min from Seattle.">
   <meta name="twitter:image"      content="https://westcoastrvcamping.com/assets/images/topo/sol-duc-campground.jpg">
   <!-- LCP preload -->
   <link rel="preload" as="image" href="/assets/images/topo/sol-duc-campground.jpg" fetchpriority="high">
@@ -63,7 +63,7 @@
       "name": "Does Sol Duc Campground have hookups?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Sol Duc Campground is dry camping only \u2014 no electric, water, or sewer hookups. A dump station is available on site."
+        "text": "Yes. Sol Duc Campground offers water and electric (W+E) hookups. Full sewer hookups are not available."
       }
     },
     {
@@ -71,7 +71,7 @@
       "name": "What is the maximum RV length at Sol Duc Campground?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Reported maximum RV length at Sol Duc Campground is 35 feet; confirm the individual site and vehicle rules."
+        "text": "Reported maximum RV length at Sol Duc Campground is 36 feet; confirm the individual site and vehicle rules."
       }
     },
     {
@@ -103,7 +103,7 @@
       "name": "How do I reserve a site at Sol Duc Campground?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sol Duc Campground accepts reservations through Recreation.gov. Reserving 6 months in advance."
+        "text": "Sol Duc Campground accepts reservations through Recreation.gov. Reservable up to 6 months in advance."
       }
     }
   ]
@@ -118,7 +118,7 @@
     "TouristAttraction"
   ],
   "name": "Sol Duc Campground",
-  "description": "Forested RV campground in Olympic National Park with an easy waterfall trail and optional access to natural hot spring pools next door.",
+  "description": "Olympic National Park resort campground with 82 standard sites plus a separate 17-site RV area offering water and electric hookups for rigs up to 36 feet.",
   "url": "https://westcoastrvcamping.com/campground/sol-duc-campground",
   "image": "https://westcoastrvcamping.com/assets/images/topo/sol-duc-campground.jpg",
   "amenityFeature": [
@@ -145,7 +145,7 @@
     {
       "@type": "LocationFeatureSpecification",
       "name": "Electric Hookups",
-      "value": false
+      "value": true
     },
     {
       "@type": "LocationFeatureSpecification",
@@ -180,12 +180,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
   <!-- Shared nav styles (single source of truth) -->
-  <link rel="stylesheet" href="../assets/nav.css?v=20260906c">
+  <link rel="stylesheet" href="../assets/nav.css?v=20260906d">
   <!-- Shared assets (single source of truth) -->
   <link rel="stylesheet" href="../assets/tokens.css">
   <link rel="stylesheet" href="../assets/base.css">
   <link rel="stylesheet" href="../assets/footer.css">
-  <style>/* Nav styles live in assets/nav.css?v=20260906c — see that file to edit */
+  <style>/* Nav styles live in assets/nav.css?v=20260906d — see that file to edit */
 
     /* HERO */
     .hero { position: relative; height: calc(100svh - 90px); min-height: 520px; max-height: 820px;
@@ -363,8 +363,14 @@
     .nearby-camp-name { font-size: 15px; font-weight: 600; color: var(--text);
       white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .nearby-camp-meta { font-size: 13px; color: var(--text-muted); margin-top: 1px; }
+    .nearby-camp-reason { font-size: 12px; color: var(--forest); font-weight: 650; margin-top: 3px; }
     .nearby-camp-arrow { color: var(--text-muted); flex-shrink: 0; transition: transform .18s, color .18s; }
     .nearby-camp-link:hover .nearby-camp-arrow { transform: translateX(3px); color: var(--forest); }
+    .regional-guide-link { display:block; margin-top:14px; padding:14px 16px; border-radius:var(--r-lg);
+      background:var(--forest); color:var(--white); transition:background .18s, transform .18s; }
+    .regional-guide-link:hover { background:var(--forest-mid); transform:translateY(-1px); }
+    .regional-guide-link span { display:block; font-size:14px; font-weight:700; }
+    .regional-guide-link small { display:block; margin-top:3px; color:rgba(255,255,255,.68); line-height:1.4; }
 
     /* RESERVE CTA */
     .reserve-section { background: var(--gold-pale); border-top: 1px solid var(--tan); border-bottom: 1px solid var(--tan); }
@@ -398,7 +404,7 @@
   data-nav-cta-text="Booking details"
   data-nav-cta-url="https://www.recreation.gov/camping/campgrounds/251906"
   data-nav-cta-external
-  data-footer-note="Record updated 2026-02-21 · Individual facts may need rechecking">
+  data-footer-note="Record updated 2026-09-06 · Individual facts may need rechecking">
 
 
 <!-- HERO -->
@@ -420,7 +426,7 @@
       </span>
     </div>
     <h1>Sol Duc Campground</h1>
-    <p class="hero-desc">Forested RV campground in Olympic National Park with an easy waterfall trail and optional access to natural hot spring pools next door.</p>
+    <p class="hero-desc">Olympic National Park resort campground with 82 standard sites plus a separate 17-site RV area offering water and electric hookups for rigs up to 36 feet.</p>
     <div class="hero-actions">
       <a href="https://www.recreation.gov/camping/campgrounds/251906" target="_blank" class="btn btn-gold">
         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="11" height="9" rx="1"/><path d="M5 4V3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v1"/><line x1="7.5" y1="8" x2="7.5" y2="10"/><line x1="6" y1="9" x2="9" y2="9"/></svg>
@@ -444,17 +450,17 @@
     </div>
     <div class="stat">
       <div class="stat-label">Max Length</div>
-      <div class="stat-val">35 ft</div>
-      <div class="stat-note">dry camping</div>
+      <div class="stat-val">36 ft</div>
+      <div class="stat-note">water & electric</div>
     </div>
     <div class="stat">
       <div class="stat-label">Hookups</div>
-      <div class="stat-val">None</div>
-      <div class="stat-note">dry camping</div>
+      <div class="stat-val">Water + Electric</div>
+      <div class="stat-note">water & electric</div>
     </div>
     <div class="stat">
       <div class="stat-label">Surface</div>
-      <div class="stat-val">Paved</div>
+      <div class="stat-val">Mixed</div>
       <div class="stat-note">site surface</div>
     </div>
     <div class="stat">
@@ -479,7 +485,7 @@
         <span class="eyebrow">Why Visit</span>
         <h2 class="section-title">Sol Duc Campground</h2>
         <div class="overview-body">
-          <p>Sol Duc Campground nestles in a cathedral of old-growth Douglas fir along the Sol Duc River. The Sol Duc Falls trail, an easy 1.6-mile round trip, ends at one of the most photogenic waterfalls on the peninsula. Families can purchase day passes to the adjacent Sol Duc Hot Springs Resort mineral pools for a memorable soak after a day of hiking.</p>
+          <p>Sol Duc Hot Springs RV Park and Campground share an old-growth setting along the Sol Duc River but offer different site types. The campground has 82 standard campsites, flush restrooms, and running water; many sites fit smaller RVs, with a few campground sites listed up to 35 feet. The separate 17-site RV area is a gravel, back-in lot with water and electric hookups and spaces from 20 to 36 feet. Both areas use the same Recreation.gov listing and provide direct access to the Sol Duc valley, hot spring pools, and the trail to Sol Duc Falls.</p>
         </div>
         <div class="divider"></div>
         <div class="overview-meta">
@@ -493,7 +499,7 @@
           </div>
           <div class="meta-row">
             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1.5" y="4" width="12" height="9" rx="1"/><path d="M5 4V3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v1"/></svg>
-            Recreation.gov · Reserving 6 months in advance
+            Recreation.gov · Reservable up to 6 months in advance
           </div>
           <div class="meta-row">
             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7.5 1.5L9 5.5H13L9.8 8l1.2 4-3.5-2.3L4 12l1.2-4L2 5.5h4z"/></svg>
@@ -527,13 +533,13 @@
     <div class="specs-grid">
       <div class="spec-cell">
         <div class="spec-label">Maneuverability</div>
-        <div class="spec-val">Challenging</div>
+        <div class="spec-val">Moderate</div>
         <div class="dots">
-          <div class="dot on-danger"></div>
-          <div class="dot on-danger"></div>
-          <div class="dot on-danger"></div>
+          <div class="dot on-warn"></div>
+          <div class="dot on-warn"></div>
+          <div class="dot"></div>
         </div>
-        <div class="spec-note" style="margin-top:7px;">Tight loops — plan your approach</div>
+        <div class="spec-note" style="margin-top:7px;">Some tight turns — manageable</div>
       </div>
 
       <div class="spec-cell">
@@ -560,7 +566,7 @@
 
       <div class="spec-cell">
         <div class="spec-label">Site Surface</div>
-        <div class="spec-val">Paved</div>
+        <div class="spec-val">Mixed</div>
         <div class="spec-note" style="margin-top:8px;">Check conditions at check-in</div>
       </div>
 
@@ -576,10 +582,10 @@
       <div class="spec-cell">
         <div class="spec-label">Hookups</div>
         <div class="spec-val">
-          <svg class="cross" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="4" x2="12" y2="12"/><line x1="12" y1="4" x2="4" y2="12"/></svg>
-          None
+          <svg class="tick" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2.5,8 6.5,12 13.5,4"/></svg>
+          Water + Electric
         </div>
-        <div class="spec-note" style="margin-top:7px;">Bring full tanks</div>
+        <div class="spec-note" style="margin-top:7px;">Water & electric at site</div>
       </div>
     </div>
   </div>
@@ -655,7 +661,7 @@
         </div>
       </div>
     </div>
-    <div class="amenities-note">Flush toilets and drinking water are available, but no showers on site. Every site includes a fire pit.</div>
+    <div class="amenities-note">The campground has flush restrooms and running water. The separate 17-site RV area has water and electric hookups; showers and hot spring pools require resort access.</div>
   </div>
 </div>
 
@@ -666,11 +672,11 @@
     <div class="tips-left">
       <span class="eyebrow">Insider Knowledge</span>
       <h2>Site recommendations from the field</h2>
-      <p>Sourced from first-hand visits, park ranger notes, and RV community reports. Updated when conditions change.</p>
+      <p>Practical guidance assembled from current operator maps, park pages, and clearly identified community observations.</p>
     </div>
     <div class="tips-card">
       <div class="tips-icon">🗺️</div>
-      <p>Sites along the Sol Duc River in Loop A (sites 1–20) are the most desirable — the sound of the river is constant and the old-growth canopy is stunning. Loops C and D near the hot springs resort are convenient if you plan to use the pools daily (fee required). Request Loop A or B; Loop D tends to get more resort foot traffic. All loops are shaded.</p>
+      <p>Choose one of the 17 dedicated RV spaces when water and electric hookups are essential; Recreation.gov identifies 20-, 26-, and 36-foot RV site groups, all back-in. The separate 82-site campground is more wooded and private, but most RV-compatible pads are shorter and have no hookups. Confirm the equipment limit on the exact site before booking.</p>
     </div>
   </div>
 </div>
@@ -705,6 +711,7 @@
             <div class="nearby-camp-info">
               <div class="nearby-camp-name">Fairholme Campground</div>
               <div class="nearby-camp-meta">National Park · ~3 hr 15 min</div>
+              <div class="nearby-camp-reason">Fits listed rigs up to 21 ft</div>
             </div>
             <svg class="nearby-camp-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,3 11,8 6,13"/></svg>
           </a>
@@ -713,6 +720,7 @@
             <div class="nearby-camp-info">
               <div class="nearby-camp-name">Hoh Campground</div>
               <div class="nearby-camp-meta">National Park · ~4 hr</div>
+              <div class="nearby-camp-reason">Fits listed rigs up to 21 ft</div>
             </div>
             <svg class="nearby-camp-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,3 11,8 6,13"/></svg>
           </a>
@@ -721,10 +729,12 @@
             <div class="nearby-camp-info">
               <div class="nearby-camp-name">Heart O&#x27; the Hills Campground</div>
               <div class="nearby-camp-meta">National Park · ~3 hr</div>
+              <div class="nearby-camp-reason">Fits listed rigs up to 21 ft</div>
             </div>
             <svg class="nearby-camp-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,3 11,8 6,13"/></svg>
           </a>
         </div>
+
       </div>
 
     </div>
@@ -737,7 +747,7 @@
     <div>
       <p class="reserve-eyebrow">Ready to book?</p>
       <h2 class="reserve-title">Plan your visit to Sol Duc Campground</h2>
-      <p class="reserve-sub">Reserving 6 months in advance. Confirm current rules, site dimensions, and conditions with the operator. Booking and availability are handled externally.</p>
+      <p class="reserve-sub">Reservable up to 6 months in advance. Confirm current rules, site dimensions, and conditions with the operator. Booking and availability are handled externally.</p>
     </div>
     <a href="https://www.recreation.gov/camping/campgrounds/251906" target="_blank" class="reserve-btn">
       Booking details
@@ -764,7 +774,7 @@
       heroImg.style.transform = `translateY(${window.scrollY * 0.28}px)`;
   }, { passive: true });
 </script>
-<script src="../assets/nav.js?v=20260906c"></script>
-<script src="../assets/footer.js?v=20260906c"></script>
+<script src="../assets/nav.js?v=20260906d"></script>
+<script src="../assets/footer.js?v=20260906d"></script>
 </body>
 </html>

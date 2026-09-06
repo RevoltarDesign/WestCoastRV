@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-09-06",
+  "sections": [
+    {
+      "id": "jefferson-state-parks",
+      "county": "Jefferson",
+      "operator_layer": "state_parks",
+      "status": "complete",
+      "inventory_sources": [
+        "https://parks.wa.gov/find-parks/state-parks",
+        "https://parks.wa.gov/passes-permits/reservations/reservation-parks"
+      ],
+      "candidates": [
+        {"name": "Fort Worden Historical State Park", "slug": "fort-worden-historical-state-park", "decision": "included_existing", "reason": "Developed RV camping already published."},
+        {"name": "Dosewallips State Park", "slug": "dosewallips-state-park", "decision": "included_new", "reason": "Developed standard and utility campsites accept RVs up to 40 feet."},
+        {"name": "Fort Flagler Historical State Park", "slug": "fort-flagler-historical-state-park", "decision": "included_new", "reason": "Two developed campgrounds include standard, partial, and full-hookup sites."},
+        {"name": "Shine Tidelands State Park", "decision": "excluded", "reason": "Day-use tidelands; no developed campground."},
+        {"name": "Triton Cove State Park", "decision": "excluded", "reason": "Day-use water-access site; no developed campground."}
+      ]
+    },
+    {
+      "id": "jefferson-county-city-port",
+      "county": "Jefferson",
+      "operator_layer": "county_city_port",
+      "status": "queued",
+      "inventory_sources": ["https://jeffersoncountywa.myrec.com/info/dept/", "https://portofpt.com/"],
+      "candidates": [
+        {"name": "Quilcene Campground", "decision": "research", "reason": "Official county listing says nine campsites and first-come service."},
+        {"name": "Lake Leland Park Campground", "decision": "research", "reason": "Official county listing says 22 campsites, 30-foot maximum, and no water."},
+        {"name": "Upper Oak Bay Campground", "decision": "research", "reason": "Official county materials conflict on 20, 23, or 24 electrical campsites."},
+        {"name": "Lower Oak Bay Campground", "decision": "research", "reason": "Official county listing says 12 campsites without hookups."},
+        {"name": "Point Hudson Marina & RV Park", "decision": "research", "reason": "Port-operated RV park; operator classification and site details need review."},
+        {"name": "Jefferson County Fairgrounds Campground", "decision": "research", "reason": "Current public RV availability and event restrictions need review."}
+      ]
+    },
+    {
+      "id": "jefferson-private-tribal",
+      "county": "Jefferson",
+      "operator_layer": "private_tribal",
+      "status": "queued",
+      "inventory_sources": [],
+      "candidates": []
+    }
+  ]
+}
