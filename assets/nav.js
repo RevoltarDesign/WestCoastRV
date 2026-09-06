@@ -8,6 +8,7 @@
    so no junk data accumulates. Just swap in the real ID and push.
    ============================================================ */
 (function () {
+  if (['localhost', '127.0.0.1'].includes(location.hostname)) return;
   var GA_ID = 'G-9HJLVP3QNJ';
   if (GA_ID === 'G-XXXXXXXXXX') return;
   var s = document.createElement('script');
@@ -29,7 +30,7 @@
 
      data-nav-transparent          – nav starts clear, solidifies on scroll
                                      (campground detail pages only)
-     data-nav-cta-text="…"        – button label  (default: "Browse all 110 →")
+     data-nav-cta-text="…"        – button label  (default: "Browse campgrounds →")
      data-nav-cta-url="…"         – button href   (default: "/campgrounds")
      data-nav-cta-external        – adds target="_blank" to the CTA
 
@@ -41,12 +42,12 @@
   /* ── Config from body attributes ─────────────────────────── */
   const body         = document.body;
   const transparent  = body.hasAttribute('data-nav-transparent');
-  const ctaText      = body.dataset.navCtaText || 'Browse all 110 →';
+  const ctaText      = body.dataset.navCtaText || 'Browse campgrounds →';
   const ctaUrl       = body.dataset.navCtaUrl  || '/campgrounds';
   const ctaExternal  = body.hasAttribute('data-nav-cta-external');
 
-  /* ── Asset path — always root-relative so it works at any depth ── */
-  const assetRoot    = '/assets/';
+  /* Resolve beside this script for both hosted and local-file previews. */
+  const assetRoot    = new URL('.', document.currentScript.src).href;
 
   /* ── Active link detection ────────────────────────────────── */
   const p = window.location.pathname;
@@ -63,11 +64,12 @@
       <img src="${assetRoot}west-coast-rv-logo-mark.png"
            alt="West Coast RV Camping"
            class="nav-logo-img"
-           height="44">
+           width="155" height="44">
     </a>
     <div class="nav-right">
       <ul class="nav-links">
         <li><a href="/campgrounds"${active('campground')}>Campgrounds</a></li>
+        <li><a href="/map"${active('map')}>Map</a></li>
         <li><a href="/field-notes"${active('field-note')}>Field Notes</a></li>
         <li><a href="/about"${active('about')}>About</a></li>
       </ul>
@@ -91,3 +93,18 @@
   }
 
 })();
+
+// Campground referral intent; no email, query string, or reservation details sent.
+document.addEventListener('click', function (event) {
+  const link = event.target.closest('a');
+  if (!link || !location.pathname.includes('/campground/') || typeof window.gtag !== 'function') return;
+  const configured = document.body.dataset.navCtaUrl;
+  if (!configured) return;
+  const destination = new URL(link.href, location.href);
+  if (destination.href !== new URL(configured, location.href).href || destination.origin === location.origin) return;
+  window.gtag('event', 'campground_outbound', {
+    campground_slug: location.pathname.split('/').pop().replace(/\.html$/, ''),
+    provider: destination.hostname,
+    transport_type: 'beacon'
+  });
+});
