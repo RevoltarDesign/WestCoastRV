@@ -28,15 +28,15 @@ HOOKUP_LABEL = {'0': 'None', '1': 'Electric', '2': 'Water + Electric', '3': 'Ful
 HOOKUP_NOTE  = {'0': 'dry camping',   '1': 'electric only',
                 '2': 'water & electric', '3': 'full hookups'}
 
-MANEUV_LABEL = {'1': 'Easy', '2': 'Moderate', '3': 'Challenging'}
+MANEUV_LABEL = {'1': 'Reported easy', '2': 'Reported moderate', '3': 'Reported challenging'}
 MANEUV_NOTE  = {
-    '1': 'Wide roads, easy to navigate',
-    '2': 'Some tight turns — manageable',
-    '3': 'Tight loops — plan your approach',
+    '1': 'Road and pad conditions vary by site',
+    '2': 'Review the operator map for your loop',
+    '3': 'Confirm the approach for your rig',
 }
 
-CELL_LABEL = {'0': 'Unknown', '1': 'Spotty', '2': 'Good'}
-CELL_NOTE  = {'0': 'Check your carrier map', '1': 'Download maps before you go', '2': 'Service generally reliable'}
+CELL_LABEL = {'0': 'Not confirmed', '1': 'Reported spotty', '2': 'Reported good'}
+CELL_NOTE  = {'0': 'Check your carrier map', '1': 'Coverage varies by carrier', '2': 'Coverage varies by carrier'}
 
 GEN_LABEL = {'1': 'Restricted', '2': 'Allowed'}
 GEN_NOTE  = {'1': 'Designated hours only', '2': 'No generator restrictions'}
@@ -57,8 +57,8 @@ PARK_FILTER = {
 }
 PASS_META = {
     'National Forest': 'Check the operator for camping and day-use fees',
-    'National Park':      'NPS America the Beautiful pass accepted',
-    'State Park':         'Discover Pass required',
+    'National Park':      'Entrance passes generally do not cover camping fees',
+    'State Park':         'Overnight guests do not need a Discover Pass at the park where they camp',
     'County Campground':  'Check park website for day-use fees',
     'Private Campground': 'No pass required — rates vary by season',
 }
@@ -179,7 +179,7 @@ def build_amenities_grid(row):
         block('🚻', 'Toilets',       has_toilet, toilet_type if has_toilet else 'Flush toilets'),
         block('🚿', 'Showers',       has_shower,  'Available'),
         block('💧', 'Drinking Water', has_water,   'Available'),
-        block('🔥', 'Fire Pits',     has_fire,    'Every site'),
+        block('🔥', 'Fire Pits',     has_fire,    'Listed as available'),
     ])
 
 def build_specs_grid(row):
@@ -192,7 +192,7 @@ def build_specs_grid(row):
     hookup_label, hookup_note_txt, has_hookup = hookup_display(hookup_level)
 
     dump_val  = f'{SVG_CHECK}\n          On-site'       if dump else f'{SVG_CROSS}\n          Not available'
-    dump_note = 'Available to all registered campers' if dump else 'Nearest dump station in town'
+    dump_note = 'Confirm hours and access with the operator' if dump else 'Plan a separate dump stop'
     hook_val  = f'{SVG_CHECK}\n          {hookup_label}' if has_hookup else f'{SVG_CROSS}\n          {hookup_label}'
     hook_note = {'0': 'Bring full tanks',
                  '1': 'Electric service available',
@@ -356,7 +356,9 @@ def build_faq_json(row):
     miles_str = ''  # Drive Time Minutes is not a distance.
     drive_ans = f"{name} is approximately {drive_time.replace(' from Seattle','')}{miles_str} from Seattle."
 
-    if 'first-come' in reservation.lower():
+    if reservation.lower().startswith('closed'):
+        res_ans = f"{name} is currently {reservation[0].lower() + reservation[1:]}. Check the official closure details before travel."
+    elif 'first-come' in reservation.lower():
         res_ans = f'{name} is first-come, first-served. Check official access and camping rules before travel.'
     elif 'recreation.gov' in (reserve_url or '').lower():
         res_ans = f"{name} accepts reservations through Recreation.gov. {reservation}."
@@ -487,7 +489,7 @@ def generate_page(row, slug_lookup, template):
     dump_display = 'On-site' if dump else 'Not available'
     dump_note    = 'Confirm access with the operator' if dump else 'Plan a separate dump stop'
     reserve_short = format_reservation_short(reservation)
-    reserve_note  = 'books out fast' if 'month' in reservation.lower() else 'availability varies'
+    reserve_note  = 'Check exact dates with the operator' if 'month' in reservation.lower() else 'Availability varies'
 
     addr_parts = [p.strip() for p in address.split(',')]
     city = addr_parts[1] if len(addr_parts) >= 2 else nearest_town
@@ -527,6 +529,9 @@ def generate_page(row, slug_lookup, template):
     og_title = f"{name} — {park_type} | WA RV Camping"
     og_desc  = (f"{rv_str+'-site ' if rv_str else ''}{park_type} campground, "
                 f"{len_str}{hookup_phrase}. {drive_time} from Seattle.")[:200]
+    closed = reservation.lower().startswith('closed')
+    if closed:
+        og_desc = row.get('Short Description', '')[:200]
 
     services_note = (f"Stock up in {nearest_town} before heading out — services get limited near the campground."
                      if nearest_town else "Stock up on supplies before leaving the nearest town.")
@@ -536,16 +541,16 @@ def generate_page(row, slug_lookup, template):
         return f'{v} mi' if v and v != '0' else '—'
 
     fcfs = 'first-come' in reservation.lower()
-    reserve_label = 'Camping rules' if fcfs else 'Booking details'
+    reserve_label = 'Closure details' if closed else 'Camping rules' if fcfs else 'Booking details'
     access_notice = ''
-    if row.get('RV Access') == 'no' and row.get('Access note'):
+    if (row.get('RV Access') == 'no' or closed) and row.get('Access note'):
         access_notice = ('<aside style="padding:100px 24px 24px;background:#fff1d6;color:#352d1b;text-align:center" aria-label="Campground access restriction">'
                          + '<strong>' + h(row['Access note']) + '</strong> '
                          + '<a href="' + h(row.get('Access source', '')) + '">Official source</a>'
                          + ' · Checked ' + h(row.get('Access checked', '')) + '</aside>')
     tokens = {
         '{{reserve_label}}': reserve_label,
-        '{{nav_mode}}': 'data-access-restricted' if row.get('RV Access') == 'no' else 'data-nav-transparent',
+        '{{nav_mode}}': 'data-access-restricted' if row.get('RV Access') == 'no' or closed else 'data-nav-transparent',
         '{{access_notice}}': access_notice,
         '{{page_title}}':               page_title,
         '{{meta_desc}}':                meta_desc,

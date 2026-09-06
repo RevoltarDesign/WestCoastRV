@@ -29,6 +29,16 @@ class TrustWorkflowTests(unittest.TestCase):
         self.assertNotIn("mount st. helens", combined)
         self.assertIn("whatcom", combined)
 
+    def test_all_campgrounds_are_in_coverage_summary(self):
+        result = trust.audit(date(2026, 9, 6))
+        self.assertEqual(result["coverage_summary"]["campgrounds"], 120)
+        self.assertEqual(
+            result["coverage_summary"]["fully_supported"]
+            + result["coverage_summary"]["partially_supported"]
+            + result["coverage_summary"]["unresearched"],
+            120,
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

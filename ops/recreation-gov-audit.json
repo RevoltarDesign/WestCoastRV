@@ -1,0 +1,428 @@
+{
+  "checked_on": "2026-09-06",
+  "records_checked": 42,
+  "identity_errors": 0,
+  "errors": [],
+  "results": [
+    {
+      "slug": "fairholme-campground",
+      "facility_id": "259084",
+      "expected": "Fairholme Campground",
+      "actual": "Fairholme Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/259084"
+    },
+    {
+      "slug": "hoh-campground",
+      "facility_id": "247592",
+      "expected": "Hoh Rainforest Campground",
+      "actual": "Hoh Rainforest Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/247592"
+    },
+    {
+      "slug": "kalaloch-campground",
+      "facility_id": "232464",
+      "expected": "Kalaloch Campground",
+      "actual": "KALALOCH",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232464"
+    },
+    {
+      "slug": "mora-campground",
+      "facility_id": "247591",
+      "expected": "Mora Campground",
+      "actual": "Mora Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/247591"
+    },
+    {
+      "slug": "sol-duc-campground",
+      "facility_id": "251906",
+      "expected": "Sol Duc Hot Springs Resort Campground",
+      "actual": "SOL DUC HOT SPRINGS RESORT CAMPGROUND",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/251906"
+    },
+    {
+      "slug": "staircase-campground",
+      "facility_id": "247586",
+      "expected": "Staircase Campground",
+      "actual": "Staircase Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/247586"
+    },
+    {
+      "slug": "cougar-rock-campground",
+      "facility_id": "232466",
+      "expected": "Cougar Rock Campground",
+      "actual": "COUGAR ROCK CAMPGROUND",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232466"
+    },
+    {
+      "slug": "ohanapecosh-campground",
+      "facility_id": "232465",
+      "expected": "Ohanapecosh Campground",
+      "actual": "OHANAPECOSH CAMPGROUND",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232465"
+    },
+    {
+      "slug": "white-river-campground",
+      "facility_id": "259031",
+      "expected": "White River Campground",
+      "actual": "White River Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/259031"
+    },
+    {
+      "slug": "newhalem-creek-campground",
+      "facility_id": "234060",
+      "expected": "Newhalem Creek Campground",
+      "actual": "Newhalem Creek Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/234060"
+    },
+    {
+      "slug": "goodell-creek-campground",
+      "facility_id": "246852",
+      "expected": "Goodell Creek Campground",
+      "actual": "Goodell Creek Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/246852"
+    },
+    {
+      "slug": "colonial-creek-south-campground",
+      "facility_id": "255201",
+      "expected": "Colonial Creek South Campground",
+      "actual": "Colonial Creek South Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/255201"
+    },
+    {
+      "slug": "colonial-creek-north-campground",
+      "facility_id": "246855",
+      "expected": "Colonial Creek North Campground",
+      "actual": "Colonial Creek North Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/246855"
+    },
+    {
+      "slug": "tinkham-campground",
+      "facility_id": "232113",
+      "expected": "Tinkham Campground",
+      "actual": "Tinkham Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232113"
+    },
+    {
+      "slug": "kachess-campground",
+      "facility_id": "232064",
+      "expected": "Kachess Campground",
+      "actual": "KACHESS",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232064"
+    },
+    {
+      "slug": "verlot-campground",
+      "facility_id": "232120",
+      "expected": "Verlot Campground",
+      "actual": "Verlot Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232120"
+    },
+    {
+      "slug": "gold-basin-campground",
+      "facility_id": "232051",
+      "expected": "Gold Basin Campground",
+      "actual": "Gold Basin Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232051"
+    },
+    {
+      "slug": "turlo-campground",
+      "facility_id": "232118",
+      "expected": "Turlo Campground",
+      "actual": "Turlo Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232118"
+    },
+    {
+      "slug": "bedal-campground",
+      "facility_id": "233864",
+      "expected": "Bedal Campground",
+      "actual": "Bedal Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/233864"
+    },
+    {
+      "slug": "horseshoe-cove-campground",
+      "facility_id": "232059",
+      "expected": "Horseshoe Cove Campground",
+      "actual": "Horseshoe Cove Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232059"
+    },
+    {
+      "slug": "shannon-creek-campground",
+      "facility_id": "232096",
+      "expected": "Shannon Creek Campground",
+      "actual": "Shannon Creek Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232096"
+    },
+    {
+      "slug": "douglas-fir-campground",
+      "facility_id": "232038",
+      "expected": "Douglas Fir Campground",
+      "actual": "Douglas Fir Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232038"
+    },
+    {
+      "slug": "silver-fir-campground",
+      "facility_id": "232099",
+      "expected": "Silver Fir Campground",
+      "actual": "Silver Fir Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232099"
+    },
+    {
+      "slug": "coho-campground",
+      "facility_id": "233384",
+      "expected": "Coho Campground",
+      "actual": "COHO CAMPGROUND",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/233384"
+    },
+    {
+      "slug": "eightmile-campground",
+      "facility_id": "121440",
+      "expected": "Eightmile Campground",
+      "actual": "EIGHTMILE CAMPGROUND",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/121440"
+    },
+    {
+      "slug": "johnny-creek-campground",
+      "facility_id": "10250569",
+      "expected": "Johnny Creek Campground",
+      "actual": "Johnny Creek ",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/10250569"
+    },
+    {
+      "slug": "nason-creek-campground",
+      "facility_id": "121390",
+      "expected": "Nason Creek Campground",
+      "actual": "NASON CREEK CAMPGROUND",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/121390"
+    },
+    {
+      "slug": "bonaparte-lake-campground",
+      "facility_id": "252036",
+      "expected": "Bonaparte Lake Campground",
+      "actual": "BONAPARTE LAKE CAMPGROUND",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/252036"
+    },
+    {
+      "slug": "swan-lake-campground",
+      "facility_id": "10378408",
+      "expected": "Swan Lake Campground",
+      "actual": "Swan Lake",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/10378408"
+    },
+    {
+      "slug": "east-sullivan-campground",
+      "facility_id": "231987",
+      "expected": "East Sullivan Campground",
+      "actual": "EAST SULLIVAN",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/231987"
+    },
+    {
+      "slug": "noisy-creek-campground",
+      "facility_id": "231988",
+      "expected": "Noisy Creek Campground",
+      "actual": "NOISY CREEK",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/231988"
+    },
+    {
+      "slug": "iron-creek-campground",
+      "facility_id": "232853",
+      "expected": "Iron Creek Campground",
+      "actual": "Iron Creek Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232853"
+    },
+    {
+      "slug": "takhlakh-lake-campground",
+      "facility_id": "232861",
+      "expected": "Takhlakh Lake Campground",
+      "actual": "Takhlakh Lake Campground ",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232861"
+    },
+    {
+      "slug": "walupt-lake-campground",
+      "facility_id": "232860",
+      "expected": "Walupt Lake Campground",
+      "actual": "Walupt Lake Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232860"
+    },
+    {
+      "slug": "denny-creek-campground",
+      "facility_id": "232035",
+      "expected": "Denny Creek Campground",
+      "actual": "Denny Creek Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232035"
+    },
+    {
+      "slug": "salmon-la-sac-campground",
+      "facility_id": "232094",
+      "expected": "Salmon La Sac Campground",
+      "actual": "SALMON LA SAC",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232094"
+    },
+    {
+      "slug": "bumping-lake-campground",
+      "facility_id": "232356",
+      "expected": "Bumping Lake Campground",
+      "actual": "Bumping Lake Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232356"
+    },
+    {
+      "slug": "la-wis-wis-campground",
+      "facility_id": "233877",
+      "expected": "La Wis Wis Campground",
+      "actual": "La Wis Wis Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/233877"
+    },
+    {
+      "slug": "lower-falls-campground",
+      "facility_id": "250032",
+      "expected": "Lower Falls Campground",
+      "actual": "LOWER FALLS CAMPGROUND",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/250032"
+    },
+    {
+      "slug": "peterson-prairie-campground",
+      "facility_id": "232895",
+      "expected": "Peterson Prairie Campground",
+      "actual": "Peterson Prairie Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232895"
+    },
+    {
+      "slug": "panorama-point-campground",
+      "facility_id": "232081",
+      "expected": "Panorama Point Campground",
+      "actual": "Panorama Point Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232081"
+    },
+    {
+      "slug": "beckler-river-campground",
+      "facility_id": "232018",
+      "expected": "Beckler River Campground",
+      "actual": "Beckler River Campground",
+      "identity_score": 1.0,
+      "ok": true,
+      "checked_on": "2026-09-06",
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232018"
+    }
+  ]
+}

@@ -13,6 +13,7 @@ from urllib.parse import urlparse
 HERE = Path(__file__).resolve().parent
 EVIDENCE = HERE / "verification-evidence.json"
 COVERAGE = HERE / "coverage-inventory.json"
+DATASET = HERE / "data" / "campgrounds.csv"
 CRITICAL = {"operating_status", "rv_access", "reservation_method", "max_rv_length", "hookups"}
 ACCEPTED = {"supported", "corrected_locally"}
 DECISIONS = {"included_existing", "included_new", "excluded", "deferred", "research"}
@@ -89,11 +90,37 @@ def audit(as_of):
         if section.get("status") == "complete" and undecided:
             errors.append(f"complete section has {undecided} research decisions: {section.get('id')}")
 
-    for slug, fields in supported.items():
+    import csv
+    with DATASET.open(newline="", encoding="utf-8-sig") as source:
+        rows = list(csv.DictReader(source))
+    rule_support = {}
+    for row in rows:
+        fields = set()
+        for rule in evidence.get("dataset_rules", []):
+            scope = rule.get("scope", "")
+            if scope.startswith("Park Type = ") and row.get("Park Type") == scope.removeprefix("Park Type = "):
+                fields.add(rule.get("field"))
+        rule_support[row["Slug"]] = fields
+
+    coverage_summary = {"campgrounds": len(rows), "fully_supported": 0, "partially_supported": 0,
+                        "unresearched": 0, "supported_by_field": {field: 0 for field in sorted(CRITICAL)}}
+    for row in rows:
+        slug = row["Slug"]
+        fields = supported.get(slug, set()) | rule_support.get(slug, set())
+        for field in fields & CRITICAL:
+            coverage_summary["supported_by_field"][field] += 1
         missing = sorted(CRITICAL - fields)
         if missing:
             warnings.append(f"{slug}: critical evidence remaining: {', '.join(missing)}")
-    return {"errors": errors, "warnings": warnings, "supported": {k: sorted(v) for k, v in supported.items()}}
+        if not missing:
+            coverage_summary["fully_supported"] += 1
+        elif fields:
+            coverage_summary["partially_supported"] += 1
+        else:
+            coverage_summary["unresearched"] += 1
+    return {"errors": errors, "warnings": warnings,
+            "supported": {k: sorted(v) for k, v in supported.items()},
+            "coverage_summary": coverage_summary}
 
 
 def main():

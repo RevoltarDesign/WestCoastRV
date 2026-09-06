@@ -14,9 +14,103 @@
         "source_family": "washington-state-parks-reservations",
         "evidence": "Current statewide instructions specify a rolling nine-month reservation window."
       }
+    },
+    {
+      "id": "washington-state-parks-overnight-discover-pass",
+      "scope": "Park Type = State Park",
+      "field": "fee_policy",
+      "checked_on": "2026-09-06",
+      "value": "Overnight guests do not need a Discover Pass at the park where they camp",
+      "source": {
+        "url": "https://parks.wa.gov/passes-permits/get-park-pass/discover-pass",
+        "publisher": "Washington State Parks",
+        "source_family": "washington-state-parks-passes",
+        "evidence": "The current exemption says overnight guests do not need a Discover Pass to park in the state park where they are staying."
+      }
     }
   ],
   "observations": [
+    {
+      "slug": "hoh-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-06",
+      "summary": "NPS says most sites fit 21-foot equipment and a few fit equipment up to 35 feet.",
+      "proposed_value": 35,
+      "sources": [{"url":"https://www.nps.gov/olym/planyourvisit/camping.htm","publisher":"National Park Service","source_family":"nps-olympic-camping","evidence":"Current Hoh listing says sites for 21 feet, with a few up to 35 feet."}]
+    },
+    {
+      "slug": "hoh-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "Peak-season reservations use Recreation.gov; the campground is first-come outside that period.",
+      "proposed_value": "Seasonal reservations through Recreation.gov",
+      "sources": [{"url":"https://www.nps.gov/olym/planyourvisit/camping.htm","publisher":"National Park Service","source_family":"nps-olympic-camping","evidence":"Current Hoh listing publishes the 2026 reservation season and Recreation.gov route."}]
+    },
+    {
+      "slug": "ohanapecosh-campground",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-06",
+      "summary": "The entire developed area is closed for the 2026 season during construction.",
+      "proposed_value": "closed for 2026",
+      "sources": [{"url":"https://www.nps.gov/mora/planyourvisit/park-construction-faqs.htm","publisher":"National Park Service","source_family":"nps-mount-rainier-construction","evidence":"Current FAQ states no camping or visitor access in 2026 and an expected summer 2027 reopening."}]
+    },
+    {
+      "slug": "big-creek-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-06",
+      "summary": "Olympic National Forest Big Creek is first-come; the former URL led to an unrelated Indiana campground.",
+      "proposed_value": "first-come, first-served",
+      "sources": [{"url":"https://www.fs.usda.gov/recarea/olympic/recreation/camping-cabins/recarea/?actid=29&recid=79317","publisher":"USDA Forest Service","source_family":"usfs-olympic","evidence":"Current operator listing identifies the 64-unit Big Creek campground near Hoodsport."}]
+    },
+    {
+      "slug": "big-creek-campground",
+      "field": "max_rv_length",
+      "status": "unknown",
+      "checked_on": "2026-09-06",
+      "summary": "The current operator web listing confirms RV access but does not publish one campground-wide maximum.",
+      "proposed_value": null,
+      "sources": [{"url":"https://www.fs.usda.gov/recarea/olympic/recreation/camping-cabins/recarea/?actid=29&recid=79317","publisher":"USDA Forest Service","source_family":"usfs-olympic","evidence":"Current Big Creek listing accepts RVs but gives no maximum length."}]
+    },
+    {
+      "slug": "swan-lake-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-06",
+      "summary": "The campground is first-come; the former destination was the separate Swan Lake Kitchen group shelter.",
+      "proposed_value": "first-come, first-served",
+      "sources": [{"url":"https://www.recreation.gov/camping/campgrounds/10378408","publisher":"Recreation.gov","source_family":"recreation-gov-swan-lake","evidence":"Current facility record identifies Swan Lake campground, separate from facility 234632 Swan Lake Kitchen."}]
+    },
+    {
+      "slug": "horseshoe-cove-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-06",
+      "summary": "Current reservable inventory includes RV sites up to 40 feet.",
+      "proposed_value": 40,
+      "sources": [{"url":"https://www.recreation.gov/camping/campgrounds/232059","publisher":"Recreation.gov","source_family":"recreation-gov-horseshoe-cove","evidence":"Current campsite inventory includes 40-foot RV and trailer limits."}]
+    },
+    {
+      "slug": "johnny-creek-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-06",
+      "summary": "The facility description accepts tents, trailers, and RVs up to 65 feet.",
+      "proposed_value": 65,
+      "sources": [{"url":"https://www.recreation.gov/camping/campgrounds/10250569","publisher":"Recreation.gov","source_family":"recreation-gov-johnny-creek","evidence":"Current facility description publishes a 65-foot maximum."}]
+    },
+    {
+      "slug": "salmon-la-sac-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-06",
+      "summary": "The longest published pull-throughs accept RVs and trailers up to 127 feet; most sites are shorter.",
+      "proposed_value": 127,
+      "sources": [{"url":"https://www.recreation.gov/camping/campsites/84265","publisher":"Recreation.gov","source_family":"recreation-gov-salmon-la-sac","evidence":"Site 20 publishes a 127-foot RV and trailer maximum."}]
+    },
     {
       "slug": "graves-creek-campground",
       "field": "rv_access",

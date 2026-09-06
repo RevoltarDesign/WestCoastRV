@@ -1,0 +1,42 @@
+{
+  "audit_date": "2026-09-06",
+  "scope": "All 120 campground records, all reservation URLs, every generated detail page, and the shared campground template",
+  "counting_method": "Campground findings count one incorrect published fact or destination. Template findings count one root cause and also record the number of affected pages.",
+  "summary": {
+    "campground_specific_findings": 20,
+    "campground_specific_fixed": 20,
+    "shared_template_findings": 6,
+    "shared_template_fixed": 6,
+    "affected_page_instances_fixed": 627
+  },
+  "campground_findings": [
+    {"slug":"osoyoos-lake-veterans-memorial-state-park","issue":"Obsolete State Park identity remained in nearby copy","status":"fixed","source":"https://oroville-wa.com/departments/parks-department/"},
+    {"slug":"andersens-oceanside-rv-park","issue":"Nearby section incorrectly described Ocean Shores and Grays Harbor","status":"fixed","source":"https://andersensrv.com/"},
+    {"slug":"big-creek-campground","issue":"Reservation link led to Indian-Celina Lake in Indiana","status":"fixed","source":"https://www.fs.usda.gov/recarea/olympic/recreation/camping-cabins/recarea/?actid=29&recid=79317"},
+    {"slug":"big-creek-campground","issue":"Record advertised reservations although the campground is first-come","status":"fixed","source":"https://www.fs.usda.gov/recarea/olympic/recreation/camping-cabins/recarea/?actid=29&recid=79317"},
+    {"slug":"big-creek-campground","issue":"The page stated a 36-foot maximum that the current operator page does not publish","status":"fixed by changing to not confirmed","source":"https://www.fs.usda.gov/recarea/olympic/recreation/camping-cabins/recarea/?actid=29&recid=79317"},
+    {"slug":"swan-lake-campground","issue":"Reservation link led to Swan Lake Kitchen group shelter","status":"fixed","source":"https://www.recreation.gov/camping/campgrounds/10378408"},
+    {"slug":"hoh-campground","issue":"Site count was 88; current NPS campground page lists 78","status":"fixed","source":"https://www.nps.gov/olym/planyourvisit/camping.htm"},
+    {"slug":"hoh-campground","issue":"The displayed maximum was 21 feet although NPS lists a few sites up to 35 feet","status":"fixed","source":"https://www.nps.gov/olym/planyourvisit/camping.htm"},
+    {"slug":"ohanapecosh-campground","issue":"Stale copy said closure ended in early 2026; the entire area is closed for 2026","status":"fixed","source":"https://www.nps.gov/mora/planyourvisit/park-construction-faqs.htm"},
+    {"slug":"ohanapecosh-campground","issue":"Site count was 85; NPS says the project covers 185 campsites","status":"fixed","source":"https://www.nps.gov/mora/planyourvisit/ohanapecosh.htm"},
+    {"slug":"ohanapecosh-campground","issue":"The page retained a pre-rehabilitation 32-foot maximum even though the rebuilt 2027 inventory is not published","status":"fixed","source":"https://www.nps.gov/mora/planyourvisit/park-construction-faqs.htm"},
+    {"slug":"ohanapecosh-campground","issue":"Structured FAQ and navigation still described booking as available during the full closure","status":"fixed","source":"https://www.nps.gov/mora/planyourvisit/park-construction-faqs.htm"},
+    {"slug":"horseshoe-cove-campground","issue":"Site count was 38; Recreation.gov lists 39","status":"fixed","source":"https://www.recreation.gov/camping/campgrounds/232059"},
+    {"slug":"horseshoe-cove-campground","issue":"The displayed maximum was 30 feet while current reservable RV inventory includes 40-foot sites","status":"fixed","source":"https://www.recreation.gov/camping/campgrounds/232059"},
+    {"slug":"johnny-creek-campground","issue":"Site count was 56; Recreation.gov lists 65","status":"fixed","source":"https://www.recreation.gov/camping/campgrounds/10250569"},
+    {"slug":"johnny-creek-campground","issue":"Maximum length was 50 feet; Recreation.gov lists equipment up to 65 feet","status":"fixed","source":"https://www.recreation.gov/camping/campgrounds/10250569"},
+    {"slug":"salmon-la-sac-campground","issue":"Published facility count was 69; Recreation.gov describes 67 public sites","status":"fixed","source":"https://www.recreation.gov/camping/campgrounds/232094"},
+    {"slug":"salmon-la-sac-campground","issue":"Structured maximum said 60 feet while the page cited a 127-foot pull-through","status":"fixed","source":"https://www.recreation.gov/camping/campsites/84265"},
+    {"slug":"lake-easton-state-park","issue":"Nearby copy used the former John Wayne Pioneer Trail name, gave it as 56 miles, and incorrectly called the upper Yakima a designated Wild and Scenic River","status":"fixed","source":"https://parks.wa.gov/find-parks/state-parks/lake-easton-state-park"},
+    {"slug":"lake-easton-state-park","issue":"Site advice told readers to book six months out despite the current statewide nine-month window","status":"fixed","source":"https://parks.wa.gov/passes-permits/reservations/making-reservations"}
+  ],
+  "template_findings": [
+    {"issue":"Amenities copy claimed every site had a fire pit without site-level evidence","affected_pages":110,"status":"fixed"},
+    {"issue":"State Park card said a Discover Pass is required for overnight guests","affected_pages":50,"status":"fixed","source":"https://parks.wa.gov/passes-permits/get-park-pass/discover-pass"},
+    {"issue":"Dump-station notes invented access eligibility or a nearest-town alternative","affected_pages":120,"status":"fixed"},
+    {"issue":"Cell coverage labels presented historical estimates as verified facts","affected_pages":120,"status":"fixed"},
+    {"issue":"Maneuverability labels presented historical estimates as verified facts","affected_pages":120,"status":"fixed"},
+    {"issue":"Reservation cards added an unsupported urgency claim","affected_pages":107,"status":"fixed"}
+  ]
+}
