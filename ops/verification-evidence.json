@@ -143,22 +143,6 @@
       ]
     },
     {
-      "slug": "twanoh-state-park",
-      "field": "hookups",
-      "status": "corrected_locally",
-      "checked_on": "2026-09-05",
-      "summary": "Homepage says 47 full-hookup sites; directory and official source distinguish 22 full-hookup and 25 standard sites.",
-      "sources": [
-        {
-          "url": "https://parks.wa.gov/find-parks/state-parks/twanoh-state-park",
-          "publisher": "Washington State Parks",
-          "evidence": "Official park search result reports 25 standard and 22 full-hookup campsites; live directory agrees.",
-          "source_family": "washington-state-parks"
-        }
-      ],
-      "resolution": "Corrected and deployed on 2026-09-06. Historical summary retained for traceability."
-    },
-    {
       "slug": "silver-lake-park",
       "field": "operating_status",
       "status": "supported",
@@ -1795,6 +1779,486 @@
           "publisher": "Washington State Parks",
           "source_family": "washington-state-parks",
           "evidence": "The current operator page or official campground brochure identifies the published utility level."
+        }
+      ]
+    },
+    {
+      "slug": "belfair-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the park and its active dated closures; those limits are preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/belfair-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the park and its active dated closures; those limits are preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "belfair-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or campground map identifies vehicle, RV, utility, or full-hookup campsites.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/belfair-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or campground map identifies vehicle, RV, utility, or full-hookup campsites."
+        }
+      ]
+    },
+    {
+      "slug": "belfair-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page identifies reservation availability and first-come or seasonal exceptions.",
+      "proposed_value": "Primitive, standard, and full-hookup sites reservable year-round; Tree Loop open May 15\u2013September 15",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/belfair-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page identifies reservation availability and first-come or seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "belfair-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes this limit, or the record explicitly leaves a single park-wide limit unconfirmed when dimensions vary by site.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/belfair-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes this limit, or the record explicitly leaves a single park-wide limit unconfirmed when dimensions vary by site."
+        }
+      ]
+    },
+    {
+      "slug": "belfair-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the published utility level.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/belfair-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the published utility level."
+        }
+      ]
+    },
+    {
+      "slug": "fort-worden-historical-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the park and its active dated closures; those limits are preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-worden-historical-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the park and its active dated closures; those limits are preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "fort-worden-historical-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or campground map identifies vehicle, RV, utility, or full-hookup campsites.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-worden-historical-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or campground map identifies vehicle, RV, utility, or full-hookup campsites."
+        }
+      ]
+    },
+    {
+      "slug": "fort-worden-historical-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page identifies reservation availability and first-come or seasonal exceptions.",
+      "proposed_value": "Reservations required; 2026 camping offered April 1\u2013October 31. Beach sites 18\u201350 closed March 1\u2013June 30, 2027 for upgrades",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-worden-historical-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page identifies reservation availability and first-come or seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "fort-worden-historical-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes this limit, or the record explicitly leaves a single park-wide limit unconfirmed when dimensions vary by site.",
+      "proposed_value": 75,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-worden-historical-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes this limit, or the record explicitly leaves a single park-wide limit unconfirmed when dimensions vary by site."
+        }
+      ]
+    },
+    {
+      "slug": "fort-worden-historical-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the published utility level.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-worden-historical-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the published utility level."
+        }
+      ]
+    },
+    {
+      "slug": "jarrell-cove-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the park and its active dated closures; those limits are preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/jarrell-cove-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the park and its active dated closures; those limits are preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "jarrell-cove-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or campground map identifies vehicle, RV, utility, or full-hookup campsites.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/jarrell-cove-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or campground map identifies vehicle, RV, utility, or full-hookup campsites."
+        }
+      ]
+    },
+    {
+      "slug": "jarrell-cove-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page identifies reservation availability and first-come or seasonal exceptions.",
+      "proposed_value": "Sites 5\u20137 and marine site MT22 first-come; all other campsites reservable, most year-round",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/jarrell-cove-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page identifies reservation availability and first-come or seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "jarrell-cove-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes this limit, or the record explicitly leaves a single park-wide limit unconfirmed when dimensions vary by site.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/jarrell-cove-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes this limit, or the record explicitly leaves a single park-wide limit unconfirmed when dimensions vary by site."
+        }
+      ]
+    },
+    {
+      "slug": "jarrell-cove-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the published utility level.",
+      "proposed_value": 2,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/jarrell-cove-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the published utility level."
+        }
+      ]
+    },
+    {
+      "slug": "potlatch-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the park and its active dated closures; those limits are preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/potlatch-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the park and its active dated closures; those limits are preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "potlatch-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or campground map identifies vehicle, RV, utility, or full-hookup campsites.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/potlatch-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or campground map identifies vehicle, RV, utility, or full-hookup campsites."
+        }
+      ]
+    },
+    {
+      "slug": "potlatch-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page identifies reservation availability and first-come or seasonal exceptions.",
+      "proposed_value": "Sites 1\u201327 reservable year-round; sites 36\u201393 closed November 15\u2013March 31",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/potlatch-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page identifies reservation availability and first-come or seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "potlatch-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes this limit, or the record explicitly leaves a single park-wide limit unconfirmed when dimensions vary by site.",
+      "proposed_value": 60,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/potlatch-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes this limit, or the record explicitly leaves a single park-wide limit unconfirmed when dimensions vary by site."
+        }
+      ]
+    },
+    {
+      "slug": "potlatch-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the published utility level.",
+      "proposed_value": 2,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/potlatch-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the published utility level."
+        }
+      ]
+    },
+    {
+      "slug": "sequim-bay-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the park and its active dated closures; those limits are preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/sequim-bay-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the park and its active dated closures; those limits are preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "sequim-bay-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or campground map identifies vehicle, RV, utility, or full-hookup campsites.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/sequim-bay-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or campground map identifies vehicle, RV, utility, or full-hookup campsites."
+        }
+      ]
+    },
+    {
+      "slug": "sequim-bay-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page identifies reservation availability and first-come or seasonal exceptions.",
+      "proposed_value": "Reservable for May 15\u2013September 15 arrivals; first-come September 16\u2013May 14. Lower Loop currently closed for restroom construction; reopening TBD",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/sequim-bay-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page identifies reservation availability and first-come or seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "sequim-bay-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes this limit, or the record explicitly leaves a single park-wide limit unconfirmed when dimensions vary by site.",
+      "proposed_value": 40,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/sequim-bay-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes this limit, or the record explicitly leaves a single park-wide limit unconfirmed when dimensions vary by site."
+        }
+      ]
+    },
+    {
+      "slug": "sequim-bay-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the published utility level.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/sequim-bay-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the published utility level."
+        }
+      ]
+    },
+    {
+      "slug": "twanoh-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the park and its active dated closures; those limits are preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/twanoh-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the park and its active dated closures; those limits are preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "twanoh-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or campground map identifies vehicle, RV, utility, or full-hookup campsites.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/twanoh-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or campground map identifies vehicle, RV, utility, or full-hookup campsites."
+        }
+      ]
+    },
+    {
+      "slug": "twanoh-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page identifies reservation availability and first-come or seasonal exceptions.",
+      "proposed_value": "Campground open first-come during day-use construction through September 30, 2026; reservations resume if work ends early",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/twanoh-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page identifies reservation availability and first-come or seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "twanoh-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes this limit, or the record explicitly leaves a single park-wide limit unconfirmed when dimensions vary by site.",
+      "proposed_value": 35,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/twanoh-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes this limit, or the record explicitly leaves a single park-wide limit unconfirmed when dimensions vary by site."
+        }
+      ]
+    },
+    {
+      "slug": "twanoh-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the published utility level.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/twanoh-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the published utility level."
         }
       ]
     }

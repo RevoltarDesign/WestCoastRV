@@ -1,0 +1,84 @@
+{
+  "checked_on": "2026-09-07",
+  "method": "Use a campground-specific Google Maps destination when the park contains a distinct named campground; otherwise use the exact named park destination corroborated by the current Washington State Parks address or published locate point. Seattle estimates use no-ferry routes for the Olympic Peninsula and ordinary fastest routes elsewhere, then round up for normal traffic variation.",
+  "reviews": [
+    {
+      "slug": "sequim-bay-state-park",
+      "latitude": 48.0400657,
+      "longitude": -123.0290089,
+      "address": "269035 Highway 101, Sequim, WA 98382",
+      "named_map_url": "https://www.google.com/maps/place/Sequim+Bay+State+Park/@48.0400657,-123.0290089,574m/data=!3m2!1e3!4b1!4m6!3m5!1s0x548fc116f8fb0147:0xff8925159f79f5d3!8m2!3d48.0400657!4d-123.0290089",
+      "coordinate_source": "Google Maps exact named park destination matched to the Washington State Parks address and published locate point",
+      "precision": "park entrance/address point",
+      "observed_route_minutes": 126,
+      "distance_miles": 117,
+      "display_minutes": 135,
+      "route_note": "Uses the no-ferry I-5 and Tacoma Narrows route; ferry options may be shorter but add fare, queue, and sailing-time uncertainty."
+    },
+    {
+      "slug": "fort-worden-historical-state-park",
+      "latitude": 48.1416198,
+      "longitude": -122.7623848,
+      "address": "202 Eisenhower Avenue, Port Townsend, WA 98368",
+      "named_map_url": "https://www.google.com/maps/place/Fort+Worden+State+Park+Beach+Campground/data=!4m7!3m6!1s0x548fede3e7668261:0x3ed80e4b7b01a586!8m2!3d48.1416198!4d-122.7623848!16s%2Fg%2F11gsn4dt8t",
+      "coordinate_source": "Google Maps named Fort Worden Beach Campground point, corroborated by the official campground map",
+      "precision": "named campground point",
+      "observed_route_minutes": 135,
+      "distance_miles": 113,
+      "display_minutes": 150,
+      "route_note": "Uses the no-ferry I-5 and Tacoma Narrows route; ferry options may be shorter but add fare, queue, and sailing-time uncertainty."
+    },
+    {
+      "slug": "potlatch-state-park",
+      "latitude": 47.361386,
+      "longitude": -123.156384,
+      "address": "21020 N US Highway 101, Shelton, WA 98584",
+      "named_map_url": "https://www.google.com/maps/place/Potlatch+State+Park/@47.361386,-123.156384,582m/data=!3m2!1e3!4b1!4m6!3m5!1s0x5491c084a9d5d5e1:0x85367a86a7c7eebb!8m2!3d47.361386!4d-123.156384",
+      "coordinate_source": "Google Maps exact named park destination matched to the Washington State Parks address and published locate point",
+      "precision": "park entrance/address point",
+      "observed_route_minutes": 93,
+      "distance_miles": 92.8,
+      "display_minutes": 105,
+      "route_note": "Fastest normal I-5 and US 101 route at review time; public estimate rounds up for traffic variation."
+    },
+    {
+      "slug": "twanoh-state-park",
+      "latitude": 47.377423,
+      "longitude": -122.9746434,
+      "address": "12190 E State Route 106, Union, WA 98592",
+      "named_map_url": "https://www.google.com/maps/place/Twanoh+State+Park+Campground/data=!4m7!3m6!1s0x5491b7c2a167f263:0xa14a07e76eed1b8e!8m2!3d47.377423!4d-122.9746434!16s%2Fg%2F11tcqvc32x",
+      "coordinate_source": "Google Maps named Twanoh State Park Campground point, corroborated by the official campground map and park address",
+      "precision": "named campground point",
+      "observed_route_minutes": 86,
+      "distance_miles": 77.4,
+      "display_minutes": 90,
+      "route_note": "Fastest normal I-5 and Tacoma Narrows route at review time; public estimate rounds up for traffic variation."
+    },
+    {
+      "slug": "belfair-state-park",
+      "latitude": 47.4289813,
+      "longitude": -122.8778593,
+      "address": "3151 NE State Route 300, Belfair, WA 98528",
+      "named_map_url": "https://www.google.com/maps/place/Belfair+State+Park/@47.4289813,-122.8778593,581m/data=!3m2!1e3!4b1!4m6!3m5!1s0x5491b5fadeabc8c3:0xfa59dc0b7ea877f7!8m2!3d47.4289813!4d-122.8778593",
+      "coordinate_source": "Google Maps exact named park destination matched to the current Washington State Parks address and campground map",
+      "precision": "park entrance/address point",
+      "observed_route_minutes": 79,
+      "distance_miles": 71.5,
+      "display_minutes": 90,
+      "route_note": "Fastest normal I-5 and Tacoma Narrows route at review time; public estimate rounds up for traffic variation."
+    },
+    {
+      "slug": "jarrell-cove-state-park",
+      "latitude": 47.2850253,
+      "longitude": -122.8833949,
+      "address": "391 E Wingert Road, Shelton, WA 98584",
+      "named_map_url": "https://www.google.com/maps/place/Jarrell+Cove+State+Park/@47.2850253,-122.8833949,583m/data=!3m2!1e3!4b1!4m6!3m5!1s0x5491babd965c8aaf:0x56ee6e340057eb3e!8m2!3d47.2850253!4d-122.8833949",
+      "coordinate_source": "Google Maps exact named park destination matched to the Washington State Parks address and published locate point",
+      "precision": "park entrance/address point",
+      "observed_route_minutes": 100,
+      "distance_miles": 82.8,
+      "display_minutes": 105,
+      "route_note": "Fastest normal I-5 route at review time; public estimate rounds up for traffic variation."
+    }
+  ]
+}
