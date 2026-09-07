@@ -12,7 +12,7 @@ SPEC.loader.exec_module(trust)
 
 class TrustWorkflowTests(unittest.TestCase):
     def test_current_ledgers_are_valid(self):
-        self.assertEqual(trust.audit(date(2026, 9, 6))["errors"], [])
+        self.assertEqual(trust.audit(date(2026, 9, 7))["errors"], [])
 
     def test_source_requires_attribution_and_https(self):
         self.assertFalse(trust.valid_source({"url": "http://example.com"}))
@@ -30,7 +30,7 @@ class TrustWorkflowTests(unittest.TestCase):
         self.assertIn("whatcom", combined)
 
     def test_all_campgrounds_are_in_coverage_summary(self):
-        result = trust.audit(date(2026, 9, 6))
+        result = trust.audit(date(2026, 9, 7))
         self.assertEqual(result["coverage_summary"]["campgrounds"], 120)
         self.assertEqual(
             result["coverage_summary"]["fully_supported"]

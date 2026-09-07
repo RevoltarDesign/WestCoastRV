@@ -1317,6 +1317,486 @@
           "evidence": "The official campground map distinguishes campground roads and campsites from tent-only parking and the separate group area."
         }
       ]
+    },
+    {
+      "slug": "birch-bay-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the park and current alerts; Fort Casey's dated campground closure is preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/birch-bay-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the park and current alerts; Fort Casey's dated campground closure is preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "birch-bay-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies RV or utility campsites.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/birch-bay-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies RV or utility campsites."
+        }
+      ]
+    },
+    {
+      "slug": "birch-bay-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "Washington State Parks links the park to its reservation system; seasonal exceptions are preserved where published.",
+      "proposed_value": "Reservable up to 9 months ahead for May 15\u2013September 15 arrivals; North Loop is first-come September 16\u2013May 14",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/birch-bay-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "Washington State Parks links the park to its reservation system; seasonal exceptions are preserved where published."
+        }
+      ]
+    },
+    {
+      "slug": "birch-bay-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator material publishes this park-wide limit, or the canonical record explicitly leaves it unconfirmed.",
+      "proposed_value": 60,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/birch-bay-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material publishes this park-wide limit, or the canonical record explicitly leaves it unconfirmed."
+        }
+      ]
+    },
+    {
+      "slug": "birch-bay-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground brochure identifies the published utility level.",
+      "proposed_value": 2,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/birch-bay-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground brochure identifies the published utility level."
+        }
+      ]
+    },
+    {
+      "slug": "camano-island-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the park and current alerts; Fort Casey's dated campground closure is preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/camano-island-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the park and current alerts; Fort Casey's dated campground closure is preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "camano-island-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies RV or utility campsites.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/camano-island-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies RV or utility campsites."
+        }
+      ]
+    },
+    {
+      "slug": "camano-island-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "Washington State Parks links the park to its reservation system; seasonal exceptions are preserved where published.",
+      "proposed_value": "Reservable up to 9 months in advance",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/camano-island-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "Washington State Parks links the park to its reservation system; seasonal exceptions are preserved where published."
+        }
+      ]
+    },
+    {
+      "slug": "camano-island-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator material publishes this park-wide limit, or the canonical record explicitly leaves it unconfirmed.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/camano-island-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material publishes this park-wide limit, or the canonical record explicitly leaves it unconfirmed."
+        }
+      ]
+    },
+    {
+      "slug": "camano-island-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground brochure identifies the published utility level.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/camano-island-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground brochure identifies the published utility level."
+        }
+      ]
+    },
+    {
+      "slug": "deception-pass-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the park and current alerts; Fort Casey's dated campground closure is preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/deception-pass-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the park and current alerts; Fort Casey's dated campground closure is preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "deception-pass-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies RV or utility campsites.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/deception-pass-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies RV or utility campsites."
+        }
+      ]
+    },
+    {
+      "slug": "deception-pass-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "Washington State Parks links the park to its reservation system; seasonal exceptions are preserved where published.",
+      "proposed_value": "Reservable up to 9 months in advance",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/deception-pass-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "Washington State Parks links the park to its reservation system; seasonal exceptions are preserved where published."
+        }
+      ]
+    },
+    {
+      "slug": "deception-pass-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator material publishes this park-wide limit, or the canonical record explicitly leaves it unconfirmed.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/deception-pass-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material publishes this park-wide limit, or the canonical record explicitly leaves it unconfirmed."
+        }
+      ]
+    },
+    {
+      "slug": "deception-pass-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground brochure identifies the published utility level.",
+      "proposed_value": 2,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/deception-pass-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground brochure identifies the published utility level."
+        }
+      ]
+    },
+    {
+      "slug": "fort-casey-historical-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the park and current alerts; Fort Casey's dated campground closure is preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-casey-historical-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the park and current alerts; Fort Casey's dated campground closure is preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "fort-casey-historical-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies RV or utility campsites.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-casey-historical-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies RV or utility campsites."
+        }
+      ]
+    },
+    {
+      "slug": "fort-casey-historical-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "Washington State Parks links the park to its reservation system; seasonal exceptions are preserved where published.",
+      "proposed_value": "Campground closed September 15, 2026\u2013June 15, 2027 for water-line replacement; otherwise reservable up to 9 months ahead",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-casey-historical-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "Washington State Parks links the park to its reservation system; seasonal exceptions are preserved where published."
+        }
+      ]
+    },
+    {
+      "slug": "fort-casey-historical-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator material publishes this park-wide limit, or the canonical record explicitly leaves it unconfirmed.",
+      "proposed_value": 40,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-casey-historical-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material publishes this park-wide limit, or the canonical record explicitly leaves it unconfirmed."
+        }
+      ]
+    },
+    {
+      "slug": "fort-casey-historical-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground brochure identifies the published utility level.",
+      "proposed_value": 2,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-casey-historical-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground brochure identifies the published utility level."
+        }
+      ]
+    },
+    {
+      "slug": "fort-ebey-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the park and current alerts; Fort Casey's dated campground closure is preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the park and current alerts; Fort Casey's dated campground closure is preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "fort-ebey-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies RV or utility campsites.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies RV or utility campsites."
+        }
+      ]
+    },
+    {
+      "slug": "fort-ebey-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "Washington State Parks links the park to its reservation system; seasonal exceptions are preserved where published.",
+      "proposed_value": "Reservable up to 9 months in advance",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "Washington State Parks links the park to its reservation system; seasonal exceptions are preserved where published."
+        }
+      ]
+    },
+    {
+      "slug": "fort-ebey-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator material publishes this park-wide limit, or the canonical record explicitly leaves it unconfirmed.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material publishes this park-wide limit, or the canonical record explicitly leaves it unconfirmed."
+        }
+      ]
+    },
+    {
+      "slug": "fort-ebey-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground brochure identifies the published utility level.",
+      "proposed_value": 2,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-ebey-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground brochure identifies the published utility level."
+        }
+      ]
+    },
+    {
+      "slug": "larrabee-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the park and current alerts; Fort Casey's dated campground closure is preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/larrabee-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the park and current alerts; Fort Casey's dated campground closure is preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "larrabee-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies RV or utility campsites.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/larrabee-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies RV or utility campsites."
+        }
+      ]
+    },
+    {
+      "slug": "larrabee-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "Washington State Parks links the park to its reservation system; seasonal exceptions are preserved where published.",
+      "proposed_value": "Reservable up to 9 months ahead for May 15\u2013September 15 arrivals; first-come outside that period",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/larrabee-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "Washington State Parks links the park to its reservation system; seasonal exceptions are preserved where published."
+        }
+      ]
+    },
+    {
+      "slug": "larrabee-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator material publishes this park-wide limit, or the canonical record explicitly leaves it unconfirmed.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/larrabee-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material publishes this park-wide limit, or the canonical record explicitly leaves it unconfirmed."
+        }
+      ]
+    },
+    {
+      "slug": "larrabee-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground brochure identifies the published utility level.",
+      "proposed_value": 2,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/larrabee-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground brochure identifies the published utility level."
+        }
+      ]
     }
   ]
 }

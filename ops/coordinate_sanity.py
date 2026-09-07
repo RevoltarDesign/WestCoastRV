@@ -32,7 +32,7 @@ def main():
             if match and miles(p, (float(match.group(1)), float(match.group(2)))) > .01: errors.append(f"{row['Slug']}: explicit fields disagree with Google Maps link")
         if not row["Coordinates source"]: warnings.append(f"{row['Slug']}: coordinate has not completed sourced review")
     reviews = []
-    for name in ("coordinate-resolutions.json", "peninsula-location-reviews.json"):
+    for name in ["coordinate-resolutions.json", *sorted(path.name for path in HERE.glob("*-location-reviews.json"))]:
         payload = json.loads((HERE / name).read_text(encoding="utf-8")); reviews.extend(payload.get("resolutions", payload.get("reviews", [])))
     for item in reviews:
         actual = points.get(item["slug"]); expected = item["latitude"], item["longitude"]
