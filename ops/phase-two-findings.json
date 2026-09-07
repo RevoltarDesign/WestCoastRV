@@ -1,0 +1,37 @@
+{
+  "checked_on": "2026-09-06",
+  "scope": "Ten Olympic National Park campground records plus the Osoyoos route spot check",
+  "campground_fact_issues_found_and_fixed": 10,
+  "drive_time_issues_found_and_fixed": 6,
+  "coordinate_records_given_source_provenance": 33,
+  "coordinate_points_corrected_in_section": 4,
+  "coordinate_review_queue": 15,
+  "details": {
+    "campground_facts": [
+      "Fairholme site count: 84 to 88",
+      "Fairholme published maximum: 21 feet to some sites at 35 feet",
+      "Heart O' the Hills site count: 105 to 97",
+      "Heart O' the Hills published maximum: 21 feet to a few sites at 35 feet",
+      "Heart O' the Hills reservation method: advance reservation claim to first-come, first-served",
+      "Hoh maximum restored to the sourced 35-foot limited-site value",
+      "Staircase site count: 56 to 49",
+      "Staircase published maximum: 21 feet to a few sites at 35 feet",
+      "Osoyoos unsupported six-month booking-window advice replaced with the current January 1 release",
+      "Osoyoos unsupported warmest-lake, site-number, and fish-species claims replaced with city-published facts"
+    ],
+    "drive_times": [
+      "Heart O' the Hills",
+      "Hoh",
+      "Kalaloch",
+      "Ozette",
+      "South Beach",
+      "Osoyoos Lake Veteran's Memorial Park"
+    ],
+    "coordinate_corrections": [
+      "Heart O' the Hills",
+      "Ozette",
+      "South Beach",
+      "Graves Creek"
+    ]
+  }
+}

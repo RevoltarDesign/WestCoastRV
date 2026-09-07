@@ -40,7 +40,7 @@ def main():
     row.update({
         "Data last updated": "2026-09-06",
         "Number of RV campsites": "78",
-        "Max RV length": "",
+        "Max RV length": "35",
         "Access note": "NPS lists 78 total sites; RV pads are generally 21 feet, with a few up to 35 feet.",
         "Access source": "https://www.nps.gov/olym/planyourvisit/camping.htm",
         "Access checked": "2026-09-06",
@@ -97,7 +97,7 @@ def main():
         "Data last updated": "2026-09-06",
         "Reservation website": "https://www.fs.usda.gov/recarea/olympic/recreation/camping-cabins/recarea/?actid=29&recid=79317",
         "Reservation window": "First-come, first-served",
-        "Max RV length": "35",
+        "Max RV length": "",
         "Short Description": "First-come Olympic National Forest campground near Hoodsport with 64 units, a one-mile creek loop trail, and access toward Lake Cushman and Staircase.",
         "Long description": "Big Creek Campground has 64 first-come camp units in second-growth forest near Hoodsport. The Forest Service says the campground accepts tents, trailers, and RVs but its current web listing does not publish one campground-wide maximum length. Potable water and accessible vault toilets are available, and the one-mile Big Creek Campground Loop begins on site. Confirm your rig's fit and check the Forest Service page for current status before driving up Forest Road 24.",
         "Access note": "The current operator page confirms RV access but does not publish one campground-wide maximum length.",

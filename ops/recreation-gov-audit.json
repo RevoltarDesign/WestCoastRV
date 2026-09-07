@@ -3,6 +3,144 @@
   "records_checked": 42,
   "identity_errors": 0,
   "errors": [],
+  "coordinate_warnings": 15,
+  "coordinate_warning_records": [
+    {
+      "slug": "mora-campground",
+      "facility_id": "247591",
+      "coordinate_drift_miles": 7764.363,
+      "official_latitude": 0,
+      "official_longitude": 0,
+      "previous_latitude": 47.9158,
+      "previous_longitude": -124.5973
+    },
+    {
+      "slug": "cougar-rock-campground",
+      "facility_id": "232466",
+      "coordinate_drift_miles": 2.924,
+      "official_latitude": 46.7672222,
+      "official_longitude": -121.7944444,
+      "previous_latitude": 46.7515,
+      "previous_longitude": -121.7371
+    },
+    {
+      "slug": "verlot-campground",
+      "facility_id": "232120",
+      "coordinate_drift_miles": 2.569,
+      "official_latitude": 48.090365,
+      "official_longitude": -121.777802,
+      "previous_latitude": 48.0683,
+      "previous_longitude": -121.733
+    },
+    {
+      "slug": "bedal-campground",
+      "facility_id": "233864",
+      "coordinate_drift_miles": 4.009,
+      "official_latitude": 48.096843,
+      "official_longitude": -121.386943,
+      "previous_latitude": 48.0767,
+      "previous_longitude": -121.4684
+    },
+    {
+      "slug": "shannon-creek-campground",
+      "facility_id": "232096",
+      "coordinate_drift_miles": 4.184,
+      "official_latitude": 48.740375,
+      "official_longitude": -121.600532,
+      "previous_latitude": 48.7204,
+      "previous_longitude": -121.6872
+    },
+    {
+      "slug": "douglas-fir-campground",
+      "facility_id": "232038",
+      "coordinate_drift_miles": 4.648,
+      "official_latitude": 48.902656,
+      "official_longitude": -121.911954,
+      "previous_latitude": 48.8832,
+      "previous_longitude": -122.0099
+    },
+    {
+      "slug": "silver-fir-campground",
+      "facility_id": "232099",
+      "coordinate_drift_miles": 5.921,
+      "official_latitude": 48.903321,
+      "official_longitude": -121.696105,
+      "previous_latitude": 48.9008,
+      "previous_longitude": -121.8264
+    },
+    {
+      "slug": "coho-campground",
+      "facility_id": "233384",
+      "coordinate_drift_miles": 2.642,
+      "official_latitude": 47.390403,
+      "official_longitude": -123.604732,
+      "previous_latitude": 47.3746,
+      "previous_longitude": -123.5533
+    },
+    {
+      "slug": "johnny-creek-campground",
+      "facility_id": "10250569",
+      "coordinate_drift_miles": 8.324,
+      "official_latitude": 47.5982,
+      "official_longitude": -120.8174,
+      "previous_latitude": 47.5434,
+      "previous_longitude": -120.6584
+    },
+    {
+      "slug": "nason-creek-campground",
+      "facility_id": "121390",
+      "coordinate_drift_miles": 2.102,
+      "official_latitude": 47.7996,
+      "official_longitude": -120.716,
+      "previous_latitude": 47.7889,
+      "previous_longitude": -120.6736
+    },
+    {
+      "slug": "swan-lake-campground",
+      "facility_id": "10378408",
+      "coordinate_drift_miles": 20.808,
+      "official_latitude": 48.51722,
+      "official_longitude": -118.83694,
+      "previous_latitude": 48.8024,
+      "previous_longitude": -118.9834
+    },
+    {
+      "slug": "noisy-creek-campground",
+      "facility_id": "231988",
+      "coordinate_drift_miles": 3.833,
+      "official_latitude": 48.7838889,
+      "official_longitude": -117.2786111,
+      "previous_latitude": 48.8382,
+      "previous_longitude": -117.2958
+    },
+    {
+      "slug": "iron-creek-campground",
+      "facility_id": "232853",
+      "coordinate_drift_miles": 5.188,
+      "official_latitude": 46.4297222,
+      "official_longitude": -121.9869444,
+      "previous_latitude": 46.5041,
+      "previous_longitude": -121.9721
+    },
+    {
+      "slug": "peterson-prairie-campground",
+      "facility_id": "232895",
+      "coordinate_drift_miles": 2.873,
+      "official_latitude": 45.9694444,
+      "official_longitude": -121.6608333,
+      "previous_latitude": 45.9997,
+      "previous_longitude": -121.6198
+    },
+    {
+      "slug": "beckler-river-campground",
+      "facility_id": "232018",
+      "coordinate_drift_miles": 2.238,
+      "official_latitude": 47.732406,
+      "official_longitude": -121.333063,
+      "previous_latitude": 47.7476,
+      "previous_longitude": -121.3756
+    }
+  ],
   "results": [
     {
       "slug": "fairholme-campground",
@@ -12,7 +150,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/259084"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/259084",
+      "official_latitude": 48.07008,
+      "official_longitude": -123.918138,
+      "previous_latitude": 48.07008,
+      "previous_longitude": -123.918138,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "<p>Fairholme lies on the west side of Lake Cresent within Olympic National Park, about a 45-minute drive from Port Angeles and a 30-minute drive from Forks. Fairholme Campground is accessed by Camp David Jr. Road, off US Highway 101.\u00a0</p>\n"
     },
     {
       "slug": "hoh-campground",
@@ -22,7 +166,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/247592"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/247592",
+      "official_latitude": 47.8583525,
+      "official_longitude": -123.9355401,
+      "previous_latitude": 47.858353,
+      "previous_longitude": -123.93554,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "<p>Access the Upper Hoh Road from Highway 101.\u00a0</p>\n"
     },
     {
       "slug": "kalaloch-campground",
@@ -32,7 +182,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/232464"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232464",
+      "official_latitude": 47.6130556,
+      "official_longitude": -124.3747222,
+      "previous_latitude": 47.613056,
+      "previous_longitude": -124.374722,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "Kalaloch Campground is on Highway 101, 34 miles south of Forks, Washington, and 73 miles north of Aberdeen, Washington."
     },
     {
       "slug": "mora-campground",
@@ -42,7 +198,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/247591"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/247591",
+      "official_latitude": 0,
+      "official_longitude": 0,
+      "previous_latitude": 47.9158,
+      "previous_longitude": -124.5973,
+      "coordinate_drift_miles": 7764.363,
+      "official_directions": "<p>From North</p>\n<p>Drive southbound on Highway 101. Turn right on at the HWY 110 junction labeled for La Push (just before the town of Forks, WA).  Drive on HWY 110 and turn right on Mora Road. Turn left just after the Mora Ranger Station and follow the signs into the campground.\u00a0</p>\n<p>From South</p>\n<p>Drive northbound on Highway 101. Turn left on at the HWY 110 junction labeled for La Push (just after the town of Forks, WA).  Drive on HWY 110 and turn right on Mora Road. Turn left just after the Mora Ranger Station and follow the signs into the campground.</p>\n\n"
     },
     {
       "slug": "sol-duc-campground",
@@ -52,7 +214,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/251906"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/251906",
+      "official_latitude": 47.9667528,
+      "official_longitude": -123.857825,
+      "previous_latitude": 47.966753,
+      "previous_longitude": -123.857825,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "Sol Duc is in the northern part of Olympic National Park, 28 miles west of Port Angeles and west of Lake Crescent.<br />\n3 1/2 hours from Seattle<br />\n5 hours from Portland<br />\n3 hours from Victoria, BC<br />\nFrom the east: From Port Angeles, take Hwy. 101 west for 29 miles, then turn left onto Sol Duc Hot Springs Rd and travel 12 miles to Sol Duc Hot Springs Resort.<br />\nFrom the south: From Forks, take Hwy. 101 north for 28 miles then turn right onto Sol Duc Hot Springs Rd and travel 12 miles to Sol Duc Hot Springs Resort."
     },
     {
       "slug": "staircase-campground",
@@ -62,7 +230,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/247586"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/247586",
+      "official_latitude": 47.515373,
+      "official_longitude": -123.329668,
+      "previous_latitude": 47.515373,
+      "previous_longitude": -123.329668,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "<p>Staircase Campground is accessed off Highway 101 at the city of Hoodsport, WA. You take North Lake Cushman Road for a number of twisting and turning miles. North Lake Cushman Road will end with the blacktop and become Forest Service Road, NP - 24. You will simply follow this road to the end.</p>\n"
     },
     {
       "slug": "cougar-rock-campground",
@@ -72,7 +246,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/232466"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232466",
+      "official_latitude": 46.7672222,
+      "official_longitude": -121.7944444,
+      "previous_latitude": 46.7515,
+      "previous_longitude": -121.7371,
+      "coordinate_drift_miles": 2.924,
+      "official_directions": "Cougar Rock Campground is located 14 miles east of Ashford, Washington, on State Route 706/Paradise Road."
     },
     {
       "slug": "ohanapecosh-campground",
@@ -82,7 +262,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/232465"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232465",
+      "official_latitude": 46.7311111,
+      "official_longitude": -121.5702778,
+      "previous_latitude": 46.731111,
+      "previous_longitude": -121.570278,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "Located on State Route 123, four miles north of State Route 12."
     },
     {
       "slug": "white-river-campground",
@@ -92,7 +278,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/259031"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/259031",
+      "official_latitude": 46.90241,
+      "official_longitude": -121.641815,
+      "previous_latitude": 46.90241,
+      "previous_longitude": -121.641815,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": ""
     },
     {
       "slug": "newhalem-creek-campground",
@@ -102,7 +294,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/234060"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/234060",
+      "official_latitude": 48.675,
+      "official_longitude": -121.2611111,
+      "previous_latitude": 48.675,
+      "previous_longitude": -121.261111,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "<p>Newhalem Creek Campground is located at milepost 120 on State Route 20. From Burlington, WA, drive 60 miles (97 km) east on State Route 20. From Twisp, WA, drive 82 miles (132 km) west on State Route 20.\u00a0</p>\n"
     },
     {
       "slug": "goodell-creek-campground",
@@ -112,7 +310,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/246852"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/246852",
+      "official_latitude": 48.673,
+      "official_longitude": -121.267,
+      "previous_latitude": 48.673,
+      "previous_longitude": -121.267,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "<p>Goodell Creek Campground is located at milepost 119 on State Route 20. From Burlington, WA, drive 60 miles (97 km) east on State Route 20. The west entrance to the park is at milepost 112.  From Twisp, WA, drive 82 miles (132 km) west on State Route 20.\u00a0</p>\n"
     },
     {
       "slug": "colonial-creek-south-campground",
@@ -122,7 +326,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/255201"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/255201",
+      "official_latitude": 48.6895806,
+      "official_longitude": -121.0960611,
+      "previous_latitude": 48.689581,
+      "previous_longitude": -121.096061,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "<p>Colonial Creek South Campground is located near milepost 130 on State Route 20. From Burlington, WA, drive 70 miles (113 km) east on State Route 20. From Twisp, WA, drive 71 miles (114 km) west on State Route 20.</p>\n"
     },
     {
       "slug": "colonial-creek-north-campground",
@@ -132,7 +342,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/246855"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/246855",
+      "official_latitude": 48.691,
+      "official_longitude": -121.101,
+      "previous_latitude": 48.691,
+      "previous_longitude": -121.101,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "<p>Colonial Creek North Campground is located near milepost 130 on State Route 20. From Burlington, WA, drive 70 miles (113 km) east on State Route 20. From Twisp, WA, drive 71 (114 km) miles west on State Route 20.</p>\n"
     },
     {
       "slug": "tinkham-campground",
@@ -142,7 +358,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/232113"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232113",
+      "official_latitude": 47.402524,
+      "official_longitude": -121.56748,
+      "previous_latitude": 47.402524,
+      "previous_longitude": -121.56748,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "From Seattle, Washington, go east on I-90 to Exit 42.  Turn south and go approximately 1 mile to the campground."
     },
     {
       "slug": "kachess-campground",
@@ -152,7 +374,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/232064"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232064",
+      "official_latitude": 47.35484,
+      "official_longitude": -121.24342,
+      "previous_latitude": 47.35484,
+      "previous_longitude": -121.24342,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "<p>From Seattle, travel east on I-90 approximately 62 miles, or from Cle Elum travel west on I-90 approximately 20 miles. Take exit 62 and follow Kachess Lake Road for 5.5 miles to the campground, which is on the right.</p>"
     },
     {
       "slug": "verlot-campground",
@@ -162,7 +390,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/232120"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232120",
+      "official_latitude": 48.090365,
+      "official_longitude": -121.777802,
+      "previous_latitude": 48.0683,
+      "previous_longitude": -121.733,
+      "coordinate_drift_miles": 2.569,
+      "official_directions": "From Seattle, go north on I-5 to Everett.  Take Exit 194 onto Highway 2.\nHead north at Highway 204 toward Lake Stevens.  Turn north on Highway 9.\nTurn east on Highway 92 to Granite Falls, WA.  Campground is 10.8 miles\neast of Granite Falls."
     },
     {
       "slug": "gold-basin-campground",
@@ -172,7 +406,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/232051"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232051",
+      "official_latitude": 48.07758,
+      "official_longitude": -121.738008,
+      "previous_latitude": 48.07758,
+      "previous_longitude": -121.738008,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "From Seattle, Washington, go north on I-5 to Everett. Take exit 194 onto\nHighway 2, then turn north at Highway 204 toward Lake Stevens. Turn north on Highway 9 then east on Highway 92 to Granite Falls. The campground is located 13.5 miles east of Granite Falls."
     },
     {
       "slug": "turlo-campground",
@@ -182,7 +422,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/232118"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232118",
+      "official_latitude": 48.0955556,
+      "official_longitude": -121.7902778,
+      "previous_latitude": 48.095556,
+      "previous_longitude": -121.790278,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "From Seattle, Washington: Go north on I-5 to Everett. Take exit 194 onto\nHwy 2. Head north at Hwy 204, toward Lake Stevens. Turn north on Hwy 9,\nthen east on Hwy 92 to Granite Falls."
     },
     {
       "slug": "bedal-campground",
@@ -192,7 +438,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/233864"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/233864",
+      "official_latitude": 48.096843,
+      "official_longitude": -121.386943,
+      "previous_latitude": 48.0767,
+      "previous_longitude": -121.4684,
+      "coordinate_drift_miles": 4.009,
+      "official_directions": "<p>From Darrington, Washington, travel 16 miles southeast on of the Mt. Loop Scenic Byway. The campground is located on the west side of the road at mile post 37, just beyond the junction of Mt. Loop and Forest Road 49. Note that the final 7.5 miles are along a graveled single lane section of road and that road conditions can be variable due to heavy use, weather, and periodic maintenance. We recommend accessing the campground via Darrington as the Barlow Pass section may be gated.</p>\n"
     },
     {
       "slug": "horseshoe-cove-campground",
@@ -202,7 +454,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/232059"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232059",
+      "official_latitude": 48.671943,
+      "official_longitude": -121.676449,
+      "previous_latitude": 48.671943,
+      "previous_longitude": -121.676449,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": " From Seattle, go north on I-5 to Burlington. Take Exit 230 on State Highway 20. Go past the Mt. Baker Ranger District Office in Sedro-Woolley and follow State Route 20 east for 16 miles to milepost 82. Turn left (north) on the Baker Lake Highway (Forest Service Road 11). Continue 15.1miles. Turn right at the Horseshoe Cove Road junction. Head 2 miles down Horseshoe Cove Road, past Bayview Campground to the campground. "
     },
     {
       "slug": "shannon-creek-campground",
@@ -212,7 +470,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/232096"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232096",
+      "official_latitude": 48.740375,
+      "official_longitude": -121.600532,
+      "previous_latitude": 48.7204,
+      "previous_longitude": -121.6872,
+      "coordinate_drift_miles": 4.184,
+      "official_directions": " From Seattle, go north on I-5 to Burlington. Take Exit 230 on State Highway 20. Go past the Mt. Baker Ranger District Office in Sedro-Woolley and follow State Route 20 east for 16 miles to milepost 82. Turn left (north) on the Baker Lake Highway (Forest Service Road 11). Continue for 23.3 miles to the sign for Shannon Creek Campground on the right."
     },
     {
       "slug": "douglas-fir-campground",
@@ -222,7 +486,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/232038"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232038",
+      "official_latitude": 48.902656,
+      "official_longitude": -121.911954,
+      "previous_latitude": 48.8832,
+      "previous_longitude": -122.0099,
+      "coordinate_drift_miles": 4.648,
+      "official_directions": " From Seattle, Washington, go north on I-5 to Bellingham. Take exit 255 onto Sunset Drive/Mt. Baker Highway SR 542. Continue on SR 542 past the town of Glacier near mile 33 and continue approximately 2 miles to the campground. The campground is on the left (west) side of the highway just after crossing the bridge over the North Fork Nooksack River. "
     },
     {
       "slug": "silver-fir-campground",
@@ -232,7 +502,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/232099"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232099",
+      "official_latitude": 48.903321,
+      "official_longitude": -121.696105,
+      "previous_latitude": 48.9008,
+      "previous_longitude": -121.8264,
+      "coordinate_drift_miles": 5.921,
+      "official_directions": " From Seattle, Washington, go north on I-5 to Bellingham. Take exit 255 onto Sunset Drive/Mt. Baker Highway SR 542. Continue on SR 542 past the town of Glacier near mile 33 and continue approximately 12.5 miles to the campground. The campground is on the right (west) side of the highway after crossing the bridge over the North Fork Nooksack River."
     },
     {
       "slug": "coho-campground",
@@ -242,7 +518,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/233384"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/233384",
+      "official_latitude": 47.390403,
+      "official_longitude": -123.604732,
+      "previous_latitude": 47.3746,
+      "previous_longitude": -123.5533,
+      "coordinate_drift_miles": 2.642,
+      "official_directions": "From Route 12 via Montesano: Turn north on Wynoochee Valley Road, 1 mile west of Montesano. Drive 35 miles on Wynoochee Valley Road and Forest Road 22 to a major intersection. Turn left to stay on FR-22. Drive a short distance and turn right on Forest Road 2294. Drive 1 mile to the campground. \n<br /><br />"
     },
     {
       "slug": "eightmile-campground",
@@ -252,7 +534,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/121440"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/121440",
+      "official_latitude": 47.5508333,
+      "official_longitude": -120.7661111,
+      "previous_latitude": 47.550833,
+      "previous_longitude": -120.766111,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "From the west, take Highway 2 east through Monroe and over Steven's Pass. Turn right on Icicle River Road and follow for approximately 8 miles. The campground will be on the left.<br /><br />\nFrom the east, take Highway 2 west through Leavenworth. Turn left on Icicle River Road and follow road approximately 8 miles to the campground on the left."
     },
     {
       "slug": "johnny-creek-campground",
@@ -262,7 +550,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/10250569"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/10250569",
+      "official_latitude": 47.5982,
+      "official_longitude": -120.8174,
+      "previous_latitude": 47.5434,
+      "previous_longitude": -120.6584,
+      "coordinate_drift_miles": 8.324,
+      "official_directions": ""
     },
     {
       "slug": "nason-creek-campground",
@@ -272,7 +566,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/121390"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/121390",
+      "official_latitude": 47.7996,
+      "official_longitude": -120.716,
+      "previous_latitude": 47.7889,
+      "previous_longitude": -120.6736,
+      "coordinate_drift_miles": 2.102,
+      "official_directions": "From Leavenworth, WA head southwest on US-2 toward 9th street and go about 15 miles. Turn right onto WA-207 N for 3.4 miles and the campground will be on the left hand side."
     },
     {
       "slug": "bonaparte-lake-campground",
@@ -282,7 +582,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/252036"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/252036",
+      "official_latitude": 48.7924639,
+      "official_longitude": -119.0574194,
+      "previous_latitude": 48.792464,
+      "previous_longitude": -119.057419,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "From Tonasket, Washington, take State Route 20 East for 24 miles.  Turn left onto the Bonaparte Recreation Area turnoff (Okanogan County Road 4953).  Continue on Okanogan County Road #4953 for approximately 6 miles to the Bonaparte Lake Campground entrance on the left hand side of the road."
     },
     {
       "slug": "swan-lake-campground",
@@ -292,7 +598,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/10378408"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/10378408",
+      "official_latitude": 48.51722,
+      "official_longitude": -118.83694,
+      "previous_latitude": 48.8024,
+      "previous_longitude": -118.9834,
+      "coordinate_drift_miles": 20.808,
+      "official_directions": ""
     },
     {
       "slug": "east-sullivan-campground",
@@ -302,7 +614,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/231987"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/231987",
+      "official_latitude": 48.8613889,
+      "official_longitude": -117.2827778,
+      "previous_latitude": 48.861389,
+      "previous_longitude": -117.282778,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "<p>Campground is located 95 miles north of Spokane, Washington. From the junction of State Highway 20, follow State Highway 31 three miles north to the junction of the Sullivan Lake Road (County Road 9345).  Follow the Sullivan Lake Road for 12.5 miles to the junction of Forest Road 2200 (Sullivan Creek).  Turn right onto Sullivan Creek Road and follow it for 0.25 mile to the entrance of East Sullivan Campground.</p>\n"
     },
     {
       "slug": "noisy-creek-campground",
@@ -312,7 +630,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/231988"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/231988",
+      "official_latitude": 48.7838889,
+      "official_longitude": -117.2786111,
+      "previous_latitude": 48.8382,
+      "previous_longitude": -117.2958,
+      "coordinate_drift_miles": 3.833,
+      "official_directions": "<p>Campground is located ninety miles north of Spokane, Washington.  From the junction of State Highway 20, take Highway 31 north for three miles to the junction of the Sullivan Lake Road (County Road 9345Follow the Sullivan Lake Road for 8 miles to the campground entrance.  The campground is located at the south end of Sullivan Lake.</p>\n"
     },
     {
       "slug": "iron-creek-campground",
@@ -322,7 +646,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/232853"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232853",
+      "official_latitude": 46.4297222,
+      "official_longitude": -121.9869444,
+      "previous_latitude": 46.5041,
+      "previous_longitude": -121.9721,
+      "coordinate_drift_miles": 5.188,
+      "official_directions": "Take Highway 12 from I-5 and proceed 40 miles to Randle, turn south on Forest Road 25 and continue for 12 miles to the campground.\n\n"
     },
     {
       "slug": "takhlakh-lake-campground",
@@ -332,7 +662,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/232861"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232861",
+      "official_latitude": 46.2808333,
+      "official_longitude": -121.5986111,
+      "previous_latitude": 46.280833,
+      "previous_longitude": -121.598611,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "From I-5: Take exit 68 and head east on US Highway 12 to Randle, Washington. Turn south onto State Highway 131 and travel 1 mile, stay left at the Y and continue southeast on Forest Road 23 for 30 miles to Forest Road 2329. Turn left onto Forest Road 2329 and follow it through the junction with Forest Road 5601. Proceed on Forest Road 2329 for 3/4-mile to the campground.<br /><br />\nThe last 7 miles of Forest Road 23 are gravel surfaced."
     },
     {
       "slug": "walupt-lake-campground",
@@ -342,7 +678,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/232860"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232860",
+      "official_latitude": 46.4230556,
+      "official_longitude": -121.4736111,
+      "previous_latitude": 46.423056,
+      "previous_longitude": -121.473611,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "Take I-5 to Highway 12 towards Packwood, then take Highway 21 to FS Road 2160 to the campground."
     },
     {
       "slug": "denny-creek-campground",
@@ -352,7 +694,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/232035"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232035",
+      "official_latitude": 47.412132,
+      "official_longitude": -121.442183,
+      "previous_latitude": 47.412132,
+      "previous_longitude": -121.442183,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "From Seattle, take Interstate 90 east to exit 47. Go north over the freeway and follow signs 3 miles to campground."
     },
     {
       "slug": "salmon-la-sac-campground",
@@ -362,7 +710,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/232094"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232094",
+      "official_latitude": 47.403564,
+      "official_longitude": -121.098554,
+      "previous_latitude": 47.403564,
+      "previous_longitude": -121.098554,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "<p>From Seattle, take I-90 east for nearly 80 miles. Take exit 80 toward Salmon La Sac and turn left on Bullfrog Road. Continue to the 2nd traffic circle and take the second exit onto WA-903 north. Continue onto Salmon La Sac road. The campground is on the left, just past Cayuse Campground. </p><p>From Cle Elum, travel north on Highway 903 / Salmon la Sac Road for 19 miles. Stay left on Salmon La Sac road to the campground. The campground is on the left, just past Cayuse Campground.</p>"
     },
     {
       "slug": "bumping-lake-campground",
@@ -372,7 +726,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/232356"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232356",
+      "official_latitude": 46.8552778,
+      "official_longitude": -121.3044444,
+      "previous_latitude": 46.855278,
+      "previous_longitude": -121.304444,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "<p>From Yakima, travel 25 miles on Highway 12 to the junction with Highway 410. Travel 29 miles on Highway 410 (Chinook Pass Highway) to milepost 88.4. Take Forest Road 18 (Bumping River Road) for 11.7 miles to campground.</p>"
     },
     {
       "slug": "la-wis-wis-campground",
@@ -382,7 +742,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/233877"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/233877",
+      "official_latitude": 46.6738889,
+      "official_longitude": -121.5877778,
+      "previous_latitude": 46.673889,
+      "previous_longitude": -121.587778,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "From Packwood, Washington, go 5 miles east on State Route 12 to Campground."
     },
     {
       "slug": "lower-falls-campground",
@@ -392,7 +758,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/250032"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/250032",
+      "official_latitude": 46.15664,
+      "official_longitude": -121.878452,
+      "previous_latitude": 46.15664,
+      "previous_longitude": -121.878452,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": "From Portland or Seattle take I-5 to exit 21 for WA-503 E toward Woodland/Cougar. WA-503 will turn into FR 90, turn right at the Pine Creek Visitor Center. Lower Falls Campground will be on your right hand side after you pass mile marker 28 on FR 90."
     },
     {
       "slug": "peterson-prairie-campground",
@@ -402,7 +774,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/232895"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232895",
+      "official_latitude": 45.9694444,
+      "official_longitude": -121.6608333,
+      "previous_latitude": 45.9997,
+      "previous_longitude": -121.6198,
+      "coordinate_drift_miles": 2.873,
+      "official_directions": "From SR 14 follow SR 141 North to the town of Trout Lake, continue through town on SR 141 till the road ends and  FS 24 begins(approximately 5 miles WSW of town). Continue west on FS 24 for another 2.25 miles to the entrance of Peterson Prairie."
     },
     {
       "slug": "panorama-point-campground",
@@ -412,7 +790,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/232081"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232081",
+      "official_latitude": 48.724189,
+      "official_longitude": -121.672679,
+      "previous_latitude": 48.724189,
+      "previous_longitude": -121.672679,
+      "coordinate_drift_miles": 0.0,
+      "official_directions": " From Seattle, go north on I-5 to Burlington. Take Exit 230 on State Highway 20. Go past the Mt. Baker Ranger District Office in Sedro-Woolley and follow State Route 20 east for 16 miles to milepost 82. Turn left (north) on the Baker Lake Highway (Forest Service Road 11). Continue for 19.2 miles on the Baker Lake Highway. The campground is on the right."
     },
     {
       "slug": "beckler-river-campground",
@@ -422,7 +806,13 @@
       "identity_score": 1.0,
       "ok": true,
       "checked_on": "2026-09-06",
-      "source": "https://www.recreation.gov/api/camps/campgrounds/232018"
+      "source": "https://www.recreation.gov/api/camps/campgrounds/232018",
+      "official_latitude": 47.732406,
+      "official_longitude": -121.333063,
+      "previous_latitude": 47.7476,
+      "previous_longitude": -121.3756,
+      "coordinate_drift_miles": 2.238,
+      "official_directions": "From Seattle, Washington, go north on I-5 to US Highway 2, exit 194.\nApproximately 49 miles along Highway 2 turn north onto Forest Road 65. Turn at the campground sign and continue about 1.5 miles."
     }
   ]
 }

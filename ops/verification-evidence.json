@@ -31,31 +31,20 @@
   ],
   "observations": [
     {
-      "slug": "hoh-campground",
-      "field": "max_rv_length",
-      "status": "corrected_locally",
-      "checked_on": "2026-09-06",
-      "summary": "NPS says most sites fit 21-foot equipment and a few fit equipment up to 35 feet.",
-      "proposed_value": 35,
-      "sources": [{"url":"https://www.nps.gov/olym/planyourvisit/camping.htm","publisher":"National Park Service","source_family":"nps-olympic-camping","evidence":"Current Hoh listing says sites for 21 feet, with a few up to 35 feet."}]
-    },
-    {
-      "slug": "hoh-campground",
-      "field": "reservation_method",
-      "status": "supported",
-      "checked_on": "2026-09-06",
-      "summary": "Peak-season reservations use Recreation.gov; the campground is first-come outside that period.",
-      "proposed_value": "Seasonal reservations through Recreation.gov",
-      "sources": [{"url":"https://www.nps.gov/olym/planyourvisit/camping.htm","publisher":"National Park Service","source_family":"nps-olympic-camping","evidence":"Current Hoh listing publishes the 2026 reservation season and Recreation.gov route."}]
-    },
-    {
       "slug": "ohanapecosh-campground",
       "field": "operating_status",
       "status": "corrected_locally",
       "checked_on": "2026-09-06",
       "summary": "The entire developed area is closed for the 2026 season during construction.",
       "proposed_value": "closed for 2026",
-      "sources": [{"url":"https://www.nps.gov/mora/planyourvisit/park-construction-faqs.htm","publisher":"National Park Service","source_family":"nps-mount-rainier-construction","evidence":"Current FAQ states no camping or visitor access in 2026 and an expected summer 2027 reopening."}]
+      "sources": [
+        {
+          "url": "https://www.nps.gov/mora/planyourvisit/park-construction-faqs.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-mount-rainier-construction",
+          "evidence": "Current FAQ states no camping or visitor access in 2026 and an expected summer 2027 reopening."
+        }
+      ]
     },
     {
       "slug": "big-creek-campground",
@@ -64,7 +53,14 @@
       "checked_on": "2026-09-06",
       "summary": "Olympic National Forest Big Creek is first-come; the former URL led to an unrelated Indiana campground.",
       "proposed_value": "first-come, first-served",
-      "sources": [{"url":"https://www.fs.usda.gov/recarea/olympic/recreation/camping-cabins/recarea/?actid=29&recid=79317","publisher":"USDA Forest Service","source_family":"usfs-olympic","evidence":"Current operator listing identifies the 64-unit Big Creek campground near Hoodsport."}]
+      "sources": [
+        {
+          "url": "https://www.fs.usda.gov/recarea/olympic/recreation/camping-cabins/recarea/?actid=29&recid=79317",
+          "publisher": "USDA Forest Service",
+          "source_family": "usfs-olympic",
+          "evidence": "Current operator listing identifies the 64-unit Big Creek campground near Hoodsport."
+        }
+      ]
     },
     {
       "slug": "big-creek-campground",
@@ -73,7 +69,14 @@
       "checked_on": "2026-09-06",
       "summary": "The current operator web listing confirms RV access but does not publish one campground-wide maximum.",
       "proposed_value": null,
-      "sources": [{"url":"https://www.fs.usda.gov/recarea/olympic/recreation/camping-cabins/recarea/?actid=29&recid=79317","publisher":"USDA Forest Service","source_family":"usfs-olympic","evidence":"Current Big Creek listing accepts RVs but gives no maximum length."}]
+      "sources": [
+        {
+          "url": "https://www.fs.usda.gov/recarea/olympic/recreation/camping-cabins/recarea/?actid=29&recid=79317",
+          "publisher": "USDA Forest Service",
+          "source_family": "usfs-olympic",
+          "evidence": "Current Big Creek listing accepts RVs but gives no maximum length."
+        }
+      ]
     },
     {
       "slug": "swan-lake-campground",
@@ -82,7 +85,14 @@
       "checked_on": "2026-09-06",
       "summary": "The campground is first-come; the former destination was the separate Swan Lake Kitchen group shelter.",
       "proposed_value": "first-come, first-served",
-      "sources": [{"url":"https://www.recreation.gov/camping/campgrounds/10378408","publisher":"Recreation.gov","source_family":"recreation-gov-swan-lake","evidence":"Current facility record identifies Swan Lake campground, separate from facility 234632 Swan Lake Kitchen."}]
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/10378408",
+          "publisher": "Recreation.gov",
+          "source_family": "recreation-gov-swan-lake",
+          "evidence": "Current facility record identifies Swan Lake campground, separate from facility 234632 Swan Lake Kitchen."
+        }
+      ]
     },
     {
       "slug": "horseshoe-cove-campground",
@@ -91,7 +101,14 @@
       "checked_on": "2026-09-06",
       "summary": "Current reservable inventory includes RV sites up to 40 feet.",
       "proposed_value": 40,
-      "sources": [{"url":"https://www.recreation.gov/camping/campgrounds/232059","publisher":"Recreation.gov","source_family":"recreation-gov-horseshoe-cove","evidence":"Current campsite inventory includes 40-foot RV and trailer limits."}]
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232059",
+          "publisher": "Recreation.gov",
+          "source_family": "recreation-gov-horseshoe-cove",
+          "evidence": "Current campsite inventory includes 40-foot RV and trailer limits."
+        }
+      ]
     },
     {
       "slug": "johnny-creek-campground",
@@ -100,7 +117,14 @@
       "checked_on": "2026-09-06",
       "summary": "The facility description accepts tents, trailers, and RVs up to 65 feet.",
       "proposed_value": 65,
-      "sources": [{"url":"https://www.recreation.gov/camping/campgrounds/10250569","publisher":"Recreation.gov","source_family":"recreation-gov-johnny-creek","evidence":"Current facility description publishes a 65-foot maximum."}]
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/10250569",
+          "publisher": "Recreation.gov",
+          "source_family": "recreation-gov-johnny-creek",
+          "evidence": "Current facility description publishes a 65-foot maximum."
+        }
+      ]
     },
     {
       "slug": "salmon-la-sac-campground",
@@ -109,77 +133,14 @@
       "checked_on": "2026-09-06",
       "summary": "The longest published pull-throughs accept RVs and trailers up to 127 feet; most sites are shorter.",
       "proposed_value": 127,
-      "sources": [{"url":"https://www.recreation.gov/camping/campsites/84265","publisher":"Recreation.gov","source_family":"recreation-gov-salmon-la-sac","evidence":"Site 20 publishes a 127-foot RV and trailer maximum."}]
-    },
-    {
-      "slug": "graves-creek-campground",
-      "field": "rv_access",
-      "status": "corrected_locally",
-      "checked_on": "2026-09-05",
-      "summary": "Published directory calls this an RV campground with a 21-foot limit; NPS prohibits RVs and trailers.",
-      "proposed_value": false,
       "sources": [
         {
-          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
-          "publisher": "National Park Service",
-          "evidence": "Graves Creek section says road conditions preclude RVs and trailers.",
-          "source_family": "nps-olympic"
+          "url": "https://www.recreation.gov/camping/campsites/84265",
+          "publisher": "Recreation.gov",
+          "source_family": "recreation-gov-salmon-la-sac",
+          "evidence": "Site 20 publishes a 127-foot RV and trailer maximum."
         }
-      ],
-      "resolution": "Corrected and deployed on 2026-09-06. Historical summary retained for traceability."
-    },
-    {
-      "slug": "sol-duc-campground",
-      "field": "hookups",
-      "status": "supported",
-      "checked_on": "2026-09-06",
-      "summary": "The page now distinguishes the 82 standard campsites from the separate 17-site water-and-electric RV area.",
-      "proposed_value": 2,
-      "sources": [
-        {
-          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
-          "publisher": "National Park Service",
-          "evidence": "Sol Duc section describes 82 campground sites and a separate 17-site RV area with water and electric hookups.",
-          "source_family": "nps-olympic"
-        }
-      ],
-      "resolution": "Resolved 2026-09-06 by describing both facility types explicitly and applying the hookup value only to the dedicated RV area."
-    },
-    {
-      "slug": "sol-duc-campground",
-      "field": "rv_access",
-      "status": "supported",
-      "checked_on": "2026-09-06",
-      "summary": "Both the campground and dedicated RV area accept RV equipment, with site-specific limits.",
-      "proposed_value": true,
-      "sources": [{"url":"https://www.nps.gov/olym/planyourvisit/camping.htm","publisher":"National Park Service","source_family":"nps-olympic","evidence":"The current Sol Duc section publishes RV limits for both the campground and RV area."}]
-    },
-    {
-      "slug": "sol-duc-campground",
-      "field": "max_rv_length",
-      "status": "supported",
-      "checked_on": "2026-09-06",
-      "summary": "The dedicated RV area has site groups up to 36 feet; campground pads are mostly shorter.",
-      "proposed_value": 36,
-      "sources": [{"url":"https://www.recreation.gov/camping/campgrounds/251906","publisher":"Recreation.gov","source_family":"recreation-gov-sol-duc","evidence":"Current inventory includes dedicated RV sites labeled for 20-, 26-, and 36-foot equipment."}]
-    },
-    {
-      "slug": "sol-duc-campground",
-      "field": "reservation_method",
-      "status": "supported",
-      "checked_on": "2026-09-06",
-      "summary": "The current NPS page routes reservations to Recreation.gov up to six months ahead.",
-      "proposed_value": "Reservable up to 6 months in advance",
-      "sources": [{"url":"https://www.nps.gov/olym/planyourvisit/camping.htm","publisher":"National Park Service","source_family":"nps-olympic","evidence":"Current Sol Duc section says reservations are available through Recreation.gov up to six months ahead."}]
-    },
-    {
-      "slug": "sol-duc-campground",
-      "field": "operating_status",
-      "status": "supported",
-      "checked_on": "2026-09-06",
-      "summary": "NPS currently lists the facility as open with seasonal reservation dates and possible weather closures.",
-      "proposed_value": "open with seasonal reservation dates",
-      "sources": [{"url":"https://www.nps.gov/olym/planyourvisit/camping.htm","publisher":"National Park Service","source_family":"nps-olympic","evidence":"Current status is open; primitive camping may continue until the winter road closure, subject to severe weather."}]
+      ]
     },
     {
       "slug": "twanoh-state-park",
@@ -204,7 +165,14 @@
       "checked_on": "2026-09-06",
       "summary": "Whatcom County publishes an active 2026 camping season from April 10 through October 26.",
       "proposed_value": "seasonal campground",
-      "sources": [{"url":"https://www.whatcomcounty.us/3517/Silver-Lake-Park","publisher":"Whatcom County Parks & Recreation","source_family":"whatcom-county-silver-lake","evidence":"Current park page lists the 2026 camping season and reservation information."}]
+      "sources": [
+        {
+          "url": "https://www.whatcomcounty.us/3517/Silver-Lake-Park",
+          "publisher": "Whatcom County Parks & Recreation",
+          "source_family": "whatcom-county-silver-lake",
+          "evidence": "Current park page lists the 2026 camping season and reservation information."
+        }
+      ]
     },
     {
       "slug": "silver-lake-park",
@@ -213,7 +181,14 @@
       "checked_on": "2026-09-06",
       "summary": "Maple Creek and Red Mountain accept RVs; Cedar is not recommended for RVs and caps vehicles at 25 feet.",
       "proposed_value": true,
-      "sources": [{"url":"https://www.whatcomcounty.us/3518/Camping-at-Silver-Lake-Park/messages","publisher":"Whatcom County Parks & Recreation","source_family":"whatcom-county-silver-lake","evidence":"Campground details explicitly identify the two RV campgrounds and Cedar's restriction."}]
+      "sources": [
+        {
+          "url": "https://www.whatcomcounty.us/3518/Camping-at-Silver-Lake-Park/messages",
+          "publisher": "Whatcom County Parks & Recreation",
+          "source_family": "whatcom-county-silver-lake",
+          "evidence": "Campground details explicitly identify the two RV campgrounds and Cedar's restriction."
+        }
+      ]
     },
     {
       "slug": "silver-lake-park",
@@ -222,7 +197,14 @@
       "checked_on": "2026-09-06",
       "summary": "The current official campground details do not publish one park-wide RV maximum; Cedar's 25-foot rule does not apply to the RV campgrounds.",
       "proposed_value": null,
-      "sources": [{"url":"https://www.whatcomcounty.us/3518/Camping-at-Silver-Lake-Park/messages","publisher":"Whatcom County Parks & Recreation","source_family":"whatcom-county-silver-lake","evidence":"Current page describes equipment types and Cedar's limit but gives no park-wide maximum for Maple Creek or Red Mountain."}]
+      "sources": [
+        {
+          "url": "https://www.whatcomcounty.us/3518/Camping-at-Silver-Lake-Park/messages",
+          "publisher": "Whatcom County Parks & Recreation",
+          "source_family": "whatcom-county-silver-lake",
+          "evidence": "Current page describes equipment types and Cedar's limit but gives no park-wide maximum for Maple Creek or Red Mountain."
+        }
+      ]
     },
     {
       "slug": "silver-lake-park",
@@ -231,7 +213,14 @@
       "checked_on": "2026-09-06",
       "summary": "Both RV campgrounds provide water and electric hookups; the official page does not claim sewer at sites.",
       "proposed_value": 2,
-      "sources": [{"url":"https://www.whatcomcounty.us/3518/Camping-at-Silver-Lake-Park/messages","publisher":"Whatcom County Parks & Recreation","source_family":"whatcom-county-silver-lake","evidence":"Maple Creek and Red Mountain details list water and electric service and amp ranges."}]
+      "sources": [
+        {
+          "url": "https://www.whatcomcounty.us/3518/Camping-at-Silver-Lake-Park/messages",
+          "publisher": "Whatcom County Parks & Recreation",
+          "source_family": "whatcom-county-silver-lake",
+          "evidence": "Maple Creek and Red Mountain details list water and electric service and amp ranges."
+        }
+      ]
     },
     {
       "slug": "silver-lake-park",
@@ -240,7 +229,14 @@
       "checked_on": "2026-09-06",
       "summary": "Reservations for the next calendar year open on the first business day of December, with limited first-come sites.",
       "proposed_value": "Reservations for the next calendar year open the first business day of December",
-      "sources": [{"url":"https://www.whatcomcounty.us/3517/Silver-Lake-Park","publisher":"Whatcom County Parks & Recreation","source_family":"whatcom-county-silver-lake","evidence":"Current reservation information gives the annual December opening and notes limited first-come availability."}]
+      "sources": [
+        {
+          "url": "https://www.whatcomcounty.us/3517/Silver-Lake-Park",
+          "publisher": "Whatcom County Parks & Recreation",
+          "source_family": "whatcom-county-silver-lake",
+          "evidence": "Current reservation information gives the annual December opening and notes limited first-come availability."
+        }
+      ]
     },
     {
       "slug": "dosewallips-state-park",
@@ -249,7 +245,14 @@
       "checked_on": "2026-09-06",
       "summary": "The official park page describes a year-round camping park and publishes current 2026 alerts.",
       "proposed_value": "open with seasonal service changes",
-      "sources": [{"url": "https://parks.wa.gov/find-parks/state-parks/dosewallips-state-park", "publisher": "Washington State Parks", "source_family": "washington-state-parks-dosewallips", "evidence": "Current park page describes year-round camping, winterized services, and current alerts."}]
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/dosewallips-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks-dosewallips",
+          "evidence": "Current park page describes year-round camping, winterized services, and current alerts."
+        }
+      ]
     },
     {
       "slug": "dosewallips-state-park",
@@ -258,7 +261,14 @@
       "checked_on": "2026-09-06",
       "summary": "The operator explicitly accepts RVs and combinations up to 40 feet.",
       "proposed_value": true,
-      "sources": [{"url": "https://parks.wa.gov/find-parks/state-parks/dosewallips-state-park", "publisher": "Washington State Parks", "source_family": "washington-state-parks-dosewallips", "evidence": "Camping section says RVs and combinations of 40 feet or less are accommodated."}]
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/dosewallips-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks-dosewallips",
+          "evidence": "Camping section says RVs and combinations of 40 feet or less are accommodated."
+        }
+      ]
     },
     {
       "slug": "dosewallips-state-park",
@@ -267,7 +277,14 @@
       "checked_on": "2026-09-06",
       "summary": "The published park-wide maximum is 40 feet; individual pads still vary.",
       "proposed_value": 40,
-      "sources": [{"url": "https://parks.wa.gov/find-parks/state-parks/dosewallips-state-park", "publisher": "Washington State Parks", "source_family": "washington-state-parks-dosewallips", "evidence": "Camping section states a 40-foot maximum for RVs and combinations."}]
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/dosewallips-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks-dosewallips",
+          "evidence": "Camping section states a 40-foot maximum for RVs and combinations."
+        }
+      ]
     },
     {
       "slug": "dosewallips-state-park",
@@ -276,7 +293,14 @@
       "checked_on": "2026-09-06",
       "summary": "The current campground map identifies full-hookup and water/electric site ranges.",
       "proposed_value": 3,
-      "sources": [{"url": "https://parks.wa.gov/sites/default/files/2024-11/Dosewallips%20Campground%20Map%2010-24-24.pdf", "publisher": "Washington State Parks", "source_family": "washington-state-parks-dosewallips", "evidence": "Map labels full-hookup sites and separate water/electric ranges."}]
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/sites/default/files/2024-11/Dosewallips%20Campground%20Map%2010-24-24.pdf",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks-dosewallips",
+          "evidence": "Map labels full-hookup sites and separate water/electric ranges."
+        }
+      ]
     },
     {
       "slug": "dosewallips-state-park",
@@ -285,7 +309,20 @@
       "checked_on": "2026-09-06",
       "summary": "Individual campsites are reservable and the statewide booking window is nine months.",
       "proposed_value": "Reservable up to 9 months in advance",
-      "sources": [{"url": "https://parks.wa.gov/passes-permits/reservations/making-reservations", "publisher": "Washington State Parks", "source_family": "washington-state-parks-reservations", "evidence": "Statewide instructions specify a rolling nine-month reservation window."}, {"url": "https://parks.wa.gov/passes-permits/reservations/reservation-parks", "publisher": "Washington State Parks", "source_family": "washington-state-parks-reservations", "evidence": "Dosewallips is listed for reservable individual campsites."}]
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/passes-permits/reservations/making-reservations",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks-reservations",
+          "evidence": "Statewide instructions specify a rolling nine-month reservation window."
+        },
+        {
+          "url": "https://parks.wa.gov/passes-permits/reservations/reservation-parks",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks-reservations",
+          "evidence": "Dosewallips is listed for reservable individual campsites."
+        }
+      ]
     },
     {
       "slug": "fort-flagler-historical-state-park",
@@ -294,7 +331,20 @@
       "checked_on": "2026-09-06",
       "summary": "The official park page and 2026 camping notice show active camping, with seasonal loop changes.",
       "proposed_value": "open with seasonal loop changes",
-      "sources": [{"url": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park", "publisher": "Washington State Parks", "source_family": "washington-state-parks-fort-flagler", "evidence": "Current park page describes both active campgrounds and 2026 alerts."}, {"url": "https://parks.wa.gov/news/2025/book-beach-all-year-long-fort-flagler-historical-state-park", "publisher": "Washington State Parks", "source_family": "washington-state-parks-fort-flagler", "evidence": "Operator announces year-round reservations for the lower campground beginning January 2026."}]
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks-fort-flagler",
+          "evidence": "Current park page describes both active campgrounds and 2026 alerts."
+        },
+        {
+          "url": "https://parks.wa.gov/news/2025/book-beach-all-year-long-fort-flagler-historical-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks-fort-flagler",
+          "evidence": "Operator announces year-round reservations for the lower campground beginning January 2026."
+        }
+      ]
     },
     {
       "slug": "fort-flagler-historical-state-park",
@@ -303,7 +353,14 @@
       "checked_on": "2026-09-06",
       "summary": "The operator describes standard, partial, and full-hookup RV camping in two campgrounds.",
       "proposed_value": true,
-      "sources": [{"url": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park", "publisher": "Washington State Parks", "source_family": "washington-state-parks-fort-flagler", "evidence": "Camping section describes level, spacious standard, partial, and full-hookup sites."}]
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks-fort-flagler",
+          "evidence": "Camping section describes level, spacious standard, partial, and full-hookup sites."
+        }
+      ]
     },
     {
       "slug": "fort-flagler-historical-state-park",
@@ -312,7 +369,14 @@
       "checked_on": "2026-09-06",
       "summary": "The official park brochure reports RV accommodation up to 50 feet.",
       "proposed_value": 50,
-      "sources": [{"url": "https://parks.wa.gov/sites/default/files/2023-07/Fort%20Flagler%20State%20Park%20Brochure%2005-22-20%20Final%20Web%20SFS.pdf", "publisher": "Washington State Parks", "source_family": "washington-state-parks-fort-flagler", "evidence": "Official brochure states that full-hookup sites accommodate RVs up to 50 feet."}]
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/sites/default/files/2023-07/Fort%20Flagler%20State%20Park%20Brochure%2005-22-20%20Final%20Web%20SFS.pdf",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks-fort-flagler",
+          "evidence": "Official brochure states that full-hookup sites accommodate RVs up to 50 feet."
+        }
+      ]
     },
     {
       "slug": "fort-flagler-historical-state-park",
@@ -321,7 +385,14 @@
       "checked_on": "2026-09-06",
       "summary": "The official page lists partial and full-hookup sites in the lower campground.",
       "proposed_value": 3,
-      "sources": [{"url": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park", "publisher": "Washington State Parks", "source_family": "washington-state-parks-fort-flagler", "evidence": "Camping section explicitly lists standard, partial, and full-hookup sites."}]
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks-fort-flagler",
+          "evidence": "Camping section explicitly lists standard, partial, and full-hookup sites."
+        }
+      ]
     },
     {
       "slug": "fort-flagler-historical-state-park",
@@ -330,7 +401,900 @@
       "checked_on": "2026-09-06",
       "summary": "Individual campsites are reservable, and the lower campground accepts year-round reservations in 2026.",
       "proposed_value": "Reservable up to 9 months in advance",
-      "sources": [{"url": "https://parks.wa.gov/passes-permits/reservations/making-reservations", "publisher": "Washington State Parks", "source_family": "washington-state-parks-reservations", "evidence": "Statewide instructions specify a rolling nine-month window."}, {"url": "https://parks.wa.gov/news/2025/book-beach-all-year-long-fort-flagler-historical-state-park", "publisher": "Washington State Parks", "source_family": "washington-state-parks-fort-flagler", "evidence": "Lower campground reservations became year-round January 1, 2026."}]
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/passes-permits/reservations/making-reservations",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks-reservations",
+          "evidence": "Statewide instructions specify a rolling nine-month window."
+        },
+        {
+          "url": "https://parks.wa.gov/news/2025/book-beach-all-year-long-fort-flagler-historical-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks-fort-flagler",
+          "evidence": "Lower campground reservations became year-round January 1, 2026."
+        }
+      ]
+    },
+    {
+      "slug": "fairholme-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section publishes its operating status and seasonal limitations.",
+      "proposed_value": "open/currently listed by NPS",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section publishes its operating status and seasonal limitations."
+        }
+      ]
+    },
+    {
+      "slug": "fairholme-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section states whether RVs and trailers are allowed and gives equipment guidance.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section states whether RVs and trailers are allowed and gives equipment guidance."
+        }
+      ]
+    },
+    {
+      "slug": "fairholme-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section states the 2026 reservation or first-come rules.",
+      "proposed_value": "Seasonal reservations required May 15\u2013September 29, 2026; sites open up to 6 months, 2 weeks, or 4 days ahead",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section states the 2026 reservation or first-come rules."
+        }
+      ]
+    },
+    {
+      "slug": "fairholme-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section publishes the equipment length range, or explicitly prohibits RVs and trailers.",
+      "proposed_value": 35,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section publishes the equipment length range, or explicitly prohibits RVs and trailers."
+        }
+      ]
+    },
+    {
+      "slug": "fairholme-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The NPS facility lists identify the dedicated Sol Duc RV hookup area; the other reviewed park campgrounds list basic facilities without site hookups.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The NPS facility lists identify the dedicated Sol Duc RV hookup area; the other reviewed park campgrounds list basic facilities without site hookups."
+        }
+      ]
+    },
+    {
+      "slug": "heart-o-the-hills-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section publishes its operating status and seasonal limitations.",
+      "proposed_value": "open/currently listed by NPS",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section publishes its operating status and seasonal limitations."
+        }
+      ]
+    },
+    {
+      "slug": "heart-o-the-hills-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section states whether RVs and trailers are allowed and gives equipment guidance.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section states whether RVs and trailers are allowed and gives equipment guidance."
+        }
+      ]
+    },
+    {
+      "slug": "heart-o-the-hills-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section states the 2026 reservation or first-come rules.",
+      "proposed_value": "First-come, first-served",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section states the 2026 reservation or first-come rules."
+        }
+      ]
+    },
+    {
+      "slug": "heart-o-the-hills-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section publishes the equipment length range, or explicitly prohibits RVs and trailers.",
+      "proposed_value": 35,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section publishes the equipment length range, or explicitly prohibits RVs and trailers."
+        }
+      ]
+    },
+    {
+      "slug": "heart-o-the-hills-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The NPS facility lists identify the dedicated Sol Duc RV hookup area; the other reviewed park campgrounds list basic facilities without site hookups.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The NPS facility lists identify the dedicated Sol Duc RV hookup area; the other reviewed park campgrounds list basic facilities without site hookups."
+        }
+      ]
+    },
+    {
+      "slug": "hoh-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section publishes its operating status and seasonal limitations.",
+      "proposed_value": "open/currently listed by NPS",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section publishes its operating status and seasonal limitations."
+        }
+      ]
+    },
+    {
+      "slug": "hoh-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section states whether RVs and trailers are allowed and gives equipment guidance.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section states whether RVs and trailers are allowed and gives equipment guidance."
+        }
+      ]
+    },
+    {
+      "slug": "hoh-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section states the 2026 reservation or first-come rules.",
+      "proposed_value": "Seasonal reservations required June 12\u2013September 6, 2026; first-come outside that period",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section states the 2026 reservation or first-come rules."
+        }
+      ]
+    },
+    {
+      "slug": "hoh-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section publishes the equipment length range, or explicitly prohibits RVs and trailers.",
+      "proposed_value": 35,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section publishes the equipment length range, or explicitly prohibits RVs and trailers."
+        }
+      ]
+    },
+    {
+      "slug": "hoh-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The NPS facility lists identify the dedicated Sol Duc RV hookup area; the other reviewed park campgrounds list basic facilities without site hookups.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The NPS facility lists identify the dedicated Sol Duc RV hookup area; the other reviewed park campgrounds list basic facilities without site hookups."
+        }
+      ]
+    },
+    {
+      "slug": "kalaloch-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section publishes its operating status and seasonal limitations.",
+      "proposed_value": "open/currently listed by NPS",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section publishes its operating status and seasonal limitations."
+        }
+      ]
+    },
+    {
+      "slug": "kalaloch-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section states whether RVs and trailers are allowed and gives equipment guidance.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section states whether RVs and trailers are allowed and gives equipment guidance."
+        }
+      ]
+    },
+    {
+      "slug": "kalaloch-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section states the 2026 reservation or first-come rules.",
+      "proposed_value": "Seasonal reservations required May 15\u2013September 20, 2026; first-come outside that period",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section states the 2026 reservation or first-come rules."
+        }
+      ]
+    },
+    {
+      "slug": "kalaloch-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section publishes the equipment length range, or explicitly prohibits RVs and trailers.",
+      "proposed_value": 35,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section publishes the equipment length range, or explicitly prohibits RVs and trailers."
+        }
+      ]
+    },
+    {
+      "slug": "kalaloch-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The NPS facility lists identify the dedicated Sol Duc RV hookup area; the other reviewed park campgrounds list basic facilities without site hookups.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The NPS facility lists identify the dedicated Sol Duc RV hookup area; the other reviewed park campgrounds list basic facilities without site hookups."
+        }
+      ]
+    },
+    {
+      "slug": "mora-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section publishes its operating status and seasonal limitations.",
+      "proposed_value": "open/currently listed by NPS",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section publishes its operating status and seasonal limitations."
+        }
+      ]
+    },
+    {
+      "slug": "mora-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section states whether RVs and trailers are allowed and gives equipment guidance.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section states whether RVs and trailers are allowed and gives equipment guidance."
+        }
+      ]
+    },
+    {
+      "slug": "mora-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section states the 2026 reservation or first-come rules.",
+      "proposed_value": "Seasonal reservations required May 15\u2013September 20, 2026; first-come outside that period",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section states the 2026 reservation or first-come rules."
+        }
+      ]
+    },
+    {
+      "slug": "mora-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section publishes the equipment length range, or explicitly prohibits RVs and trailers.",
+      "proposed_value": 35,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section publishes the equipment length range, or explicitly prohibits RVs and trailers."
+        }
+      ]
+    },
+    {
+      "slug": "mora-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The NPS facility lists identify the dedicated Sol Duc RV hookup area; the other reviewed park campgrounds list basic facilities without site hookups.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The NPS facility lists identify the dedicated Sol Duc RV hookup area; the other reviewed park campgrounds list basic facilities without site hookups."
+        }
+      ]
+    },
+    {
+      "slug": "ozette-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section publishes its operating status and seasonal limitations.",
+      "proposed_value": "open/currently listed by NPS",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section publishes its operating status and seasonal limitations."
+        }
+      ]
+    },
+    {
+      "slug": "ozette-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section states whether RVs and trailers are allowed and gives equipment guidance.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section states whether RVs and trailers are allowed and gives equipment guidance."
+        }
+      ]
+    },
+    {
+      "slug": "ozette-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section states the 2026 reservation or first-come rules.",
+      "proposed_value": "First-come, first-served",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section states the 2026 reservation or first-come rules."
+        }
+      ]
+    },
+    {
+      "slug": "ozette-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section publishes the equipment length range, or explicitly prohibits RVs and trailers.",
+      "proposed_value": 21,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section publishes the equipment length range, or explicitly prohibits RVs and trailers."
+        }
+      ]
+    },
+    {
+      "slug": "ozette-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The NPS facility lists identify the dedicated Sol Duc RV hookup area; the other reviewed park campgrounds list basic facilities without site hookups.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The NPS facility lists identify the dedicated Sol Duc RV hookup area; the other reviewed park campgrounds list basic facilities without site hookups."
+        }
+      ]
+    },
+    {
+      "slug": "sol-duc-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section publishes its operating status and seasonal limitations.",
+      "proposed_value": "open/currently listed by NPS",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section publishes its operating status and seasonal limitations."
+        }
+      ]
+    },
+    {
+      "slug": "sol-duc-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section states whether RVs and trailers are allowed and gives equipment guidance.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section states whether RVs and trailers are allowed and gives equipment guidance."
+        }
+      ]
+    },
+    {
+      "slug": "sol-duc-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section states the 2026 reservation or first-come rules.",
+      "proposed_value": "Reservable up to 6 months in advance",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section states the 2026 reservation or first-come rules."
+        }
+      ]
+    },
+    {
+      "slug": "sol-duc-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section publishes the equipment length range, or explicitly prohibits RVs and trailers.",
+      "proposed_value": 36,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section publishes the equipment length range, or explicitly prohibits RVs and trailers."
+        }
+      ]
+    },
+    {
+      "slug": "sol-duc-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The NPS facility lists identify the dedicated Sol Duc RV hookup area; the other reviewed park campgrounds list basic facilities without site hookups.",
+      "proposed_value": 2,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The NPS facility lists identify the dedicated Sol Duc RV hookup area; the other reviewed park campgrounds list basic facilities without site hookups."
+        }
+      ]
+    },
+    {
+      "slug": "south-beach-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section publishes its operating status and seasonal limitations.",
+      "proposed_value": "open/currently listed by NPS",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section publishes its operating status and seasonal limitations."
+        }
+      ]
+    },
+    {
+      "slug": "south-beach-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section states whether RVs and trailers are allowed and gives equipment guidance.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section states whether RVs and trailers are allowed and gives equipment guidance."
+        }
+      ]
+    },
+    {
+      "slug": "south-beach-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section states the 2026 reservation or first-come rules.",
+      "proposed_value": "First-come, first-served",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section states the 2026 reservation or first-come rules."
+        }
+      ]
+    },
+    {
+      "slug": "south-beach-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section publishes the equipment length range, or explicitly prohibits RVs and trailers.",
+      "proposed_value": 35,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section publishes the equipment length range, or explicitly prohibits RVs and trailers."
+        }
+      ]
+    },
+    {
+      "slug": "south-beach-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The NPS facility lists identify the dedicated Sol Duc RV hookup area; the other reviewed park campgrounds list basic facilities without site hookups.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The NPS facility lists identify the dedicated Sol Duc RV hookup area; the other reviewed park campgrounds list basic facilities without site hookups."
+        }
+      ]
+    },
+    {
+      "slug": "staircase-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section publishes its operating status and seasonal limitations.",
+      "proposed_value": "open/currently listed by NPS",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section publishes its operating status and seasonal limitations."
+        }
+      ]
+    },
+    {
+      "slug": "staircase-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section states whether RVs and trailers are allowed and gives equipment guidance.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section states whether RVs and trailers are allowed and gives equipment guidance."
+        }
+      ]
+    },
+    {
+      "slug": "staircase-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section states the 2026 reservation or first-come rules.",
+      "proposed_value": "Seasonal reservations required July 8\u2013September 29, 2026; first-come outside that period",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section states the 2026 reservation or first-come rules."
+        }
+      ]
+    },
+    {
+      "slug": "staircase-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section publishes the equipment length range, or explicitly prohibits RVs and trailers.",
+      "proposed_value": 35,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section publishes the equipment length range, or explicitly prohibits RVs and trailers."
+        }
+      ]
+    },
+    {
+      "slug": "staircase-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The NPS facility lists identify the dedicated Sol Duc RV hookup area; the other reviewed park campgrounds list basic facilities without site hookups.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The NPS facility lists identify the dedicated Sol Duc RV hookup area; the other reviewed park campgrounds list basic facilities without site hookups."
+        }
+      ]
+    },
+    {
+      "slug": "graves-creek-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section publishes its operating status and seasonal limitations.",
+      "proposed_value": "open/currently listed by NPS",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section publishes its operating status and seasonal limitations."
+        }
+      ]
+    },
+    {
+      "slug": "graves-creek-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section states whether RVs and trailers are allowed and gives equipment guidance.",
+      "proposed_value": false,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section states whether RVs and trailers are allowed and gives equipment guidance."
+        }
+      ]
+    },
+    {
+      "slug": "graves-creek-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section states the 2026 reservation or first-come rules.",
+      "proposed_value": "First-come, first-served",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section states the 2026 reservation or first-come rules."
+        }
+      ]
+    },
+    {
+      "slug": "graves-creek-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current campground section publishes the equipment length range, or explicitly prohibits RVs and trailers.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The current campground section publishes the equipment length range, or explicitly prohibits RVs and trailers."
+        }
+      ]
+    },
+    {
+      "slug": "graves-creek-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The NPS facility lists identify the dedicated Sol Duc RV hookup area; the other reviewed park campgrounds list basic facilities without site hookups.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps-olympic-camping",
+          "evidence": "The NPS facility lists identify the dedicated Sol Duc RV hookup area; the other reviewed park campgrounds list basic facilities without site hookups."
+        }
+      ]
+    },
+    {
+      "slug": "osoyoos-lake-veterans-memorial-state-park",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The city publishes current park contacts and links to the active 2026 reservation system.",
+      "proposed_value": "active 2026 reservation listing",
+      "sources": [
+        {
+          "url": "https://oroville-wa.com/departments/parks-department/",
+          "publisher": "City of Oroville",
+          "source_family": "city-of-oroville-parks",
+          "evidence": "The city publishes current park contacts and links to the active 2026 reservation system."
+        }
+      ]
+    },
+    {
+      "slug": "osoyoos-lake-veterans-memorial-state-park",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The city lists standard and utility campsites plus a trailer dump.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://oroville-wa.com/departments/parks-department/",
+          "publisher": "City of Oroville",
+          "source_family": "city-of-oroville-parks",
+          "evidence": "The city lists standard and utility campsites plus a trailer dump."
+        }
+      ]
+    },
+    {
+      "slug": "osoyoos-lake-veterans-memorial-state-park",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The city links directly to the 2026 Bonfire reservation page.",
+      "proposed_value": "2026 reservations opened January 1, 2026; check current availability",
+      "sources": [
+        {
+          "url": "https://oroville-wa.com/departments/parks-department/",
+          "publisher": "City of Oroville",
+          "source_family": "city-of-oroville-parks",
+          "evidence": "The city links directly to the 2026 Bonfire reservation page."
+        }
+      ]
+    },
+    {
+      "slug": "osoyoos-lake-veterans-memorial-state-park",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The current city page does not publish a campground-wide maximum RV length, so the site leaves it unconfirmed.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://oroville-wa.com/departments/parks-department/",
+          "publisher": "City of Oroville",
+          "source_family": "city-of-oroville-parks",
+          "evidence": "The current city page does not publish a campground-wide maximum RV length, so the site leaves it unconfirmed."
+        }
+      ]
+    },
+    {
+      "slug": "osoyoos-lake-veterans-memorial-state-park",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-06",
+      "summary": "The city lists 39 utility sites with power and water plus one accessible power-and-water site.",
+      "proposed_value": 2,
+      "sources": [
+        {
+          "url": "https://oroville-wa.com/departments/parks-department/",
+          "publisher": "City of Oroville",
+          "source_family": "city-of-oroville-parks",
+          "evidence": "The city lists 39 utility sites with power and water plus one accessible power-and-water site."
+        }
+      ]
     }
   ]
 }

@@ -113,9 +113,18 @@ def cell_dots(level):
 def gen_dots(level):
     return dots_html(int(level), color='warn')
 
-def extract_lat_lng(maps_url):
-    m = re.search(r'q=([-\d.]+),([-\d.]+)', maps_url or '')
+def extract_lat_lng(maps_url, row=None):
+    if row and row.get('Latitude') and row.get('Longitude'):
+        return row['Latitude'].strip(), row['Longitude'].strip()
+    m = re.search(r'(?:q=|query=)([-\d.]+),([-\d.]+)', maps_url or '')
     return (m.group(1), m.group(2)) if m else ('', '')
+
+def directions_url(row):
+    """Open turn-by-turn directions to the reviewed point from the visitor's location."""
+    lat, lng = extract_lat_lng(row.get('Google Maps Link', ''), row)
+    if lat and lng:
+        return f'https://www.google.com/maps/dir/?api=1&destination={lat},{lng}&travelmode=driving'
+    return row.get('Google Maps Link', '#')
 
 def parse_address(addr):
     parts = [p.strip() for p in (addr or '').split(',')]
@@ -130,6 +139,7 @@ def parse_address(addr):
 
 def format_reservation_short(text):
     if not text: return 'FCFS'
+    if re.search(r'opened January 1', text, re.I): return 'Jan. 1 release'
     m = re.search(r'(\d+)\s*month', text, re.I)
     if m: return f'{m.group(1)} mo.'
     if re.search(r'first.come', text, re.I): return 'FCFS'
@@ -414,7 +424,7 @@ def build_campground_json(row):
     park_type   = row.get('Park Type', '')
     hookup_level = row.get('Hookups', '0')
 
-    lat, lng = extract_lat_lng(maps_url)
+    lat, lng = extract_lat_lng(maps_url, row)
     street, city, state, postal = parse_address(address)
 
     has_dump    = true_val(row.get('Dump station on site', ''))
@@ -494,8 +504,9 @@ def generate_page(row, slug_lookup, template):
     addr_parts = [p.strip() for p in address.split(',')]
     city = addr_parts[1] if len(addr_parts) >= 2 else nearest_town
 
-    miles_str     = ''  # Drive Time Minutes is not a distance.
-    drive_full    = f'{row.get("Time from Seattle","")}{miles_str}'
+    miles = (row.get('Drive distance miles') or '').strip()
+    miles_str = f' · {miles} mi' if miles else ''
+    drive_full = f'{row.get("Time from Seattle","")}{miles_str}'
     pass_meta     = PASS_META.get(park_type, 'Check website for current fees')
 
     if 'first-come' in reservation.lower():
@@ -582,7 +593,7 @@ def generate_page(row, slug_lookup, template):
         '{{reservation_meta}}':         h(res_meta),
         '{{pass_meta}}':                h(pass_meta),
         '{{state_map}}':                state_map,
-        '{{google_maps}}':              row.get('Google Maps Link', '#'),
+        '{{google_maps}}':              directions_url(row),
         '{{map_region}}':               h(f'{city}, WA' if city else 'Washington State'),
         '{{specs_grid_html}}':          '<p>RVs and trailers are not allowed. See the official access guidance above.</p>' if row.get('RV Access') == 'no' else build_specs_grid(row),
         '{{activities_title}}':         h(f'Activities at {name}'),

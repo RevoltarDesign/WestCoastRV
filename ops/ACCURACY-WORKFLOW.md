@@ -27,6 +27,8 @@ Counts, showers, potable water, dump access, generator rules, and accessibility 
 
 - `python3 ops/content_scrub.py` catches known cross-region contamination, obsolete identities, stale closure wording, and unsupported universal amenity copy.
 - `python3 ops/audit_recreation_gov.py` compares every Recreation.gov URL with the live facility name and rejects links to similarly named campgrounds, kitchens, picnic areas, or day-use facilities. It saves `ops/recreation-gov-audit.json` as a dated snapshot.
+- `python3 ops/apply_recreation_coordinates.py` accepts a Recreation.gov facility point only when the facility identity matches, the point is inside Washington, and it is within two miles of the prior pin. Larger moves enter the manual review queue.
+- `python3 ops/route_audit.py` requires every reviewed Seattle estimate to retain its origin, observed minutes, distance, dated Google Maps route, and a public estimate that is never shorter than the observed route.
 - `python3 ops/check_external_links.py` checks all public external destinations.
 - `python3 ops/trust_workflow.py summary` reports evidence coverage across every campground, including records with no evidence yet.
 - `python3 -m unittest discover -s ops -p 'test_*.py'` protects corrected cases during later regeneration.
@@ -35,6 +37,8 @@ Run the offline checks on every content change. Run the live source and link che
 
 ## Current baseline — 2026-09-06
 
-The whole 120-record dataset has completed the structural and contamination scrub. The initial evidence ledger fully supports all five critical fields for 3 campgrounds, partially supports 50, and has no accepted critical-field evidence for 67. That internal gap is a research queue, not a badge to place throughout the public experience.
+The whole 120-record dataset has completed the structural and contamination scrub. After the first section review, the evidence ledger fully supports all five critical fields for 13 campgrounds, partially supports 55, and has no accepted critical-field evidence for 52. That internal gap is a research queue, not a badge to place throughout the public experience.
 
 The scrub found and fixed 20 campground-specific factual issues and six shared template issues. The template fixes corrected 627 affected page instances. Exact findings and sources are in `scrub-findings.json`.
+
+The first section review completed all ten Olympic National Park records, added coordinate provenance to 33 campgrounds, and added reviewed Seattle routes to 11. Coordinates drive the map, topographic art, structured data, and the directions destination. Public “Get Directions” buttons now open turn-by-turn driving directions to the reviewed point. Olympic routes use a no-ferry option where one offers a more stable towing estimate; route notes preserve that decision.

@@ -26,7 +26,7 @@ def make_record(row):
     band = 'all' if mins is None else ('under-1' if mins < 60 else '1-2' if mins < 120
            else '2-3' if mins < 180 else '3-4' if mins < 240 else '4plus')
     key, label = HOOKUPS.get(row.get('Hookups'), ('unknown', 'Not confirmed'))
-    lat, lon = extract_lat_lng(row.get('Google Maps Link'))
+    lat, lon = extract_lat_lng(row.get('Google Maps Link'), row)
     if not lat or not lon:
         raise ValueError(f"Missing coordinates for {row['Slug']}")
     record = dict(name=row['Name'], slug=row['Slug'], desc=row['Short Description'],
