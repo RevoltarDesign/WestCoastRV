@@ -16,6 +16,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 DATASET = HERE / "data" / "campgrounds.csv"
+RESOLUTIONS = HERE / "coordinate-resolutions.json"
 ALIASES = {
     "hoh-campground": "Hoh Rainforest Campground",
     "sol-duc-campground": "Sol Duc Hot Springs Resort Campground",
@@ -41,7 +42,10 @@ def distance_miles(a, b):
 def main():
     with DATASET.open(newline="", encoding="utf-8-sig") as source:
         rows = list(csv.DictReader(source))
-    results, errors, coordinate_warnings = [], [], []
+    resolutions = {}
+    if RESOLUTIONS.exists():
+        resolutions = {item["slug"]: item for item in json.loads(RESOLUTIONS.read_text(encoding="utf-8"))["resolutions"]}
+    results, errors, coordinate_warnings, applied_resolutions = [], [], [], []
     for row in rows:
         match = re.search(r"recreation\.gov/camping/campgrounds/(\d+)", row["Reservation website"])
         if not match:
@@ -59,27 +63,37 @@ def main():
         official = (facility.get("facility_latitude"), facility.get("facility_longitude"))
         current = legacy_coordinates(row.get("Google Maps Link", ""))
         drift = distance_miles(current, official) if all(value is not None for value in (*current, *official)) else None
+        resolution = resolutions.get(row["Slug"])
+        resolution_applied = False
+        if resolution and all(value is not None for value in current):
+            chosen = (resolution["latitude"], resolution["longitude"])
+            resolution_applied = distance_miles(current, chosen) <= 0.05
+            if resolution_applied:
+                applied_resolutions.append(row["Slug"])
         item = {"slug": row["Slug"], "facility_id": facility_id, "expected": expected,
                 "actual": actual, "identity_score": round(score, 3), "ok": ok,
                 "checked_on": date.today().isoformat(), "source": url,
                 "official_latitude": official[0], "official_longitude": official[1],
                 "previous_latitude": current[0], "previous_longitude": current[1],
                 "coordinate_drift_miles": round(drift, 3) if drift is not None else None,
-                "official_directions": facility.get("facility_directions", "")}
+                "official_directions": facility.get("facility_directions", ""),
+                "manual_resolution": resolution.get("decision") if resolution_applied else None}
         results.append(item)
         if not ok:
             errors.append(item)
-        if drift is None or drift > 2:
+        if (drift is None or drift > 2) and not resolution_applied:
             coordinate_warnings.append({k: item[k] for k in (
                 "slug", "facility_id", "coordinate_drift_miles", "official_latitude", "official_longitude",
                 "previous_latitude", "previous_longitude")})
     report = {"checked_on": date.today().isoformat(), "records_checked": len(results),
               "identity_errors": len(errors), "errors": errors,
               "coordinate_warnings": len(coordinate_warnings),
+              "manual_coordinate_resolutions": len(applied_resolutions),
+              "manual_coordinate_resolution_records": applied_resolutions,
               "coordinate_warning_records": coordinate_warnings, "results": results}
     output = HERE / "recreation-gov-audit.json"
     output.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({k: report[k] for k in ("checked_on", "records_checked", "identity_errors", "errors", "coordinate_warnings", "coordinate_warning_records")}, indent=2))
+    print(json.dumps({k: report[k] for k in ("checked_on", "records_checked", "identity_errors", "errors", "coordinate_warnings", "coordinate_warning_records", "manual_coordinate_resolutions", "manual_coordinate_resolution_records")}, indent=2))
     raise SystemExit(bool(errors))
 
 

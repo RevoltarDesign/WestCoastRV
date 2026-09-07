@@ -1295,6 +1295,28 @@
           "evidence": "The city lists 39 utility sites with power and water plus one accessible power-and-water site."
         }
       ]
+    },
+    {
+      "slug": "swan-lake-campground",
+      "field": "site_recommendations",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-06",
+      "summary": "Removed a mismatched walk-in-only paragraph that contradicted the campground RV listing and referred to a nonexistent trail connection to Bonaparte Lake.",
+      "proposed_value": "Use the reviewed drive-in campground entrance and confirm current pad dimensions and seasonal services.",
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/10378408",
+          "publisher": "Recreation.gov",
+          "source_family": "recreation-gov-swan-lake",
+          "evidence": "The current Washington facility record identifies Swan Lake campground and supports the reviewed access destination."
+        },
+        {
+          "url": "https://cdn.recreation.gov/webphotos/facilitymaps/75544_SWLK.pdf",
+          "publisher": "USDA Forest Service / Recreation.gov",
+          "source_family": "usfs-swan-lake-map",
+          "evidence": "The official campground map distinguishes campground roads and campsites from tent-only parking and the separate group area."
+        }
+      ]
     }
   ]
 }

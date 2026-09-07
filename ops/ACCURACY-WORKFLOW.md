@@ -28,6 +28,7 @@ Counts, showers, potable water, dump access, generator rules, and accessibility 
 - `python3 ops/content_scrub.py` catches known cross-region contamination, obsolete identities, stale closure wording, and unsupported universal amenity copy.
 - `python3 ops/audit_recreation_gov.py` compares every Recreation.gov URL with the live facility name and rejects links to similarly named campgrounds, kitchens, picnic areas, or day-use facilities. It saves `ops/recreation-gov-audit.json` as a dated snapshot.
 - `python3 ops/apply_recreation_coordinates.py` accepts a Recreation.gov facility point only when the facility identity matches, the point is inside Washington, and it is within two miles of the prior pin. Larger moves enter the manual review queue.
+- `python3 ops/apply_manual_coordinate_resolutions.py` applies the reviewed exception queue in `coordinate-resolutions.json`. A resolution requires agreement among the facility identity, agency access directions, and a named navigation destination; it also stores the reason for moving or retaining the pin.
 - `python3 ops/route_audit.py` requires every reviewed Seattle estimate to retain its origin, observed minutes, distance, dated Google Maps route, and a public estimate that is never shorter than the observed route.
 - `python3 ops/check_external_links.py` checks all public external destinations.
 - `python3 ops/trust_workflow.py summary` reports evidence coverage across every campground, including records with no evidence yet.
@@ -42,3 +43,5 @@ The whole 120-record dataset has completed the structural and contamination scru
 The scrub found and fixed 20 campground-specific factual issues and six shared template issues. The template fixes corrected 627 affected page instances. Exact findings and sources are in `scrub-findings.json`.
 
 The first section review completed all ten Olympic National Park records, added coordinate provenance to 33 campgrounds, and added reviewed Seattle routes to 11. Coordinates drive the map, topographic art, structured data, and the directions destination. Public “Get Directions” buttons now open turn-by-turn driving directions to the reviewed point. Olympic routes use a no-ferry option where one offers a more stable towing estimate; route notes preserve that decision.
+
+The first coordinate exception queue resolved all 15 Recreation.gov discrepancies. Fourteen prior pins were materially wrong and Mora's source feed contained an invalid `0,0` point; all 15 now use reviewed named navigation destinations corroborated by agency records and access directions. The same pass reviewed Seattle routes for all 15, uses the agency-recommended Darrington approach for Bedal, and uses a no-ferry baseline for Mora.
