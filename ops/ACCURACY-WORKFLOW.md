@@ -25,6 +25,8 @@ Counts, showers, potable water, dump access, generator rules, and accessibility 
 
 ## Checks
 
+Run `python3 ops/coordinate_sanity.py` before publishing. It checks Washington bounds, consistency between coordinate fields and map links, reviewed-pin drift, and suspiciously close duplicates. Missing coordinate provenance remains a visible warning queue so the source-backed review can expand section by section.
+
 - `python3 ops/content_scrub.py` catches known cross-region contamination, obsolete identities, stale closure wording, and unsupported universal amenity copy.
 - `python3 ops/audit_recreation_gov.py` compares every Recreation.gov URL with the live facility name and rejects links to similarly named campgrounds, kitchens, picnic areas, or day-use facilities. It saves `ops/recreation-gov-audit.json` as a dated snapshot.
 - `python3 ops/apply_recreation_coordinates.py` accepts a Recreation.gov facility point only when the facility identity matches, the point is inside Washington, and it is within two miles of the prior pin. Larger moves enter the manual review queue.
