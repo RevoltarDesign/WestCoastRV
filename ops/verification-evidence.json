@@ -4181,6 +4181,646 @@
           "evidence": "The current operator page or official campground map identifies the published utility level."
         }
       ]
+    },
+    {
+      "slug": "bridgeport-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page and winter schedule identify dated seasonal, construction, utility, or weather-dependent restrictions preserved in the canonical record.",
+      "proposed_value": "current dated closures and alerts preserved",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/bridgeport-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page and winter schedule identify dated seasonal, construction, utility, or weather-dependent restrictions preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "bridgeport-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/bridgeport-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites."
+        }
+      ]
+    },
+    {
+      "slug": "bridgeport-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions.",
+      "proposed_value": "Reservable May 15\u2013September 15; first-come September 16\u2013April 30. Dry camping may move to the watercraft-launch area when snow removal is unavailable",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/bridgeport-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "bridgeport-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes the maximum or limited-availability equipment length preserved in the record.",
+      "proposed_value": 45,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/bridgeport-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes the maximum or limited-availability equipment length preserved in the record."
+        }
+      ]
+    },
+    {
+      "slug": "bridgeport-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the highest published utility level and the text preserves site-type distinctions.",
+      "proposed_value": 2,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/bridgeport-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the highest published utility level and the text preserves site-type distinctions."
+        }
+      ]
+    },
+    {
+      "slug": "curlew-lake-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page and winter schedule identify dated seasonal, construction, utility, or weather-dependent restrictions preserved in the canonical record.",
+      "proposed_value": "current dated closures and alerts preserved",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/curlew-lake-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page and winter schedule identify dated seasonal, construction, utility, or weather-dependent restrictions preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "curlew-lake-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/curlew-lake-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites."
+        }
+      ]
+    },
+    {
+      "slug": "curlew-lake-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions.",
+      "proposed_value": "Most campsites are reservable during the operating season, with some first-come availability. Most loops close in late October and reopen in April or May as weather allows",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/curlew-lake-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "curlew-lake-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes the maximum or limited-availability equipment length preserved in the record.",
+      "proposed_value": 45,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/curlew-lake-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes the maximum or limited-availability equipment length preserved in the record."
+        }
+      ]
+    },
+    {
+      "slug": "curlew-lake-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the highest published utility level and the text preserves site-type distinctions.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/curlew-lake-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the highest published utility level and the text preserves site-type distinctions."
+        }
+      ]
+    },
+    {
+      "slug": "lake-chelan-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page and winter schedule identify dated seasonal, construction, utility, or weather-dependent restrictions preserved in the canonical record.",
+      "proposed_value": "current dated closures and alerts preserved",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/lake-chelan-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page and winter schedule identify dated seasonal, construction, utility, or weather-dependent restrictions preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "lake-chelan-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/lake-chelan-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites."
+        }
+      ]
+    },
+    {
+      "slug": "lake-chelan-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions.",
+      "proposed_value": "Beach Loop is reservable April 15\u2013September 30, West Loop April 15\u2013September 14, Trailer Loop sites 8\u201317 year-round, and Trailer Loop sites 1\u20137 and 18\u201335 April 15\u2013September 30",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/lake-chelan-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "lake-chelan-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes the maximum or limited-availability equipment length preserved in the record.",
+      "proposed_value": 45,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/lake-chelan-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes the maximum or limited-availability equipment length preserved in the record."
+        }
+      ]
+    },
+    {
+      "slug": "lake-chelan-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the highest published utility level and the text preserves site-type distinctions.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/lake-chelan-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the highest published utility level and the text preserves site-type distinctions."
+        }
+      ]
+    },
+    {
+      "slug": "riverside-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page and winter schedule identify dated seasonal, construction, utility, or weather-dependent restrictions preserved in the canonical record.",
+      "proposed_value": "current dated closures and alerts preserved",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/riverside-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page and winter schedule identify dated seasonal, construction, utility, or weather-dependent restrictions preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "riverside-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/riverside-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites."
+        }
+      ]
+    },
+    {
+      "slug": "riverside-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions.",
+      "proposed_value": "Bowl and Pitcher sites 15\u201333 are reservable year-round; sites 1\u201314 open April 1\u2013October 15. Water and the dump station close October 15\u2013mid-April",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/riverside-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "riverside-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes the maximum or limited-availability equipment length preserved in the record.",
+      "proposed_value": 45,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/riverside-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes the maximum or limited-availability equipment length preserved in the record."
+        }
+      ]
+    },
+    {
+      "slug": "riverside-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the highest published utility level and the text preserves site-type distinctions.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/riverside-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the highest published utility level and the text preserves site-type distinctions."
+        }
+      ]
+    },
+    {
+      "slug": "steamboat-rock-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page and winter schedule identify dated seasonal, construction, utility, or weather-dependent restrictions preserved in the canonical record.",
+      "proposed_value": "current dated closures and alerts preserved",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/steamboat-rock-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page and winter schedule identify dated seasonal, construction, utility, or weather-dependent restrictions preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "steamboat-rock-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/steamboat-rock-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites."
+        }
+      ]
+    },
+    {
+      "slug": "steamboat-rock-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions.",
+      "proposed_value": "Developed camping is reservable April 1\u2013October 31. Sage, Dune, and Cove loops close November 1\u2013March 31; Bay Loop remains first-come during that period",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/steamboat-rock-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "steamboat-rock-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes the maximum or limited-availability equipment length preserved in the record.",
+      "proposed_value": 50,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/steamboat-rock-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes the maximum or limited-availability equipment length preserved in the record."
+        }
+      ]
+    },
+    {
+      "slug": "steamboat-rock-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the highest published utility level and the text preserves site-type distinctions.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/steamboat-rock-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the highest published utility level and the text preserves site-type distinctions."
+        }
+      ]
+    },
+    {
+      "slug": "sun-lakes-dry-falls-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page and winter schedule identify dated seasonal, construction, utility, or weather-dependent restrictions preserved in the canonical record.",
+      "proposed_value": "current dated closures and alerts preserved",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/sun-lakes-dry-falls-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page and winter schedule identify dated seasonal, construction, utility, or weather-dependent restrictions preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "sun-lakes-dry-falls-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/sun-lakes-dry-falls-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites."
+        }
+      ]
+    },
+    {
+      "slug": "sun-lakes-dry-falls-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions.",
+      "proposed_value": "Reservable during the main season; camping is first-come September 16\u2013April 14. Sites 1\u201331 may close October 31\u2013March 16 depending on weather",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/sun-lakes-dry-falls-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "sun-lakes-dry-falls-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes the maximum or limited-availability equipment length preserved in the record.",
+      "proposed_value": 65,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/sun-lakes-dry-falls-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes the maximum or limited-availability equipment length preserved in the record."
+        }
+      ]
+    },
+    {
+      "slug": "sun-lakes-dry-falls-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the highest published utility level and the text preserves site-type distinctions.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/sun-lakes-dry-falls-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the highest published utility level and the text preserves site-type distinctions."
+        }
+      ]
+    },
+    {
+      "slug": "twenty-five-mile-creek-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page and winter schedule identify dated seasonal, construction, utility, or weather-dependent restrictions preserved in the canonical record.",
+      "proposed_value": "current dated closures and alerts preserved",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/twenty-five-mile-creek-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page and winter schedule identify dated seasonal, construction, utility, or weather-dependent restrictions preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "twenty-five-mile-creek-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/twenty-five-mile-creek-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites."
+        }
+      ]
+    },
+    {
+      "slug": "twenty-five-mile-creek-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions.",
+      "proposed_value": "Reservable during the main season; first-come September 16\u2013October 31 and April 1\u201330. Campground closes November 1\u2013April 1, with opening dates weather dependent",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/twenty-five-mile-creek-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "twenty-five-mile-creek-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes the maximum or limited-availability equipment length preserved in the record.",
+      "proposed_value": 30,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/twenty-five-mile-creek-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes the maximum or limited-availability equipment length preserved in the record."
+        }
+      ]
+    },
+    {
+      "slug": "twenty-five-mile-creek-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the highest published utility level and the text preserves site-type distinctions.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/twenty-five-mile-creek-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the highest published utility level and the text preserves site-type distinctions."
+        }
+      ]
+    },
+    {
+      "slug": "yakima-sportsman-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page and winter schedule identify dated seasonal, construction, utility, or weather-dependent restrictions preserved in the canonical record.",
+      "proposed_value": "current dated closures and alerts preserved",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/yakima-sportsman-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page and winter schedule identify dated seasonal, construction, utility, or weather-dependent restrictions preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "yakima-sportsman-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/yakima-sportsman-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites."
+        }
+      ]
+    },
+    {
+      "slug": "yakima-sportsman-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions.",
+      "proposed_value": "Reservable during the operating season; the park is scheduled to close October 1, 2026 and reopen April 16, 2027",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/yakima-sportsman-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "yakima-sportsman-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes the maximum or limited-availability equipment length preserved in the record.",
+      "proposed_value": 60,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/yakima-sportsman-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes the maximum or limited-availability equipment length preserved in the record."
+        }
+      ]
+    },
+    {
+      "slug": "yakima-sportsman-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the highest published utility level and the text preserves site-type distinctions.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/yakima-sportsman-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the highest published utility level and the text preserves site-type distinctions."
+        }
+      ]
     }
   ]
 }
