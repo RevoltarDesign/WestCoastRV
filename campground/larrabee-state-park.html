@@ -224,13 +224,13 @@
       border-top: 1px solid rgba(255,255,255,.08); }
     @media (max-width: 800px) { .stats-inner { grid-template-columns: repeat(3, 1fr); } }
     @media (max-width: 460px) { .stats-inner { grid-template-columns: repeat(2, 1fr); } }
-    .stat { padding: 22px 20px; border-right: 1px solid rgba(255,255,255,.09); }
+    .stat { min-width: 0; padding: 22px 20px; border-right: 1px solid rgba(255,255,255,.09); }
     .stat:first-child { padding-left: 0; }
     .stat:last-child { border-right: none; padding-right: 0; }
     .stat-label { font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
       color: rgba(255,255,255,.45); margin-bottom: 6px; }
     .stat-val { font-family: var(--font-display); font-size: 21px; font-weight: 700;
-      color: var(--white); line-height: 1.1; }
+      color: var(--white); line-height: 1.1; overflow-wrap: anywhere; }
     .stat-note { font-size: 11.5px; color: rgba(255,255,255,.42); margin-top: 4px; }
 
     /* SECTIONS */
@@ -452,7 +452,7 @@
     <div class="stat">
       <div class="stat-label">Max Length</div>
       <div class="stat-val">Not confirmed</div>
-      <div class="stat-note">water & electric</div>
+      <div class="stat-note">Check limits by site</div>
     </div>
     <div class="stat">
       <div class="stat-label">Hookups</div>

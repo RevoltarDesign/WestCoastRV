@@ -1,0 +1,150 @@
+{
+  "checked_on": "2026-09-07",
+  "method": "Use the exact named Google Maps park destination corroborated by the current Washington State Parks address and published locate point. Where a distinct campground point exists, use that campground point. Seattle estimates use the ordinary fastest route, except Illahee uses the stable no-ferry towing route, and public times round up for normal traffic variation.",
+  "reviews": [
+    {
+      "slug": "penrose-point-state-park",
+      "latitude": 47.2587227,
+      "longitude": -122.745121,
+      "address": "321 158th Avenue SW, Lakebay, WA 98349",
+      "coordinate_source": "Google Maps exact named park destination matched to the current Washington State Parks address and published locate point",
+      "precision": "park entrance/address point",
+      "observed_route_minutes": 69,
+      "distance_miles": 63.6,
+      "display_minutes": 75,
+      "route_note": "Fastest normal I-5 and Tacoma Narrows route at review time; public estimate rounds up for traffic variation."
+    },
+    {
+      "slug": "illahee-state-park",
+      "latitude": 47.5973588,
+      "longitude": -122.5974215,
+      "address": "3540 NE Sylvan Way, Bremerton, WA 98310",
+      "coordinate_source": "Google Maps exact named park destination matched to the current Washington State Parks address and published locate point",
+      "precision": "park entrance/address point",
+      "observed_route_minutes": 73,
+      "distance_miles": 68.4,
+      "display_minutes": 75,
+      "route_note": "Uses the no-ferry I-5 and Tacoma Narrows route for a stable towing estimate; ferry options vary with fare, queue, and sailing time."
+    },
+    {
+      "slug": "saltwater-state-park",
+      "latitude": 47.3758089,
+      "longitude": -122.3231043,
+      "address": "25205 8th Place S, Des Moines, WA 98198",
+      "coordinate_source": "Google Maps exact named park destination matched to the current Washington State Parks address and published locate point",
+      "precision": "park entrance/address point",
+      "observed_route_minutes": 24,
+      "distance_miles": 19.4,
+      "display_minutes": 30,
+      "route_note": "Fastest normal I-5 route at review time; public estimate rounds up for traffic variation."
+    },
+    {
+      "slug": "dash-point-state-park",
+      "latitude": 47.3164828,
+      "longitude": -122.4089008,
+      "address": "5700 SW Dash Point Road, Federal Way, WA 98023",
+      "coordinate_source": "Google Maps named Dash Point State Park Campground point, corroborated by the official campground map and park address",
+      "precision": "named campground point",
+      "observed_route_minutes": 37,
+      "distance_miles": 27.3,
+      "display_minutes": 45,
+      "route_note": "Fastest normal I-5 route at review time; public estimate rounds up for traffic variation."
+    },
+    {
+      "slug": "schafer-state-park",
+      "latitude": 47.0975793,
+      "longitude": -123.4661956,
+      "address": "1365 W Schafer Park Road, Elma, WA 98541",
+      "coordinate_source": "Google Maps exact named park destination matched to the current Washington State Parks address and published locate point",
+      "precision": "park entrance/address point",
+      "observed_route_minutes": 100,
+      "distance_miles": 101,
+      "display_minutes": 105,
+      "route_note": "Fastest normal I-5, US 101, and WA 8 route at review time; public estimate rounds up for traffic variation."
+    },
+    {
+      "slug": "rainbow-falls-state-park",
+      "latitude": 46.634344,
+      "longitude": -123.2340902,
+      "address": "633 Leudinghaus Road, Chehalis, WA 98532",
+      "coordinate_source": "Google Maps exact named park destination matched to the current Washington State Parks address and published locate point",
+      "precision": "park entrance/address point",
+      "observed_route_minutes": 102,
+      "distance_miles": 106,
+      "display_minutes": 105,
+      "route_note": "Fastest normal I-5 and WA 6 route at review time; public estimate rounds up for traffic variation."
+    },
+    {
+      "slug": "lewis-and-clark-state-park",
+      "latitude": 46.5220699,
+      "longitude": -122.8143062,
+      "address": "4583 Jackson Highway, Winlock, WA 98596",
+      "coordinate_source": "Google Maps exact named park destination matched to the current Washington State Parks address and official campground brochure",
+      "precision": "park entrance/address point",
+      "observed_route_minutes": 95,
+      "distance_miles": 102,
+      "display_minutes": 105,
+      "route_note": "Fastest normal I-5 route at review time; public estimate rounds up for traffic variation."
+    },
+    {
+      "slug": "seaquest-state-park",
+      "latitude": 46.2995111,
+      "longitude": -122.8196627,
+      "address": "3030 Spirit Lake Highway, Castle Rock, WA 98611",
+      "coordinate_source": "Google Maps exact named park destination matched to the current Washington State Parks address and published locate point",
+      "precision": "park entrance/address point",
+      "observed_route_minutes": 113,
+      "distance_miles": 122,
+      "display_minutes": 120,
+      "route_note": "Fastest normal I-5 route at review time; public estimate rounds up for traffic variation."
+    },
+    {
+      "slug": "battle-ground-lake-state-park",
+      "latitude": 45.803864,
+      "longitude": -122.4907989,
+      "address": "18002 NE 249th Street, Battle Ground, WA 98604",
+      "coordinate_source": "Google Maps exact named park destination matched to the current Washington State Parks address and published locate point",
+      "precision": "park entrance/address point",
+      "observed_route_minutes": 156,
+      "distance_miles": 165,
+      "display_minutes": 165,
+      "route_note": "Fastest route observed while NE Grace Avenue had a temporary closure; travelers should follow current navigation near Battle Ground."
+    },
+    {
+      "slug": "beacon-rock-state-park",
+      "latitude": 45.6217388,
+      "longitude": -122.0214598,
+      "address": "34841 State Route 14, Skamania, WA 98648",
+      "coordinate_source": "Google Maps named Woodard Creek Campground point, corroborated by the Washington State Parks campground map",
+      "precision": "named campground point",
+      "observed_route_minutes": 184,
+      "distance_miles": 197,
+      "display_minutes": 195,
+      "route_note": "Fastest normal I-5 and WA 14 route at review time; directions end at Woodard Creek Campground, the park's RV hookup loop."
+    },
+    {
+      "slug": "millersylvania-state-park",
+      "latitude": 46.9150377,
+      "longitude": -122.9134965,
+      "address": "12245 Tilley Road S, Olympia, WA 98512",
+      "coordinate_source": "Google Maps exact named park destination matched to the current Washington State Parks address and published locate point",
+      "precision": "park entrance/address point",
+      "observed_route_minutes": 69,
+      "distance_miles": 71,
+      "display_minutes": 75,
+      "route_note": "Fastest normal I-5 route at review time; public estimate rounds up for traffic variation."
+    },
+    {
+      "slug": "ike-kinswa-state-park",
+      "latitude": 46.5550323,
+      "longitude": -122.5301113,
+      "address": "873 State Route 122, Silver Creek, WA 98585",
+      "coordinate_source": "Google Maps exact named park destination matched to the current Washington State Parks address and published locate point",
+      "precision": "park entrance/address point",
+      "observed_route_minutes": 111,
+      "distance_miles": 115,
+      "display_minutes": 120,
+      "route_note": "Fastest normal I-5, US 12, and WA 122 route at review time; public estimate rounds up for traffic variation."
+    }
+  ]
+}

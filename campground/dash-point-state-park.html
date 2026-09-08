@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dash Point State Park — State Park, Federal Way, WA | WA RV Camping</title>
-  <meta name="description" content="Dash Point State Park: 140 sites, 32ft max, electric. ~40 min from Seattle. Forested Puget Sound park 40 minutes from Seattle with 140 RV sites (electric only, ">
+  <meta name="description" content="Dash Point State Park: 138 sites, 32ft max, water + electric. ~45 min from Seattle. Year-round Puget Sound campground with 111 standard and 27 utility sites, sh">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://westcoastrvcamping.com/campground/dash-point-state-park">
   <!-- Open Graph -->
   <meta property="og:type"        content="website">
   <meta property="og:title"       content="Dash Point State Park — State Park | WA RV Camping">
-  <meta property="og:description" content="140-site State Park campground, 32ft max, electric. ~40 min from Seattle.">
+  <meta property="og:description" content="138-site State Park campground, 32ft max, water + electric. ~45 min from Seattle.">
   <meta property="og:image"       content="https://westcoastrvcamping.com/assets/images/topo/dash-point-state-park.jpg">
   <meta property="og:url"         content="https://westcoastrvcamping.com/campground/dash-point-state-park">
   <meta property="og:site_name"   content="West Coast RV Camping">
   <meta name="twitter:card"       content="summary_large_image">
   <meta name="twitter:title"      content="Dash Point State Park — State Park | WA RV Camping">
-  <meta name="twitter:description" content="140-site State Park campground, 32ft max, electric. ~40 min from Seattle.">
+  <meta name="twitter:description" content="138-site State Park campground, 32ft max, water + electric. ~45 min from Seattle.">
   <meta name="twitter:image"      content="https://westcoastrvcamping.com/assets/images/topo/dash-point-state-park.jpg">
   <!-- LCP preload -->
   <link rel="preload" as="image" href="/assets/images/topo/dash-point-state-park.jpg" fetchpriority="high">
@@ -63,7 +63,7 @@
       "name": "Does Dash Point State Park have hookups?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Dash Point State Park offers electric-only hookups. Water and sewer are not available at the site."
+        "text": "Yes. Dash Point State Park offers water and electric (W+E) hookups. Full sewer hookups are not available."
       }
     },
     {
@@ -79,7 +79,7 @@
       "name": "How far is Dash Point State Park from Seattle?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Dash Point State Park is approximately ~40 min from Seattle."
+        "text": "Dash Point State Park is approximately ~45 min from Seattle."
       }
     },
     {
@@ -87,7 +87,7 @@
       "name": "Does Dash Point State Park have showers?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No, there are no showers at Dash Point State Park."
+        "text": "Yes, showers are available on-site at Dash Point State Park."
       }
     },
     {
@@ -103,7 +103,7 @@
       "name": "How do I reserve a site at Dash Point State Park?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Dash Point State Park accepts reservations online. Reservable up to 9 months in advance."
+        "text": "Dash Point State Park is first-come, first-served. Check official access and camping rules before travel."
       }
     }
   ]
@@ -118,7 +118,7 @@
     "TouristAttraction"
   ],
   "name": "Dash Point State Park",
-  "description": "Forested Puget Sound park 40 minutes from Seattle with 140 RV sites (electric only, 32 ft max), tight but affordable beach camping close to city services.",
+  "description": "Year-round Puget Sound campground with 111 standard and 27 utility sites, showers, a trailer dump, forest trails, and a 32-foot equipment limit.",
   "url": "https://westcoastrvcamping.com/campground/dash-point-state-park",
   "image": "https://westcoastrvcamping.com/assets/images/topo/dash-point-state-park.jpg",
   "amenityFeature": [
@@ -130,7 +130,7 @@
     {
       "@type": "LocationFeatureSpecification",
       "name": "Showers",
-      "value": false
+      "value": true
     },
     {
       "@type": "LocationFeatureSpecification",
@@ -158,16 +158,16 @@
     "Hikers",
     "Anglers"
   ],
-  "numberOfRooms": 140,
+  "numberOfRooms": 138,
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 47.3286,
-    "longitude": -122.4133
+    "latitude": 47.3164828,
+    "longitude": -122.4089008
   },
-  "hasMap": "https://www.google.com/maps?q=47.3286,-122.4133",
+  "hasMap": "https://www.google.com/maps?q=47.3164828,-122.4089008",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "5700 SW Dash Point Rd",
+    "streetAddress": "5700 SW Dash Point Road",
     "addressLocality": "Federal Way",
     "addressRegion": "WA",
     "postalCode": "98023",
@@ -223,13 +223,13 @@
       border-top: 1px solid rgba(255,255,255,.08); }
     @media (max-width: 800px) { .stats-inner { grid-template-columns: repeat(3, 1fr); } }
     @media (max-width: 460px) { .stats-inner { grid-template-columns: repeat(2, 1fr); } }
-    .stat { padding: 22px 20px; border-right: 1px solid rgba(255,255,255,.09); }
+    .stat { min-width: 0; padding: 22px 20px; border-right: 1px solid rgba(255,255,255,.09); }
     .stat:first-child { padding-left: 0; }
     .stat:last-child { border-right: none; padding-right: 0; }
     .stat-label { font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
       color: rgba(255,255,255,.45); margin-bottom: 6px; }
     .stat-val { font-family: var(--font-display); font-size: 21px; font-weight: 700;
-      color: var(--white); line-height: 1.1; }
+      color: var(--white); line-height: 1.1; overflow-wrap: anywhere; }
     .stat-note { font-size: 11.5px; color: rgba(255,255,255,.42); margin-top: 4px; }
 
     /* SECTIONS */
@@ -401,10 +401,10 @@
 </head>
 <body
   data-nav-transparent
-  data-nav-cta-text="Booking details"
+  data-nav-cta-text="Camping rules"
   data-nav-cta-url="https://parks.wa.gov/find-parks/state-parks/dash-point-state-park"
   data-nav-cta-external
-  data-footer-note="Record updated 2026-04-19 · Individual facts may need rechecking">
+  data-footer-note="Record updated 2026-09-07 · Individual facts may need rechecking">
 
 
 <!-- HERO -->
@@ -422,17 +422,17 @@
       </span>
       <span class="badge badge-drive">
         <svg width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="5.5" cy="5.5" r="4"/><path d="M5.5 3V5.5l1.5 1.5"/></svg>
-        ~40 min from Seattle
+        ~45 min from Seattle
       </span>
     </div>
     <h1>Dash Point State Park</h1>
-    <p class="hero-desc">Forested Puget Sound park 40 minutes from Seattle with 140 RV sites (electric only, 32 ft max), tight but affordable beach camping close to city services.</p>
+    <p class="hero-desc">Year-round Puget Sound campground with 111 standard and 27 utility sites, showers, a trailer dump, forest trails, and a 32-foot equipment limit.</p>
     <div class="hero-actions">
       <a href="https://parks.wa.gov/find-parks/state-parks/dash-point-state-park" target="_blank" class="btn btn-gold">
         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="11" height="9" rx="1"/><path d="M5 4V3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v1"/><line x1="7.5" y1="8" x2="7.5" y2="10"/><line x1="6" y1="9" x2="9" y2="9"/></svg>
-        Booking details
+        Camping rules
       </a>
-      <a href="https://www.google.com/maps/dir/?api=1&destination=47.3286,-122.4133&travelmode=driving" target="_blank" class="btn btn-outline">
+      <a href="https://www.google.com/maps/dir/?api=1&destination=47.3164828,-122.4089008&travelmode=driving" target="_blank" class="btn btn-outline">
         <svg width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="7.5" cy="6" r="2.5"/><path d="M7.5 1.5C5 1.5 3 3.5 3 6c0 3.9 4.5 7.5 4.5 7.5S12 9.9 12 6c0-2.5-2-4.5-4.5-4.5Z"/></svg>
         Get Directions
       </a>
@@ -445,18 +445,18 @@
   <div class="stats-inner">
     <div class="stat">
       <div class="stat-label">RV Sites</div>
-      <div class="stat-val">140</div>
+      <div class="stat-val">138</div>
       <div class="stat-note">reported RV sites</div>
     </div>
     <div class="stat">
       <div class="stat-label">Max Length</div>
       <div class="stat-val">32 ft</div>
-      <div class="stat-note">electric only</div>
+      <div class="stat-note">Confirm the selected site</div>
     </div>
     <div class="stat">
       <div class="stat-label">Hookups</div>
-      <div class="stat-val">Electric</div>
-      <div class="stat-note">electric only</div>
+      <div class="stat-val">Water + Electric</div>
+      <div class="stat-note">water & electric</div>
     </div>
     <div class="stat">
       <div class="stat-label">Surface</div>
@@ -470,8 +470,8 @@
     </div>
     <div class="stat">
       <div class="stat-label">Reservation</div>
-      <div class="stat-val">9 mo.</div>
-      <div class="stat-note">Check exact dates with the operator</div>
+      <div class="stat-val">FCFS</div>
+      <div class="stat-note">Availability varies</div>
     </div>
   </div>
 </div>
@@ -485,21 +485,21 @@
         <span class="eyebrow">Why Visit</span>
         <h2 class="section-title">Dash Point State Park</h2>
         <div class="overview-body">
-          <p>Dash Point State Park packs 140 campsites into 398 acres of forested bluffs above Puget Sound near Federal Way. Sites are compact and situated on uneven grades — RVs should be no longer than 32 feet, and leveling blocks are essential. Electric hookups are available at some sites. No showers. The payoff is dense second-growth forest trails and a good stretch of Puget Sound beach just below the bluffs, all within 40 minutes of Seattle.</p>
+          <p>Dash Point State Park combines a broad Puget Sound beach with forest trails between Federal Way and Tacoma. The official campground brochure identifies 111 standard campsites and 27 utility sites. Washington State Parks currently lists standard and utility camping, showers, drinking water, a trailer dump, and limited availability for equipment up to 32 feet. Campsites can be reserved year-round. The reviewed map pin points to the campground rather than the park&#x27;s general day-use location.</p>
         </div>
         <div class="divider"></div>
         <div class="overview-meta">
           <div class="meta-row">
             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="7.5" cy="6" r="2.5"/><path d="M7.5 1.5C5 1.5 3 3.5 3 6c0 3.9 4.5 7.5 4.5 7.5S12 9.9 12 6c0-2.5-2-4.5-4.5-4.5Z"/></svg>
-            5700 SW Dash Point Rd, Federal Way, WA 98023
+            5700 SW Dash Point Road, Federal Way, WA 98023
           </div>
           <div class="meta-row">
             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="7.5" cy="7.5" r="5.5"/><path d="M7.5 4.5V7.5l2 2"/></svg>
-            ~40 min from Seattle
+            ~45 min from Seattle · 27.3 mi
           </div>
           <div class="meta-row">
             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1.5" y="4" width="12" height="9" rx="1"/><path d="M5 4V3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v1"/></svg>
-            Online reservation · Reservable up to 9 months in advance
+            No advance reservations · Campsites reservable year-round; unreserved sites may be available first-come
           </div>
           <div class="meta-row">
             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7.5 1.5L9 5.5H13L9.8 8l1.2 4-3.5-2.3L4 12l1.2-4L2 5.5h4z"/></svg>
@@ -512,7 +512,7 @@
         <div class="map-card">
           <img class="map-card-img" src="/assets/images/svg/dash-point-state-park.svg" alt="Washington state map showing Dash Point State Park location">
           <div class="map-card-foot">
-            <a href="https://www.google.com/maps/dir/?api=1&destination=47.3286,-122.4133&travelmode=driving" target="_blank">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=47.3164828,-122.4089008&travelmode=driving" target="_blank">
               <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6.5" cy="5.5" r="2.2"/><path d="M6.5 1.5C4.3 1.5 2.5 3.3 2.5 5.5c0 3.4 4 6.5 4 6.5s4-3.1 4-6.5c0-2.2-1.8-4-4-4z"/></svg>
               Open in Google Maps
             </a>
@@ -583,9 +583,9 @@
         <div class="spec-label">Hookups</div>
         <div class="spec-val">
           <svg class="tick" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="2.5,8 6.5,12 13.5,4"/></svg>
-          Electric
+          Water + Electric
         </div>
-        <div class="spec-note" style="margin-top:7px;">Electric service available</div>
+        <div class="spec-note" style="margin-top:7px;">Water & electric at site</div>
       </div>
     </div>
   </div>
@@ -620,7 +620,7 @@
       <div class="nature-card">
         <span class="nature-card-eyebrow">State Park</span>
         <h3>Washington State Parks — built for exploration</h3>
-          <p>Dash Point State Park protects a forested headland and sandy beach between Federal Way and Tacoma, where 11 miles of trail preserve one of the largest blocks of mature second-growth forest remaining on Puget Sound&#x27;s eastern shoreline. The park&#x27;s beach at low tide exposes a rich intertidal community of purple sea urchins, sea stars, and Dungeness crab, and great blue herons nest in a rookery within the park&#x27;s upland forest and fish the tidal flats daily. Dash Point&#x27;s beach faces Commencement Bay, and harbor porpoise are frequently spotted from the shoreline — the park records some of the highest orca sighting frequencies of any southern Puget Sound shoreline accessible by road.</p>
+          <p>Dash Point State Park includes Puget Sound beach and a wooded trail system between Federal Way and Tacoma. Low tides expose a broad intertidal area; visitors should consult tide tables and current park notices before beach activities.</p>
       </div>
     </div>
   </div>
@@ -640,10 +640,10 @@
         </div>
       </div>
       <div class="amenity">
-        <div class="amenity-icon off">🚿</div>
+        <div class="amenity-icon on">🚿</div>
         <div>
           <div class="amenity-name">Showers</div>
-          <div class="amenity-status off">Not available</div>
+          <div class="amenity-status on">Available</div>
         </div>
       </div>
       <div class="amenity">
@@ -711,7 +711,7 @@
             <div class="nearby-camp-info">
               <div class="nearby-camp-name">Saltwater State Park</div>
               <div class="nearby-camp-meta">State Park · ~30 min</div>
-              <div class="nearby-camp-reason">Fits listed rigs up to 50 ft</div>
+              <div class="nearby-camp-reason">Another state park option</div>
             </div>
             <svg class="nearby-camp-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,3 11,8 6,13"/></svg>
           </a>
@@ -719,7 +719,7 @@
             <div class="nearby-camp-icon">🏕️</div>
             <div class="nearby-camp-info">
               <div class="nearby-camp-name">Penrose Point State Park</div>
-              <div class="nearby-camp-meta">State Park · ~1 hr 30 min</div>
+              <div class="nearby-camp-meta">State Park · ~1 hr 15 min</div>
               <div class="nearby-camp-reason">Fits listed rigs up to 35 ft</div>
             </div>
             <svg class="nearby-camp-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,3 11,8 6,13"/></svg>
@@ -728,7 +728,7 @@
             <div class="nearby-camp-icon">⛰️</div>
             <div class="nearby-camp-info">
               <div class="nearby-camp-name">Illahee State Park</div>
-              <div class="nearby-camp-meta">State Park · ~1 hr via ferry</div>
+              <div class="nearby-camp-meta">State Park · ~1 hr 15 min</div>
               <div class="nearby-camp-reason">More services: Full Hookups</div>
             </div>
             <svg class="nearby-camp-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,3 11,8 6,13"/></svg>
@@ -738,7 +738,7 @@
             <div class="nearby-camp-info">
               <div class="nearby-camp-name">Jarrell Cove State Park</div>
               <div class="nearby-camp-meta">State Park · ~1 hr 45 min</div>
-              <div class="nearby-camp-reason">More services: Water + Electric</div>
+              <div class="nearby-camp-reason">Another state park option</div>
             </div>
             <svg class="nearby-camp-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,3 11,8 6,13"/></svg>
           </a>
@@ -756,10 +756,10 @@
     <div>
       <p class="reserve-eyebrow">Ready to book?</p>
       <h2 class="reserve-title">Plan your visit to Dash Point State Park</h2>
-      <p class="reserve-sub">Reservable up to 9 months in advance. Confirm current rules, site dimensions, and conditions with the operator. Booking and availability are handled externally.</p>
+      <p class="reserve-sub">Campsites reservable year-round; unreserved sites may be available first-come. Confirm current rules, site dimensions, and conditions with the operator. Booking and availability are handled externally.</p>
     </div>
     <a href="https://parks.wa.gov/find-parks/state-parks/dash-point-state-park" target="_blank" class="reserve-btn">
-      Booking details
+      Camping rules
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
     </a>
   </div>

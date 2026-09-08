@@ -2261,6 +2261,966 @@
           "evidence": "The current operator page or official campground map identifies the published utility level."
         }
       ]
+    },
+    {
+      "slug": "battle-ground-lake-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks with dated closures preserved",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/battle-ground-lake-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "battle-ground-lake-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/battle-ground-lake-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated."
+        }
+      ]
+    },
+    {
+      "slug": "battle-ground-lake-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions.",
+      "proposed_value": "Campsites reservable year-round; unreserved sites may be available first-come",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/battle-ground-lake-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "battle-ground-lake-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one.",
+      "proposed_value": 35,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/battle-ground-lake-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one."
+        }
+      ]
+    },
+    {
+      "slug": "battle-ground-lake-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups.",
+      "proposed_value": 2,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/battle-ground-lake-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups."
+        }
+      ]
+    },
+    {
+      "slug": "beacon-rock-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks with dated closures preserved",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/beacon-rock-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "beacon-rock-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/beacon-rock-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated."
+        }
+      ]
+    },
+    {
+      "slug": "beacon-rock-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions.",
+      "proposed_value": "Campgrounds are reservable during their operating season; Upper Campground closes in winter. Verify current dates before travel",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/beacon-rock-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "beacon-rock-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one.",
+      "proposed_value": 40,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/beacon-rock-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one."
+        }
+      ]
+    },
+    {
+      "slug": "beacon-rock-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/beacon-rock-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups."
+        }
+      ]
+    },
+    {
+      "slug": "dash-point-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks with dated closures preserved",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/dash-point-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "dash-point-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/dash-point-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated."
+        }
+      ]
+    },
+    {
+      "slug": "dash-point-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions.",
+      "proposed_value": "Campsites reservable year-round; unreserved sites may be available first-come",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/dash-point-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "dash-point-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one.",
+      "proposed_value": 32,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/dash-point-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one."
+        }
+      ]
+    },
+    {
+      "slug": "dash-point-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups.",
+      "proposed_value": 2,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/dash-point-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups."
+        }
+      ]
+    },
+    {
+      "slug": "ike-kinswa-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks with dated closures preserved",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/ike-kinswa-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "ike-kinswa-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/ike-kinswa-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated."
+        }
+      ]
+    },
+    {
+      "slug": "ike-kinswa-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions.",
+      "proposed_value": "Loop B reservable year-round; Loop A closed September 30\u2013May 16 and Loop D closed September 30\u2013April 30. Loop A hookups do not operate in winter",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/ike-kinswa-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "ike-kinswa-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one.",
+      "proposed_value": 60,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/ike-kinswa-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one."
+        }
+      ]
+    },
+    {
+      "slug": "ike-kinswa-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/ike-kinswa-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups."
+        }
+      ]
+    },
+    {
+      "slug": "illahee-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks with dated closures preserved",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/illahee-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "illahee-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/illahee-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated."
+        }
+      ]
+    },
+    {
+      "slug": "illahee-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions.",
+      "proposed_value": "Campsites reservable year-round; unreserved sites may be available first-come",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/illahee-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "illahee-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one.",
+      "proposed_value": 40,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/illahee-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one."
+        }
+      ]
+    },
+    {
+      "slug": "illahee-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/illahee-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups."
+        }
+      ]
+    },
+    {
+      "slug": "lewis-and-clark-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks with dated closures preserved",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/lewis-clark-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "lewis-and-clark-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/lewis-clark-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated."
+        }
+      ]
+    },
+    {
+      "slug": "lewis-and-clark-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions.",
+      "proposed_value": "Main campground closed October 1, 2026\u2013May 1, 2027; reserve during the operating season and verify current dates",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/lewis-clark-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "lewis-and-clark-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/lewis-clark-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one."
+        }
+      ]
+    },
+    {
+      "slug": "lewis-and-clark-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/lewis-clark-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups."
+        }
+      ]
+    },
+    {
+      "slug": "millersylvania-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks with dated closures preserved",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/millersylvania-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "millersylvania-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/millersylvania-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated."
+        }
+      ]
+    },
+    {
+      "slug": "millersylvania-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions.",
+      "proposed_value": "Campsites reservable year-round; unreserved sites may be available first-come",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/millersylvania-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "millersylvania-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one.",
+      "proposed_value": 60,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/millersylvania-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one."
+        }
+      ]
+    },
+    {
+      "slug": "millersylvania-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups.",
+      "proposed_value": 2,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/millersylvania-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups."
+        }
+      ]
+    },
+    {
+      "slug": "penrose-point-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks with dated closures preserved",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/penrose-point-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "penrose-point-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/penrose-point-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated."
+        }
+      ]
+    },
+    {
+      "slug": "penrose-point-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions.",
+      "proposed_value": "Reservable for May 15\u2013September 15 arrivals; unreserved sites are first-come. Check the current winter schedule outside the main season",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/penrose-point-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "penrose-point-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one.",
+      "proposed_value": 35,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/penrose-point-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one."
+        }
+      ]
+    },
+    {
+      "slug": "penrose-point-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/penrose-point-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups."
+        }
+      ]
+    },
+    {
+      "slug": "rainbow-falls-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks with dated closures preserved",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/rainbow-falls-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "rainbow-falls-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/rainbow-falls-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated."
+        }
+      ]
+    },
+    {
+      "slug": "rainbow-falls-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions.",
+      "proposed_value": "Generally reservable for May 15\u2013September 15 arrivals; check the current winter schedule outside the main season",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/rainbow-falls-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "rainbow-falls-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one.",
+      "proposed_value": 60,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/rainbow-falls-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one."
+        }
+      ]
+    },
+    {
+      "slug": "rainbow-falls-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups.",
+      "proposed_value": 2,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/rainbow-falls-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups."
+        }
+      ]
+    },
+    {
+      "slug": "saltwater-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record.",
+      "proposed_value": "campground currently closed; reopening TBD",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/saltwater-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "saltwater-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/saltwater-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated."
+        }
+      ]
+    },
+    {
+      "slug": "saltwater-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions.",
+      "proposed_value": "Closed while flood and erosion projects and the future camping configuration are under review; reopening TBD",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/saltwater-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "saltwater-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/saltwater-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one."
+        }
+      ]
+    },
+    {
+      "slug": "saltwater-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/saltwater-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups."
+        }
+      ]
+    },
+    {
+      "slug": "schafer-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks with dated closures preserved",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/schafer-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "schafer-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/schafer-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated."
+        }
+      ]
+    },
+    {
+      "slug": "schafer-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions.",
+      "proposed_value": "Generally reservable for May 15\u2013September 15 arrivals; check the current winter schedule outside the main season",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/schafer-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "schafer-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one.",
+      "proposed_value": 40,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/schafer-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one."
+        }
+      ]
+    },
+    {
+      "slug": "schafer-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups.",
+      "proposed_value": 2,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/schafer-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups."
+        }
+      ]
+    },
+    {
+      "slug": "seaquest-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record.",
+      "proposed_value": "currently listed by Washington State Parks with dated closures preserved",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/seaquest-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page lists the active campground status and dated seasonal or project closures; those limits are preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "seaquest-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/seaquest-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies vehicle, RV, utility, or full-hookup campsites; Saltwater remains unclassified while its closed campground is reevaluated."
+        }
+      ]
+    },
+    {
+      "slug": "seaquest-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions.",
+      "proposed_value": "Campsites reservable year-round; unreserved sites may be available first-come",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/seaquest-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator reservation page, park page, and winter schedule identify reservation availability and seasonal exceptions."
+        }
+      ]
+    },
+    {
+      "slug": "seaquest-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one.",
+      "proposed_value": 50,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/seaquest-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The operator publishes this limit, or the record explicitly leaves a park-wide limit unconfirmed when current official material does not support one."
+        }
+      ]
+    },
+    {
+      "slug": "seaquest-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/seaquest-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator page or official campground map identifies the published utility level; closed Saltwater retains only the supported absence of hookups."
+        }
+      ]
     }
   ]
 }

@@ -139,6 +139,7 @@ def parse_address(addr):
 
 def format_reservation_short(text):
     if not text: return 'FCFS'
+    if re.search(r'^(campground\s+)?closed\b', text, re.I): return 'Closed'
     if re.search(r'opened January 1', text, re.I): return 'Jan. 1 release'
     m = re.search(r'(\d+)\s*month', text, re.I)
     if m: return f'{m.group(1)} mo.'
@@ -366,7 +367,7 @@ def build_faq_json(row):
     miles_str = ''  # Drive Time Minutes is not a distance.
     drive_ans = f"{name} is approximately {drive_time.replace(' from Seattle','')}{miles_str} from Seattle."
 
-    if reservation.lower().startswith('closed'):
+    if re.search(r'^(campground\s+)?closed\b', reservation, re.I):
         res_ans = f"{name} is currently {reservation[0].lower() + reservation[1:]}. Check the official closure details before travel."
     elif 'first-come' in reservation.lower():
         res_ans = f'{name} is first-come, first-served. Check official access and camping rules before travel.'
@@ -540,7 +541,7 @@ def generate_page(row, slug_lookup, template):
     og_title = f"{name} — {park_type} | WA RV Camping"
     og_desc  = (f"{rv_str+'-site ' if rv_str else ''}{park_type} campground, "
                 f"{len_str}{hookup_phrase}. {drive_time} from Seattle.")[:200]
-    closed = reservation.lower().startswith('closed')
+    closed = bool(re.search(r'^(campground\s+)?closed\b', reservation, re.I))
     if closed:
         og_desc = row.get('Short Description', '')[:200]
 
@@ -580,6 +581,7 @@ def generate_page(row, slug_lookup, template):
         '{{short_desc}}':               h(row.get('Short Description', '')),
         '{{rv_sites}}':                 rv_sites,
         '{{max_length_val}}':           'No RV access' if row.get('RV Access') == 'no' else f'{max_length} ft' if max_length else 'Not confirmed',
+        '{{max_length_note}}':          'Confirm the selected site' if max_length else 'Check limits by site',
         '{{hookup_val}}':               hookup_label,
         '{{hookup_note}}':              hookup_note_txt,
         '{{surface}}':                  h(surface),
