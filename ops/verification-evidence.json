@@ -95,22 +95,6 @@
       ]
     },
     {
-      "slug": "horseshoe-cove-campground",
-      "field": "max_rv_length",
-      "status": "corrected_locally",
-      "checked_on": "2026-09-06",
-      "summary": "Current reservable inventory includes RV sites up to 40 feet.",
-      "proposed_value": 40,
-      "sources": [
-        {
-          "url": "https://www.recreation.gov/camping/campgrounds/232059",
-          "publisher": "Recreation.gov",
-          "source_family": "recreation-gov-horseshoe-cove",
-          "evidence": "Current campsite inventory includes 40-foot RV and trailer limits."
-        }
-      ]
-    },
-    {
       "slug": "johnny-creek-campground",
       "field": "max_rv_length",
       "status": "corrected_locally",
@@ -4819,6 +4803,646 @@
           "publisher": "Washington State Parks",
           "source_family": "washington-state-parks",
           "evidence": "The current operator page or official campground map identifies the highest published utility level and the text preserves site-type distinctions."
+        }
+      ]
+    },
+    {
+      "slug": "bedal-campground",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The live Recreation.gov facility page and current notices identify seasonal availability, closures, and access alerts preserved in the canonical record.",
+      "proposed_value": "Approach from Darrington on WA-530 and Mountain Loop Highway. Recreation.gov says the final 7.5 miles are gravel and variable and recommends this direction because the Barlow Pass section may be gated.",
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/233864",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The live Recreation.gov facility page and current notices identify seasonal availability, closures, and access alerts preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "bedal-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The live Recreation.gov campsite inventory identifies public sites that permit RV or trailer equipment; management records and tent-only sites are excluded from the RV count.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/api/camps/campgrounds/233864/campsites",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The live Recreation.gov campsite inventory identifies public sites that permit RV or trailer equipment; management records and tent-only sites are excluded from the RV count."
+        }
+      ]
+    },
+    {
+      "slug": "bedal-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator page identifies Recreation.gov reservations and published first-come exceptions where available.",
+      "proposed_value": "Reservable through Recreation.gov during the operating season, generally up to six months ahead; confirm current site availability and opening dates",
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/233864",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The operator page identifies Recreation.gov reservations and published first-come exceptions where available."
+        }
+      ]
+    },
+    {
+      "slug": "bedal-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The maximum is the largest positive RV or trailer length in current public campsite inventory; the canonical value is intentionally blank where only zero placeholders or non-public records provide lengths.",
+      "proposed_value": 58,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/api/camps/campgrounds/233864/campsites",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The maximum is the largest positive RV or trailer length in current public campsite inventory; the canonical value is intentionally blank where only zero placeholders or non-public records provide lengths."
+        }
+      ]
+    },
+    {
+      "slug": "bedal-campground",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator facility description states that electrical hookups are unavailable.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/233864",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The current operator facility description states that electrical hookups are unavailable."
+        }
+      ]
+    },
+    {
+      "slug": "gold-basin-campground",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The live Recreation.gov facility page and current notices identify seasonal availability, closures, and access alerts preserved in the canonical record.",
+      "proposed_value": "Directions use the named Gold Basin Campground entrance on NF-4018. The Recreation.gov facility coordinate resolves across Mountain Loop Highway at Gold Basin Mill Pond, so it is not used for the map pin.",
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232051",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The live Recreation.gov facility page and current notices identify seasonal availability, closures, and access alerts preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "gold-basin-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The live Recreation.gov campsite inventory identifies public sites that permit RV or trailer equipment; management records and tent-only sites are excluded from the RV count.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/api/camps/campgrounds/232051/campsites",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The live Recreation.gov campsite inventory identifies public sites that permit RV or trailer equipment; management records and tent-only sites are excluded from the RV count."
+        }
+      ]
+    },
+    {
+      "slug": "gold-basin-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator page identifies Recreation.gov reservations and published first-come exceptions where available.",
+      "proposed_value": "Reservable through Recreation.gov during the operating season, generally up to six months ahead; confirm current availability because older Forest Service material still shows a closure",
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232051",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The operator page identifies Recreation.gov reservations and published first-come exceptions where available."
+        }
+      ]
+    },
+    {
+      "slug": "gold-basin-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The maximum is the largest positive RV or trailer length in current public campsite inventory; the canonical value is intentionally blank where only zero placeholders or non-public records provide lengths.",
+      "proposed_value": 45,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/api/camps/campgrounds/232051/campsites",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The maximum is the largest positive RV or trailer length in current public campsite inventory; the canonical value is intentionally blank where only zero placeholders or non-public records provide lengths."
+        }
+      ]
+    },
+    {
+      "slug": "gold-basin-campground",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator facility description states that electrical hookups are unavailable.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232051",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The current operator facility description states that electrical hookups are unavailable."
+        }
+      ]
+    },
+    {
+      "slug": "horseshoe-cove-campground",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The live Recreation.gov facility page and current notices identify seasonal availability, closures, and access alerts preserved in the canonical record.",
+      "proposed_value": "Follow SR-20 to Baker Lake Road, then NF-1118 past Bayview Campground. Confirm seasonal road, campground, lake, and fire conditions before travel.",
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232059",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The live Recreation.gov facility page and current notices identify seasonal availability, closures, and access alerts preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "horseshoe-cove-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The live Recreation.gov campsite inventory identifies public sites that permit RV or trailer equipment; management records and tent-only sites are excluded from the RV count.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/api/camps/campgrounds/232059/campsites",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The live Recreation.gov campsite inventory identifies public sites that permit RV or trailer equipment; management records and tent-only sites are excluded from the RV count."
+        }
+      ]
+    },
+    {
+      "slug": "horseshoe-cove-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator page identifies Recreation.gov reservations and published first-come exceptions where available.",
+      "proposed_value": "Twenty-five campsites are normally reservable through Recreation.gov and remaining sites are first-come during the operating season; confirm current opening dates and availability",
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232059",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The operator page identifies Recreation.gov reservations and published first-come exceptions where available."
+        }
+      ]
+    },
+    {
+      "slug": "horseshoe-cove-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The maximum is the largest positive RV or trailer length in current public campsite inventory; the canonical value is intentionally blank where only zero placeholders or non-public records provide lengths.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/api/camps/campgrounds/232059/campsites",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The maximum is the largest positive RV or trailer length in current public campsite inventory; the canonical value is intentionally blank where only zero placeholders or non-public records provide lengths."
+        }
+      ]
+    },
+    {
+      "slug": "horseshoe-cove-campground",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator facility description states that electrical hookups are unavailable.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232059",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The current operator facility description states that electrical hookups are unavailable."
+        }
+      ]
+    },
+    {
+      "slug": "kachess-campground",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The live Recreation.gov facility page and current notices identify seasonal availability, closures, and access alerts preserved in the canonical record.",
+      "proposed_value": "As checked September 7, 2026, Recreation.gov lists Kachess closed for the season under the Three Queens Fire closure, Forest Service Order 06-17-03-2026-32. The boat launch closed August 1, 2026 because of low lake levels.",
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232064",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The live Recreation.gov facility page and current notices identify seasonal availability, closures, and access alerts preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "kachess-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The live Recreation.gov campsite inventory identifies public sites that permit RV or trailer equipment; management records and tent-only sites are excluded from the RV count.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/api/camps/campgrounds/232064/campsites",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The live Recreation.gov campsite inventory identifies public sites that permit RV or trailer equipment; management records and tent-only sites are excluded from the RV count."
+        }
+      ]
+    },
+    {
+      "slug": "kachess-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator page identifies Recreation.gov reservations and published first-come exceptions where available.",
+      "proposed_value": "Normally a mix of Recreation.gov reservations and first-come sites during the operating season; the campground is currently closed for the 2026 season under the Three Queens Fire order",
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232064",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The operator page identifies Recreation.gov reservations and published first-come exceptions where available."
+        }
+      ]
+    },
+    {
+      "slug": "kachess-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The maximum is the largest positive RV or trailer length in current public campsite inventory; the canonical value is intentionally blank where only zero placeholders or non-public records provide lengths.",
+      "proposed_value": 110,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/api/camps/campgrounds/232064/campsites",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The maximum is the largest positive RV or trailer length in current public campsite inventory; the canonical value is intentionally blank where only zero placeholders or non-public records provide lengths."
+        }
+      ]
+    },
+    {
+      "slug": "kachess-campground",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator facility description states that electrical hookups are unavailable.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232064",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The current operator facility description states that electrical hookups are unavailable."
+        }
+      ]
+    },
+    {
+      "slug": "shannon-creek-campground",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The live Recreation.gov facility page and current notices identify seasonal availability, closures, and access alerts preserved in the canonical record.",
+      "proposed_value": "The campground is approximately 23.3 miles up Baker Lake Road from SR-20. Confirm the seasonal opening, road, fire, and lake conditions before travel.",
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232096",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The live Recreation.gov facility page and current notices identify seasonal availability, closures, and access alerts preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "shannon-creek-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The live Recreation.gov campsite inventory identifies public sites that permit RV or trailer equipment; management records and tent-only sites are excluded from the RV count.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/api/camps/campgrounds/232096/campsites",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The live Recreation.gov campsite inventory identifies public sites that permit RV or trailer equipment; management records and tent-only sites are excluded from the RV count."
+        }
+      ]
+    },
+    {
+      "slug": "shannon-creek-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator page identifies Recreation.gov reservations and published first-come exceptions where available.",
+      "proposed_value": "Reservable through Recreation.gov during the operating season, generally up to six months ahead; currently shown seasonally closed by the Forest Service",
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232096",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The operator page identifies Recreation.gov reservations and published first-come exceptions where available."
+        }
+      ]
+    },
+    {
+      "slug": "shannon-creek-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The maximum is the largest positive RV or trailer length in current public campsite inventory; the canonical value is intentionally blank where only zero placeholders or non-public records provide lengths.",
+      "proposed_value": 36,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/api/camps/campgrounds/232096/campsites",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The maximum is the largest positive RV or trailer length in current public campsite inventory; the canonical value is intentionally blank where only zero placeholders or non-public records provide lengths."
+        }
+      ]
+    },
+    {
+      "slug": "shannon-creek-campground",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator facility description states that electrical hookups are unavailable.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232096",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The current operator facility description states that electrical hookups are unavailable."
+        }
+      ]
+    },
+    {
+      "slug": "tinkham-campground",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The live Recreation.gov facility page and current notices identify seasonal availability, closures, and access alerts preserved in the canonical record.",
+      "proposed_value": "Use I-90 Exit 42 and Tinkham Road. The final road is gravel and conditions vary with weather, heavy use, and maintenance. Recreation.gov reports that Apple Maps incorrectly labels the road closed.",
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232113",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The live Recreation.gov facility page and current notices identify seasonal availability, closures, and access alerts preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "tinkham-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The live Recreation.gov campsite inventory identifies public sites that permit RV or trailer equipment; management records and tent-only sites are excluded from the RV count.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/api/camps/campgrounds/232113/campsites",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The live Recreation.gov campsite inventory identifies public sites that permit RV or trailer equipment; management records and tent-only sites are excluded from the RV count."
+        }
+      ]
+    },
+    {
+      "slug": "tinkham-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator page identifies Recreation.gov reservations and published first-come exceptions where available.",
+      "proposed_value": "Reservable through Recreation.gov during the operating season, generally up to six months ahead; confirm current site availability and opening dates",
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232113",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The operator page identifies Recreation.gov reservations and published first-come exceptions where available."
+        }
+      ]
+    },
+    {
+      "slug": "tinkham-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The maximum is the largest positive RV or trailer length in current public campsite inventory; the canonical value is intentionally blank where only zero placeholders or non-public records provide lengths.",
+      "proposed_value": 46,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/api/camps/campgrounds/232113/campsites",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The maximum is the largest positive RV or trailer length in current public campsite inventory; the canonical value is intentionally blank where only zero placeholders or non-public records provide lengths."
+        }
+      ]
+    },
+    {
+      "slug": "tinkham-campground",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator facility description states that electrical hookups are unavailable.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232113",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The current operator facility description states that electrical hookups are unavailable."
+        }
+      ]
+    },
+    {
+      "slug": "turlo-campground",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The live Recreation.gov facility page and current notices identify seasonal availability, closures, and access alerts preserved in the canonical record.",
+      "proposed_value": "The campground is just off Mountain Loop Highway east of Granite Falls. Confirm highway, fire, and seasonal conditions before travel.",
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232118",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The live Recreation.gov facility page and current notices identify seasonal availability, closures, and access alerts preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "turlo-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The live Recreation.gov campsite inventory identifies public sites that permit RV or trailer equipment; management records and tent-only sites are excluded from the RV count.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/api/camps/campgrounds/232118/campsites",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The live Recreation.gov campsite inventory identifies public sites that permit RV or trailer equipment; management records and tent-only sites are excluded from the RV count."
+        }
+      ]
+    },
+    {
+      "slug": "turlo-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator page identifies Recreation.gov reservations and published first-come exceptions where available.",
+      "proposed_value": "Reservable through Recreation.gov during the operating season, generally up to six months ahead; confirm current site availability and opening dates",
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232118",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The operator page identifies Recreation.gov reservations and published first-come exceptions where available."
+        }
+      ]
+    },
+    {
+      "slug": "turlo-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The maximum is the largest positive RV or trailer length in current public campsite inventory; the canonical value is intentionally blank where only zero placeholders or non-public records provide lengths.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/api/camps/campgrounds/232118/campsites",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The maximum is the largest positive RV or trailer length in current public campsite inventory; the canonical value is intentionally blank where only zero placeholders or non-public records provide lengths."
+        }
+      ]
+    },
+    {
+      "slug": "turlo-campground",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator facility description states that electrical hookups are unavailable.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232118",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The current operator facility description states that electrical hookups are unavailable."
+        }
+      ]
+    },
+    {
+      "slug": "verlot-campground",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The live Recreation.gov facility page and current notices identify seasonal availability, closures, and access alerts preserved in the canonical record.",
+      "proposed_value": "The campground is about 10.8 miles east of Granite Falls on the Mountain Loop Highway. Confirm road, fire, and seasonal conditions before travel.",
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232120",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The live Recreation.gov facility page and current notices identify seasonal availability, closures, and access alerts preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "verlot-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The live Recreation.gov campsite inventory identifies public sites that permit RV or trailer equipment; management records and tent-only sites are excluded from the RV count.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/api/camps/campgrounds/232120/campsites",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The live Recreation.gov campsite inventory identifies public sites that permit RV or trailer equipment; management records and tent-only sites are excluded from the RV count."
+        }
+      ]
+    },
+    {
+      "slug": "verlot-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The operator page identifies Recreation.gov reservations and published first-come exceptions where available.",
+      "proposed_value": "Reservable through Recreation.gov during the operating season, generally up to six months ahead; confirm current site availability and opening dates",
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232120",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The operator page identifies Recreation.gov reservations and published first-come exceptions where available."
+        }
+      ]
+    },
+    {
+      "slug": "verlot-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The maximum is the largest positive RV or trailer length in current public campsite inventory; the canonical value is intentionally blank where only zero placeholders or non-public records provide lengths.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/api/camps/campgrounds/232120/campsites",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The maximum is the largest positive RV or trailer length in current public campsite inventory; the canonical value is intentionally blank where only zero placeholders or non-public records provide lengths."
+        }
+      ]
+    },
+    {
+      "slug": "verlot-campground",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-07",
+      "summary": "The current operator facility description states that electrical hookups are unavailable.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232120",
+          "publisher": "Recreation.gov / U.S. Forest Service",
+          "source_family": "recreation-gov",
+          "evidence": "The current operator facility description states that electrical hookups are unavailable."
         }
       ]
     }

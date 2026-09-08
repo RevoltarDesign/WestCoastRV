@@ -307,9 +307,9 @@
       "source": "https://www.recreation.gov/api/camps/campgrounds/232051",
       "official_latitude": 48.07758,
       "official_longitude": -121.738008,
-      "previous_latitude": 48.07758,
-      "previous_longitude": -121.738008,
-      "coordinate_drift_miles": 0.0,
+      "previous_latitude": 48.0783333,
+      "previous_longitude": -121.7375,
+      "coordinate_drift_miles": 0.057,
       "official_directions": "From Seattle, Washington, go north on I-5 to Everett. Take exit 194 onto\nHighway 2, then turn north at Highway 204 toward Lake Stevens. Turn north on Highway 9 then east on Highway 92 to Granite Falls. The campground is located 13.5 miles east of Granite Falls.",
       "manual_resolution": null
     },
@@ -324,8 +324,8 @@
       "source": "https://www.recreation.gov/api/camps/campgrounds/232118",
       "official_latitude": 48.0955556,
       "official_longitude": -121.7902778,
-      "previous_latitude": 48.095556,
-      "previous_longitude": -121.790278,
+      "previous_latitude": 48.0955556,
+      "previous_longitude": -121.7902778,
       "coordinate_drift_miles": 0.0,
       "official_directions": "From Seattle, Washington: Go north on I-5 to Everett. Take exit 194 onto\nHwy 2. Head north at Hwy 204, toward Lake Stevens. Turn north on Hwy 9,\nthen east on Hwy 92 to Granite Falls.",
       "manual_resolution": null

@@ -1,0 +1,102 @@
+{
+  "checked_on": "2026-09-07",
+  "method": "Campground coordinates were resolved from Recreation.gov facility and campsite records, then checked against named Google Maps destinations. Seattle routes use current ordinary driving estimates; public display times add a towing and traffic margin. Bedal uses the Forest Service-recommended Darrington approach.",
+  "reviews": [
+    {
+      "slug": "tinkham-campground",
+      "address": "58050 Tinkham Road, North Bend, WA 98045",
+      "latitude": 47.402524,
+      "longitude": -121.56748,
+      "coordinate_source": "Recreation.gov facility point corroborated by its campsite coordinate cluster and Forest Service directions from I-90 Exit 42",
+      "precision": "campground entrance/address point",
+      "observed_route_minutes": 45,
+      "display_minutes": 60,
+      "distance_miles": 42.7,
+      "route_note": "Fastest normal I-90 route at review time. Tinkham Road is gravel and conditions vary; Recreation.gov recommends access from Exit 42. Public estimate adds a towing and traffic margin."
+    },
+    {
+      "slug": "kachess-campground",
+      "address": "8000 Kachess Lake Road, Easton, WA 98925",
+      "latitude": 47.35484,
+      "longitude": -121.24342,
+      "coordinate_source": "Recreation.gov facility point corroborated by its campsite coordinate cluster and official Kachess Lake Road directions",
+      "precision": "campground entrance/address point",
+      "observed_route_minutes": 70,
+      "display_minutes": 90,
+      "distance_miles": 67.4,
+      "route_note": "Fastest normal I-90 and Kachess Lake Road route at review time. Public estimate adds a towing, pass-traffic, and local-road margin."
+    },
+    {
+      "slug": "verlot-campground",
+      "address": "Mountain Loop Highway, Granite Falls, WA 98252",
+      "latitude": 48.0903473,
+      "longitude": -121.7777402,
+      "coordinate_source": "Google Maps named Verlot Campground point corroborated by Recreation.gov facility coordinates and Forest Service directions",
+      "precision": "named campground point",
+      "observed_route_minutes": 64,
+      "display_minutes": 75,
+      "distance_miles": 54.4,
+      "route_note": "Fastest normal I-5, WA-9, WA-92, and Mountain Loop Highway route at review time. Public estimate adds a towing and traffic margin."
+    },
+    {
+      "slug": "gold-basin-campground",
+      "address": "NF-4018, Granite Falls, WA 98252",
+      "latitude": 48.0783333,
+      "longitude": -121.7375,
+      "coordinate_source": "Google Maps named Gold Basin Campground point corroborated by Recreation.gov campsite coordinates; the Recreation.gov facility point resolves across the highway at Gold Basin Mill Pond",
+      "precision": "named campground point",
+      "observed_route_minutes": 68,
+      "display_minutes": 80,
+      "distance_miles": 56.8,
+      "route_note": "Fastest normal I-5, WA-9, WA-92, and Mountain Loop Highway route at review time. Directions use the named campground rather than the mill pond across the highway."
+    },
+    {
+      "slug": "turlo-campground",
+      "address": "32910 Mountain Loop Highway, Granite Falls, WA 98252",
+      "latitude": 48.0955556,
+      "longitude": -121.7902778,
+      "coordinate_source": "Recreation.gov facility point matched to the Google Maps routed campground address and official Mountain Loop Highway directions",
+      "precision": "campground entrance/address point",
+      "observed_route_minutes": 63,
+      "display_minutes": 75,
+      "distance_miles": 53.7,
+      "route_note": "Fastest normal I-5, WA-9, WA-92, and Mountain Loop Highway route at review time. Public estimate adds a towing and traffic margin."
+    },
+    {
+      "slug": "bedal-campground",
+      "address": "Mountain Loop Highway, Darrington, WA 98241",
+      "latitude": 48.0968238,
+      "longitude": -121.3870382,
+      "coordinate_source": "Google Maps named Bedal Campground point corroborated by Recreation.gov facility and campsite coordinates",
+      "precision": "named campground point",
+      "observed_route_minutes": 109,
+      "display_minutes": 120,
+      "distance_miles": 91.3,
+      "route_note": "Uses the Forest Service-recommended approach through Darrington on WA-530. The final 7.5 miles are gravel and variable; the Barlow Pass approach may be gated."
+    },
+    {
+      "slug": "horseshoe-cove-campground",
+      "address": "NF-1118, Concrete, WA 98237",
+      "latitude": 48.671943,
+      "longitude": -121.676449,
+      "coordinate_source": "Recreation.gov facility point corroborated by its campsite coordinate cluster and Forest Service Baker Lake directions",
+      "precision": "campground entrance/address point",
+      "observed_route_minutes": 115,
+      "display_minutes": 135,
+      "distance_miles": 106,
+      "route_note": "Fastest normal I-5, SR-20, Baker Lake Road, and NF-1118 route at review time. Public estimate adds a towing and traffic margin."
+    },
+    {
+      "slug": "shannon-creek-campground",
+      "address": "Baker Lake Road, Concrete, WA 98237",
+      "latitude": 48.7383462,
+      "longitude": -121.599499,
+      "coordinate_source": "Google Maps named Shannon Creek Campground point corroborated by Recreation.gov campsite coordinates and official Baker Lake Road directions",
+      "precision": "named campground point",
+      "observed_route_minutes": 125,
+      "display_minutes": 145,
+      "distance_miles": 112,
+      "route_note": "Fastest normal I-5, SR-20, and Baker Lake Road route at review time. Public estimate adds a towing and traffic margin."
+    }
+  ]
+}
