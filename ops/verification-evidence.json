@@ -3260,7 +3260,7 @@
       "status": "corrected_locally",
       "checked_on": "2026-09-07",
       "summary": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions.",
-      "proposed_value": "Loop 1 closes September 30\u2013April 15, Loop 2 October 31\u2013April 15, and Loop 3 September 10\u2013April 15; first-come October 1\u201331 and April 3\u201314",
+      "proposed_value": "Reservable during the main season. Loop 1 closes September 30\u2013April 15, Loop 2 October 31\u2013April 15, and Loop 3 September 10\u2013April 15; first-come October 1\u201331 and April 3\u201314",
       "sources": [
         {
           "url": "https://parks.wa.gov/find-parks/state-parks/alta-lake-state-park",
@@ -3500,7 +3500,7 @@
       "status": "corrected_locally",
       "checked_on": "2026-09-07",
       "summary": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions.",
-      "proposed_value": "Campground closes October 1, 2026 and is scheduled to reopen in April 2027; verify project and seasonal dates before travel",
+      "proposed_value": "Reservable during the operating season. Campground closes October 1, 2026 and is scheduled to reopen in April 2027",
       "sources": [
         {
           "url": "https://parks.wa.gov/find-parks/state-parks/daroga-state-park",
@@ -3580,7 +3580,7 @@
       "status": "corrected_locally",
       "checked_on": "2026-09-07",
       "summary": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions.",
-      "proposed_value": "Wanapum campground closes November 1\u2013March 1. Sites 1\u201331 are first-come March 1\u2013April 15; sites 32\u201349 open April 1 and are first-come through April 15",
+      "proposed_value": "Reservable April 16\u2013October 15. Wanapum closes November 1\u2013March 1; sites 1\u201331 are first-come March 1\u2013April 15 and sites 32\u201349 open April 1",
       "sources": [
         {
           "url": "https://parks.wa.gov/find-parks/state-parks/wanapum-recreation-area",
@@ -3660,7 +3660,7 @@
       "status": "corrected_locally",
       "checked_on": "2026-09-07",
       "summary": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions.",
-      "proposed_value": "Sites 94\u2013135 close September 16\u2013May 1; sites 1\u201393 close November 1\u2013May 1 and are first-come October 16\u201331. Verify the current winter schedule",
+      "proposed_value": "Reservable during the main season. Sites 94\u2013135 close September 16\u2013May 1; sites 1\u201393 close November 1\u2013May 1 and are first-come October 16\u201331",
       "sources": [
         {
           "url": "https://parks.wa.gov/find-parks/state-parks/lake-easton-state-park",
@@ -3820,7 +3820,7 @@
       "status": "corrected_locally",
       "checked_on": "2026-09-07",
       "summary": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions.",
-      "proposed_value": "Some loops close November 1\u2013March 13 while others remain available; camping is first-come October 16\u201331 and March 1\u2013May 14. Verify the current loop schedule",
+      "proposed_value": "Reservable during the main season. Some loops close November 1\u2013March 13; camping is first-come October 16\u201331 and March 1\u2013May 14",
       "sources": [
         {
           "url": "https://parks.wa.gov/find-parks/state-parks/lincoln-rock-state-park",
@@ -3900,7 +3900,7 @@
       "status": "corrected_locally",
       "checked_on": "2026-09-07",
       "summary": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions.",
-      "proposed_value": "Sites 51\u201371 close October 31\u2013March 15; camping is first-come November 1\u2013March 15. Verify the current winter schedule before travel",
+      "proposed_value": "Reservable during the main season. Sites 51\u201371 close October 31\u2013March 15; camping is first-come November 1\u2013March 15",
       "sources": [
         {
           "url": "https://parks.wa.gov/find-parks/state-parks/maryhill-state-park",
@@ -4140,7 +4140,7 @@
       "status": "corrected_locally",
       "checked_on": "2026-09-07",
       "summary": "The current operator reservation information and winter schedule identify reservable periods, first-come periods, and seasonal exceptions.",
-      "proposed_value": "Loop 2 is open year-round and first-come October 16\u2013March 31. Loop 1 closes October 16 and its reopening depends on construction completion",
+      "proposed_value": "Reservable during the main season. Loop 2 is open year-round and first-come October 16\u2013March 31; Loop 1 reopening depends on construction completion",
       "sources": [
         {
           "url": "https://parks.wa.gov/find-parks/state-parks/wenatchee-confluence-state-park",
