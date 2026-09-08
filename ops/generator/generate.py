@@ -143,6 +143,7 @@ def format_reservation_short(text):
     if re.search(r'opened January 1', text, re.I): return 'Jan. 1 release'
     m = re.search(r'(\d+)\s*month', text, re.I)
     if m: return f'{m.group(1)} mo.'
+    if re.search(r'\breserv(?:e|able|ations?)\b', text, re.I): return 'Seasonal'
     if re.search(r'first.come', text, re.I): return 'FCFS'
     m = re.search(r'(\d+)\s*day', text, re.I)
     if m: return f'{m.group(1)} days'
@@ -369,12 +370,12 @@ def build_faq_json(row):
 
     if re.search(r'^(campground\s+)?closed\b', reservation, re.I):
         res_ans = f"{name} is currently {reservation[0].lower() + reservation[1:]}. Check the official closure details before travel."
-    elif 'first-come' in reservation.lower():
-        res_ans = f'{name} is first-come, first-served. Check official access and camping rules before travel.'
     elif 'recreation.gov' in (reserve_url or '').lower():
         res_ans = f"{name} accepts reservations through Recreation.gov. {reservation}."
     elif reserve_url:
         res_ans = f"{name} accepts reservations online. {reservation}."
+    elif 'first-come' in reservation.lower():
+        res_ans = f'{name} is first-come, first-served. Check official access and camping rules before travel.'
     else:
         res_ans = f"{name} is first-come, first-served. No advance reservation is required."
 
@@ -510,12 +511,14 @@ def generate_page(row, slug_lookup, template):
     drive_full = f'{row.get("Time from Seattle","")}{miles_str}'
     pass_meta     = PASS_META.get(park_type, 'Check website for current fees')
 
-    if 'first-come' in reservation.lower():
-        res_meta = f'No advance reservations · {reservation}'
+    if re.search(r'^(campground\s+)?closed\b', reservation, re.I):
+        res_meta = f'Closure details · {reservation}'
     elif 'recreation.gov' in (reserve_url or '').lower():
         res_meta = f'Recreation.gov · {reservation}'
     elif reserve_url and reserve_url != '#':
         res_meta = f'Online reservation · {reservation}'
+    elif 'first-come' in reservation.lower():
+        res_meta = f'No advance reservations · {reservation}'
     else:
         res_meta = reservation or 'First-come, first-served'
 

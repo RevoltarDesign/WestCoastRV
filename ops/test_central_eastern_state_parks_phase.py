@@ -46,6 +46,8 @@ class CentralEasternStateParksPhaseTests(unittest.TestCase):
         wenatchee = (HERE.parent / "campground" / "lake-wenatchee-state-park.html").read_text(encoding="utf-8")
         self.assertIn('<div class="stat-val">125</div>', alta)
         self.assertIn("partial rather than full", alta)
+        self.assertIn("Online reservation", alta)
+        self.assertNotIn("No advance reservations", alta)
         self.assertIn('<div class="stat-val">197</div>', wenatchee)
         self.assertIn("under 20 feet", wenatchee)
 
