@@ -30,7 +30,7 @@ OPTION_FIELDS = {
     "Hookups":            {"0", "1", "2", "3"},
     "Generator policy":   {"0", "1", "2"},
     "Cell coverage":      {"0", "1", "2"},
-    "Amenities: Toilets": {"Vaulted toilets", "Flush toilets"},  # empty = None
+    "Amenities: Toilets": {"Toilets", "Vaulted toilets", "Flush toilets"},  # empty = None
 }
 
 SWITCH_FIELDS = [

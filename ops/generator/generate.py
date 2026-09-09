@@ -38,14 +38,16 @@ MANEUV_NOTE  = {
 CELL_LABEL = {'0': 'Not confirmed', '1': 'Reported spotty', '2': 'Reported good'}
 CELL_NOTE  = {'0': 'Check your carrier map', '1': 'Coverage varies by carrier', '2': 'Coverage varies by carrier'}
 
-GEN_LABEL = {'1': 'Restricted', '2': 'Allowed'}
-GEN_NOTE  = {'1': 'Designated hours only', '2': 'No generator restrictions'}
+GEN_LABEL = {'0': 'Not allowed', '1': 'Restricted', '2': 'Allowed', '': 'Not confirmed'}
+GEN_NOTE  = {'0': 'Operator prohibits generators', '1': 'Designated hours only',
+             '2': 'No generator restrictions', '': 'Confirm with the operator'}
 
 PARK_BADGE = {
     'National Forest': 'National Forest',
     'National Park':      'National Park',
     'State Park':         'State Park',
     'County Campground':  'County Park',
+    'City Campground':    'Municipal RV Park',
     'Private Campground': 'Private',
 }
 PARK_FILTER = {
@@ -53,6 +55,7 @@ PARK_FILTER = {
     'National Park':      'national',
     'State Park':         'state',
     'County Campground':  'county',
+    'City Campground':    'city',
     'Private Campground': 'private',
 }
 PASS_META = {
@@ -60,6 +63,7 @@ PASS_META = {
     'National Park':      'Entrance passes generally do not cover camping fees',
     'State Park':         'Overnight guests do not need a Discover Pass at the park where they camp',
     'County Campground':  'Check park website for day-use fees',
+    'City Campground':    'Check the operator for current rates and parking rules',
     'Private Campground': 'No pass required — rates vary by season',
 }
 
@@ -111,7 +115,7 @@ def cell_dots(level):
     return dots_html(1, color='warn') if level == '1' else dots_html(2, color='green')
 
 def gen_dots(level):
-    return dots_html(int(level), color='warn')
+    return dots_html(int(level), color='warn') if level in {'0', '1', '2'} else dots_html(0)
 
 def extract_lat_lng(maps_url, row=None):
     if row and row.get('Latitude') and row.get('Longitude'):
@@ -309,12 +313,15 @@ def build_regional_guide(row):
     jefferson = {
         'dosewallips-state-park', 'fort-flagler-historical-state-park',
         'fort-worden-historical-state-park', 'seal-rock-campground',
+        'quilcene-campground', 'lake-leland-park-campground',
+        'upper-oak-bay-campground', 'lower-oak-bay-campground',
+        'point-hudson-marina-rv-park', 'jefferson-county-fairgrounds-campground',
     }
     if row.get('Slug') not in jefferson:
         return ''
     return ('<a class="regional-guide-link" href="/field-notes/jefferson-county-rv-camping">'
             '<span>Jefferson County RV camping guide</span>'
-            '<small>Compare Hood Canal, Marrowstone Island, and Port Townsend</small>'
+            '<small>Compare 10 verified options from Hood Canal to Port Townsend</small>'
             '</a>')
 
 def build_long_desc_paras(row):

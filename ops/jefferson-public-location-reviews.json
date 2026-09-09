@@ -1,0 +1,84 @@
+{
+  "checked_on": "2026-09-09",
+  "method": "Use the exact named Google Maps campground point, corroborated by the current operator address and campground map. Seattle estimates use the no-ferry I-5 and Tacoma Narrows route for consistency because ferry waits and sailing availability are not represented reliably in a static estimate; displayed times round the observed route up to a practical planning interval.",
+  "reviews": [
+    {
+      "slug": "quilcene-campground",
+      "latitude": 47.822257,
+      "longitude": -122.879913,
+      "address": "294964 US Highway 101, Quilcene, WA 98376",
+      "named_map_url": "https://www.google.com/maps/place/Quilcene+Campground/data=!4m7!3m6!1s0x548fd85ba9527673:0x87c21e4ed17e7b2f!8m2!3d47.822257!4d-122.879913",
+      "coordinate_source": "Google Maps exact named campground point matched to the current Jefferson County address",
+      "precision": "named campground point",
+      "observed_route_minutes": 115,
+      "distance_miles": 105,
+      "display_minutes": 120,
+      "route_note": "Uses the no-ferry I-5 and Tacoma Narrows route; the Bainbridge ferry can be shorter in motion but adds fare, queue, and sailing-time uncertainty."
+    },
+    {
+      "slug": "lake-leland-park-campground",
+      "latitude": 47.898178,
+      "longitude": -122.87482,
+      "address": "165 Leland Valley Road W, Quilcene, WA 98376",
+      "named_map_url": "https://www.google.com/maps/place/Leland+Lake+Campground/@47.898178,-122.87482,576m/data=!3m2!1e3!4b1!4m6!3m5!1s0x548fdc0ddf9502d1:0x972162c8a9a09dc5!8m2!3d47.898178!4d-122.87482",
+      "coordinate_source": "Google Maps named campground point matched to the current Jefferson County address and campground diagram",
+      "precision": "named campground point",
+      "observed_route_minutes": 114,
+      "distance_miles": 105,
+      "display_minutes": 120,
+      "route_note": "Uses the no-ferry I-5 and Tacoma Narrows route; ferry options add fare, queue, and sailing-time uncertainty."
+    },
+    {
+      "slug": "upper-oak-bay-campground",
+      "latitude": 48.0241543,
+      "longitude": -122.733437,
+      "address": "290 Cleveland Street, Port Hadlock, WA 98339",
+      "named_map_url": "https://www.google.com/maps/place/Upper+Oak+Bay+County+Park/@48.0241543,-122.733437,574m/data=!3m2!1e3!4b1!4m6!3m5!1s0x548fef522a805115:0xb5bde8fb843d59eb!8m2!3d48.0241543!4d-122.733437",
+      "coordinate_source": "Google Maps exact named campground point matched to the Jefferson County campground map and address",
+      "precision": "named campground point",
+      "observed_route_minutes": 115,
+      "distance_miles": 102,
+      "display_minutes": 120,
+      "route_note": "Uses the no-ferry I-5 and Tacoma Narrows route; ferry options add fare, queue, and sailing-time uncertainty."
+    },
+    {
+      "slug": "lower-oak-bay-campground",
+      "latitude": 48.0231306,
+      "longitude": -122.7295974,
+      "address": "301 Portage Way, Port Hadlock, WA 98339",
+      "named_map_url": "https://www.google.com/maps/place/Lower+Oak+Bay+Campground/@48.0231306,-122.7295974,574m/data=!3m2!1e3!4b1!4m6!3m5!1s0x548fefcaea200bcf:0x440536e030412420!8m2!3d48.0231306!4d-122.7295974",
+      "coordinate_source": "Google Maps exact named campground point matched to the Jefferson County campground map and address",
+      "precision": "named campground point",
+      "observed_route_minutes": 115,
+      "distance_miles": 102,
+      "display_minutes": 120,
+      "route_note": "Uses the no-ferry I-5 and Tacoma Narrows route; ferry options add fare, queue, and sailing-time uncertainty."
+    },
+    {
+      "slug": "point-hudson-marina-rv-park",
+      "latitude": 48.118556,
+      "longitude": -122.7511022,
+      "address": "380 Jefferson Street, Port Townsend, WA 98368",
+      "named_map_url": "https://www.google.com/maps/place/Point+Hudson+Marina+and+RV+Park/@48.118556,-122.7511022,573m/data=!3m1!1e3!4m9!3m8!1s0x548fedc0154a8a57:0xfadc276a406f8227!8m2!3d48.118556!4d-122.7511022",
+      "coordinate_source": "Google Maps exact named RV park point matched to the current Port of Port Townsend address and site map",
+      "precision": "named RV park point",
+      "observed_route_minutes": 135,
+      "distance_miles": 112,
+      "display_minutes": 150,
+      "route_note": "Uses the no-ferry I-5 and Tacoma Narrows route; the Bainbridge ferry can reduce driving mileage but adds fare, queue, and sailing-time uncertainty."
+    },
+    {
+      "slug": "jefferson-county-fairgrounds-campground",
+      "latitude": 48.1323287,
+      "longitude": -122.7851357,
+      "address": "4450 Jackman Street, Port Townsend, WA 98368",
+      "named_map_url": "https://www.google.com/maps/place/The+Campground+at+Jefferson+County+Fairgrounds/@48.1323287,-122.7851357,573m/data=!3m2!1e3!4b1!4m6!3m5!1s0x548fedbef5f01faf:0x1decd326dc9008b0!8m2!3d48.1323287!4d-122.7851357",
+      "coordinate_source": "Google Maps exact named campground point matched to the current operator address",
+      "precision": "named campground point",
+      "observed_route_minutes": 134,
+      "distance_miles": 112,
+      "display_minutes": 150,
+      "route_note": "Uses the no-ferry I-5 and Tacoma Narrows route; the Bainbridge ferry can reduce driving mileage but adds fare, queue, and sailing-time uncertainty."
+    }
+  ]
+}

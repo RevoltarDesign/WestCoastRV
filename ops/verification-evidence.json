@@ -5445,6 +5445,486 @@
           "evidence": "The current operator facility description states that electrical hookups are unavailable."
         }
       ]
+    },
+    {
+      "slug": "quilcene-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports operating status: Open seasonally April 1\u2013October 31.",
+      "proposed_value": "Open seasonally April 1\u2013October 31",
+      "sources": [
+        {
+          "url": "https://jeffersoncountywa.myrec.com/info/facilities/details.aspx?FacilityID=9916",
+          "publisher": "Jefferson County Parks & Recreation",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The current operator page describes active overnight use and its applicable season or closure limits: Open seasonally April 1\u2013October 31."
+        }
+      ]
+    },
+    {
+      "slug": "quilcene-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports rv access: True.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://jeffersoncountywa.myrec.com/info/facilities/details.aspx?FacilityID=9916",
+          "publisher": "Jefferson County Parks & Recreation",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator explicitly describes RV, trailer, vehicle-length, or hookup inventory for overnight use."
+        }
+      ]
+    },
+    {
+      "slug": "quilcene-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports reservation method: First-come, no reservations.",
+      "proposed_value": "First-come, no reservations",
+      "sources": [
+        {
+          "url": "https://jeffersoncountywa.myrec.com/info/facilities/details.aspx?FacilityID=9916",
+          "publisher": "Jefferson County Parks & Recreation",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator states the current way to obtain a site: First-come, no reservations."
+        }
+      ]
+    },
+    {
+      "slug": "quilcene-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports max rv length: 30.",
+      "proposed_value": 30,
+      "sources": [
+        {
+          "url": "https://jeffersoncountywa.myrec.com/info/facilities/details.aspx?FacilityID=9916",
+          "publisher": "Jefferson County Parks & Recreation",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator publishes this maximum for the applicable RV sites."
+        }
+      ]
+    },
+    {
+      "slug": "quilcene-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports hookups: 0.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://jeffersoncountywa.myrec.com/info/facilities/details.aspx?FacilityID=9916",
+          "publisher": "Jefferson County Parks & Recreation",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator explicitly lists the available campsite utility level; the dataset stores the highest available level."
+        }
+      ]
+    },
+    {
+      "slug": "lake-leland-park-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports operating status: Open seasonally April 1\u2013October 31.",
+      "proposed_value": "Open seasonally April 1\u2013October 31",
+      "sources": [
+        {
+          "url": "https://jeffersoncountywa.myrec.com/info/facilities/details.aspx?FacilityID=9914",
+          "publisher": "Jefferson County Parks & Recreation",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The current operator page describes active overnight use and its applicable season or closure limits: Open seasonally April 1\u2013October 31."
+        }
+      ]
+    },
+    {
+      "slug": "lake-leland-park-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports rv access: True.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://jeffersoncountywa.myrec.com/info/facilities/details.aspx?FacilityID=9914",
+          "publisher": "Jefferson County Parks & Recreation",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator explicitly describes RV, trailer, vehicle-length, or hookup inventory for overnight use."
+        }
+      ]
+    },
+    {
+      "slug": "lake-leland-park-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports reservation method: First-come, no reservations.",
+      "proposed_value": "First-come, no reservations",
+      "sources": [
+        {
+          "url": "https://jeffersoncountywa.myrec.com/info/facilities/details.aspx?FacilityID=9914",
+          "publisher": "Jefferson County Parks & Recreation",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator states the current way to obtain a site: First-come, no reservations."
+        }
+      ]
+    },
+    {
+      "slug": "lake-leland-park-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports max rv length: 30.",
+      "proposed_value": 30,
+      "sources": [
+        {
+          "url": "https://jeffersoncountywa.myrec.com/info/facilities/details.aspx?FacilityID=9914",
+          "publisher": "Jefferson County Parks & Recreation",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator publishes this maximum for the applicable RV sites."
+        }
+      ]
+    },
+    {
+      "slug": "lake-leland-park-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports hookups: 0.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://jeffersoncountywa.myrec.com/info/facilities/details.aspx?FacilityID=9914",
+          "publisher": "Jefferson County Parks & Recreation",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator explicitly lists the available campsite utility level; the dataset stores the highest available level."
+        }
+      ]
+    },
+    {
+      "slug": "upper-oak-bay-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports operating status: Open seasonally April 1\u2013October 31.",
+      "proposed_value": "Open seasonally April 1\u2013October 31",
+      "sources": [
+        {
+          "url": "https://jeffersoncountywa.myrec.com/info/facilities/details.aspx?FacilityID=9911",
+          "publisher": "Jefferson County Parks & Recreation",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The current operator page describes active overnight use and its applicable season or closure limits: Open seasonally April 1\u2013October 31."
+        }
+      ]
+    },
+    {
+      "slug": "upper-oak-bay-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports rv access: True.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://jeffersoncountywa.myrec.com/info/facilities/details.aspx?FacilityID=9911",
+          "publisher": "Jefferson County Parks & Recreation",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator explicitly describes RV, trailer, vehicle-length, or hookup inventory for overnight use."
+        }
+      ]
+    },
+    {
+      "slug": "upper-oak-bay-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports reservation method: First-come, no reservations.",
+      "proposed_value": "First-come, no reservations",
+      "sources": [
+        {
+          "url": "https://jeffersoncountywa.myrec.com/info/facilities/details.aspx?FacilityID=9911",
+          "publisher": "Jefferson County Parks & Recreation",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator states the current way to obtain a site: First-come, no reservations."
+        }
+      ]
+    },
+    {
+      "slug": "upper-oak-bay-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports max rv length: 30.",
+      "proposed_value": 30,
+      "sources": [
+        {
+          "url": "https://jeffersoncountywa.myrec.com/info/facilities/details.aspx?FacilityID=9911",
+          "publisher": "Jefferson County Parks & Recreation",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator publishes this maximum for the applicable RV sites."
+        }
+      ]
+    },
+    {
+      "slug": "upper-oak-bay-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports hookups: 1.",
+      "proposed_value": 1,
+      "sources": [
+        {
+          "url": "https://jeffersoncountywa.myrec.com/info/facilities/details.aspx?FacilityID=9911",
+          "publisher": "Jefferson County Parks & Recreation",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator explicitly lists the available campsite utility level; the dataset stores the highest available level."
+        }
+      ]
+    },
+    {
+      "slug": "lower-oak-bay-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports operating status: Open seasonally April 1\u2013October 31.",
+      "proposed_value": "Open seasonally April 1\u2013October 31",
+      "sources": [
+        {
+          "url": "https://jeffersoncountywa.myrec.com/info/facilities/details.aspx?FacilityID=9911",
+          "publisher": "Jefferson County Parks & Recreation",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The current operator page describes active overnight use and its applicable season or closure limits: Open seasonally April 1\u2013October 31."
+        }
+      ]
+    },
+    {
+      "slug": "lower-oak-bay-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports rv access: True.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://jeffersoncountywa.myrec.com/info/facilities/details.aspx?FacilityID=9911",
+          "publisher": "Jefferson County Parks & Recreation",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator explicitly describes RV, trailer, vehicle-length, or hookup inventory for overnight use."
+        }
+      ]
+    },
+    {
+      "slug": "lower-oak-bay-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports reservation method: First-come, no reservations.",
+      "proposed_value": "First-come, no reservations",
+      "sources": [
+        {
+          "url": "https://jeffersoncountywa.myrec.com/info/facilities/details.aspx?FacilityID=9911",
+          "publisher": "Jefferson County Parks & Recreation",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator states the current way to obtain a site: First-come, no reservations."
+        }
+      ]
+    },
+    {
+      "slug": "lower-oak-bay-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports max rv length: 30.",
+      "proposed_value": 30,
+      "sources": [
+        {
+          "url": "https://jeffersoncountywa.myrec.com/info/facilities/details.aspx?FacilityID=9911",
+          "publisher": "Jefferson County Parks & Recreation",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator publishes this maximum for the applicable RV sites."
+        }
+      ]
+    },
+    {
+      "slug": "lower-oak-bay-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports hookups: 0.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://jeffersoncountywa.myrec.com/info/facilities/details.aspx?FacilityID=9911",
+          "publisher": "Jefferson County Parks & Recreation",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator explicitly lists the available campsite utility level; the dataset stores the highest available level."
+        }
+      ]
+    },
+    {
+      "slug": "point-hudson-marina-rv-park",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports operating status: Open for transient RV reservations.",
+      "proposed_value": "Open for transient RV reservations",
+      "sources": [
+        {
+          "url": "https://portofpt.com/point-hudson-marina-rv-park/",
+          "publisher": "Port of Port Townsend",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The current operator page describes active overnight use and its applicable season or closure limits: Open for transient RV reservations."
+        }
+      ]
+    },
+    {
+      "slug": "point-hudson-marina-rv-park",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports rv access: True.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://portofpt.com/point-hudson-marina-rv-park/",
+          "publisher": "Port of Port Townsend",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator explicitly describes RV, trailer, vehicle-length, or hookup inventory for overnight use."
+        }
+      ]
+    },
+    {
+      "slug": "point-hudson-marina-rv-park",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports reservation method: Online reservation through CampLife.",
+      "proposed_value": "Online reservation through CampLife",
+      "sources": [
+        {
+          "url": "https://portofpt.com/point-hudson-marina-rv-park/",
+          "publisher": "Port of Port Townsend",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator states the current way to obtain a site: Online reservation through CampLife."
+        }
+      ]
+    },
+    {
+      "slug": "point-hudson-marina-rv-park",
+      "field": "max_rv_length",
+      "status": "unknown",
+      "checked_on": "2026-09-09",
+      "summary": "The operator does not publish one park-wide maximum; verify the selected site.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://portofpt.com/point-hudson-marina-rv-park/",
+          "publisher": "Port of Port Townsend",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The current operator page publishes no single park-wide RV maximum."
+        }
+      ]
+    },
+    {
+      "slug": "point-hudson-marina-rv-park",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports hookups: 3.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://portofpt.com/point-hudson-marina-rv-park/",
+          "publisher": "Port of Port Townsend",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator explicitly lists the available campsite utility level; the dataset stores the highest available level."
+        }
+      ]
+    },
+    {
+      "slug": "jefferson-county-fairgrounds-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports operating status: Year-round with seasonal and event closures.",
+      "proposed_value": "Year-round with seasonal and event closures",
+      "sources": [
+        {
+          "url": "https://jeffcofairgrounds.org/campround/",
+          "publisher": "Jefferson County Fairgrounds Association",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The current operator page describes active overnight use and its applicable season or closure limits: Year-round with seasonal and event closures."
+        }
+      ]
+    },
+    {
+      "slug": "jefferson-county-fairgrounds-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports rv access: True.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://jeffcofairgrounds.org/campround/",
+          "publisher": "Jefferson County Fairgrounds Association",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator explicitly describes RV, trailer, vehicle-length, or hookup inventory for overnight use."
+        }
+      ]
+    },
+    {
+      "slug": "jefferson-county-fairgrounds-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports reservation method: Online reservation required before occupying a site.",
+      "proposed_value": "Online reservation required before occupying a site",
+      "sources": [
+        {
+          "url": "https://jeffcofairgrounds.org/campround/",
+          "publisher": "Jefferson County Fairgrounds Association",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator states the current way to obtain a site: Online reservation required before occupying a site."
+        }
+      ]
+    },
+    {
+      "slug": "jefferson-county-fairgrounds-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports max rv length: 50.",
+      "proposed_value": 50,
+      "sources": [
+        {
+          "url": "https://jeffcofairgrounds.org/campround/",
+          "publisher": "Jefferson County Fairgrounds Association",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator publishes this maximum for the applicable RV sites."
+        }
+      ]
+    },
+    {
+      "slug": "jefferson-county-fairgrounds-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Current operator information supports hookups: 3.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://jeffcofairgrounds.org/campround/",
+          "publisher": "Jefferson County Fairgrounds Association",
+          "source_family": "jefferson-public-operator",
+          "evidence": "The operator explicitly lists the available campsite utility level; the dataset stores the highest available level."
+        }
+      ]
     }
   ]
 }

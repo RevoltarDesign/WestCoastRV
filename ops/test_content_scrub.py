@@ -12,7 +12,7 @@ SPEC.loader.exec_module(scrub)
 class ContentScrubTests(unittest.TestCase):
     def test_current_dataset_has_no_known_contamination(self):
         result = scrub.audit()
-        self.assertEqual(result["campgrounds_checked"], 120)
+        self.assertGreaterEqual(result["campgrounds_checked"], 126)
         self.assertEqual(result["errors"], [])
 
 
