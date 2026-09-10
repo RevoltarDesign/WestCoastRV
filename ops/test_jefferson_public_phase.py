@@ -47,7 +47,7 @@ class JeffersonPublicPhaseTests(unittest.TestCase):
 
     def test_guide_and_generated_pages(self):
         guide = (SITE / "field-notes/jefferson-county-rv-camping.html").read_text()
-        self.assertEqual(10, guide.count('<article class="camp">'))
+        self.assertGreaterEqual(guide.count('<article class="camp">'), 10)
         for slug in SLUGS:
             self.assertIn(f'/campground/{slug}', guide)
             page = (SITE / "campground" / f"{slug}.html").read_text()

@@ -159,6 +159,12 @@ def hookup_display(level):
 def true_val(s):
     return str(s).strip().lower() == 'true'
 
+def optional_bool(s):
+    value = str(s).strip().lower()
+    if value == 'true': return True
+    if value == 'false': return False
+    return None
+
 # ── HTML builders ──────────────────────────────────────────────────────────────
 def build_activity_pills(row):
     lines = []
@@ -203,12 +209,19 @@ def build_specs_grid(row):
     cell   = row.get('Cell coverage', '1')
     gen    = row.get('Generator policy', '1')
     surface = (row.get('Site surface type') or 'Mixed').strip()
-    dump   = true_val(row.get('Dump station on site', ''))
+    dump   = optional_bool(row.get('Dump station on site', ''))
     hookup_level = row.get('Hookups', '0')
     hookup_label, hookup_note_txt, has_hookup = hookup_display(hookup_level)
 
-    dump_val  = f'{SVG_CHECK}\n          On-site'       if dump else f'{SVG_CROSS}\n          Not available'
-    dump_note = 'Confirm hours and access with the operator' if dump else 'Plan a separate dump stop'
+    if dump is True:
+        dump_val = f'{SVG_CHECK}\n          On-site'
+        dump_note = 'Confirm hours and access with the operator'
+    elif dump is False:
+        dump_val = f'{SVG_CROSS}\n          Not available'
+        dump_note = 'Plan a separate dump stop'
+    else:
+        dump_val = 'Not confirmed'
+        dump_note = 'Confirm with the operator'
     hook_val  = f'{SVG_CHECK}\n          {hookup_label}' if has_hookup else f'{SVG_CROSS}\n          {hookup_label}'
     hook_note = {'0': 'Bring full tanks',
                  '1': 'Electric service available',
@@ -316,12 +329,14 @@ def build_regional_guide(row):
         'quilcene-campground', 'lake-leland-park-campground',
         'upper-oak-bay-campground', 'lower-oak-bay-campground',
         'point-hudson-marina-rv-park', 'jefferson-county-fairgrounds-campground',
+        'cove-rv-park-country-store', 'hard-rain-cafe-campground',
+        'port-ludlow-rv-park',
     }
     if row.get('Slug') not in jefferson:
         return ''
     return ('<a class="regional-guide-link" href="/field-notes/jefferson-county-rv-camping">'
             '<span>Jefferson County RV camping guide</span>'
-            '<small>Compare 10 verified options from Hood Canal to Port Townsend</small>'
+            '<small>Compare 13 verified options from the Hoh Rain Forest to Port Townsend</small>'
             '</a>')
 
 def build_long_desc_paras(row):
@@ -357,14 +372,16 @@ def build_faq_json(row):
     drive_time    = row.get('Time from Seattle', '')
     drive_mins    = row.get('Drive Time Minutes', '')
     has_showers   = true_val(row.get('Amenities: Showers', ''))
-    has_dump      = true_val(row.get('Dump station on site', ''))
+    has_dump      = optional_bool(row.get('Dump station on site', ''))
     reserve_url   = row.get('Reservation website', '')
     reservation   = row.get('Reservation window', '')
 
     # Hookups answer
     if hookup_level == '0':
-        hook_ans = (f"No. {name} is dry camping only — no electric, water, or sewer hookups. "
-                    f"{'A dump station is available on site.' if has_dump else 'There is no dump station.'}")
+        dump_clause = ('A dump station is available on site.' if has_dump is True else
+                       'There is no dump station.' if has_dump is False else
+                       'The dump-station status is not confirmed; check with the operator.')
+        hook_ans = f"No. {name} is dry camping only — no electric, water, or sewer hookups. {dump_clause}"
     elif hookup_level == '1':
         hook_ans = f"Yes. {name} offers electric-only hookups. Water and sewer are not available at the site."
     elif hookup_level == '2':
@@ -397,7 +414,9 @@ def build_faq_json(row):
         (f"Does {name} have showers?",
          f"{'Yes, showers are available on-site at' if has_showers else 'No, there are no showers at'} {name}."),
         (f"Does {name} have a dump station?",
-         f"{'Yes, there is a dump station on site at' if has_dump else 'No dump station at'} {name}."),
+         f"Yes, there is a dump station on site at {name}." if has_dump is True else
+         f"No, there is no dump station at {name}." if has_dump is False else
+         f"The dump-station status at {name} is not confirmed; check with the operator before relying on one."),
         (f"How do I reserve a site at {name}?",
          res_ans),
     ]
@@ -436,7 +455,7 @@ def build_campground_json(row):
     lat, lng = extract_lat_lng(maps_url, row)
     street, city, state, postal = parse_address(address)
 
-    has_dump    = true_val(row.get('Dump station on site', ''))
+    has_dump    = optional_bool(row.get('Dump station on site', ''))
     has_shower  = true_val(row.get('Amenities: Showers', ''))
     has_water   = true_val(row.get('Amenities: Drinking water', ''))
     has_fire    = true_val(row.get('Amenities: Fire pits', ''))
@@ -450,6 +469,20 @@ def build_campground_json(row):
     if true_val(row.get('Kayaking/Paddling','')): tourist.append('Kayakers')
     if true_val(row.get('Playground','')) or true_val(row.get('Swimming','')): tourist.append('Families')
 
+    amenities = [
+        {"@type":"LocationFeatureSpecification","name":"Toilets",        "value": has_toilet},
+        {"@type":"LocationFeatureSpecification","name":"Showers",        "value": has_shower},
+        {"@type":"LocationFeatureSpecification","name":"Drinking Water", "value": has_water},
+    ]
+    if has_dump is not None:
+        amenities.append(
+            {"@type":"LocationFeatureSpecification","name":"Dump Station", "value": has_dump}
+        )
+    amenities.extend([
+        {"@type":"LocationFeatureSpecification","name":"Electric Hookups","value": has_hookup},
+        {"@type":"LocationFeatureSpecification","name":"Fire Pits",      "value": has_fire},
+    ])
+
     schema = {
         "@context": "https://schema.org",
         "@type": ["CivicStructure", "TouristAttraction"],
@@ -457,14 +490,7 @@ def build_campground_json(row):
         "description": short_desc,
         "url": f"https://westcoastrvcamping.com/campground/{slug}",
         "image": hero_image,
-        "amenityFeature": [
-            {"@type":"LocationFeatureSpecification","name":"Toilets",        "value": has_toilet},
-            {"@type":"LocationFeatureSpecification","name":"Showers",        "value": has_shower},
-            {"@type":"LocationFeatureSpecification","name":"Drinking Water", "value": has_water},
-            {"@type":"LocationFeatureSpecification","name":"Dump Station",   "value": has_dump},
-            {"@type":"LocationFeatureSpecification","name":"Electric Hookups","value": has_hookup},
-            {"@type":"LocationFeatureSpecification","name":"Fire Pits",      "value": has_fire},
-        ],
+        "amenityFeature": amenities,
         "touristType": tourist,
     }
     if rv_sites:
@@ -498,15 +524,16 @@ def generate_page(row, slug_lookup, template):
     max_length   = (row.get('Max RV length') or '').strip()
     hookup_level = (row.get('Hookups') or '0').strip()
     surface      = (row.get('Site surface type') or 'Mixed').strip()
-    dump         = true_val(row.get('Dump station on site', ''))
+    dump         = optional_bool(row.get('Dump station on site', ''))
     reservation  = (row.get('Reservation window') or '').strip()
     reserve_url  = (row.get('Reservation website') or '#').strip() or '#'
     nearest_town = (row.get('Nearest town') or '').strip()
     data_updated = (row.get('Data last updated') or 'Feb 2026').strip()
 
     hookup_label, hookup_note_txt, has_hookup = hookup_display(hookup_level)
-    dump_display = 'On-site' if dump else 'Not available'
-    dump_note    = 'Confirm access with the operator' if dump else 'Plan a separate dump stop'
+    dump_display = 'On-site' if dump is True else 'Not available' if dump is False else 'Not confirmed'
+    dump_note = ('Confirm access with the operator' if dump is True else
+                 'Plan a separate dump stop' if dump is False else 'Confirm with the operator')
     reserve_short = format_reservation_short(reservation)
     reserve_note  = 'Check exact dates with the operator' if 'month' in reservation.lower() else 'Availability varies'
 

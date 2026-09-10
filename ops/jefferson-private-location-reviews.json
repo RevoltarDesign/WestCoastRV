@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-09-09",
+  "method": "Exact named Google Maps destinations were matched to current operator or regional-guide addresses. Stable display estimates use the no-ferry route from Seattle so the planning number does not omit ferry queues or sailing time.",
+  "reviews": [
+    {
+      "slug": "cove-rv-park-country-store",
+      "address": "303075 US Highway 101, Brinnon, WA 98320",
+      "latitude": 47.7391044,
+      "longitude": -122.8798666,
+      "coordinate_source": "Google Maps exact named RV park point matched to the operator's published address",
+      "precision": "named campground point",
+      "distance_miles": 125,
+      "observed_route_minutes": 134,
+      "display_minutes": 135,
+      "route_note": "Uses the no-ferry I-5, Tacoma Narrows, and US 101 route; ferry choices can show a shorter moving time but add fare, queue, and sailing uncertainty."
+    },
+    {
+      "slug": "hard-rain-cafe-campground",
+      "address": "5763 Upper Hoh Road, Forks, WA 98331",
+      "latitude": 47.8169556,
+      "longitude": -124.1539028,
+      "coordinate_source": "Google Maps exact named Hard Rain property point matched to the operator's published address",
+      "precision": "named operator property point",
+      "distance_miles": 204,
+      "observed_route_minutes": 228,
+      "display_minutes": 240,
+      "route_note": "Uses the no-ferry I-5 and US 101 route; the rounded planning estimate leaves a modest buffer for the final Upper Hoh Road segment."
+    },
+    {
+      "slug": "port-ludlow-rv-park",
+      "address": "44 Breaker Lane, Port Ludlow, WA 98365",
+      "latitude": 47.9195323,
+      "longitude": -122.7052439,
+      "coordinate_source": "Google Maps exact named RV park point matched to the current regional guide and operator address",
+      "precision": "named campground point",
+      "distance_miles": 93,
+      "observed_route_minutes": 98,
+      "display_minutes": 105,
+      "route_note": "Uses the no-ferry I-5, Tacoma Narrows, WA 3, and Hood Canal Bridge route; ferry options add fare, queue, and sailing uncertainty."
+    }
+  ]
+}

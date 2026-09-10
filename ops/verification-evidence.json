@@ -5925,6 +5925,456 @@
           "evidence": "The operator explicitly lists the available campsite utility level; the dataset stores the highest available level."
         }
       ]
+    },
+    {
+      "slug": "cove-rv-park-country-store",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source review supports operating status: Current transient reservations available.",
+      "proposed_value": "Current transient reservations available",
+      "sources": [
+        {
+          "url": "https://coverv.com/accomodations/",
+          "publisher": "Cove RV Park & Country Store",
+          "source_family": "jefferson-private-review",
+          "evidence": "Operator lists current RV site types, utilities, amenities, and its 40-foot limit."
+        },
+        {
+          "url": "https://www.campspot.com/book/cove-rv",
+          "publisher": "Campspot",
+          "source_family": "jefferson-private-review",
+          "evidence": "Live booking page confirms transient RV inventory and the park identity."
+        },
+        {
+          "url": "https://cdn2.creativecirclemedia.com/ptleader/files/20250527-183002-db0-PT%20Leader%20Getaway%202025.pdf",
+          "publisher": "Olympic Peninsula Tourism Commission / Port Townsend Leader",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current regional guide corroborates the campground, address, 25-site count, and hookups."
+        }
+      ]
+    },
+    {
+      "slug": "cove-rv-park-country-store",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source review supports rv access: True.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://coverv.com/accomodations/",
+          "publisher": "Cove RV Park & Country Store",
+          "source_family": "jefferson-private-review",
+          "evidence": "Operator lists current RV site types, utilities, amenities, and its 40-foot limit."
+        },
+        {
+          "url": "https://www.campspot.com/book/cove-rv",
+          "publisher": "Campspot",
+          "source_family": "jefferson-private-review",
+          "evidence": "Live booking page confirms transient RV inventory and the park identity."
+        },
+        {
+          "url": "https://cdn2.creativecirclemedia.com/ptleader/files/20250527-183002-db0-PT%20Leader%20Getaway%202025.pdf",
+          "publisher": "Olympic Peninsula Tourism Commission / Port Townsend Leader",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current regional guide corroborates the campground, address, 25-site count, and hookups."
+        }
+      ]
+    },
+    {
+      "slug": "cove-rv-park-country-store",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source review supports reservation method: Online through Campspot.",
+      "proposed_value": "Online through Campspot",
+      "sources": [
+        {
+          "url": "https://coverv.com/accomodations/",
+          "publisher": "Cove RV Park & Country Store",
+          "source_family": "jefferson-private-review",
+          "evidence": "Operator lists current RV site types, utilities, amenities, and its 40-foot limit."
+        },
+        {
+          "url": "https://www.campspot.com/book/cove-rv",
+          "publisher": "Campspot",
+          "source_family": "jefferson-private-review",
+          "evidence": "Live booking page confirms transient RV inventory and the park identity."
+        },
+        {
+          "url": "https://cdn2.creativecirclemedia.com/ptleader/files/20250527-183002-db0-PT%20Leader%20Getaway%202025.pdf",
+          "publisher": "Olympic Peninsula Tourism Commission / Port Townsend Leader",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current regional guide corroborates the campground, address, 25-site count, and hookups."
+        }
+      ]
+    },
+    {
+      "slug": "cove-rv-park-country-store",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source review supports max rv length: 40.",
+      "proposed_value": 40,
+      "sources": [
+        {
+          "url": "https://coverv.com/accomodations/",
+          "publisher": "Cove RV Park & Country Store",
+          "source_family": "jefferson-private-review",
+          "evidence": "Operator lists current RV site types, utilities, amenities, and its 40-foot limit."
+        },
+        {
+          "url": "https://www.campspot.com/book/cove-rv",
+          "publisher": "Campspot",
+          "source_family": "jefferson-private-review",
+          "evidence": "Live booking page confirms transient RV inventory and the park identity."
+        },
+        {
+          "url": "https://cdn2.creativecirclemedia.com/ptleader/files/20250527-183002-db0-PT%20Leader%20Getaway%202025.pdf",
+          "publisher": "Olympic Peninsula Tourism Commission / Port Townsend Leader",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current regional guide corroborates the campground, address, 25-site count, and hookups."
+        }
+      ]
+    },
+    {
+      "slug": "cove-rv-park-country-store",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source review supports hookups: 3.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://coverv.com/accomodations/",
+          "publisher": "Cove RV Park & Country Store",
+          "source_family": "jefferson-private-review",
+          "evidence": "Operator lists current RV site types, utilities, amenities, and its 40-foot limit."
+        },
+        {
+          "url": "https://www.campspot.com/book/cove-rv",
+          "publisher": "Campspot",
+          "source_family": "jefferson-private-review",
+          "evidence": "Live booking page confirms transient RV inventory and the park identity."
+        },
+        {
+          "url": "https://cdn2.creativecirclemedia.com/ptleader/files/20250527-183002-db0-PT%20Leader%20Getaway%202025.pdf",
+          "publisher": "Olympic Peninsula Tourism Commission / Port Townsend Leader",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current regional guide corroborates the campground, address, 25-site count, and hookups."
+        }
+      ]
+    },
+    {
+      "slug": "hard-rain-cafe-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source review supports operating status: Seasonal March 15\u2013November 15.",
+      "proposed_value": "Seasonal March 15\u2013November 15",
+      "sources": [
+        {
+          "url": "https://hohrainforest.wixsite.com/hardrain",
+          "publisher": "Hard Rain Cafe & Campground",
+          "source_family": "jefferson-private-review",
+          "evidence": "Operator states the current season, reservation method, address, and active campground operation."
+        },
+        {
+          "url": "https://cdn2.creativecirclemedia.com/ptleader/files/20250527-183002-db0-PT%20Leader%20Getaway%202025.pdf",
+          "publisher": "Olympic Peninsula Tourism Commission / Port Townsend Leader",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current regional guide corroborates 13 sites and RV hookups."
+        },
+        {
+          "url": "https://maps.campendium.com/us/forks-wa/food-drink/hard-rain-cafe-rv-park-forks",
+          "publisher": "Campendium",
+          "source_family": "jefferson-private-review",
+          "evidence": "Camper reports support water and 30-amp service and the conservative 36-foot vehicle figure."
+        }
+      ]
+    },
+    {
+      "slug": "hard-rain-cafe-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source review supports rv access: True.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://hohrainforest.wixsite.com/hardrain",
+          "publisher": "Hard Rain Cafe & Campground",
+          "source_family": "jefferson-private-review",
+          "evidence": "Operator states the current season, reservation method, address, and active campground operation."
+        },
+        {
+          "url": "https://cdn2.creativecirclemedia.com/ptleader/files/20250527-183002-db0-PT%20Leader%20Getaway%202025.pdf",
+          "publisher": "Olympic Peninsula Tourism Commission / Port Townsend Leader",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current regional guide corroborates 13 sites and RV hookups."
+        },
+        {
+          "url": "https://maps.campendium.com/us/forks-wa/food-drink/hard-rain-cafe-rv-park-forks",
+          "publisher": "Campendium",
+          "source_family": "jefferson-private-review",
+          "evidence": "Camper reports support water and 30-amp service and the conservative 36-foot vehicle figure."
+        }
+      ]
+    },
+    {
+      "slug": "hard-rain-cafe-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source review supports reservation method: Reserve online with first-night deposit.",
+      "proposed_value": "Reserve online with first-night deposit",
+      "sources": [
+        {
+          "url": "https://hohrainforest.wixsite.com/hardrain",
+          "publisher": "Hard Rain Cafe & Campground",
+          "source_family": "jefferson-private-review",
+          "evidence": "Operator states the current season, reservation method, address, and active campground operation."
+        },
+        {
+          "url": "https://cdn2.creativecirclemedia.com/ptleader/files/20250527-183002-db0-PT%20Leader%20Getaway%202025.pdf",
+          "publisher": "Olympic Peninsula Tourism Commission / Port Townsend Leader",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current regional guide corroborates 13 sites and RV hookups."
+        },
+        {
+          "url": "https://maps.campendium.com/us/forks-wa/food-drink/hard-rain-cafe-rv-park-forks",
+          "publisher": "Campendium",
+          "source_family": "jefferson-private-review",
+          "evidence": "Camper reports support water and 30-amp service and the conservative 36-foot vehicle figure."
+        }
+      ]
+    },
+    {
+      "slug": "hard-rain-cafe-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source review supports max rv length: 36.",
+      "proposed_value": 36,
+      "sources": [
+        {
+          "url": "https://hohrainforest.wixsite.com/hardrain",
+          "publisher": "Hard Rain Cafe & Campground",
+          "source_family": "jefferson-private-review",
+          "evidence": "Operator states the current season, reservation method, address, and active campground operation."
+        },
+        {
+          "url": "https://cdn2.creativecirclemedia.com/ptleader/files/20250527-183002-db0-PT%20Leader%20Getaway%202025.pdf",
+          "publisher": "Olympic Peninsula Tourism Commission / Port Townsend Leader",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current regional guide corroborates 13 sites and RV hookups."
+        },
+        {
+          "url": "https://maps.campendium.com/us/forks-wa/food-drink/hard-rain-cafe-rv-park-forks",
+          "publisher": "Campendium",
+          "source_family": "jefferson-private-review",
+          "evidence": "Camper reports support water and 30-amp service and the conservative 36-foot vehicle figure."
+        }
+      ]
+    },
+    {
+      "slug": "hard-rain-cafe-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source review supports hookups: 2.",
+      "proposed_value": 2,
+      "sources": [
+        {
+          "url": "https://hohrainforest.wixsite.com/hardrain",
+          "publisher": "Hard Rain Cafe & Campground",
+          "source_family": "jefferson-private-review",
+          "evidence": "Operator states the current season, reservation method, address, and active campground operation."
+        },
+        {
+          "url": "https://cdn2.creativecirclemedia.com/ptleader/files/20250527-183002-db0-PT%20Leader%20Getaway%202025.pdf",
+          "publisher": "Olympic Peninsula Tourism Commission / Port Townsend Leader",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current regional guide corroborates 13 sites and RV hookups."
+        },
+        {
+          "url": "https://maps.campendium.com/us/forks-wa/food-drink/hard-rain-cafe-rv-park-forks",
+          "publisher": "Campendium",
+          "source_family": "jefferson-private-review",
+          "evidence": "Camper reports support water and 30-amp service and the conservative 36-foot vehicle figure."
+        }
+      ]
+    },
+    {
+      "slug": "port-ludlow-rv-park",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source review supports operating status: Open year-round.",
+      "proposed_value": "Open year-round",
+      "sources": [
+        {
+          "url": "https://portludlowrvpark.com/",
+          "publisher": "Port Ludlow RV Park",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current park site states year-round operation, full hookups, amenities, address, and a 40-foot maximum."
+        },
+        {
+          "url": "https://cdn2.creativecirclemedia.com/ptleader/files/20250527-183002-db0-PT%20Leader%20Getaway%202025.pdf",
+          "publisher": "Olympic Peninsula Tourism Commission / Port Townsend Leader",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current regional guide corroborates active private operation, 37 sites, address, and hookups."
+        },
+        {
+          "url": "https://maps.campendium.com/us/port-ludlow-wa/camping-rv/port-ludlow-rv-park",
+          "publisher": "Campendium",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current visitor reports and campground details corroborate transient stays, full hookups, and the 40-foot limit."
+        },
+        {
+          "url": "https://www.goodsam.com/campgrounds-rv-parks/washington/port-ludlow/port-ludlow-rv-park/cgid-201201387",
+          "publisher": "Good Sam",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current directory independently corroborates year-round public operation and contact details."
+        }
+      ]
+    },
+    {
+      "slug": "port-ludlow-rv-park",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source review supports rv access: True.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://portludlowrvpark.com/",
+          "publisher": "Port Ludlow RV Park",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current park site states year-round operation, full hookups, amenities, address, and a 40-foot maximum."
+        },
+        {
+          "url": "https://cdn2.creativecirclemedia.com/ptleader/files/20250527-183002-db0-PT%20Leader%20Getaway%202025.pdf",
+          "publisher": "Olympic Peninsula Tourism Commission / Port Townsend Leader",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current regional guide corroborates active private operation, 37 sites, address, and hookups."
+        },
+        {
+          "url": "https://maps.campendium.com/us/port-ludlow-wa/camping-rv/port-ludlow-rv-park",
+          "publisher": "Campendium",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current visitor reports and campground details corroborate transient stays, full hookups, and the 40-foot limit."
+        },
+        {
+          "url": "https://www.goodsam.com/campgrounds-rv-parks/washington/port-ludlow/port-ludlow-rv-park/cgid-201201387",
+          "publisher": "Good Sam",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current directory independently corroborates year-round public operation and contact details."
+        }
+      ]
+    },
+    {
+      "slug": "port-ludlow-rv-park",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source review supports reservation method: Call park directly for availability.",
+      "proposed_value": "Call park directly for availability",
+      "sources": [
+        {
+          "url": "https://portludlowrvpark.com/",
+          "publisher": "Port Ludlow RV Park",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current park site states year-round operation, full hookups, amenities, address, and a 40-foot maximum."
+        },
+        {
+          "url": "https://cdn2.creativecirclemedia.com/ptleader/files/20250527-183002-db0-PT%20Leader%20Getaway%202025.pdf",
+          "publisher": "Olympic Peninsula Tourism Commission / Port Townsend Leader",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current regional guide corroborates active private operation, 37 sites, address, and hookups."
+        },
+        {
+          "url": "https://maps.campendium.com/us/port-ludlow-wa/camping-rv/port-ludlow-rv-park",
+          "publisher": "Campendium",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current visitor reports and campground details corroborate transient stays, full hookups, and the 40-foot limit."
+        },
+        {
+          "url": "https://www.goodsam.com/campgrounds-rv-parks/washington/port-ludlow/port-ludlow-rv-park/cgid-201201387",
+          "publisher": "Good Sam",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current directory independently corroborates year-round public operation and contact details."
+        }
+      ]
+    },
+    {
+      "slug": "port-ludlow-rv-park",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source review supports max rv length: 40.",
+      "proposed_value": 40,
+      "sources": [
+        {
+          "url": "https://portludlowrvpark.com/",
+          "publisher": "Port Ludlow RV Park",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current park site states year-round operation, full hookups, amenities, address, and a 40-foot maximum."
+        },
+        {
+          "url": "https://cdn2.creativecirclemedia.com/ptleader/files/20250527-183002-db0-PT%20Leader%20Getaway%202025.pdf",
+          "publisher": "Olympic Peninsula Tourism Commission / Port Townsend Leader",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current regional guide corroborates active private operation, 37 sites, address, and hookups."
+        },
+        {
+          "url": "https://maps.campendium.com/us/port-ludlow-wa/camping-rv/port-ludlow-rv-park",
+          "publisher": "Campendium",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current visitor reports and campground details corroborate transient stays, full hookups, and the 40-foot limit."
+        },
+        {
+          "url": "https://www.goodsam.com/campgrounds-rv-parks/washington/port-ludlow/port-ludlow-rv-park/cgid-201201387",
+          "publisher": "Good Sam",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current directory independently corroborates year-round public operation and contact details."
+        }
+      ]
+    },
+    {
+      "slug": "port-ludlow-rv-park",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source review supports hookups: 3.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://portludlowrvpark.com/",
+          "publisher": "Port Ludlow RV Park",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current park site states year-round operation, full hookups, amenities, address, and a 40-foot maximum."
+        },
+        {
+          "url": "https://cdn2.creativecirclemedia.com/ptleader/files/20250527-183002-db0-PT%20Leader%20Getaway%202025.pdf",
+          "publisher": "Olympic Peninsula Tourism Commission / Port Townsend Leader",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current regional guide corroborates active private operation, 37 sites, address, and hookups."
+        },
+        {
+          "url": "https://maps.campendium.com/us/port-ludlow-wa/camping-rv/port-ludlow-rv-park",
+          "publisher": "Campendium",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current visitor reports and campground details corroborate transient stays, full hookups, and the 40-foot limit."
+        },
+        {
+          "url": "https://www.goodsam.com/campgrounds-rv-parks/washington/port-ludlow/port-ludlow-rv-park/cgid-201201387",
+          "publisher": "Good Sam",
+          "source_family": "jefferson-private-review",
+          "evidence": "Current directory independently corroborates year-round public operation and contact details."
+        }
+      ]
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-09-06",
+  "updated_on": "2026-09-09",
   "sections": [
     {
       "id": "jefferson-state-parks",
@@ -95,9 +95,49 @@
       "id": "jefferson-private-tribal",
       "county": "Jefferson",
       "operator_layer": "private_tribal",
-      "status": "queued",
-      "inventory_sources": [],
-      "candidates": []
+      "status": "complete",
+      "inventory_sources": [
+        "https://cdn2.creativecirclemedia.com/ptleader/files/20250527-183002-db0-PT%20Leader%20Getaway%202025.pdf",
+        "https://coverv.com/accomodations/",
+        "https://hohrainforest.wixsite.com/hardrain",
+        "https://portludlowrvpark.com/",
+        "https://hohtribe-nsn.org/"
+      ],
+      "candidates": [
+        {
+          "name": "Cove RV Park & Country Store",
+          "slug": "cove-rv-park-country-store",
+          "decision": "included_new",
+          "reason": "Current operator and booking pages support transient full-hookup RV stays."
+        },
+        {
+          "name": "Hard Rain Cafe & Campground",
+          "slug": "hard-rain-cafe-campground",
+          "decision": "included_new",
+          "reason": "Current operator page supports seasonal reservations and the regional inventory confirms RV sites."
+        },
+        {
+          "name": "Port Ludlow RV Park",
+          "slug": "port-ludlow-rv-park",
+          "decision": "included_new",
+          "reason": "Current local guide, operator page, map listing, and recent visitor reports support transient RV stays."
+        },
+        {
+          "name": "Halfway RV Park",
+          "decision": "excluded",
+          "reason": "Present in older guides but absent from the current 2025 regional campground inventory and no current operator source was found."
+        },
+        {
+          "name": "Smitty's Island Retreat RV Park",
+          "decision": "excluded",
+          "reason": "Recent visitor reporting describes a 30-day minimum and no overnight or short-stay option; it is outside the transient trip-planning scope."
+        },
+        {
+          "name": "Hoh Tribe visitor RV campground",
+          "decision": "excluded",
+          "reason": "No public visitor RV campground or reservation channel appears in the Tribe's current official visitor-facing materials."
+        }
+      ]
     }
   ]
 }
