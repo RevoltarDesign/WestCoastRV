@@ -330,13 +330,14 @@ def build_regional_guide(row):
         'upper-oak-bay-campground', 'lower-oak-bay-campground',
         'point-hudson-marina-rv-park', 'jefferson-county-fairgrounds-campground',
         'cove-rv-park-country-store', 'hard-rain-cafe-campground',
-        'port-ludlow-rv-park',
+        'port-ludlow-rv-park', 'falls-view-campground', 'hoh-campground',
+        'kalaloch-campground', 'south-beach-campground',
     }
     if row.get('Slug') not in jefferson:
         return ''
     return ('<a class="regional-guide-link" href="/field-notes/jefferson-county-rv-camping">'
             '<span>Jefferson County RV camping guide</span>'
-            '<small>Compare 13 verified options from the Hoh Rain Forest to Port Townsend</small>'
+            '<small>Compare 17 verified records from the Hoh Rain Forest to Port Townsend</small>'
             '</a>')
 
 def build_long_desc_paras(row):
@@ -393,7 +394,7 @@ def build_faq_json(row):
     drive_ans = f"{name} is approximately {drive_time.replace(' from Seattle','')}{miles_str} from Seattle."
 
     if re.search(r'^(campground\s+)?closed\b', reservation, re.I):
-        res_ans = f"{name} is currently {reservation[0].lower() + reservation[1:]}. Check the official closure details before travel."
+        res_ans = f"{name} is currently closed. Check the official closure details before travel."
     elif 'recreation.gov' in (reserve_url or '').lower():
         res_ans = f"{name} accepts reservations through Recreation.gov. {reservation}."
     elif reserve_url:

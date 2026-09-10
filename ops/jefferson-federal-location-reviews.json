@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-09-09",
+  "method": "Exact named Google Maps campground points were matched to current federal facility records. Drive estimates use the no-ferry route from Seattle so planning times do not omit ferry queues or sailing time.",
+  "reviews": [
+    {
+      "slug": "falls-view-campground",
+      "address": "US Highway 101, Quilcene, WA 98376",
+      "latitude": 47.7905528,
+      "longitude": -122.9251396,
+      "coordinate_source": "Google Maps exact named campground point matched to the Forest Service facility address and directions",
+      "precision": "named campground point",
+      "distance_miles": 109,
+      "observed_route_minutes": 116,
+      "display_minutes": 120,
+      "route_note": "Uses the no-ferry I-5, Tacoma Narrows, and US 101 route; ferry routes may show less driving time but add fare, queue, and sailing uncertainty."
+    },
+    {
+      "slug": "seal-rock-campground",
+      "address": "305365 US Highway 101, Brinnon, WA 98320",
+      "latitude": 47.7103836,
+      "longitude": -122.890345,
+      "coordinate_source": "Google Maps exact named campground point matched to the Forest Service facility page",
+      "precision": "named campground point",
+      "distance_miles": 115,
+      "observed_route_minutes": 124,
+      "display_minutes": 135,
+      "route_note": "Uses the no-ferry I-5, Tacoma Narrows, and US 101 route. The public estimate rounds above the observed route and avoids ferry timing uncertainty."
+    }
+  ]
+}

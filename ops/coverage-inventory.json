@@ -43,6 +43,80 @@
       ]
     },
     {
+      "id": "jefferson-federal",
+      "county": "Jefferson",
+      "operator_layer": "federal",
+      "status": "complete",
+      "inventory_sources": [
+        "https://www.co.jefferson.wa.us/DocumentCenter/View/18148/2022-Jeff-Co-PROS-Plan?bidId=",
+        "https://www.fs.usda.gov/activity/olympic/recreation/camping-cabins/?actid=31&recid=47687",
+        "https://www.nps.gov/olym/planyourvisit/camping.htm",
+        "https://www.nps.gov/olym/planyourvisit/conditions.htm"
+      ],
+      "candidates": [
+        {
+          "name": "Hoh Campground",
+          "slug": "hoh-campground",
+          "decision": "included_existing",
+          "reason": "NPS publishes current RV access, seasonal reservations, and operating status."
+        },
+        {
+          "name": "Kalaloch Campground",
+          "slug": "kalaloch-campground",
+          "decision": "included_existing",
+          "reason": "NPS publishes current RV access, summer reservations, and year-round operation."
+        },
+        {
+          "name": "South Beach Campground",
+          "slug": "south-beach-campground",
+          "decision": "included_existing",
+          "reason": "NPS publishes seasonal first-come camping and selected RV sites up to 35 feet."
+        },
+        {
+          "name": "Queets Campground",
+          "decision": "excluded",
+          "reason": "NPS explicitly says RVs and trailers are not recommended on the remote Upper Queets access road."
+        },
+        {
+          "name": "Seal Rock Campground",
+          "slug": "seal-rock-campground",
+          "decision": "included_existing",
+          "reason": "Developed RV campground retained with a prominent current closure notice and corrected 21-foot limit."
+        },
+        {
+          "name": "Falls View Campground",
+          "slug": "falls-view-campground",
+          "decision": "included_new",
+          "reason": "Current federal inventory labels it open and Recreation.gov confirms first-come dry sites with selected RV capacity to 35 feet."
+        },
+        {
+          "name": "Collins Campground",
+          "decision": "deferred",
+          "reason": "Recreation.gov maintains active facility details, but the current Forest Service inventory labels the site closed; publish after status is reconciled."
+        },
+        {
+          "name": "Elkhorn Campground",
+          "decision": "excluded",
+          "reason": "Road washouts eliminated motor-vehicle access; the Forest Service describes the remaining area as a walk-in dispersed camp."
+        },
+        {
+          "name": "Rainbow Campground",
+          "decision": "excluded",
+          "reason": "The former campground is decommissioned and gated; only trail access remains."
+        },
+        {
+          "name": "Interrorem Cabin",
+          "decision": "excluded",
+          "reason": "Bookable cabin lodging rather than a transient RV campground."
+        },
+        {
+          "name": "Mount Walker Viewpoint",
+          "decision": "excluded",
+          "reason": "Day-use viewpoint without legal overnight campsites."
+        }
+      ]
+    },
+    {
       "id": "jefferson-county-city-port",
       "county": "Jefferson",
       "operator_layer": "county_city_port",

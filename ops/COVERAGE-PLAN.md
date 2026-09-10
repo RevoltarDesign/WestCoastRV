@@ -23,9 +23,9 @@ Work county by county, finishing one operator layer at a time: state parks, fede
 ## Pilot: Jefferson County
 
 - **State parks: complete for this pass.** Fort Worden was already present. Dosewallips and Fort Flagler were accepted and added on 2026-09-06. Non-camping state park units are exclusions when inventoried.
-- **Federal: partial.** Seal Rock was already present. Olympic National Forest and Olympic National Park inventories still need a facility-by-facility decision pass.
+- **Federal: complete for this pass.** Hoh, Kalaloch, South Beach, and Seal Rock were already present; Falls View was added on 2026-09-09. Seal Rock's published rig limit was corrected to 21 feet and its exact entrance and current closure were recorded. Collins remains deferred because two federal surfaces conflict on current operating status. Queets, Elkhorn, Rainbow, Interrorem Cabin, and Mount Walker were documented as exclusions.
 - **County/city/port: complete for this pass.** Quilcene, Lake Leland, Upper Oak Bay, Lower Oak Bay, Point Hudson, and Jefferson County Fairgrounds were verified and published on 2026-09-09. Current operator pages, facility maps, exact named map points, and stable no-ferry Seattle routes support the records. Conflicting Oak Bay site totals remain visible in the listing notes rather than being presented as certain.
-- **Private/tribal: queued.** Search Port Townsend, Port Hadlock, Quilcene, Brinnon, and Hood Canal using operator websites and business-registry signals; do not infer that an aggregator listing proves current operation.
+- **Private/tribal: complete for this pass.** Cove RV Park, Hard Rain Cafe & Campground, and Port Ludlow RV Park were added on 2026-09-09. Halfway, Smitty's, and a proposed Hoh tribal visitor campground were researched and excluded with documented reasons.
 
 ## Completion evidence
 

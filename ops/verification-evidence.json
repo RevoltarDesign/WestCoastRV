@@ -6375,6 +6375,226 @@
           "evidence": "Current directory independently corroborates year-round public operation and contact details."
         }
       ]
+    },
+    {
+      "slug": "falls-view-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source federal review supports operating status: Open in current Forest Service inventory.",
+      "proposed_value": "Open in current Forest Service inventory",
+      "sources": [
+        {
+          "url": "https://www.fs.usda.gov/activity/olympic/recreation/camping-cabins/?actid=31&recid=47687",
+          "publisher": "US Forest Service",
+          "source_family": "jefferson-federal-review",
+          "evidence": "Current Olympic National Forest inventory labels Falls View open."
+        },
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/10355712",
+          "publisher": "Recreation.gov / US Forest Service",
+          "source_family": "jefferson-federal-review",
+          "evidence": "Current facility record supports first-come operation, dry camping, and selected RV sites up to 35 feet."
+        }
+      ]
+    },
+    {
+      "slug": "falls-view-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source federal review supports rv access: True.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.fs.usda.gov/activity/olympic/recreation/camping-cabins/?actid=31&recid=47687",
+          "publisher": "US Forest Service",
+          "source_family": "jefferson-federal-review",
+          "evidence": "Current Olympic National Forest inventory labels Falls View open."
+        },
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/10355712",
+          "publisher": "Recreation.gov / US Forest Service",
+          "source_family": "jefferson-federal-review",
+          "evidence": "Current facility record supports first-come operation, dry camping, and selected RV sites up to 35 feet."
+        }
+      ]
+    },
+    {
+      "slug": "falls-view-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source federal review supports reservation method: First-come with Scan & Pay.",
+      "proposed_value": "First-come with Scan & Pay",
+      "sources": [
+        {
+          "url": "https://www.fs.usda.gov/activity/olympic/recreation/camping-cabins/?actid=31&recid=47687",
+          "publisher": "US Forest Service",
+          "source_family": "jefferson-federal-review",
+          "evidence": "Current Olympic National Forest inventory labels Falls View open."
+        },
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/10355712",
+          "publisher": "Recreation.gov / US Forest Service",
+          "source_family": "jefferson-federal-review",
+          "evidence": "Current facility record supports first-come operation, dry camping, and selected RV sites up to 35 feet."
+        }
+      ]
+    },
+    {
+      "slug": "falls-view-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source federal review supports max rv length: 35.",
+      "proposed_value": 35,
+      "sources": [
+        {
+          "url": "https://www.fs.usda.gov/activity/olympic/recreation/camping-cabins/?actid=31&recid=47687",
+          "publisher": "US Forest Service",
+          "source_family": "jefferson-federal-review",
+          "evidence": "Current Olympic National Forest inventory labels Falls View open."
+        },
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/10355712",
+          "publisher": "Recreation.gov / US Forest Service",
+          "source_family": "jefferson-federal-review",
+          "evidence": "Current facility record supports first-come operation, dry camping, and selected RV sites up to 35 feet."
+        }
+      ]
+    },
+    {
+      "slug": "falls-view-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source federal review supports hookups: 0.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.fs.usda.gov/activity/olympic/recreation/camping-cabins/?actid=31&recid=47687",
+          "publisher": "US Forest Service",
+          "source_family": "jefferson-federal-review",
+          "evidence": "Current Olympic National Forest inventory labels Falls View open."
+        },
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/10355712",
+          "publisher": "Recreation.gov / US Forest Service",
+          "source_family": "jefferson-federal-review",
+          "evidence": "Current facility record supports first-come operation, dry camping, and selected RV sites up to 35 feet."
+        }
+      ]
+    },
+    {
+      "slug": "seal-rock-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source federal review supports operating status: Currently listed closed.",
+      "proposed_value": "Currently listed closed",
+      "sources": [
+        {
+          "url": "https://www.fs.usda.gov/activity/olympic/recreation/camping-cabins/?actid=31&recid=47687",
+          "publisher": "US Forest Service",
+          "source_family": "jefferson-federal-review",
+          "evidence": "Current inventory labels Seal Rock closed and identifies 41 tent/RV sites."
+        },
+        {
+          "url": "https://www.allstays.com/Campgrounds-details/32601.htm",
+          "publisher": "AllStays",
+          "source_family": "jefferson-federal-review",
+          "evidence": "Current campground directory independently reports the 21-foot RV maximum from the Forest Service facility record."
+        }
+      ]
+    },
+    {
+      "slug": "seal-rock-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source federal review supports rv access: True.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.fs.usda.gov/activity/olympic/recreation/camping-cabins/?actid=31&recid=47687",
+          "publisher": "US Forest Service",
+          "source_family": "jefferson-federal-review",
+          "evidence": "Current inventory labels Seal Rock closed and identifies 41 tent/RV sites."
+        },
+        {
+          "url": "https://www.allstays.com/Campgrounds-details/32601.htm",
+          "publisher": "AllStays",
+          "source_family": "jefferson-federal-review",
+          "evidence": "Current campground directory independently reports the 21-foot RV maximum from the Forest Service facility record."
+        }
+      ]
+    },
+    {
+      "slug": "seal-rock-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source federal review supports reservation method: No current booking while closed.",
+      "proposed_value": "No current booking while closed",
+      "sources": [
+        {
+          "url": "https://www.fs.usda.gov/activity/olympic/recreation/camping-cabins/?actid=31&recid=47687",
+          "publisher": "US Forest Service",
+          "source_family": "jefferson-federal-review",
+          "evidence": "Current inventory labels Seal Rock closed and identifies 41 tent/RV sites."
+        },
+        {
+          "url": "https://www.allstays.com/Campgrounds-details/32601.htm",
+          "publisher": "AllStays",
+          "source_family": "jefferson-federal-review",
+          "evidence": "Current campground directory independently reports the 21-foot RV maximum from the Forest Service facility record."
+        }
+      ]
+    },
+    {
+      "slug": "seal-rock-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source federal review supports max rv length: 21.",
+      "proposed_value": 21,
+      "sources": [
+        {
+          "url": "https://www.fs.usda.gov/activity/olympic/recreation/camping-cabins/?actid=31&recid=47687",
+          "publisher": "US Forest Service",
+          "source_family": "jefferson-federal-review",
+          "evidence": "Current inventory labels Seal Rock closed and identifies 41 tent/RV sites."
+        },
+        {
+          "url": "https://www.allstays.com/Campgrounds-details/32601.htm",
+          "publisher": "AllStays",
+          "source_family": "jefferson-federal-review",
+          "evidence": "Current campground directory independently reports the 21-foot RV maximum from the Forest Service facility record."
+        }
+      ]
+    },
+    {
+      "slug": "seal-rock-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-09",
+      "summary": "Cross-source federal review supports hookups: 0.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.fs.usda.gov/activity/olympic/recreation/camping-cabins/?actid=31&recid=47687",
+          "publisher": "US Forest Service",
+          "source_family": "jefferson-federal-review",
+          "evidence": "Current inventory labels Seal Rock closed and identifies 41 tent/RV sites."
+        },
+        {
+          "url": "https://www.allstays.com/Campgrounds-details/32601.htm",
+          "publisher": "AllStays",
+          "source_family": "jefferson-federal-review",
+          "evidence": "Current campground directory independently reports the 21-foot RV maximum from the Forest Service facility record."
+        }
+      ]
     }
   ]
 }
