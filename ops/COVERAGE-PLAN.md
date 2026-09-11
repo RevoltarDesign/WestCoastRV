@@ -28,6 +28,14 @@ Work county by county, finishing one operator layer at a time: state parks, fede
 - **County/city/port: complete for this pass.** Quilcene, Lake Leland, Upper Oak Bay, Lower Oak Bay, Point Hudson, and Jefferson County Fairgrounds were verified and published on 2026-09-09. Current operator pages, facility maps, exact named map points, and stable no-ferry Seattle routes support the records. Conflicting Oak Bay site totals remain visible in the listing notes rather than being presented as certain.
 - **Private/tribal: complete for this pass.** Cove RV Park, Hard Rain Cafe & Campground, and Port Ludlow RV Park were added on 2026-09-09. Halfway, Smitty's, and a proposed Hoh tribal visitor campground were researched and excluded with documented reasons.
 
+## Clallam County
+
+- **Washington DNR: complete for this pass.** Bear Creek, Lyre River, and Sadie Creek were verified and published on 2026-09-11 with exact DNR-linked coordinates, no-ferry Seattle routes, RV limits, current status, and primitive-access notes.
+- **Federal: complete for this pass.** Fairholme, Heart O' the Hills, Mora, Ozette, and Sol Duc were rechecked. Log Cabin Resort RV & Campground was added with the current 31-site RV inventory. Deer Park is excluded because NPS lists tents only and says the road is unsuitable for RVs and trailers.
+- **County: complete for this pass.** Dungeness and Salt Creek were rechecked against current county campground and facility pages. The review corrected restroom and dump-station facts and added explicit RV access notes.
+- **State parks: complete for this pass.** Bogachiel and Sequim Bay were rechecked. Bogachiel now uses the current official locate point; Sequim Bay now lists its 60 RV-capable standard and full-hookup campsites and the Lower Loop construction closure.
+- **Private/tribal: in progress.** Four existing private records remain published and are grouped in the Clallam guide. A full operator inventory and critical-field recheck is the next county layer.
+
 ## Completion evidence
 
 The machine-readable inventory is `coverage-inventory.json`. `trust_workflow.py check` rejects duplicate candidates, missing decisions, malformed sources, unsupported published critical facts, and sections marked complete while candidates remain undecided.

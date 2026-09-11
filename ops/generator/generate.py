@@ -326,6 +326,19 @@ def nearby_reason(current, candidate):
 
 
 def build_regional_guide(row):
+    clallam = {
+        'fairholme-campground', 'heart-o-the-hills-campground', 'mora-campground',
+        'ozette-campground', 'sol-duc-campground', 'log-cabin-resort-rv-campground',
+        'bear-creek-campground', 'lyre-river-campground', 'sadie-creek-campground',
+        'bogachiel-state-park', 'sequim-bay-state-park', 'dungeness-recreation-area',
+        'salt-creek-recreation-area', 'elwha-dam-rv-park', 'forks-101-rv-park',
+        'crescent-beach-rv-park', 'gilgal-oasis-rv-park',
+    }
+    if row.get('Slug') in clallam:
+        return ('<a class="regional-guide-link" href="/field-notes/clallam-county-rv-camping">'
+                '<span>Clallam County RV camping guide</span>'
+                '<small>Compare 17 campground records from Sequim to Lake Ozette</small>'
+                '</a>')
     jefferson = {
         'dosewallips-state-park', 'fort-flagler-historical-state-park',
         'fort-worden-historical-state-park', 'seal-rock-campground',

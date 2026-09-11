@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-09-11",
+  "method": "Coordinates use exact named campground points linked by the operator or matched to the operator's address and access directions. Seattle estimates use the no-ferry route and round upward for towing.",
+  "reviews": [
+    {"slug":"bear-creek-campground","address":"US Highway 101, Port Angeles, WA 98363","latitude":48.0656333,"longitude":-124.2407638,"coordinate_source":"Official Washington DNR directions link resolved to the exact named Google Maps campground point","precision":"named campground point","distance_miles":179,"observed_route_minutes":214,"display_minutes":225,"route_note":"Uses the no-ferry I-5 and US 101 route and rounds above current moving time for towing."},
+    {"slug":"lyre-river-campground","address":"46059 WA-112, Port Angeles, WA 98363","latitude":48.1500240,"longitude":-123.8328907,"coordinate_source":"Official Washington DNR directions link resolved to the exact named Google Maps campground point","precision":"named campground point","distance_miles":158,"observed_route_minutes":189,"display_minutes":210,"route_note":"Uses the no-ferry I-5 and US 101 route and adds towing margin for SR 112."},
+    {"slug":"sadie-creek-campground","address":"East Twin River Road, Port Angeles, WA 98363","latitude":48.1340580,"longitude":-123.9062550,"coordinate_source":"Exact coordinate in the official Washington DNR directions link","precision":"official campground point","distance_miles":161,"observed_route_minutes":193,"display_minutes":210,"route_note":"Uses the no-ferry I-5 and US 101 route and adds towing margin for the short gravel approach."},
+    {"slug":"log-cabin-resort-rv-campground","address":"3183 East Beach Road, Port Angeles, WA 98363","latitude":48.0938949,"longitude":-123.7886940,"coordinate_source":"Google Maps exact named resort point matched to the NPS-listed concession and official operator address","precision":"named campground point","distance_miles":157,"observed_route_minutes":190,"display_minutes":210,"route_note":"Uses the no-ferry I-5 and US 101 route. The faster ferry option is excluded because wait and loading times vary for trailers."},
+    {"slug":"bogachiel-state-park","address":"185983 US-101, Forks, WA 98331","latitude":47.8963623,"longitude":-124.3605957,"coordinate_source":"Current Washington State Parks published locate point","precision":"official park locate point","distance_miles":206,"observed_route_minutes":223,"display_minutes":225,"route_note":"Uses the stable no-ferry I-5 and US 101 route."}
+  ]
+}

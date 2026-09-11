@@ -112,17 +112,26 @@
 
 })();
 
-// Campground referral intent; no email, query string, or reservation details sent.
+// Privacy-safe discovery and referral intent; no email, query string, or reservation details sent.
 document.addEventListener('click', function (event) {
   const link = event.target.closest('a');
-  if (!link || !location.pathname.includes('/campground/') || typeof window.gtag !== 'function') return;
-  const configured = document.body.dataset.navCtaUrl;
-  if (!configured) return;
+  if (!link || typeof window.gtag !== 'function') return;
   const destination = new URL(link.href, location.href);
-  if (destination.href !== new URL(configured, location.href).href || destination.origin === location.origin) return;
-  window.gtag('event', 'campground_outbound', {
-    campground_slug: location.pathname.split('/').pop().replace(/\.html$/, ''),
-    provider: destination.hostname,
-    transport_type: 'beacon'
-  });
+  const detail = location.pathname.includes('/campground/');
+  const slug = detail ? location.pathname.split('/').pop().replace(/\.html$/, '') : '';
+  if (/google\.[^/]+\/maps/.test(destination.hostname + destination.pathname)) {
+    window.gtag('event', 'directions_click', { campground_slug: slug, source_page: location.pathname, transport_type: 'beacon' });
+    return;
+  }
+  if (detail && destination.origin !== location.origin) {
+    window.gtag('event', 'campground_outbound', { campground_slug: slug, provider: destination.hostname, transport_type: 'beacon' });
+    return;
+  }
+  if (destination.origin === location.origin && destination.pathname.includes('/campground/')) {
+    window.gtag('event', 'campground_open', {
+      campground_slug: destination.pathname.split('/').pop().replace(/\.html$/, ''),
+      source_page: location.pathname,
+      transport_type: 'beacon'
+    });
+  }
 });

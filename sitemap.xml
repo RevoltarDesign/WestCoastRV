@@ -56,6 +56,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://westcoastrvcamping.com/field-notes/clallam-county-rv-camping</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://westcoastrvcamping.com/campground/fairholme-campground</loc>
   </url>
   <url>
@@ -459,5 +464,17 @@
   </url>
   <url>
     <loc>https://westcoastrvcamping.com/campground/south-fork-hoh-campground</loc>
+  </url>
+  <url>
+    <loc>https://westcoastrvcamping.com/campground/bear-creek-campground</loc>
+  </url>
+  <url>
+    <loc>https://westcoastrvcamping.com/campground/lyre-river-campground</loc>
+  </url>
+  <url>
+    <loc>https://westcoastrvcamping.com/campground/sadie-creek-campground</loc>
+  </url>
+  <url>
+    <loc>https://westcoastrvcamping.com/campground/log-cabin-resort-rv-campground</loc>
   </url>
 </urlset>

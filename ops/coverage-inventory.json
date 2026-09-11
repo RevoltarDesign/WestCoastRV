@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-09-10",
+  "updated_on": "2026-09-11",
   "sections": [
     {
       "id": "jefferson-state-parks",
@@ -263,6 +263,174 @@
           "name": "Hoh Tribe visitor RV campground",
           "decision": "excluded",
           "reason": "No public visitor RV campground or reservation channel appears in the Tribe's current official visitor-facing materials."
+        }
+      ]
+    },
+    {
+      "id": "clallam-dnr",
+      "county": "Clallam",
+      "operator_layer": "Washington DNR",
+      "status": "complete",
+      "inventory_sources": [
+        "https://dnr.wa.gov/recreation/find-your-campsite",
+        "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests"
+      ],
+      "candidates": [
+        {
+          "name": "Bear Creek Campground",
+          "slug": "bear-creek-campground",
+          "decision": "included_new",
+          "reason": "Current DNR inventory and official regional page confirm drive-in RV access."
+        },
+        {
+          "name": "Lyre River Campground",
+          "slug": "lyre-river-campground",
+          "decision": "included_new",
+          "reason": "Current DNR inventory and official regional page confirm drive-in RV access."
+        },
+        {
+          "name": "Sadie Creek Campground",
+          "slug": "sadie-creek-campground",
+          "decision": "included_new",
+          "reason": "Current DNR inventory and official regional page confirm drive-in RV access."
+        }
+      ]
+    },
+    {
+      "id": "clallam-federal",
+      "county": "Clallam",
+      "operator_layer": "federal",
+      "status": "complete",
+      "inventory_sources": [
+        "https://www.nps.gov/olym/planyourvisit/camping.htm"
+      ],
+      "candidates": [
+        {
+          "name": "Fairholme Campground",
+          "slug": "fairholme-campground",
+          "decision": "included_existing",
+          "reason": "Current NPS inventory confirms RV access and operating details."
+        },
+        {
+          "name": "Heart O' the Hills Campground",
+          "slug": "heart-o-the-hills-campground",
+          "decision": "included_existing",
+          "reason": "Current NPS inventory confirms RV access and operating details."
+        },
+        {
+          "name": "Mora Campground",
+          "slug": "mora-campground",
+          "decision": "included_existing",
+          "reason": "Current NPS inventory confirms RV access and operating details."
+        },
+        {
+          "name": "Ozette Campground",
+          "slug": "ozette-campground",
+          "decision": "included_existing",
+          "reason": "Current NPS inventory confirms RV access and operating details."
+        },
+        {
+          "name": "Sol Duc Campground",
+          "slug": "sol-duc-campground",
+          "decision": "included_existing",
+          "reason": "Current NPS inventory confirms RV access and operating details."
+        },
+        {
+          "name": "Log Cabin Resort RV & Campground",
+          "slug": "log-cabin-resort-rv-campground",
+          "decision": "included_new",
+          "reason": "Current NPS concession inventory confirms 31 RV sites and access up to 35 feet."
+        },
+        {
+          "name": "Deer Park Campground",
+          "decision": "excluded",
+          "reason": "NPS explicitly lists tents only and says the access road is unsuitable for RVs or trailers."
+        }
+      ]
+    },
+    {
+      "id": "clallam-county",
+      "county": "Clallam",
+      "operator_layer": "county",
+      "status": "complete",
+      "inventory_sources": [
+        "https://www.clallamcountywa.gov/Facilities"
+      ],
+      "candidates": [
+        {
+          "name": "Dungeness Recreation Area",
+          "slug": "dungeness-recreation-area",
+          "decision": "included_existing",
+          "reason": "County inventory confirms 66 drive-in campsites for tents and RVs."
+        },
+        {
+          "name": "Salt Creek Recreation Area",
+          "slug": "salt-creek-recreation-area",
+          "decision": "included_existing",
+          "reason": "County inventory confirms 92 utility and nonutility RV campsites."
+        }
+      ]
+    },
+    {
+      "id": "clallam-state-parks",
+      "county": "Clallam",
+      "operator_layer": "state_parks",
+      "status": "complete",
+      "inventory_sources": [
+        "https://parks.wa.gov/find-parks/state-parks"
+      ],
+      "candidates": [
+        {
+          "name": "Bogachiel State Park",
+          "slug": "bogachiel-state-park",
+          "decision": "included_existing",
+          "reason": "Current park page confirms standard and partial-hookup RV camping."
+        },
+        {
+          "name": "Sequim Bay State Park",
+          "slug": "sequim-bay-state-park",
+          "decision": "included_existing",
+          "reason": "Current park page and brochure confirm standard and full-hookup camping."
+        }
+      ]
+    },
+    {
+      "id": "clallam-private-tribal",
+      "county": "Clallam",
+      "operator_layer": "private_tribal",
+      "status": "in_progress",
+      "inventory_sources": [
+        "https://www.clallamcountywa.gov/Facilities"
+      ],
+      "candidates": [
+        {
+          "name": "Elwha Dam RV Park",
+          "slug": "elwha-dam-rv-park",
+          "decision": "included_existing",
+          "reason": "Existing public record retained for the private/tribal verification queue."
+        },
+        {
+          "name": "Forks 101 RV Park",
+          "slug": "forks-101-rv-park",
+          "decision": "included_existing",
+          "reason": "Existing public record retained for the private/tribal verification queue."
+        },
+        {
+          "name": "Crescent Beach & RV Park",
+          "slug": "crescent-beach-rv-park",
+          "decision": "included_existing",
+          "reason": "Existing public record retained for the private/tribal verification queue."
+        },
+        {
+          "name": "Gilgal Oasis RV Park",
+          "slug": "gilgal-oasis-rv-park",
+          "decision": "included_existing",
+          "reason": "Existing public record retained for the private/tribal verification queue."
+        },
+        {
+          "name": "Private and tribal operator inventory",
+          "decision": "research",
+          "reason": "Full operator-by-operator inventory is the next Clallam layer."
         }
       ]
     }

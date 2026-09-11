@@ -7295,6 +7295,521 @@
           "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
         }
       ]
+    },
+    {
+      "slug": "bear-creek-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current official sources support operating status.",
+      "proposed_value": "current operator status",
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Current inventory supports operating status and county."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and RV limits."
+        }
+      ]
+    },
+    {
+      "slug": "bear-creek-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current official sources support rv access.",
+      "proposed_value": true,
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Current inventory supports operating status and county."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and RV limits."
+        }
+      ]
+    },
+    {
+      "slug": "bear-creek-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current official sources support reservation method.",
+      "proposed_value": "First-come, first-served; scheduled closure September 15, 2026\u2013April 15, 2027",
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Current inventory supports operating status and county."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and RV limits."
+        }
+      ]
+    },
+    {
+      "slug": "bear-creek-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current official sources support max rv length.",
+      "proposed_value": 30,
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Current inventory supports operating status and county."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and RV limits."
+        }
+      ]
+    },
+    {
+      "slug": "bear-creek-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current official sources support hookups.",
+      "proposed_value": 0,
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Current inventory supports operating status and county."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and RV limits."
+        }
+      ]
+    },
+    {
+      "slug": "lyre-river-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current official sources support operating status.",
+      "proposed_value": "current operator status",
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Current inventory supports operating status and county."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and RV limits."
+        }
+      ]
+    },
+    {
+      "slug": "lyre-river-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current official sources support rv access.",
+      "proposed_value": true,
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Current inventory supports operating status and county."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and RV limits."
+        }
+      ]
+    },
+    {
+      "slug": "lyre-river-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current official sources support reservation method.",
+      "proposed_value": "First-come, first-served; scheduled closure September 15, 2026\u2013April 15, 2027",
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Current inventory supports operating status and county."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and RV limits."
+        }
+      ]
+    },
+    {
+      "slug": "lyre-river-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current official sources support max rv length.",
+      "proposed_value": 20,
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Current inventory supports operating status and county."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and RV limits."
+        }
+      ]
+    },
+    {
+      "slug": "lyre-river-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current official sources support hookups.",
+      "proposed_value": 0,
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Current inventory supports operating status and county."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and RV limits."
+        }
+      ]
+    },
+    {
+      "slug": "sadie-creek-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current official sources support operating status.",
+      "proposed_value": "current operator status",
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Current inventory supports operating status and county."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and RV limits."
+        }
+      ]
+    },
+    {
+      "slug": "sadie-creek-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current official sources support rv access.",
+      "proposed_value": true,
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Current inventory supports operating status and county."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and RV limits."
+        }
+      ]
+    },
+    {
+      "slug": "sadie-creek-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current official sources support reservation method.",
+      "proposed_value": "First-come, first-served",
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Current inventory supports operating status and county."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and RV limits."
+        }
+      ]
+    },
+    {
+      "slug": "sadie-creek-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current official sources support max rv length.",
+      "proposed_value": 30,
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Current inventory supports operating status and county."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and RV limits."
+        }
+      ]
+    },
+    {
+      "slug": "sadie-creek-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current official sources support hookups.",
+      "proposed_value": 0,
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Current inventory supports operating status and county."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "clallam-public-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and RV limits."
+        }
+      ]
+    },
+    {
+      "slug": "log-cabin-resort-rv-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current official sources support operating status.",
+      "proposed_value": "current operator status",
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "clallam-public-review",
+          "evidence": "Current campground inventory supports status, reservation method, site inventory, RV limits, and facilities."
+        }
+      ]
+    },
+    {
+      "slug": "log-cabin-resort-rv-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current official sources support rv access.",
+      "proposed_value": true,
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "clallam-public-review",
+          "evidence": "Current campground inventory supports status, reservation method, site inventory, RV limits, and facilities."
+        }
+      ]
+    },
+    {
+      "slug": "log-cabin-resort-rv-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current official sources support reservation method.",
+      "proposed_value": "Call 866-405-2950; open May\u2013October 2026",
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "clallam-public-review",
+          "evidence": "Current campground inventory supports status, reservation method, site inventory, RV limits, and facilities."
+        }
+      ]
+    },
+    {
+      "slug": "log-cabin-resort-rv-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current official sources support max rv length.",
+      "proposed_value": 35,
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "clallam-public-review",
+          "evidence": "Current campground inventory supports status, reservation method, site inventory, RV limits, and facilities."
+        }
+      ]
+    },
+    {
+      "slug": "log-cabin-resort-rv-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current official sources support hookups.",
+      "proposed_value": 3,
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "clallam-public-review",
+          "evidence": "Current campground inventory supports status, reservation method, site inventory, RV limits, and facilities."
+        }
+      ]
+    },
+    {
+      "slug": "fairholme-campground",
+      "field": "rv_site_count",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-11",
+      "summary": "Clallam public review corrected rv site count.",
+      "proposed_value": 69,
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/olym/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "clallam-public-review",
+          "evidence": "Current campground inventory supports status, reservation method, site inventory, RV limits, and facilities."
+        }
+      ]
+    },
+    {
+      "slug": "sequim-bay-state-park",
+      "field": "rv_site_count",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-11",
+      "summary": "Clallam public review corrected rv site count.",
+      "proposed_value": 60,
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/sites/default/files/2023-03/SequimBay_Brochure_03.22.2023.pdf",
+          "publisher": "Washington State Parks",
+          "source_family": "clallam-public-review",
+          "evidence": "Official brochure lists 45 standard and 15 full-hookup campsites."
+        }
+      ]
+    },
+    {
+      "slug": "dungeness-recreation-area",
+      "field": "facilities",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-11",
+      "summary": "Clallam public review corrected facilities.",
+      "proposed_value": "flush toilets, showers, water and dump station",
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://clallamcountywa.gov/facilities/facility/details/Dungeness-Recreation-Area-2",
+          "publisher": "Clallam County",
+          "source_family": "clallam-public-review",
+          "evidence": "Current county page confirms the campground inventory and facilities."
+        }
+      ]
+    },
+    {
+      "slug": "salt-creek-recreation-area",
+      "field": "facilities",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-11",
+      "summary": "Clallam public review corrected facilities.",
+      "proposed_value": "flush toilets, showers, seasonal water and dump station",
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://www.clallamcountywa.gov/Facilities/Facility/Details/Salt-Creek-Recreation-Area-26",
+          "publisher": "Clallam County",
+          "source_family": "clallam-public-review",
+          "evidence": "Current county page confirms the campground inventory and facilities."
+        }
+      ]
+    },
+    {
+      "slug": "bogachiel-state-park",
+      "field": "coordinates",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-11",
+      "summary": "Clallam public review corrected coordinates.",
+      "proposed_value": "47.8963623,-124.3605957",
+      "source_family": "clallam-public-review",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/bogachiel-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "clallam-public-review",
+          "evidence": "Current park page publishes the locate point."
+        }
+      ]
     }
   ]
 }
