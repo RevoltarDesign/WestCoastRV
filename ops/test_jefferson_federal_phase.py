@@ -43,7 +43,7 @@ class JeffersonFederalPhaseTests(unittest.TestCase):
 
     def test_generated_assets_and_regional_guide(self):
         guide = (SITE / "field-notes/jefferson-county-rv-camping.html").read_text()
-        self.assertEqual(17, guide.count('<article class="camp">'))
+        self.assertEqual(22, guide.count('<article class="camp">'))
         for slug in {"falls-view-campground", "hoh-campground", "kalaloch-campground", "south-beach-campground"}:
             self.assertIn(f"/campground/{slug}", guide)
         self.assertTrue((SITE / "assets/images/topo/falls-view-campground.jpg").is_file())

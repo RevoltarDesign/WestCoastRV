@@ -44,6 +44,7 @@ GEN_NOTE  = {'0': 'Operator prohibits generators', '1': 'Designated hours only',
 
 PARK_BADGE = {
     'National Forest': 'National Forest',
+    'State Forest':       'State Forest',
     'National Park':      'National Park',
     'State Park':         'State Park',
     'County Campground':  'County Park',
@@ -52,6 +53,7 @@ PARK_BADGE = {
 }
 PARK_FILTER = {
     'National Forest': 'forest',
+    'State Forest':       'state-forest',
     'National Park':      'national',
     'State Park':         'state',
     'County Campground':  'county',
@@ -60,6 +62,7 @@ PARK_FILTER = {
 }
 PASS_META = {
     'National Forest': 'Check the operator for camping and day-use fees',
+    'State Forest':       'Discover Pass required for vehicle access; campsites are first-come with no separate camping fee',
     'National Park':      'Entrance passes generally do not cover camping fees',
     'State Park':         'Overnight guests do not need a Discover Pass at the park where they camp',
     'County Campground':  'Check park website for day-use fees',
@@ -332,12 +335,15 @@ def build_regional_guide(row):
         'cove-rv-park-country-store', 'hard-rain-cafe-campground',
         'port-ludlow-rv-park', 'falls-view-campground', 'hoh-campground',
         'kalaloch-campground', 'south-beach-campground',
+        'coppermine-bottom-campground', 'cottonwood-campground',
+        'hoh-oxbow-campground', 'minnie-peterson-campground',
+        'south-fork-hoh-campground',
     }
     if row.get('Slug') not in jefferson:
         return ''
     return ('<a class="regional-guide-link" href="/field-notes/jefferson-county-rv-camping">'
             '<span>Jefferson County RV camping guide</span>'
-            '<small>Compare 17 verified records from the Hoh Rain Forest to Port Townsend</small>'
+            '<small>Compare 22 sourced records from primitive DNR camps to Port Townsend</small>'
             '</a>')
 
 def build_long_desc_paras(row):
@@ -560,6 +566,7 @@ def generate_page(row, slug_lookup, template):
     nature_eyebrow = park_type
     nature_title   = {
         'National Park':     "One of Washington's crown jewels",
+        'State Forest':      'Primitive camping on Washington trust lands',
         'State Park':        'Washington State Parks — built for exploration',
         'County Campground': 'Local parks, local character',
         'Private Campground':'Privately managed, full-service',

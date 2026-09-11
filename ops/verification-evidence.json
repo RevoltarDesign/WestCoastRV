@@ -6595,6 +6595,706 @@
           "evidence": "Current campground directory independently reports the 21-foot RV maximum from the Forest Service facility record."
         }
       ]
+    },
+    {
+      "slug": "coppermine-bottom-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support operating status: Open in current DNR inventory.",
+      "proposed_value": "Open in current DNR inventory",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "coppermine-bottom-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support rv access: True.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "coppermine-bottom-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support reservation method: First-come; Discover Pass required.",
+      "proposed_value": "First-come; Discover Pass required",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "coppermine-bottom-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support max rv length: 30.",
+      "proposed_value": 30,
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "coppermine-bottom-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support hookups: 0.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "cottonwood-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support operating status: Open in current DNR inventory.",
+      "proposed_value": "Open in current DNR inventory",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "cottonwood-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support rv access: True.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "cottonwood-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support reservation method: First-come; Discover Pass required.",
+      "proposed_value": "First-come; Discover Pass required",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "cottonwood-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support max rv length: 30.",
+      "proposed_value": 30,
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "cottonwood-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support hookups: 0.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "hoh-oxbow-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support operating status: Open in current DNR inventory.",
+      "proposed_value": "Open in current DNR inventory",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "hoh-oxbow-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support rv access: True.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "hoh-oxbow-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support reservation method: First-come; Discover Pass required.",
+      "proposed_value": "First-come; Discover Pass required",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "hoh-oxbow-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support max rv length: 30.",
+      "proposed_value": 30,
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "hoh-oxbow-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support hookups: 0.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "minnie-peterson-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support operating status: Open in current DNR inventory.",
+      "proposed_value": "Open in current DNR inventory",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "minnie-peterson-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support rv access: True.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "minnie-peterson-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support reservation method: First-come; Discover Pass required.",
+      "proposed_value": "First-come; Discover Pass required",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "minnie-peterson-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support max rv length: 30.",
+      "proposed_value": 30,
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "minnie-peterson-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support hookups: 0.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "south-fork-hoh-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support operating status: Open in current DNR inventory.",
+      "proposed_value": "Open in current DNR inventory",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "south-fork-hoh-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support rv access: True.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "south-fork-hoh-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support reservation method: First-come; Discover Pass required.",
+      "proposed_value": "First-come; Discover Pass required",
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "south-fork-hoh-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support max rv length: 30.",
+      "proposed_value": 30,
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
+    },
+    {
+      "slug": "south-fork-hoh-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-10",
+      "summary": "Current official DNR sources support hookups: 0.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://dnr.wa.gov/recreation/find-your-campsite",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Current campsite inventory supports county and operating status."
+        },
+        {
+          "url": "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official regional page supports directions, facilities, first-come use, and current alerts."
+        },
+        {
+          "url": "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf",
+          "publisher": "Washington Department of Natural Resources",
+          "source_family": "jefferson-dnr-review",
+          "evidence": "Official recreation guide supports a 30-foot trailer maximum and primitive campground context."
+        }
+      ]
     }
   ]
 }

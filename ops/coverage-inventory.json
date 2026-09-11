@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-09-09",
+  "updated_on": "2026-09-10",
   "sections": [
     {
       "id": "jefferson-state-parks",
@@ -113,6 +113,59 @@
           "name": "Mount Walker Viewpoint",
           "decision": "excluded",
           "reason": "Day-use viewpoint without legal overnight campsites."
+        }
+      ]
+    },
+    {
+      "id": "jefferson-dnr",
+      "county": "Jefferson",
+      "operator_layer": "Washington DNR",
+      "status": "complete",
+      "inventory_sources": [
+        "https://dnr.wa.gov/recreation/find-your-campsite",
+        "https://dnr.wa.gov/forest-and-trust-lands/olympic-peninsula-forests",
+        "https://dnr.wa.gov/sites/default/files/publications/amp_recreation_guide.pdf"
+      ],
+      "candidates": [
+        {
+          "name": "Coppermine Bottom Campground",
+          "slug": "coppermine-bottom-campground",
+          "decision": "included_new",
+          "reason": "Current DNR inventory lists the campground open and the official recreation guide supports RV/trailer access up to 30 feet."
+        },
+        {
+          "name": "Cottonwood Campground",
+          "slug": "cottonwood-campground",
+          "decision": "included_new",
+          "reason": "Current DNR inventory lists the campground open and the official recreation guide supports RV/trailer access up to 30 feet."
+        },
+        {
+          "name": "Hoh Oxbow Campground",
+          "slug": "hoh-oxbow-campground",
+          "decision": "included_new",
+          "reason": "Current DNR inventory lists the campground open and the official recreation guide supports RV/trailer access up to 30 feet."
+        },
+        {
+          "name": "Minnie Peterson Campground",
+          "slug": "minnie-peterson-campground",
+          "decision": "included_new",
+          "reason": "Current DNR inventory lists the campground open and the official recreation guide supports RV/trailer access up to 30 feet."
+        },
+        {
+          "name": "South Fork Hoh Campground",
+          "slug": "south-fork-hoh-campground",
+          "decision": "included_new",
+          "reason": "Current DNR inventory lists the campground open and the official recreation guide supports RV/trailer access up to 30 feet."
+        },
+        {
+          "name": "Upper Clearwater Campground",
+          "decision": "deferred",
+          "reason": "DNR lists the campground closed for all of 2026 and says RVs are allowed but not recommended; reconsider after a reopening and access review."
+        },
+        {
+          "name": "Yahoo Lake Campground",
+          "decision": "excluded",
+          "reason": "DNR describes backcountry campsites reached by a one-mile hike, so it is outside the drive-in RV scope."
         }
       ]
     },

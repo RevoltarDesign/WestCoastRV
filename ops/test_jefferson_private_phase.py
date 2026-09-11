@@ -39,7 +39,7 @@ class JeffersonPrivatePhaseTests(unittest.TestCase):
 
     def test_assets_pages_and_guide(self):
         guide = (SITE / "field-notes/jefferson-county-rv-camping.html").read_text()
-        self.assertEqual(17, guide.count('<article class="camp">'))
+        self.assertEqual(22, guide.count('<article class="camp">'))
         for slug in SLUGS:
             self.assertTrue((SITE / "assets/images/topo" / f"{slug}.jpg").is_file())
             self.assertTrue((SITE / "assets/images/svg" / f"{slug}.svg").is_file())
