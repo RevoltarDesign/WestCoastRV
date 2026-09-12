@@ -27,9 +27,9 @@ class ClallamPublicPhaseTests(unittest.TestCase):
   coverage=json.loads((HERE/'coverage-inventory.json').read_text())
   sections={s['id']:s for s in coverage['sections']}
   for key in ('clallam-dnr','clallam-federal','clallam-county','clallam-state-parks'): self.assertEqual('complete',sections[key]['status'])
-  self.assertEqual('in_progress',sections['clallam-private-tribal']['status'])
+  self.assertEqual('complete',sections['clallam-private-tribal']['status'])
   guide=(SITE/'field-notes/clallam-county-rv-camping.html').read_text()
-  self.assertEqual(17,guide.count('<article class="camp">'))
+  self.assertEqual(23,guide.count('<article class="camp">'))
   self.assertIn('clallam-county-rv-camping',(SITE/'sitemap.xml').read_text())
  def test_measurement_events(self):
   nav=(SITE/'assets/nav.js').read_text(); map_page=(SITE/'map.html').read_text()

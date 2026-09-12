@@ -13,7 +13,8 @@ import xml.etree.ElementTree as ET
 from generate import CSV_PATH, BASE_DIR, extract_lat_lng, display_image
 
 TYPES = {'National Park': 'national', 'National Forest': 'forest', 'State Forest': 'state-forest', 'State Park': 'state',
-         'County Campground': 'county', 'City Campground': 'city', 'Private Campground': 'private'}
+         'County Campground': 'county', 'City Campground': 'city', 'Private Campground': 'private',
+         'Tribal Campground': 'tribal'}
 HOOKUPS = {'0': ('none', 'No hookups'), '1': ('electric', 'Electric'),
            '2': ('water-electric', 'Water + Electric'), '3': ('full', 'Full hookups')}
 

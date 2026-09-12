@@ -34,7 +34,7 @@ Work county by county, finishing one operator layer at a time: state parks, fede
 - **Federal: complete for this pass.** Fairholme, Heart O' the Hills, Mora, Ozette, and Sol Duc were rechecked. Log Cabin Resort RV & Campground was added with the current 31-site RV inventory. Deer Park is excluded because NPS lists tents only and says the road is unsuitable for RVs and trailers.
 - **County: complete for this pass.** Dungeness and Salt Creek were rechecked against current county campground and facility pages. The review corrected restroom and dump-station facts and added explicit RV access notes.
 - **State parks: complete for this pass.** Bogachiel and Sequim Bay were rechecked. Bogachiel now uses the current official locate point; Sequim Bay now lists its 60 RV-capable standard and full-hookup campsites and the Lower Loop construction closure.
-- **Private/tribal: in progress.** Four existing private records remain published and are grouped in the Clallam guide. A full operator inventory and critical-field recheck is the next county layer.
+- **Private/tribal: complete for this pass.** Quileute Oceanside, Hobuck Beach, Cape Resort, Mason's Resort, Anglers Hideaway, and 3 Rivers Resort were verified and added on 2026-09-11. Four existing private records were rechecked and corrected. Hide-Away, The Village RV, Lost Resort, Van Riper's, and Riverview remain documented as deferred until stable operator and reservation facts are available; Cycle Camp and group-only Camp David Jr. are excluded from RV trip-planning scope.
 
 ## Completion evidence
 

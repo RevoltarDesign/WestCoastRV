@@ -398,39 +398,112 @@
       "id": "clallam-private-tribal",
       "county": "Clallam",
       "operator_layer": "private_tribal",
-      "status": "in_progress",
+      "status": "complete",
       "inventory_sources": [
-        "https://www.clallamcountywa.gov/Facilities"
+        "https://makah.com/business/",
+        "https://forkswa.com/business-directory/business-category/lodging/rv-parks-campgrounds/",
+        "https://quileuteoceanside.com/277695-2/",
+        "https://hobuckbeachresort.com/rv-camping/",
+        "https://cape-resort.com/rv-tent-camping/",
+        "https://www.masonsresort.com/ways-to-stay/",
+        "https://www.anglershideaway.net/",
+        "https://forkslodging.net/3-rivers-resort/rv-and-camp-sites/"
       ],
       "candidates": [
+        {
+          "name": "Quileute Oceanside Resort RV Camping",
+          "slug": "quileute-oceanside-resort-rv-camping",
+          "decision": "included_new",
+          "reason": "Current operator pages support transient RV camping and the published utility details."
+        },
+        {
+          "name": "Hobuck Beach Resort RV Camping",
+          "slug": "hobuck-beach-resort-rv-camping",
+          "decision": "included_new",
+          "reason": "Current operator pages support transient RV camping and the published utility details."
+        },
+        {
+          "name": "Cape Resort RV Park",
+          "slug": "cape-resort-rv-park",
+          "decision": "included_new",
+          "reason": "Current operator pages support transient RV camping and the published utility details."
+        },
+        {
+          "name": "Mason's Resort Sekiu",
+          "slug": "masons-resort-sekiu",
+          "decision": "included_new",
+          "reason": "Current operator pages support transient RV camping and the published utility details."
+        },
+        {
+          "name": "Anglers Hideaway RV Park",
+          "slug": "anglers-hideaway-rv-park",
+          "decision": "included_new",
+          "reason": "Current operator pages support transient RV camping and the published utility details."
+        },
+        {
+          "name": "Three Rivers Resort RV Camping",
+          "slug": "three-rivers-resort-rv-camping",
+          "decision": "included_new",
+          "reason": "Current operator pages support transient RV camping and the published utility details."
+        },
         {
           "name": "Elwha Dam RV Park",
           "slug": "elwha-dam-rv-park",
           "decision": "included_existing",
-          "reason": "Existing public record retained for the private/tribal verification queue."
+          "reason": "Current operator pages support transient RV operation; unsupported copy was corrected."
         },
         {
           "name": "Forks 101 RV Park",
           "slug": "forks-101-rv-park",
           "decision": "included_existing",
-          "reason": "Existing public record retained for the private/tribal verification queue."
+          "reason": "Current operator pages support transient RV operation; unsupported copy was corrected."
         },
         {
           "name": "Crescent Beach & RV Park",
           "slug": "crescent-beach-rv-park",
           "decision": "included_existing",
-          "reason": "Existing public record retained for the private/tribal verification queue."
+          "reason": "Current operator pages support transient RV operation; unsupported copy was corrected."
         },
         {
           "name": "Gilgal Oasis RV Park",
           "slug": "gilgal-oasis-rv-park",
           "decision": "included_existing",
-          "reason": "Existing public record retained for the private/tribal verification queue."
+          "reason": "Current operator pages support transient RV operation; unsupported copy was corrected."
         },
         {
-          "name": "Private and tribal operator inventory",
-          "decision": "research",
-          "reason": "Full operator-by-operator inventory is the next Clallam layer."
+          "name": "Hide-Away RV Park",
+          "decision": "deferred",
+          "reason": "The Makah visitor inventory confirms current operation, but the former operator domain now redirects to unrelated gambling content and no direct reservation source is available."
+        },
+        {
+          "name": "The Village RV",
+          "decision": "deferred",
+          "reason": "The Makah visitor inventory lists 26 full-hookup sites, but no stable operator or reservation page was found."
+        },
+        {
+          "name": "Lost Resort at Lake Ozette",
+          "decision": "deferred",
+          "reason": "Current local inventory supports camping, but present RV count, rig limit, utilities, and stable operator details could not all be verified."
+        },
+        {
+          "name": "Van Riper\u2019s Resort",
+          "decision": "deferred",
+          "reason": "Local inventories identify RV camping, but no current stable operator page was available for a source-backed record."
+        },
+        {
+          "name": "Riverview RV Park",
+          "decision": "deferred",
+          "reason": "A current Forks inventory names the property, but the available detailed source is older and the current reservation channel was not verified."
+        },
+        {
+          "name": "Cycle Camp",
+          "decision": "excluded",
+          "reason": "The operator targets bicycle and motorcycle tent campers rather than RV travelers."
+        },
+        {
+          "name": "Camp David Jr.",
+          "decision": "excluded",
+          "reason": "County facility is group-use only and not an individual transient RV campground."
         }
       ]
     }

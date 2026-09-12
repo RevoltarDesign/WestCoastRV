@@ -7810,6 +7810,536 @@
           "evidence": "Current park page publishes the locate point."
         }
       ]
+    },
+    {
+      "slug": "quileute-oceanside-resort-rv-camping",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports operating status.",
+      "proposed_value": "current transient RV camping",
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://quileuteoceanside.com/277695-2/",
+          "publisher": "Quileute Oceanside Resort",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms ocean and river RV sites with full hookups."
+        },
+        {
+          "url": "https://quileuteoceanside.com/",
+          "publisher": "Quileute Oceanside Resort",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms tribal ownership, location, and current booking."
+        }
+      ]
+    },
+    {
+      "slug": "quileute-oceanside-resort-rv-camping",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports rv access.",
+      "proposed_value": true,
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://quileuteoceanside.com/277695-2/",
+          "publisher": "Quileute Oceanside Resort",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms ocean and river RV sites with full hookups."
+        },
+        {
+          "url": "https://quileuteoceanside.com/",
+          "publisher": "Quileute Oceanside Resort",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms tribal ownership, location, and current booking."
+        }
+      ]
+    },
+    {
+      "slug": "quileute-oceanside-resort-rv-camping",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports reservation method.",
+      "proposed_value": "Reserve current ocean or river RV availability online",
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://quileuteoceanside.com/277695-2/",
+          "publisher": "Quileute Oceanside Resort",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms ocean and river RV sites with full hookups."
+        },
+        {
+          "url": "https://quileuteoceanside.com/",
+          "publisher": "Quileute Oceanside Resort",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms tribal ownership, location, and current booking."
+        }
+      ]
+    },
+    {
+      "slug": "quileute-oceanside-resort-rv-camping",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports hookups.",
+      "proposed_value": 3,
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://quileuteoceanside.com/277695-2/",
+          "publisher": "Quileute Oceanside Resort",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms ocean and river RV sites with full hookups."
+        },
+        {
+          "url": "https://quileuteoceanside.com/",
+          "publisher": "Quileute Oceanside Resort",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms tribal ownership, location, and current booking."
+        }
+      ]
+    },
+    {
+      "slug": "hobuck-beach-resort-rv-camping",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports operating status.",
+      "proposed_value": "current transient RV camping",
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://hobuckbeachresort.com/rv-camping/",
+          "publisher": "Hobuck Beach Resort / Makah Tribe",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms 10 first-come RV sites, full hookups, pull-through access, and showers."
+        }
+      ]
+    },
+    {
+      "slug": "hobuck-beach-resort-rv-camping",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports rv access.",
+      "proposed_value": true,
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://hobuckbeachresort.com/rv-camping/",
+          "publisher": "Hobuck Beach Resort / Makah Tribe",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms 10 first-come RV sites, full hookups, pull-through access, and showers."
+        }
+      ]
+    },
+    {
+      "slug": "hobuck-beach-resort-rv-camping",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports reservation method.",
+      "proposed_value": "Ten full-hookup RV sites are first-come; call the office for current instructions",
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://hobuckbeachresort.com/rv-camping/",
+          "publisher": "Hobuck Beach Resort / Makah Tribe",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms 10 first-come RV sites, full hookups, pull-through access, and showers."
+        }
+      ]
+    },
+    {
+      "slug": "hobuck-beach-resort-rv-camping",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports hookups.",
+      "proposed_value": 3,
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://hobuckbeachresort.com/rv-camping/",
+          "publisher": "Hobuck Beach Resort / Makah Tribe",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms 10 first-come RV sites, full hookups, pull-through access, and showers."
+        }
+      ]
+    },
+    {
+      "slug": "cape-resort-rv-park",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports operating status.",
+      "proposed_value": "current transient RV camping",
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://cape-resort.com/rv-tent-camping/",
+          "publisher": "Cape Resort / Makah Tribe",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms 39 RV sites, utilities, facilities, and RV capacity over 31 feet."
+        }
+      ]
+    },
+    {
+      "slug": "cape-resort-rv-park",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports rv access.",
+      "proposed_value": true,
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://cape-resort.com/rv-tent-camping/",
+          "publisher": "Cape Resort / Makah Tribe",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms 39 RV sites, utilities, facilities, and RV capacity over 31 feet."
+        }
+      ]
+    },
+    {
+      "slug": "cape-resort-rv-park",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports reservation method.",
+      "proposed_value": "Campsites are first-come; call the resort for current RV instructions",
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://cape-resort.com/rv-tent-camping/",
+          "publisher": "Cape Resort / Makah Tribe",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms 39 RV sites, utilities, facilities, and RV capacity over 31 feet."
+        }
+      ]
+    },
+    {
+      "slug": "cape-resort-rv-park",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports hookups.",
+      "proposed_value": 3,
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://cape-resort.com/rv-tent-camping/",
+          "publisher": "Cape Resort / Makah Tribe",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms 39 RV sites, utilities, facilities, and RV capacity over 31 feet."
+        }
+      ]
+    },
+    {
+      "slug": "masons-resort-sekiu",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports operating status.",
+      "proposed_value": "current transient RV camping",
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://www.masonsresort.com/ways-to-stay/",
+          "publisher": "Mason's Resort",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms current first-come full-hookup, partial-hookup, and dry RV camping."
+        }
+      ]
+    },
+    {
+      "slug": "masons-resort-sekiu",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports rv access.",
+      "proposed_value": true,
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://www.masonsresort.com/ways-to-stay/",
+          "publisher": "Mason's Resort",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms current first-come full-hookup, partial-hookup, and dry RV camping."
+        }
+      ]
+    },
+    {
+      "slug": "masons-resort-sekiu",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports reservation method.",
+      "proposed_value": "RV and camping sites are first-come, first-served",
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://www.masonsresort.com/ways-to-stay/",
+          "publisher": "Mason's Resort",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms current first-come full-hookup, partial-hookup, and dry RV camping."
+        }
+      ]
+    },
+    {
+      "slug": "masons-resort-sekiu",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports hookups.",
+      "proposed_value": 3,
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://www.masonsresort.com/ways-to-stay/",
+          "publisher": "Mason's Resort",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms current first-come full-hookup, partial-hookup, and dry RV camping."
+        }
+      ]
+    },
+    {
+      "slug": "anglers-hideaway-rv-park",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports operating status.",
+      "proposed_value": "current transient RV camping",
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://www.anglershideaway.net/",
+          "publisher": "Anglers Hideaway",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms 30 full-hookup sites, 38-foot maximum, facilities, and reservations."
+        }
+      ]
+    },
+    {
+      "slug": "anglers-hideaway-rv-park",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports rv access.",
+      "proposed_value": true,
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://www.anglershideaway.net/",
+          "publisher": "Anglers Hideaway",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms 30 full-hookup sites, 38-foot maximum, facilities, and reservations."
+        }
+      ]
+    },
+    {
+      "slug": "anglers-hideaway-rv-park",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports reservation method.",
+      "proposed_value": "Reserve full-hookup RV sites online; two-week cancellation deadline",
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://www.anglershideaway.net/",
+          "publisher": "Anglers Hideaway",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms 30 full-hookup sites, 38-foot maximum, facilities, and reservations."
+        }
+      ]
+    },
+    {
+      "slug": "anglers-hideaway-rv-park",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports max rv length.",
+      "proposed_value": 38,
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://www.anglershideaway.net/",
+          "publisher": "Anglers Hideaway",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms 30 full-hookup sites, 38-foot maximum, facilities, and reservations."
+        }
+      ]
+    },
+    {
+      "slug": "anglers-hideaway-rv-park",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports hookups.",
+      "proposed_value": 3,
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://www.anglershideaway.net/",
+          "publisher": "Anglers Hideaway",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms 30 full-hookup sites, 38-foot maximum, facilities, and reservations."
+        }
+      ]
+    },
+    {
+      "slug": "three-rivers-resort-rv-camping",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports operating status.",
+      "proposed_value": "current transient RV camping",
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://forkslodging.net/3-rivers-resort/rv-and-camp-sites/",
+          "publisher": "3 Rivers Resort",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms current full- and partial-hookup RV sites, facilities, and booking."
+        }
+      ]
+    },
+    {
+      "slug": "three-rivers-resort-rv-camping",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports rv access.",
+      "proposed_value": true,
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://forkslodging.net/3-rivers-resort/rv-and-camp-sites/",
+          "publisher": "3 Rivers Resort",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms current full- and partial-hookup RV sites, facilities, and booking."
+        }
+      ]
+    },
+    {
+      "slug": "three-rivers-resort-rv-camping",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports reservation method.",
+      "proposed_value": "Check current full- or partial-hookup RV availability online",
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://forkslodging.net/3-rivers-resort/rv-and-camp-sites/",
+          "publisher": "3 Rivers Resort",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms current full- and partial-hookup RV sites, facilities, and booking."
+        }
+      ]
+    },
+    {
+      "slug": "three-rivers-resort-rv-camping",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-11",
+      "summary": "Current operator review supports hookups.",
+      "proposed_value": 3,
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://forkslodging.net/3-rivers-resort/rv-and-camp-sites/",
+          "publisher": "3 Rivers Resort",
+          "source_family": "clallam-private-review",
+          "evidence": "Operator confirms current full- and partial-hookup RV sites, facilities, and booking."
+        }
+      ]
+    },
+    {
+      "slug": "elwha-dam-rv-park",
+      "field": "content_scrub",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-11",
+      "summary": "conflicting site totals removed; operator GPS point adopted; unsupported river-fishing claim removed.",
+      "proposed_value": [
+        "conflicting site totals removed",
+        "operator GPS point adopted",
+        "unsupported river-fishing claim removed"
+      ],
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://elwharvpark.com/faq/",
+          "publisher": "Elwha Dam RV Park",
+          "source_family": "clallam-private-review",
+          "evidence": "Current operator page supports the corrected record."
+        }
+      ]
+    },
+    {
+      "slug": "forks-101-rv-park",
+      "field": "content_scrub",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-11",
+      "summary": "unsupported 75-foot limit removed; incorrect seasonal closure removed.",
+      "proposed_value": [
+        "unsupported 75-foot limit removed",
+        "incorrect seasonal closure removed"
+      ],
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://www.forksrvpark.com/",
+          "publisher": "Forks 101 RV Park",
+          "source_family": "clallam-private-review",
+          "evidence": "Current operator page supports the corrected record."
+        }
+      ]
+    },
+    {
+      "slug": "crescent-beach-rv-park",
+      "field": "content_scrub",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-11",
+      "summary": "unsupported site count removed; unsupported park-wide length removed.",
+      "proposed_value": [
+        "unsupported site count removed",
+        "unsupported park-wide length removed"
+      ],
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://www.crescentbeachrv.com/rvpark",
+          "publisher": "Crescent Beach & RV Park",
+          "source_family": "clallam-private-review",
+          "evidence": "Current operator page supports the corrected record."
+        }
+      ]
+    },
+    {
+      "slug": "gilgal-oasis-rv-park",
+      "field": "content_scrub",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-11",
+      "summary": "incorrect within-one-mile shopping claim corrected; unsupported park-wide length removed.",
+      "proposed_value": [
+        "incorrect within-one-mile shopping claim corrected",
+        "unsupported park-wide length removed"
+      ],
+      "source_family": "clallam-private-review",
+      "sources": [
+        {
+          "url": "https://www.gilgaloasisrvpark.com/amenities/",
+          "publisher": "Gilgal Oasis RV Park",
+          "source_family": "clallam-private-review",
+          "evidence": "Current operator page supports the corrected record."
+        }
+      ]
     }
   ]
 }

@@ -50,6 +50,7 @@ PARK_BADGE = {
     'County Campground':  'County Park',
     'City Campground':    'Municipal RV Park',
     'Private Campground': 'Private',
+    'Tribal Campground':  'Tribal Campground',
 }
 PARK_FILTER = {
     'National Forest': 'forest',
@@ -59,6 +60,7 @@ PARK_FILTER = {
     'County Campground':  'county',
     'City Campground':    'city',
     'Private Campground': 'private',
+    'Tribal Campground':  'tribal',
 }
 PASS_META = {
     'National Forest': 'Check the operator for camping and day-use fees',
@@ -68,6 +70,7 @@ PASS_META = {
     'County Campground':  'Check park website for day-use fees',
     'City Campground':    'Check the operator for current rates and parking rules',
     'Private Campground': 'No pass required — rates vary by season',
+    'Tribal Campground':  'Check the tribal operator for permits, current rates, and access rules',
 }
 
 ACTIVITY_DEFS = [
@@ -333,11 +336,14 @@ def build_regional_guide(row):
         'bogachiel-state-park', 'sequim-bay-state-park', 'dungeness-recreation-area',
         'salt-creek-recreation-area', 'elwha-dam-rv-park', 'forks-101-rv-park',
         'crescent-beach-rv-park', 'gilgal-oasis-rv-park',
+        'quileute-oceanside-resort-rv-camping', 'hobuck-beach-resort-rv-camping',
+        'cape-resort-rv-park', 'masons-resort-sekiu', 'anglers-hideaway-rv-park',
+        'three-rivers-resort-rv-camping',
     }
     if row.get('Slug') in clallam:
         return ('<a class="regional-guide-link" href="/field-notes/clallam-county-rv-camping">'
                 '<span>Clallam County RV camping guide</span>'
-                '<small>Compare 17 campground records from Sequim to Lake Ozette</small>'
+                '<small>Compare 23 campground records from Sequim to Neah Bay</small>'
                 '</a>')
     jefferson = {
         'dosewallips-state-park', 'fort-flagler-historical-state-park',
