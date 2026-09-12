@@ -8340,6 +8340,843 @@
           "evidence": "Current operator page supports the corrected record."
         }
       ]
+    },
+    {
+      "slug": "river-meadows-county-park",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports operating status.",
+      "proposed_value": "current or seasonally current",
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://www.snohomishcountywa.gov/Facilities/Facility/Details/River-Meadows-Park-46",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "river-meadows-county-park",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports rv access.",
+      "proposed_value": true,
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://www.snohomishcountywa.gov/Facilities/Facility/Details/River-Meadows-Park-46",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "river-meadows-county-park",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports reservation method.",
+      "proposed_value": "Reserve at least 3 days before arrival; weekend reservations require Friday and Saturday",
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://www.snohomishcountywa.gov/Facilities/Facility/Details/River-Meadows-Park-46",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "river-meadows-county-park",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports hookups.",
+      "proposed_value": 0,
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://www.snohomishcountywa.gov/Facilities/Facility/Details/River-Meadows-Park-46",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "river-meadows-county-park",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material does not publish one campground-wide maximum; the public record intentionally directs users to site-specific dimensions.",
+      "proposed_value": null,
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://www.snohomishcountywa.gov/Facilities/Facility/Details/River-Meadows-Park-46",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Operator material supports the published maximum or the explicit decision to leave it unclaimed."
+        }
+      ]
+    },
+    {
+      "slug": "wenberg-county-park",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports operating status.",
+      "proposed_value": "current or seasonally current",
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://www.snohomishcountywa.gov/facilities/facility/details/Wenberg-County-Park-62",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "wenberg-county-park",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports rv access.",
+      "proposed_value": true,
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://www.snohomishcountywa.gov/facilities/facility/details/Wenberg-County-Park-62",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "wenberg-county-park",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports reservation method.",
+      "proposed_value": "Reserve at least 3 days before arrival; winter camping is drop-in with reduced utilities",
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://www.snohomishcountywa.gov/facilities/facility/details/Wenberg-County-Park-62",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "wenberg-county-park",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports hookups.",
+      "proposed_value": 3,
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://www.snohomishcountywa.gov/facilities/facility/details/Wenberg-County-Park-62",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "wenberg-county-park",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material does not publish one campground-wide maximum; the public record intentionally directs users to site-specific dimensions.",
+      "proposed_value": null,
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://www.snohomishcountywa.gov/facilities/facility/details/Wenberg-County-Park-62",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Operator material supports the published maximum or the explicit decision to leave it unclaimed."
+        }
+      ]
+    },
+    {
+      "slug": "kayak-point-regional-park",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports operating status.",
+      "proposed_value": "current or seasonally current",
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://snohomishcountywa.gov/facilities/facility/details/kayakpointregionalcountypark-51",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "kayak-point-regional-park",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports rv access.",
+      "proposed_value": true,
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://snohomishcountywa.gov/facilities/facility/details/kayakpointregionalcountypark-51",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "kayak-point-regional-park",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports reservation method.",
+      "proposed_value": "Reserve at least 3 days before arrival; weekend reservations require Friday and Saturday",
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://snohomishcountywa.gov/facilities/facility/details/kayakpointregionalcountypark-51",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "kayak-point-regional-park",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports hookups.",
+      "proposed_value": 2,
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://snohomishcountywa.gov/facilities/facility/details/kayakpointregionalcountypark-51",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "kayak-point-regional-park",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material does not publish one campground-wide maximum; the public record intentionally directs users to site-specific dimensions.",
+      "proposed_value": null,
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://snohomishcountywa.gov/facilities/facility/details/kayakpointregionalcountypark-51",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Operator material supports the published maximum or the explicit decision to leave it unclaimed."
+        }
+      ]
+    },
+    {
+      "slug": "flowing-lake-county-park",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports operating status.",
+      "proposed_value": "current or seasonally current",
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://www.snohomishcountywa.gov/Facilities/Facility/Details/Flowing-Lake-Park-Campground-at-Leckies--31",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "flowing-lake-county-park",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports rv access.",
+      "proposed_value": true,
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://www.snohomishcountywa.gov/Facilities/Facility/Details/Flowing-Lake-Park-Campground-at-Leckies--31",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "flowing-lake-county-park",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports reservation method.",
+      "proposed_value": "Reserve at least 3 days before arrival; weekend reservations require Friday and Saturday",
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://www.snohomishcountywa.gov/Facilities/Facility/Details/Flowing-Lake-Park-Campground-at-Leckies--31",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "flowing-lake-county-park",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports hookups.",
+      "proposed_value": 2,
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://www.snohomishcountywa.gov/Facilities/Facility/Details/Flowing-Lake-Park-Campground-at-Leckies--31",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "flowing-lake-county-park",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material does not publish one campground-wide maximum; the public record intentionally directs users to site-specific dimensions.",
+      "proposed_value": null,
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://www.snohomishcountywa.gov/Facilities/Facility/Details/Flowing-Lake-Park-Campground-at-Leckies--31",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Operator material supports the published maximum or the explicit decision to leave it unclaimed."
+        }
+      ]
+    },
+    {
+      "slug": "whitehorse-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports operating status.",
+      "proposed_value": "current or seasonally current",
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://www.snohomishcountywa.gov/facilities/facility/details/Whitehorse-Campground-190",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "whitehorse-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports rv access.",
+      "proposed_value": true,
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://www.snohomishcountywa.gov/facilities/facility/details/Whitehorse-Campground-190",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "whitehorse-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports reservation method.",
+      "proposed_value": "Reserve at least 3 days before arrival; campground closes during winterization",
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://www.snohomishcountywa.gov/facilities/facility/details/Whitehorse-Campground-190",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "whitehorse-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports hookups.",
+      "proposed_value": 3,
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://www.snohomishcountywa.gov/facilities/facility/details/Whitehorse-Campground-190",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "whitehorse-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material does not publish one campground-wide maximum; the public record intentionally directs users to site-specific dimensions.",
+      "proposed_value": null,
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://www.snohomishcountywa.gov/facilities/facility/details/Whitehorse-Campground-190",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Operator material supports the published maximum or the explicit decision to leave it unclaimed."
+        }
+      ]
+    },
+    {
+      "slug": "squire-creek-park-campground",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports operating status.",
+      "proposed_value": "current or seasonally current",
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://snohomishcountywa.gov/facilities/facility/details/Squire-Creek-Park-Campground-54",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "squire-creek-park-campground",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports rv access.",
+      "proposed_value": true,
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://snohomishcountywa.gov/facilities/facility/details/Squire-Creek-Park-Campground-54",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "squire-creek-park-campground",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports reservation method.",
+      "proposed_value": "Reserve at least 3 days before arrival; weekend reservations require Friday and Saturday",
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://snohomishcountywa.gov/facilities/facility/details/Squire-Creek-Park-Campground-54",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "squire-creek-park-campground",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports hookups.",
+      "proposed_value": 0,
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://snohomishcountywa.gov/facilities/facility/details/Squire-Creek-Park-Campground-54",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "squire-creek-park-campground",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material does not publish one campground-wide maximum; the public record intentionally directs users to site-specific dimensions.",
+      "proposed_value": null,
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://snohomishcountywa.gov/facilities/facility/details/Squire-Creek-Park-Campground-54",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Operator material supports the published maximum or the explicit decision to leave it unclaimed."
+        }
+      ]
+    },
+    {
+      "slug": "evergreen-state-fairgrounds-rv-2",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports operating status.",
+      "proposed_value": "current or seasonally current",
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://evergreenfair.org/203/Plan-Your-Stay",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "evergreen-state-fairgrounds-rv-2",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports rv access.",
+      "proposed_value": true,
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://evergreenfair.org/203/Plan-Your-Stay",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "evergreen-state-fairgrounds-rv-2",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports reservation method.",
+      "proposed_value": "Seasonal public RV stays April 1 through October 31, excluding fair dates; maximum 7 nights",
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://evergreenfair.org/203/Plan-Your-Stay",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "evergreen-state-fairgrounds-rv-2",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current county material supports hookups.",
+      "proposed_value": 2,
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://evergreenfair.org/203/Plan-Your-Stay",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator facility details and campground inventory support the published value."
+        },
+        {
+          "url": "https://www.snohomishcountywa.gov/1082/Campgrounds",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "County campground inventory supports system-wide utilities, seasons, and policies."
+        }
+      ]
+    },
+    {
+      "slug": "evergreen-state-fairgrounds-rv-2",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator page publishes the campground-wide maximum.",
+      "proposed_value": 42,
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://evergreenfair.org/203/Plan-Your-Stay",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Operator material supports the published maximum or the explicit decision to leave it unclaimed."
+        }
+      ]
+    },
+    {
+      "slug": "flowing-lake-county-park",
+      "field": "content_scrub",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "RV count corrected to 39 confirmed utility sites; 97-acre lake claim corrected to 132.5 acres; unsupported universal 35-foot limit narrowed to fifth-wheels; unsupported rental claim removed; unsupported naturally reproducing trout claim removed.",
+      "proposed_value": [
+        "RV count corrected to 39 confirmed utility sites",
+        "97-acre lake claim corrected to 132.5 acres",
+        "unsupported universal 35-foot limit narrowed to fifth-wheels",
+        "unsupported rental claim removed",
+        "unsupported naturally reproducing trout claim removed"
+      ],
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://www.snohomishcountywa.gov/Facilities/Facility/Details/Flowing-Lake-Park-Campground-at-Leckies--31",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator page supports the corrected record."
+        },
+        {
+          "url": "https://snohomishcountywa.gov/DocumentCenter/View/107346/Flowing-Lake-Park--Campground-Map-2025",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current campground map supports the utility-site count and preserves the conflict with the facility-page total."
+        }
+      ]
+    },
+    {
+      "slug": "kayak-point-regional-park",
+      "field": "content_scrub",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "unsupported universal 35-foot limit removed; pier corrected from 700 to 300 feet; unsupported water-view claim removed; unsupported nesting and daily wildlife claims removed; current construction and playground closure added.",
+      "proposed_value": [
+        "unsupported universal 35-foot limit removed",
+        "pier corrected from 700 to 300 feet",
+        "unsupported water-view claim removed",
+        "unsupported nesting and daily wildlife claims removed",
+        "current construction and playground closure added"
+      ],
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://snohomishcountywa.gov/facilities/facility/details/kayakpointregionalcountypark-51",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator page supports the corrected record."
+        }
+      ]
+    },
+    {
+      "slug": "wenberg-county-park",
+      "field": "content_scrub",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "shore corrected from north to east; unsupported universal 45-foot limit removed; unsupported warm-water and comfortable-swimming claims removed; unnecessary Costco proximity claim removed.",
+      "proposed_value": [
+        "shore corrected from north to east",
+        "unsupported universal 45-foot limit removed",
+        "unsupported warm-water and comfortable-swimming claims removed",
+        "unnecessary Costco proximity claim removed"
+      ],
+      "source_family": "snohomish-county-review",
+      "sources": [
+        {
+          "url": "https://www.snohomishcountywa.gov/facilities/facility/details/Wenberg-County-Park-62",
+          "publisher": "Snohomish County",
+          "source_family": "snohomish-county-review",
+          "evidence": "Current operator page supports the corrected record."
+        }
+      ]
     }
   ]
 }

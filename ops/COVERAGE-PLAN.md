@@ -36,6 +36,10 @@ Work county by county, finishing one operator layer at a time: state parks, fede
 - **State parks: complete for this pass.** Bogachiel and Sequim Bay were rechecked. Bogachiel now uses the current official locate point; Sequim Bay now lists its 60 RV-capable standard and full-hookup campsites and the Lower Loop construction closure.
 - **Private/tribal: complete for this pass.** Quileute Oceanside, Hobuck Beach, Cape Resort, Mason's Resort, Anglers Hideaway, and 3 Rivers Resort were verified and added on 2026-09-11. Four existing private records were rechecked and corrected. Hide-Away, The Village RV, Lost Resort, Van Riper's, and Riverview remain documented as deferred until stable operator and reservation facts are available; Cycle Camp and group-only Camp David Jr. are excluded from RV trip-planning scope.
 
+## Snohomish County
+
+- **County-operated campgrounds: complete for this pass.** Flowing Lake, Kayak Point, and Wenberg were rechecked on 2026-09-12. River Meadows, Squire Creek, Whitehorse, and the general-public Evergreen Fairgrounds RV-2 area were verified and added. Lake Roesiger Group Camp and event-only RV-1 are documented exclusions. The pass corrected 14 unique factual issues in the three existing records, added exact named destinations and towing-buffered Seattle routes for all seven, and published a source-backed county comparison guide.
+
 ## Completion evidence
 
 The machine-readable inventory is `coverage-inventory.json`. `trust_workflow.py check` rejects duplicate candidates, missing decisions, malformed sources, unsupported published critical facts, and sections marked complete while candidates remain undecided.

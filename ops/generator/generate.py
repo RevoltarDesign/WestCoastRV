@@ -329,6 +329,17 @@ def nearby_reason(current, candidate):
 
 
 def build_regional_guide(row):
+    snohomish = {
+        'flowing-lake-county-park', 'kayak-point-regional-park',
+        'wenberg-county-park', 'river-meadows-county-park',
+        'squire-creek-park-campground', 'whitehorse-campground',
+        'evergreen-state-fairgrounds-rv-2',
+    }
+    if row.get('Slug') in snohomish:
+        return ('<a class="regional-guide-link" href="/field-notes/snohomish-county-rv-camping">'
+                '<span>Snohomish County RV camping guide</span>'
+                '<small>Compare 7 county-operated choices from Puget Sound to Darrington</small>'
+                '</a>')
     clallam = {
         'fairholme-campground', 'heart-o-the-hills-campground', 'mora-campground',
         'ozette-campground', 'sol-duc-campground', 'log-cabin-resort-rv-campground',

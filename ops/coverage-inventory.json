@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-09-11",
+  "updated_on": "2026-09-12",
   "sections": [
     {
       "id": "jefferson-state-parks",
@@ -504,6 +504,76 @@
           "name": "Camp David Jr.",
           "decision": "excluded",
           "reason": "County facility is group-use only and not an individual transient RV campground."
+        }
+      ]
+    },
+    {
+      "id": "snohomish-county",
+      "name": "Snohomish County-operated campgrounds",
+      "status": "complete",
+      "inventory_sources": [
+        "https://www.snohomishcountywa.gov/1082/Campgrounds",
+        "https://www.snohomishcountywa.gov/Facilities/Facility/Details/Flowing-Lake-Park-Campground-at-Leckies--31",
+        "https://snohomishcountywa.gov/DocumentCenter/View/107346/Flowing-Lake-Park--Campground-Map-2025",
+        "https://snohomishcountywa.gov/facilities/facility/details/kayakpointregionalcountypark-51",
+        "https://www.snohomishcountywa.gov/facilities/facility/details/Wenberg-County-Park-62",
+        "https://www.snohomishcountywa.gov/Facilities/Facility/Details/River-Meadows-Park-46",
+        "https://snohomishcountywa.gov/facilities/facility/details/Squire-Creek-Park-Campground-54",
+        "https://www.snohomishcountywa.gov/facilities/facility/details/Whitehorse-Campground-190",
+        "https://evergreenfair.org/203/Plan-Your-Stay"
+      ],
+      "candidates": [
+        {
+          "name": "Flowing Lake County Park",
+          "slug": "flowing-lake-county-park",
+          "decision": "included_existing",
+          "reason": "Current county pages support RV camping; stale or unsupported facts were corrected."
+        },
+        {
+          "name": "Kayak Point Regional Park",
+          "slug": "kayak-point-regional-park",
+          "decision": "included_existing",
+          "reason": "Current county pages support RV camping; stale or unsupported facts were corrected."
+        },
+        {
+          "name": "Wenberg County Park",
+          "slug": "wenberg-county-park",
+          "decision": "included_existing",
+          "reason": "Current county pages support RV camping; stale or unsupported facts were corrected."
+        },
+        {
+          "name": "River Meadows County Park",
+          "slug": "river-meadows-county-park",
+          "decision": "included_new",
+          "reason": "Current county pages and maps explicitly support transient RV camping."
+        },
+        {
+          "name": "Squire Creek Park Campground",
+          "slug": "squire-creek-park-campground",
+          "decision": "included_new",
+          "reason": "Current county pages and maps explicitly support transient RV camping."
+        },
+        {
+          "name": "Whitehorse Campground",
+          "slug": "whitehorse-campground",
+          "decision": "included_new",
+          "reason": "Current county pages and maps explicitly support transient RV camping."
+        },
+        {
+          "name": "Evergreen State Fairgrounds RV-2",
+          "slug": "evergreen-state-fairgrounds-rv-2",
+          "decision": "included_new",
+          "reason": "Current county pages and maps explicitly support transient RV camping."
+        },
+        {
+          "name": "Lake Roesiger Group Camp",
+          "decision": "excluded",
+          "reason": "The county inventory identifies this as group camping rather than individual transient RV sites."
+        },
+        {
+          "name": "Evergreen State Fairgrounds RV-1",
+          "decision": "excluded",
+          "reason": "RV-1 is available only for fairgrounds events; general public RV stays use RV-2."
         }
       ]
     }

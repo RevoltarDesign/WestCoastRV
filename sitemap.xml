@@ -61,6 +61,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://westcoastrvcamping.com/field-notes/snohomish-county-rv-camping</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://westcoastrvcamping.com/campground/fairholme-campground</loc>
   </url>
   <url>
@@ -494,5 +499,17 @@
   </url>
   <url>
     <loc>https://westcoastrvcamping.com/campground/three-rivers-resort-rv-camping</loc>
+  </url>
+  <url>
+    <loc>https://westcoastrvcamping.com/campground/river-meadows-county-park</loc>
+  </url>
+  <url>
+    <loc>https://westcoastrvcamping.com/campground/squire-creek-park-campground</loc>
+  </url>
+  <url>
+    <loc>https://westcoastrvcamping.com/campground/whitehorse-campground</loc>
+  </url>
+  <url>
+    <loc>https://westcoastrvcamping.com/campground/evergreen-state-fairgrounds-rv-2</loc>
   </url>
 </urlset>
