@@ -1,0 +1,102 @@
+{
+  "reviewed_on": "2026-09-12",
+  "method": "Operator-published addresses were matched to named campground points or operator-linked map points. Routes use the public OpenStreetMap/OSRM driving baseline from central Seattle; display times round upward with a towing and Puget Sound traffic margin.",
+  "reviews": [
+    {
+      "slug": "angel-of-the-winds-rv-resort",
+      "address": "25525 Dahl Rd, Arlington, WA 98223",
+      "latitude": 48.2268,
+      "longitude": -122.2229,
+      "coordinate_source": "Operator address matched to the named campground point published by Campendium",
+      "precision": "named campground entrance; operator address cross-check",
+      "distance_miles": 49,
+      "observed_route_minutes": 63,
+      "display_minutes": 75,
+      "route_note": "OSRM all-road baseline from central Seattle; public estimate adds 12 minutes and rounds upward for towing and Puget Sound traffic."
+    },
+    {
+      "slug": "lake-pleasant-rv-park",
+      "address": "24025 Bothell Everett Hwy, Bothell, WA 98021",
+      "latitude": 47.7809226,
+      "longitude": -122.2168157,
+      "coordinate_source": "OpenStreetMap named Lake Pleasant RV Park point matched to the operator address",
+      "precision": "named campground entrance",
+      "distance_miles": 17,
+      "observed_route_minutes": 32,
+      "display_minutes": 45,
+      "route_note": "OSRM all-road baseline from central Seattle; public estimate adds 13 minutes and rounds upward for towing and Puget Sound traffic."
+    },
+    {
+      "slug": "maple-grove-rv-resort",
+      "address": "12417 Hwy 99, Everett, WA 98204",
+      "latitude": 47.8843453,
+      "longitude": -122.2600149,
+      "coordinate_source": "Operator-linked Google Maps address point",
+      "precision": "operator-linked entrance point",
+      "distance_miles": 22,
+      "observed_route_minutes": 31,
+      "display_minutes": 45,
+      "route_note": "OSRM all-road baseline from central Seattle; public estimate adds 14 minutes and rounds upward for towing and Puget Sound traffic."
+    },
+    {
+      "slug": "cascade-views-rv-resort",
+      "address": "14201 339th Ave SE, Sultan, WA 98294",
+      "latitude": 47.870739,
+      "longitude": -121.7798024,
+      "coordinate_source": "Operator-embedded Google Maps address point",
+      "precision": "operator-linked entrance point",
+      "distance_miles": 42,
+      "observed_route_minutes": 62,
+      "display_minutes": 75,
+      "route_note": "OSRM all-road baseline from central Seattle; public estimate adds 13 minutes and rounds upward for towing and US 2 traffic."
+    },
+    {
+      "slug": "thousand-trails-thunderbird",
+      "address": "26702 Ben Howard Rd, Monroe, WA 98272",
+      "latitude": 47.8451,
+      "longitude": -121.8741,
+      "coordinate_source": "Thousand Trails operator-published GPS coordinates",
+      "precision": "operator-published campground point",
+      "distance_miles": 39,
+      "observed_route_minutes": 59,
+      "display_minutes": 75,
+      "route_note": "OSRM all-road baseline from central Seattle; public estimate adds 16 minutes and rounds upward for towing and US 2 traffic."
+    },
+    {
+      "slug": "emerald-springs-rv-park",
+      "address": "16408 51st Ave NE, Arlington, WA 98223",
+      "latitude": 48.1449509,
+      "longitude": -122.1621879,
+      "coordinate_source": "OpenStreetMap named caravan point matched to the operator address and directions",
+      "precision": "named campground entrance",
+      "distance_miles": 43,
+      "observed_route_minutes": 56,
+      "display_minutes": 75,
+      "route_note": "OSRM all-road baseline from central Seattle; public estimate adds 19 minutes and rounds upward for towing and Puget Sound traffic."
+    },
+    {
+      "slug": "lake-goodwin-resort",
+      "address": "4726 Lakewood Road, Stanwood, WA 98292",
+      "latitude": 48.15465,
+      "longitude": -122.29736,
+      "coordinate_source": "OpenStreetMap named Lake Goodwin Resort point matched to the operator address",
+      "precision": "named campground entrance",
+      "distance_miles": 45,
+      "observed_route_minutes": 65,
+      "display_minutes": 75,
+      "route_note": "OSRM all-road baseline from central Seattle; public estimate adds 10 minutes and rounds upward for towing and Puget Sound traffic."
+    },
+    {
+      "slug": "lake-ki-rv-resort",
+      "address": "2904 Lakewood Road, Arlington, WA 98223",
+      "latitude": 48.1537881,
+      "longitude": -122.2716148,
+      "coordinate_source": "Operator-linked Google Maps named campground point",
+      "precision": "operator-linked campground point",
+      "distance_miles": 44,
+      "observed_route_minutes": 63,
+      "display_minutes": 75,
+      "route_note": "OSRM all-road baseline from central Seattle; public estimate adds 12 minutes and rounds upward for towing and Puget Sound traffic."
+    }
+  ]
+}

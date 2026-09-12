@@ -39,6 +39,7 @@ Work county by county, finishing one operator layer at a time: state parks, fede
 ## Snohomish County
 
 - **County-operated campgrounds: complete for this pass.** Flowing Lake, Kayak Point, and Wenberg were rechecked on 2026-09-12. River Meadows, Squire Creek, Whitehorse, and the general-public Evergreen Fairgrounds RV-2 area were verified and added. Lake Roesiger Group Camp and event-only RV-1 are documented exclusions. The pass corrected 14 unique factual issues in the three existing records, added exact named destinations and towing-buffered Seattle routes for all seven, and published a source-backed county comparison guide.
+- **Private/tribal: complete for this pass.** Angel of the Winds, Lake Pleasant, Maple Grove, Cascade Views, Thousand Trails Thunderbird, Emerald Springs, Lake Goodwin Resort, and Lake Ki were verified and added on 2026-09-12. Nine additional candidates have explicit exclusion or defer decisions. The data model now preserves an operator's unpublished hookup, restroom, or shower facts as “not confirmed” rather than converting them to “none.”
 
 ## Completion evidence
 

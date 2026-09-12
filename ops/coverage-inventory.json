@@ -576,6 +576,118 @@
           "reason": "RV-1 is available only for fairgrounds events; general public RV stays use RV-2."
         }
       ]
+    },
+    {
+      "id": "snohomish-private-tribal",
+      "name": "Snohomish private and tribal campgrounds",
+      "status": "complete",
+      "inventory_sources": [
+        "https://www.discoversnohomishcounty.com/where-to-stay/",
+        "https://www.monroewa.gov/865/FAQs",
+        "https://rvwinds.com/",
+        "https://www.lakepleasantrv.com/rates/",
+        "https://maplegrovervresort.com/our-parks-sites/",
+        "https://www.cascadesrvresort.com/",
+        "https://thousandtrails.com/washington/thunderbird-rv-camping-resort/directions",
+        "https://emeraldspringsrv.com/",
+        "https://www.lakegoodwinresort.com/rental-rates/",
+        "https://www.lakekiresort.com/"
+      ],
+      "candidates": [
+        {
+          "name": "Angel of the Winds RV Resort",
+          "slug": "angel-of-the-winds-rv-resort",
+          "decision": "included_new",
+          "reason": "Current operator material explicitly supports transient RV stays; unsupported facts remain unclaimed."
+        },
+        {
+          "name": "Lake Pleasant RV Park",
+          "slug": "lake-pleasant-rv-park",
+          "decision": "included_new",
+          "reason": "Current operator material explicitly supports transient RV stays; unsupported facts remain unclaimed."
+        },
+        {
+          "name": "Maple Grove RV Resort",
+          "slug": "maple-grove-rv-resort",
+          "decision": "included_new",
+          "reason": "Current operator material explicitly supports transient RV stays; unsupported facts remain unclaimed."
+        },
+        {
+          "name": "Cascade Views RV Resort",
+          "slug": "cascade-views-rv-resort",
+          "decision": "included_new",
+          "reason": "Current operator material explicitly supports transient RV stays; unsupported facts remain unclaimed."
+        },
+        {
+          "name": "Thousand Trails Thunderbird",
+          "slug": "thousand-trails-thunderbird",
+          "decision": "included_new",
+          "reason": "Current operator material explicitly supports transient RV stays; unsupported facts remain unclaimed."
+        },
+        {
+          "name": "Emerald Springs RV Park",
+          "slug": "emerald-springs-rv-park",
+          "decision": "included_new",
+          "reason": "Current operator material explicitly supports transient RV stays; unsupported facts remain unclaimed."
+        },
+        {
+          "name": "Lake Goodwin Resort",
+          "slug": "lake-goodwin-resort",
+          "decision": "included_new",
+          "reason": "Current operator material explicitly supports transient RV stays; unsupported facts remain unclaimed."
+        },
+        {
+          "name": "Lake Ki RV Resort",
+          "slug": "lake-ki-rv-resort",
+          "decision": "included_new",
+          "reason": "Current operator material explicitly supports transient RV stays; unsupported facts remain unclaimed."
+        },
+        {
+          "name": "Eagle Park RV Park",
+          "decision": "deferred",
+          "reason": "The City of Monroe still lists it, but no stable current operator page resolves the active site count, utilities, and transient reservation method."
+        },
+        {
+          "name": "Cedar Grove Shores RV Park",
+          "decision": "deferred",
+          "reason": "Older directories identify an RV park, but no stable current operator source supports transient booking facts."
+        },
+        {
+          "name": "Lakeside RV Park Everett",
+          "decision": "excluded",
+          "reason": "The current operator markets long-term stays and does not publish transient campground booking."
+        },
+        {
+          "name": "Gold Bar Nature Trails",
+          "decision": "excluded",
+          "reason": "This is a gated member-owned camping community rather than public transient inventory."
+        },
+        {
+          "name": "Port Susan Camping Club",
+          "decision": "excluded",
+          "reason": "This is a membership camping club rather than public transient inventory."
+        },
+        {
+          "name": "The Landing at Index",
+          "decision": "excluded",
+          "reason": "The current operator describes tent-focused access on a rough logging road and does not support conventional RV access."
+        },
+        {
+          "name": "Smokey Point Mobile Home and RV Park",
+          "decision": "excluded",
+          "reason": "Current evidence supports residential or extended-stay use rather than a public transient campground."
+        },
+        {
+          "name": "Twin Cedars RV Park",
+          "decision": "excluded",
+          "reason": "Current evidence supports residential or extended-stay use rather than a public transient campground."
+        },
+        {
+          "name": "Snohomish RV and Mobile Home Park",
+          "decision": "excluded",
+          "reason": "Current evidence supports residential or extended-stay use rather than a public transient campground."
+        }
+      ]
     }
   ]
 }

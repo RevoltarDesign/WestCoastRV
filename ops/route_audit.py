@@ -21,7 +21,8 @@ def main():
             errors.append(f"{row['Slug']}: inconsistent route origin")
         if int(row["Drive Time Minutes"]) < int(row["Drive route minutes"]):
             errors.append(f"{row['Slug']}: public estimate is lower than observed route")
-        if not row["Drive time source"].startswith("https://www.google.com/maps/dir/"):
+        supported_sources = ("https://www.google.com/maps/dir/", "https://router.project-osrm.org/route/v1/driving/")
+        if not row["Drive time source"].startswith(supported_sources):
             errors.append(f"{row['Slug']}: unsupported route source")
         try:
             date.fromisoformat(row["Drive time checked"])

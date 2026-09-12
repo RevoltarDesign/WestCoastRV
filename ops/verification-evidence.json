@@ -9177,6 +9177,836 @@
           "evidence": "Current operator page supports the corrected record."
         }
       ]
+    },
+    {
+      "slug": "emerald-springs-rv-park",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports operating status.",
+      "proposed_value": "current",
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://emeraldspringsrv.com/",
+          "publisher": "Emerald Springs RV Park",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms nightly and weekly stays, full hookups, laundry, and no numeric RV limit."
+        },
+        {
+          "url": "https://emeraldspringsrv.com/logistics",
+          "publisher": "Emerald Springs RV Park",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes the address and turn-by-turn arrival directions."
+        }
+      ]
+    },
+    {
+      "slug": "emerald-springs-rv-park",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports rv access.",
+      "proposed_value": true,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://emeraldspringsrv.com/",
+          "publisher": "Emerald Springs RV Park",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms nightly and weekly stays, full hookups, laundry, and no numeric RV limit."
+        },
+        {
+          "url": "https://emeraldspringsrv.com/logistics",
+          "publisher": "Emerald Springs RV Park",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes the address and turn-by-turn arrival directions."
+        }
+      ]
+    },
+    {
+      "slug": "emerald-springs-rv-park",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports reservation method.",
+      "proposed_value": "Call for current nightly, weekly, or extended-stay availability",
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://emeraldspringsrv.com/",
+          "publisher": "Emerald Springs RV Park",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms nightly and weekly stays, full hookups, laundry, and no numeric RV limit."
+        },
+        {
+          "url": "https://emeraldspringsrv.com/logistics",
+          "publisher": "Emerald Springs RV Park",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes the address and turn-by-turn arrival directions."
+        }
+      ]
+    },
+    {
+      "slug": "emerald-springs-rv-park",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports hookups.",
+      "proposed_value": 3,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://emeraldspringsrv.com/",
+          "publisher": "Emerald Springs RV Park",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms nightly and weekly stays, full hookups, laundry, and no numeric RV limit."
+        },
+        {
+          "url": "https://emeraldspringsrv.com/logistics",
+          "publisher": "Emerald Springs RV Park",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes the address and turn-by-turn arrival directions."
+        }
+      ]
+    },
+    {
+      "slug": "emerald-springs-rv-park",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material does not publish max rv length; the public record intentionally labels it unconfirmed.",
+      "proposed_value": null,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://emeraldspringsrv.com/",
+          "publisher": "Emerald Springs RV Park",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms nightly and weekly stays, full hookups, laundry, and no numeric RV limit."
+        },
+        {
+          "url": "https://emeraldspringsrv.com/logistics",
+          "publisher": "Emerald Springs RV Park",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes the address and turn-by-turn arrival directions."
+        }
+      ]
+    },
+    {
+      "slug": "lake-ki-rv-resort",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports operating status.",
+      "proposed_value": "current",
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://www.lakekiresort.com/",
+          "publisher": "Lake Ki RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms daily online booking, full hookups, address, lake recreation, and amenities."
+        }
+      ]
+    },
+    {
+      "slug": "lake-ki-rv-resort",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports rv access.",
+      "proposed_value": true,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://www.lakekiresort.com/",
+          "publisher": "Lake Ki RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms daily online booking, full hookups, address, lake recreation, and amenities."
+        }
+      ]
+    },
+    {
+      "slug": "lake-ki-rv-resort",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports reservation method.",
+      "proposed_value": "Book daily stays online up to 10 days; monthly sites use a separate application",
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://www.lakekiresort.com/",
+          "publisher": "Lake Ki RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms daily online booking, full hookups, address, lake recreation, and amenities."
+        }
+      ]
+    },
+    {
+      "slug": "lake-ki-rv-resort",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports hookups.",
+      "proposed_value": 3,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://www.lakekiresort.com/",
+          "publisher": "Lake Ki RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms daily online booking, full hookups, address, lake recreation, and amenities."
+        }
+      ]
+    },
+    {
+      "slug": "lake-ki-rv-resort",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material does not publish max rv length; the public record intentionally labels it unconfirmed.",
+      "proposed_value": null,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://www.lakekiresort.com/",
+          "publisher": "Lake Ki RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms daily online booking, full hookups, address, lake recreation, and amenities."
+        }
+      ]
+    },
+    {
+      "slug": "angel-of-the-winds-rv-resort",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports operating status.",
+      "proposed_value": "current",
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://rvwinds.com/",
+          "publisher": "Angel of the Winds RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms tribal resort identity, address, transient operation, and amenities."
+        },
+        {
+          "url": "https://rvwinds.com/home/sites-yurts/",
+          "publisher": "Angel of the Winds RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes 178 spaces, site layouts, pad lengths, and full utility details."
+        }
+      ]
+    },
+    {
+      "slug": "angel-of-the-winds-rv-resort",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports rv access.",
+      "proposed_value": true,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://rvwinds.com/",
+          "publisher": "Angel of the Winds RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms tribal resort identity, address, transient operation, and amenities."
+        },
+        {
+          "url": "https://rvwinds.com/home/sites-yurts/",
+          "publisher": "Angel of the Winds RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes 178 spaces, site layouts, pad lengths, and full utility details."
+        }
+      ]
+    },
+    {
+      "slug": "angel-of-the-winds-rv-resort",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports reservation method.",
+      "proposed_value": "Book current RV-site availability online; maximum stay is 14 days",
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://rvwinds.com/",
+          "publisher": "Angel of the Winds RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms tribal resort identity, address, transient operation, and amenities."
+        },
+        {
+          "url": "https://rvwinds.com/home/sites-yurts/",
+          "publisher": "Angel of the Winds RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes 178 spaces, site layouts, pad lengths, and full utility details."
+        }
+      ]
+    },
+    {
+      "slug": "angel-of-the-winds-rv-resort",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports hookups.",
+      "proposed_value": 3,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://rvwinds.com/",
+          "publisher": "Angel of the Winds RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms tribal resort identity, address, transient operation, and amenities."
+        },
+        {
+          "url": "https://rvwinds.com/home/sites-yurts/",
+          "publisher": "Angel of the Winds RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes 178 spaces, site layouts, pad lengths, and full utility details."
+        }
+      ]
+    },
+    {
+      "slug": "angel-of-the-winds-rv-resort",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material does not publish max rv length; the public record intentionally labels it unconfirmed.",
+      "proposed_value": null,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://rvwinds.com/",
+          "publisher": "Angel of the Winds RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms tribal resort identity, address, transient operation, and amenities."
+        },
+        {
+          "url": "https://rvwinds.com/home/sites-yurts/",
+          "publisher": "Angel of the Winds RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes 178 spaces, site layouts, pad lengths, and full utility details."
+        }
+      ]
+    },
+    {
+      "slug": "maple-grove-rv-resort",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports operating status.",
+      "proposed_value": "current",
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://maplegrovervresort.com/our-parks-sites/",
+          "publisher": "Maple Grove RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes 87 numbered sites, configurations, dimensions, and utility details."
+        },
+        {
+          "url": "https://maplegrovervresort.com/frequently-asked-questions/",
+          "publisher": "Maple Grove RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms short-term booking and full-hookup availability."
+        }
+      ]
+    },
+    {
+      "slug": "maple-grove-rv-resort",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports rv access.",
+      "proposed_value": true,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://maplegrovervresort.com/our-parks-sites/",
+          "publisher": "Maple Grove RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes 87 numbered sites, configurations, dimensions, and utility details."
+        },
+        {
+          "url": "https://maplegrovervresort.com/frequently-asked-questions/",
+          "publisher": "Maple Grove RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms short-term booking and full-hookup availability."
+        }
+      ]
+    },
+    {
+      "slug": "maple-grove-rv-resort",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports reservation method.",
+      "proposed_value": "Daily and weekly reservations open up to 3 months in advance",
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://maplegrovervresort.com/our-parks-sites/",
+          "publisher": "Maple Grove RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes 87 numbered sites, configurations, dimensions, and utility details."
+        },
+        {
+          "url": "https://maplegrovervresort.com/frequently-asked-questions/",
+          "publisher": "Maple Grove RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms short-term booking and full-hookup availability."
+        }
+      ]
+    },
+    {
+      "slug": "maple-grove-rv-resort",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports hookups.",
+      "proposed_value": 3,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://maplegrovervresort.com/our-parks-sites/",
+          "publisher": "Maple Grove RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes 87 numbered sites, configurations, dimensions, and utility details."
+        },
+        {
+          "url": "https://maplegrovervresort.com/frequently-asked-questions/",
+          "publisher": "Maple Grove RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms short-term booking and full-hookup availability."
+        }
+      ]
+    },
+    {
+      "slug": "maple-grove-rv-resort",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material does not publish max rv length; the public record intentionally labels it unconfirmed.",
+      "proposed_value": null,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://maplegrovervresort.com/our-parks-sites/",
+          "publisher": "Maple Grove RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes 87 numbered sites, configurations, dimensions, and utility details."
+        },
+        {
+          "url": "https://maplegrovervresort.com/frequently-asked-questions/",
+          "publisher": "Maple Grove RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms short-term booking and full-hookup availability."
+        }
+      ]
+    },
+    {
+      "slug": "lake-goodwin-resort",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports operating status.",
+      "proposed_value": "current",
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://www.lakegoodwinresort.com/rental-rates/",
+          "publisher": "Lake Goodwin Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes current daily and weekly RV rates, reservation rules, and address."
+        },
+        {
+          "url": "https://www.lakegoodwinresort.com/welcome.html",
+          "publisher": "Lake Goodwin Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator describes most-site utilities, RV types, lake access, and amenities."
+        }
+      ]
+    },
+    {
+      "slug": "lake-goodwin-resort",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports rv access.",
+      "proposed_value": true,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://www.lakegoodwinresort.com/rental-rates/",
+          "publisher": "Lake Goodwin Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes current daily and weekly RV rates, reservation rules, and address."
+        },
+        {
+          "url": "https://www.lakegoodwinresort.com/welcome.html",
+          "publisher": "Lake Goodwin Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator describes most-site utilities, RV types, lake access, and amenities."
+        }
+      ]
+    },
+    {
+      "slug": "lake-goodwin-resort",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports reservation method.",
+      "proposed_value": "Call for daily or weekly RV reservations; two-night minimum for advance reservations",
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://www.lakegoodwinresort.com/rental-rates/",
+          "publisher": "Lake Goodwin Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes current daily and weekly RV rates, reservation rules, and address."
+        },
+        {
+          "url": "https://www.lakegoodwinresort.com/welcome.html",
+          "publisher": "Lake Goodwin Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator describes most-site utilities, RV types, lake access, and amenities."
+        }
+      ]
+    },
+    {
+      "slug": "lake-goodwin-resort",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports hookups.",
+      "proposed_value": 3,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://www.lakegoodwinresort.com/rental-rates/",
+          "publisher": "Lake Goodwin Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes current daily and weekly RV rates, reservation rules, and address."
+        },
+        {
+          "url": "https://www.lakegoodwinresort.com/welcome.html",
+          "publisher": "Lake Goodwin Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator describes most-site utilities, RV types, lake access, and amenities."
+        }
+      ]
+    },
+    {
+      "slug": "lake-goodwin-resort",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material does not publish max rv length; the public record intentionally labels it unconfirmed.",
+      "proposed_value": null,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://www.lakegoodwinresort.com/rental-rates/",
+          "publisher": "Lake Goodwin Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes current daily and weekly RV rates, reservation rules, and address."
+        },
+        {
+          "url": "https://www.lakegoodwinresort.com/welcome.html",
+          "publisher": "Lake Goodwin Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator describes most-site utilities, RV types, lake access, and amenities."
+        }
+      ]
+    },
+    {
+      "slug": "thousand-trails-thunderbird",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports operating status.",
+      "proposed_value": "current",
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://thousandtrails.com/washington/thunderbird-rv-camping-resort/directions",
+          "publisher": "Thousand Trails",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms 92 year-round sites, guest booking, GPS point, stay rules, and amenities."
+        }
+      ]
+    },
+    {
+      "slug": "thousand-trails-thunderbird",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports rv access.",
+      "proposed_value": true,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://thousandtrails.com/washington/thunderbird-rv-camping-resort/directions",
+          "publisher": "Thousand Trails",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms 92 year-round sites, guest booking, GPS point, stay rules, and amenities."
+        }
+      ]
+    },
+    {
+      "slug": "thousand-trails-thunderbird",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports reservation method.",
+      "proposed_value": "Book RV sites online as a member or guest; peak-season stays are limited to 14 days per site",
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://thousandtrails.com/washington/thunderbird-rv-camping-resort/directions",
+          "publisher": "Thousand Trails",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms 92 year-round sites, guest booking, GPS point, stay rules, and amenities."
+        }
+      ]
+    },
+    {
+      "slug": "thousand-trails-thunderbird",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material does not publish hookups; the public record intentionally labels it unconfirmed.",
+      "proposed_value": null,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://thousandtrails.com/washington/thunderbird-rv-camping-resort/directions",
+          "publisher": "Thousand Trails",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms 92 year-round sites, guest booking, GPS point, stay rules, and amenities."
+        }
+      ]
+    },
+    {
+      "slug": "thousand-trails-thunderbird",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material does not publish max rv length; the public record intentionally labels it unconfirmed.",
+      "proposed_value": null,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://thousandtrails.com/washington/thunderbird-rv-camping-resort/directions",
+          "publisher": "Thousand Trails",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms 92 year-round sites, guest booking, GPS point, stay rules, and amenities."
+        }
+      ]
+    },
+    {
+      "slug": "lake-pleasant-rv-park",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports operating status.",
+      "proposed_value": "current",
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://www.lakepleasantrv.com/rates/",
+          "publisher": "Lake Pleasant RV Park",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes year-round daily booking, 184 sites, full hookups, surfaces, and amenities."
+        }
+      ]
+    },
+    {
+      "slug": "lake-pleasant-rv-park",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports rv access.",
+      "proposed_value": true,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://www.lakepleasantrv.com/rates/",
+          "publisher": "Lake Pleasant RV Park",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes year-round daily booking, 184 sites, full hookups, surfaces, and amenities."
+        }
+      ]
+    },
+    {
+      "slug": "lake-pleasant-rv-park",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports reservation method.",
+      "proposed_value": "Daily sites are offered year-round with a 14-day cap; book current availability online",
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://www.lakepleasantrv.com/rates/",
+          "publisher": "Lake Pleasant RV Park",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes year-round daily booking, 184 sites, full hookups, surfaces, and amenities."
+        }
+      ]
+    },
+    {
+      "slug": "lake-pleasant-rv-park",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports hookups.",
+      "proposed_value": 3,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://www.lakepleasantrv.com/rates/",
+          "publisher": "Lake Pleasant RV Park",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes year-round daily booking, 184 sites, full hookups, surfaces, and amenities."
+        }
+      ]
+    },
+    {
+      "slug": "lake-pleasant-rv-park",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material does not publish max rv length; the public record intentionally labels it unconfirmed.",
+      "proposed_value": null,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://www.lakepleasantrv.com/rates/",
+          "publisher": "Lake Pleasant RV Park",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes year-round daily booking, 184 sites, full hookups, surfaces, and amenities."
+        }
+      ]
+    },
+    {
+      "slug": "cascade-views-rv-resort",
+      "field": "operating_status",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports operating status.",
+      "proposed_value": "current",
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://www.cascadesrvresort.com/",
+          "publisher": "Cascade Views RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms active transient RV operation, address, concrete pads, and reservation method."
+        },
+        {
+          "url": "https://www.cascadesrvresort.com/amenities/",
+          "publisher": "Cascade Views RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes pad lengths and amenities but does not state utility hookup level."
+        }
+      ]
+    },
+    {
+      "slug": "cascade-views-rv-resort",
+      "field": "rv_access",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports rv access.",
+      "proposed_value": true,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://www.cascadesrvresort.com/",
+          "publisher": "Cascade Views RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms active transient RV operation, address, concrete pads, and reservation method."
+        },
+        {
+          "url": "https://www.cascadesrvresort.com/amenities/",
+          "publisher": "Cascade Views RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes pad lengths and amenities but does not state utility hookup level."
+        }
+      ]
+    },
+    {
+      "slug": "cascade-views-rv-resort",
+      "field": "reservation_method",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material supports reservation method.",
+      "proposed_value": "Call the resort for current nightly, weekly, or monthly availability",
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://www.cascadesrvresort.com/",
+          "publisher": "Cascade Views RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms active transient RV operation, address, concrete pads, and reservation method."
+        },
+        {
+          "url": "https://www.cascadesrvresort.com/amenities/",
+          "publisher": "Cascade Views RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes pad lengths and amenities but does not state utility hookup level."
+        }
+      ]
+    },
+    {
+      "slug": "cascade-views-rv-resort",
+      "field": "hookups",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material does not publish hookups; the public record intentionally labels it unconfirmed.",
+      "proposed_value": null,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://www.cascadesrvresort.com/",
+          "publisher": "Cascade Views RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms active transient RV operation, address, concrete pads, and reservation method."
+        },
+        {
+          "url": "https://www.cascadesrvresort.com/amenities/",
+          "publisher": "Cascade Views RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes pad lengths and amenities but does not state utility hookup level."
+        }
+      ]
+    },
+    {
+      "slug": "cascade-views-rv-resort",
+      "field": "max_rv_length",
+      "status": "supported",
+      "checked_on": "2026-09-12",
+      "summary": "Current operator material does not publish max rv length; the public record intentionally labels it unconfirmed.",
+      "proposed_value": null,
+      "source_family": "snohomish-private-review",
+      "sources": [
+        {
+          "url": "https://www.cascadesrvresort.com/",
+          "publisher": "Cascade Views RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator confirms active transient RV operation, address, concrete pads, and reservation method."
+        },
+        {
+          "url": "https://www.cascadesrvresort.com/amenities/",
+          "publisher": "Cascade Views RV Resort",
+          "source_family": "snohomish-private-review",
+          "evidence": "Operator publishes pad lengths and amenities but does not state utility hookup level."
+        }
+      ]
     }
   ]
 }

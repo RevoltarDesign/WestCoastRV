@@ -24,9 +24,9 @@ TEMPLATE_PATH = Path(__file__).resolve().parent / "campground-template.html"
 OUT_DIR       = SITE_DIR / "campground"
 
 # ── Lookup tables ──────────────────────────────────────────────────────────────
-HOOKUP_LABEL = {'0': 'None', '1': 'Electric', '2': 'Water + Electric', '3': 'Full Hookups'}
+HOOKUP_LABEL = {'': 'Not confirmed', '0': 'None', '1': 'Electric', '2': 'Water + Electric', '3': 'Full Hookups'}
 HOOKUP_NOTE  = {'0': 'dry camping',   '1': 'electric only',
-                '2': 'water & electric', '3': 'full hookups'}
+                '2': 'water & electric', '3': 'full hookups', '': 'not confirmed'}
 
 MANEUV_LABEL = {'1': 'Reported easy', '2': 'Reported moderate', '3': 'Reported challenging'}
 MANEUV_NOTE  = {
@@ -160,7 +160,7 @@ def format_reservation_short(text):
     return text[:12]
 
 def hookup_display(level):
-    return HOOKUP_LABEL.get(level, 'Unknown'), HOOKUP_NOTE.get(level, ''), level != '0'
+    return HOOKUP_LABEL.get(level, 'Not confirmed'), HOOKUP_NOTE.get(level, 'not confirmed'), level not in ('', '0')
 
 def true_val(s):
     return str(s).strip().lower() == 'true'
@@ -188,18 +188,19 @@ def build_activity_list(row):
 
 def build_amenities_grid(row):
     toilet_type = (row.get('Amenities: Toilets') or '').strip()
-    has_toilet  = bool(toilet_type) and toilet_type.lower() != 'false'
-    has_shower  = true_val(row.get('Amenities: Showers', ''))
-    has_water   = true_val(row.get('Amenities: Drinking water', ''))
-    has_fire    = true_val(row.get('Amenities: Fire pits', ''))
+    has_toilet  = None if not toilet_type else toilet_type.lower() != 'false'
+    has_shower  = optional_bool(row.get('Amenities: Showers', ''))
+    has_water   = optional_bool(row.get('Amenities: Drinking water', ''))
+    has_fire    = optional_bool(row.get('Amenities: Fire pits', ''))
 
     def block(icon, name, has, label_on, label_off='Not available'):
-        cls = 'on' if has else 'off'
+        cls = 'on' if has is True else 'off' if has is False else 'unknown'
+        label = label_on if has is True else label_off if has is False else 'Not confirmed'
         return (f'      <div class="amenity">\n'
                 f'        <div class="amenity-icon {cls}">{icon}</div>\n'
                 f'        <div>\n'
                 f'          <div class="amenity-name">{name}</div>\n'
-                f'          <div class="amenity-status {cls}">{label_on if has else label_off}</div>\n'
+                f'          <div class="amenity-status {cls}">{label}</div>\n'
                 f'        </div>\n'
                 f'      </div>')
 
@@ -228,11 +229,14 @@ def build_specs_grid(row):
     else:
         dump_val = 'Not confirmed'
         dump_note = 'Confirm with the operator'
-    hook_val  = f'{SVG_CHECK}\n          {hookup_label}' if has_hookup else f'{SVG_CROSS}\n          {hookup_label}'
+    hook_val = ('Not confirmed' if hookup_level == '' else
+                f'{SVG_CHECK}\n          {hookup_label}' if has_hookup else
+                f'{SVG_CROSS}\n          {hookup_label}')
     hook_note = {'0': 'Bring full tanks',
                  '1': 'Electric service available',
                  '2': 'Water & electric at site',
-                 '3': 'Full W+E+S hookups'}.get(hookup_level, '')
+                 '3': 'Full W+E+S hookups',
+                 '': 'Confirm utilities with the operator'}.get(hookup_level, '')
 
     return f'''      <div class="spec-cell">
         <div class="spec-label">Maneuverability</div>
@@ -333,12 +337,15 @@ def build_regional_guide(row):
         'flowing-lake-county-park', 'kayak-point-regional-park',
         'wenberg-county-park', 'river-meadows-county-park',
         'squire-creek-park-campground', 'whitehorse-campground',
-        'evergreen-state-fairgrounds-rv-2',
+        'evergreen-state-fairgrounds-rv-2', 'angel-of-the-winds-rv-resort',
+        'lake-pleasant-rv-park', 'maple-grove-rv-resort',
+        'cascade-views-rv-resort', 'thousand-trails-thunderbird',
+        'emerald-springs-rv-park', 'lake-goodwin-resort', 'lake-ki-rv-resort',
     }
     if row.get('Slug') in snohomish:
         return ('<a class="regional-guide-link" href="/field-notes/snohomish-county-rv-camping">'
                 '<span>Snohomish County RV camping guide</span>'
-                '<small>Compare 7 county-operated choices from Puget Sound to Darrington</small>'
+                '<small>Compare 15 public, private, and tribal choices across Snohomish County</small>'
                 '</a>')
     clallam = {
         'fairholme-campground', 'heart-o-the-hills-campground', 'mora-campground',
@@ -408,7 +415,7 @@ def build_faq_json(row):
     max_length    = row.get('Max RV length', '')
     drive_time    = row.get('Time from Seattle', '')
     drive_mins    = row.get('Drive Time Minutes', '')
-    has_showers   = true_val(row.get('Amenities: Showers', ''))
+    has_showers   = optional_bool(row.get('Amenities: Showers', ''))
     has_dump      = optional_bool(row.get('Dump station on site', ''))
     reserve_url   = row.get('Reservation website', '')
     reservation   = row.get('Reservation window', '')
@@ -423,8 +430,10 @@ def build_faq_json(row):
         hook_ans = f"Yes. {name} offers electric-only hookups. Water and sewer are not available at the site."
     elif hookup_level == '2':
         hook_ans = f"Yes. {name} offers water and electric (W+E) hookups. Full sewer hookups are not available."
-    else:
+    elif hookup_level == '3':
         hook_ans = f"Yes. {name} offers full hookups including water, electric, and sewer connections."
+    else:
+        hook_ans = f"The current operator material does not specify the hookup level at {name}. Confirm electric, water, and sewer availability for the assigned site before booking."
 
     miles_str = ''  # Drive Time Minutes is not a distance.
     drive_ans = f"{name} is approximately {drive_time.replace(' from Seattle','')}{miles_str} from Seattle."
@@ -449,7 +458,9 @@ def build_faq_json(row):
         (f"How far is {name} from Seattle?",
          drive_ans),
         (f"Does {name} have showers?",
-         f"{'Yes, showers are available on-site at' if has_showers else 'No, there are no showers at'} {name}."),
+         f"Yes, showers are available on-site at {name}." if has_showers is True else
+         f"No, there are no showers at {name}." if has_showers is False else
+         f"Public shower availability at {name} is not confirmed; check with the operator."),
         (f"Does {name} have a dump station?",
          f"Yes, there is a dump station on site at {name}." if has_dump is True else
          f"No, there is no dump station at {name}." if has_dump is False else
@@ -493,12 +504,12 @@ def build_campground_json(row):
     street, city, state, postal = parse_address(address)
 
     has_dump    = optional_bool(row.get('Dump station on site', ''))
-    has_shower  = true_val(row.get('Amenities: Showers', ''))
-    has_water   = true_val(row.get('Amenities: Drinking water', ''))
-    has_fire    = true_val(row.get('Amenities: Fire pits', ''))
-    has_hookup  = hookup_level != '0'
+    has_shower  = optional_bool(row.get('Amenities: Showers', ''))
+    has_water   = optional_bool(row.get('Amenities: Drinking water', ''))
+    has_fire    = optional_bool(row.get('Amenities: Fire pits', ''))
+    has_hookup  = None if hookup_level == '' else hookup_level != '0'
     toilet_type = (row.get('Amenities: Toilets') or '').strip()
-    has_toilet  = bool(toilet_type) and toilet_type.lower() != 'false'
+    has_toilet  = None if not toilet_type else toilet_type.lower() != 'false'
 
     tourist = ['RV Campers']
     if true_val(row.get('Hiking','')): tourist.append('Hikers')
@@ -506,19 +517,18 @@ def build_campground_json(row):
     if true_val(row.get('Kayaking/Paddling','')): tourist.append('Kayakers')
     if true_val(row.get('Playground','')) or true_val(row.get('Swimming','')): tourist.append('Families')
 
-    amenities = [
-        {"@type":"LocationFeatureSpecification","name":"Toilets",        "value": has_toilet},
-        {"@type":"LocationFeatureSpecification","name":"Showers",        "value": has_shower},
-        {"@type":"LocationFeatureSpecification","name":"Drinking Water", "value": has_water},
-    ]
+    amenities = []
+    for amenity_name, amenity_value in (("Toilets", has_toilet), ("Showers", has_shower), ("Drinking Water", has_water)):
+        if amenity_value is not None:
+            amenities.append({"@type":"LocationFeatureSpecification","name":amenity_name,"value":amenity_value})
     if has_dump is not None:
         amenities.append(
             {"@type":"LocationFeatureSpecification","name":"Dump Station", "value": has_dump}
         )
-    amenities.extend([
-        {"@type":"LocationFeatureSpecification","name":"Electric Hookups","value": has_hookup},
-        {"@type":"LocationFeatureSpecification","name":"Fire Pits",      "value": has_fire},
-    ])
+    if has_hookup is not None:
+        amenities.append({"@type":"LocationFeatureSpecification","name":"Electric Hookups","value": has_hookup})
+    if has_fire is not None:
+        amenities.append({"@type":"LocationFeatureSpecification","name":"Fire Pits","value": has_fire})
 
     schema = {
         "@context": "https://schema.org",
@@ -559,7 +569,7 @@ def generate_page(row, slug_lookup, template):
     address      = (row.get('Address') or '').strip()
     rv_sites     = (row.get('Number of RV campsites') or '—').strip()
     max_length   = (row.get('Max RV length') or '').strip()
-    hookup_level = (row.get('Hookups') or '0').strip()
+    hookup_level = (row.get('Hookups') or '').strip()
     surface      = (row.get('Site surface type') or 'Mixed').strip()
     dump         = optional_bool(row.get('Dump station on site', ''))
     reservation  = (row.get('Reservation window') or '').strip()

@@ -28,7 +28,7 @@ class SnohomishCountyPhaseTests(unittest.TestCase):
  def test_inventory_guide_and_public_surfaces(self):
   coverage=json.loads((HERE/'coverage-inventory.json').read_text()); section=next(s for s in coverage['sections'] if s['id']=='snohomish-county')
   self.assertEqual('complete',section['status']); self.assertEqual(2,sum(c['decision']=='excluded' for c in section['candidates']))
-  guide=(SITE/'field-notes/snohomish-county-rv-camping.html').read_text(); self.assertEqual(7,guide.count('<article class="camp">'))
+  guide=(SITE/'field-notes/snohomish-county-rv-camping.html').read_text(); self.assertEqual(15,guide.count('<article class="camp">'))
   for slug in NEW:
    for path in ('campgrounds.html','map.html','sitemap.xml'): self.assertIn(slug,(SITE/path).read_text())
 

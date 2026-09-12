@@ -41,7 +41,8 @@ def make_record(row):
     for key, field in {'hiking':'Hiking', 'fishing':'Fishing', 'swim':'Swimming',
                        'kayak':'Kayaking/Paddling', 'beach':'Beach & Tide Pools',
                        'showers':'Amenities: Showers', 'dump':'Dump station on site'}.items():
-        record[key] = row.get(field, '').lower() == 'true'
+        raw = row.get(field, '').lower()
+        record[key] = True if raw == 'true' else False if raw == 'false' else None
     return record
 
 
@@ -71,6 +72,7 @@ def outputs():
         text = re.sub(r'("numberOfItems":\s*)\d+', lambda m: m[1] + str(count), text)
         text = re.sub(r'(<strong>)\d+(</strong> camps)', lambda m: m[1] + str(count) + m[2], text)
         text = re.sub(r'(<div class="trust-num">)\d+(</div>)', lambda m: m[1] + str(count) + m[2], text, count=1)
+        text = re.sub(r'(<span id="visibleCount">)\d+(</span>)', lambda m: m[1] + str(count) + m[2], text, count=1)
         result[path] = text
     path = BASE_DIR / 'site/sitemap.xml'
     ns = 'http://www.sitemaps.org/schemas/sitemap/0.9'
