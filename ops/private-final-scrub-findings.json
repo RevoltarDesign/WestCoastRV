@@ -1,0 +1,62 @@
+{
+  "checked_on": "2026-09-12",
+  "scope": "Ten private and fairgrounds records remaining in the coordinate-provenance queue",
+  "method": "Compared visitor-facing location, access, reservation, capacity, hookup, amenity, nearby-area, and Seattle-route claims with current operator material and current named-place sources. Unsupported precision was removed instead of converted into a confident claim.",
+  "summary": {
+    "records_reviewed": 10,
+    "issues_found": 57,
+    "issues_fixed": 57
+  },
+  "findings": [
+    {
+      "slug": "pine-village-koa-holiday",
+      "count": 7,
+      "issues": ["former street address", "unreviewed map pin", "low Seattle route estimate", "unsupported RV-site total", "unsupported campground-wide RV maximum", "incorrect three-mile town distance", "playground incorrectly marked absent"]
+    },
+    {
+      "slug": "thousand-trails-leavenworth",
+      "count": 9,
+      "issues": ["pin far south of operator GPS", "low Seattle route estimate", "wrong river", "membership incorrectly described as required", "year-round resort described as seasonal", "conflicting RV-site count presented as certain", "wrong Icicle Creek setting", "downtown incorrectly described as walkable", "paved-site claim unsupported"]
+    },
+    {
+      "slug": "tall-chief-rv-park-campground",
+      "count": 7,
+      "issues": ["former street address", "wrong map pin", "low Seattle route estimate", "unsupported riverfront claim", "sewer/full-hookup claim conflicts with operator", "unsupported campground-wide RV maximum", "current temporary recreation closure omitted"]
+    },
+    {
+      "slug": "packwood-rv-park-campground",
+      "count": 6,
+      "issues": ["street number off by 100", "unreviewed map pin", "low Seattle route estimate", "87-site count conflicts with current 77-site listing", "former reservation domain", "stale Grove of the Patriarchs trip guidance"]
+    },
+    {
+      "slug": "american-heritage-campground",
+      "count": 7,
+      "issues": ["map pin several miles north", "low Seattle route estimate", "mini-golf claim unsupported", "100-site total unsupported", "60-foot maximum unsupported", "pull-through recommendation conflicts with all-back-in policy", "root reservation URL now points to a different campground identity"]
+    },
+    {
+      "slug": "andersens-oceanside-rv-park",
+      "count": 4,
+      "issues": ["map pin several miles south", "Seattle route estimate about one hour low", "45-foot maximum unsupported", "separate dump-station claim unsupported"]
+    },
+    {
+      "slug": "beachside-rv-park",
+      "count": 4,
+      "issues": ["map pin on the wrong part of Birch Bay Drive", "Seattle route estimate low", "separate dump-station claim unsupported", "fire-pit claim unsupported"]
+    },
+    {
+      "slug": "sunnyside-rv-park",
+      "count": 3,
+      "issues": ["former address several miles east", "wrong map pin", "Seattle route estimate low"]
+    },
+    {
+      "slug": "north-whidbey-rv-park",
+      "count": 4,
+      "issues": ["Seattle route estimate low", "60-foot park-wide maximum unsupported", "Anacortes ferry proximity overstated", "nearest Costco distance understated"]
+    },
+    {
+      "slug": "whidbey-island-fairgrounds-campground",
+      "count": 6,
+      "issues": ["arrival point did not document long-vehicle entrance", "ferry route estimate omitted queue margin", "40-foot maximum unsupported", "only-public-campground superlative unsupported", "fixed dump-station fee stale or unverified", "older nearby-park access description presented without current qualification"]
+    }
+  ]
+}

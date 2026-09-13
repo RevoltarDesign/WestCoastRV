@@ -10357,6 +10357,806 @@
           "evidence": "The current operator material supports the reviewed hookups value and any closure or seasonal qualification preserved in the canonical record."
         }
       ]
+    },
+    {
+      "slug": "american-heritage-campground",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed operating status value and qualifications preserved in the canonical record.",
+      "proposed_value": "active campground with current visitor information",
+      "sources": [
+        {
+          "url": "https://www.americanheritagecampground.com/ah_frontpage.htm",
+          "publisher": "American Heritage Campground",
+          "source_family": "operator",
+          "evidence": "Current source material supports the reviewed operating status value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "american-heritage-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed rv access value and qualifications preserved in the canonical record.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.americanheritagecampground.com/ah_frontpage.htm",
+          "publisher": "American Heritage Campground",
+          "source_family": "operator",
+          "evidence": "Current source material supports the reviewed rv access value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "american-heritage-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed reservation method value and qualifications preserved in the canonical record.",
+      "proposed_value": "Reserve by phone or in person up to one year ahead; the operator does not offer online booking",
+      "sources": [
+        {
+          "url": "https://www.americanheritagecampground.com/ah_frontpage.htm",
+          "publisher": "American Heritage Campground",
+          "source_family": "operator",
+          "evidence": "Current source material supports the reviewed reservation method value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "american-heritage-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material does not publish one campground-wide RV maximum; the page directs travelers to confirm site-specific fit.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://www.americanheritagecampground.com/ah_frontpage.htm",
+          "publisher": "American Heritage Campground",
+          "source_family": "operator",
+          "evidence": "Current source material does not publish one campground-wide RV maximum; the page directs travelers to confirm site-specific fit."
+        }
+      ]
+    },
+    {
+      "slug": "american-heritage-campground",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed hookups value and qualifications preserved in the canonical record.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://www.americanheritagecampground.com/ah_frontpage.htm",
+          "publisher": "American Heritage Campground",
+          "source_family": "operator",
+          "evidence": "Current source material supports the reviewed hookups value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "andersens-oceanside-rv-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed operating status value and qualifications preserved in the canonical record.",
+      "proposed_value": "active campground with current visitor information",
+      "sources": [
+        {
+          "url": "https://andersensrv.com/",
+          "publisher": "Andersen's Oceanside RV Park",
+          "source_family": "operator",
+          "evidence": "Current source material supports the reviewed operating status value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "andersens-oceanside-rv-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed rv access value and qualifications preserved in the canonical record.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://andersensrv.com/",
+          "publisher": "Andersen's Oceanside RV Park",
+          "source_family": "operator",
+          "evidence": "Current source material supports the reviewed rv access value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "andersens-oceanside-rv-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed reservation method value and qualifications preserved in the canonical record.",
+      "proposed_value": "Reservations required; same-day reservations must be made before noon and stays are limited to 21 nights",
+      "sources": [
+        {
+          "url": "https://andersensrv.com/",
+          "publisher": "Andersen's Oceanside RV Park",
+          "source_family": "operator",
+          "evidence": "Current source material supports the reviewed reservation method value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "andersens-oceanside-rv-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material does not publish one campground-wide RV maximum; the page directs travelers to confirm site-specific fit.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://andersensrv.com/",
+          "publisher": "Andersen's Oceanside RV Park",
+          "source_family": "operator",
+          "evidence": "Current source material does not publish one campground-wide RV maximum; the page directs travelers to confirm site-specific fit."
+        }
+      ]
+    },
+    {
+      "slug": "andersens-oceanside-rv-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed hookups value and qualifications preserved in the canonical record.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://andersensrv.com/",
+          "publisher": "Andersen's Oceanside RV Park",
+          "source_family": "operator",
+          "evidence": "Current source material supports the reviewed hookups value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "beachside-rv-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed operating status value and qualifications preserved in the canonical record.",
+      "proposed_value": "active campground with current visitor information",
+      "sources": [
+        {
+          "url": "https://birchbaywa.org/birch-bay-rv-parks/",
+          "publisher": "Birch Bay Chamber of Commerce",
+          "source_family": "local-destination-organization",
+          "evidence": "Current source material supports the reviewed operating status value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "beachside-rv-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed rv access value and qualifications preserved in the canonical record.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://birchbaywa.org/birch-bay-rv-parks/",
+          "publisher": "Birch Bay Chamber of Commerce",
+          "source_family": "local-destination-organization",
+          "evidence": "Current source material supports the reviewed rv access value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "beachside-rv-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed reservation method value and qualifications preserved in the canonical record.",
+      "proposed_value": "Contact the campground for current availability",
+      "sources": [
+        {
+          "url": "https://birchbaywa.org/birch-bay-rv-parks/",
+          "publisher": "Birch Bay Chamber of Commerce",
+          "source_family": "local-destination-organization",
+          "evidence": "Current source material supports the reviewed reservation method value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "beachside-rv-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material does not publish one campground-wide RV maximum; the page directs travelers to confirm site-specific fit.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://birchbaywa.org/birch-bay-rv-parks/",
+          "publisher": "Birch Bay Chamber of Commerce",
+          "source_family": "local-destination-organization",
+          "evidence": "Current source material does not publish one campground-wide RV maximum; the page directs travelers to confirm site-specific fit."
+        }
+      ]
+    },
+    {
+      "slug": "beachside-rv-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed hookups value and qualifications preserved in the canonical record.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://birchbaywa.org/birch-bay-rv-parks/",
+          "publisher": "Birch Bay Chamber of Commerce",
+          "source_family": "local-destination-organization",
+          "evidence": "Current source material supports the reviewed hookups value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "north-whidbey-rv-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed operating status value and qualifications preserved in the canonical record.",
+      "proposed_value": "active campground with current visitor information",
+      "sources": [
+        {
+          "url": "https://northwhidbeyrvpark.com/",
+          "publisher": "North Whidbey RV Park",
+          "source_family": "operator",
+          "evidence": "Current source material supports the reviewed operating status value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "north-whidbey-rv-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed rv access value and qualifications preserved in the canonical record.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://northwhidbeyrvpark.com/",
+          "publisher": "North Whidbey RV Park",
+          "source_family": "operator",
+          "evidence": "Current source material supports the reviewed rv access value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "north-whidbey-rv-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed reservation method value and qualifications preserved in the canonical record.",
+      "proposed_value": "Reservations available through the operator; check live availability and site-specific fit",
+      "sources": [
+        {
+          "url": "https://northwhidbeyrvpark.com/",
+          "publisher": "North Whidbey RV Park",
+          "source_family": "operator",
+          "evidence": "Current source material supports the reviewed reservation method value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "north-whidbey-rv-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material does not publish one campground-wide RV maximum; the page directs travelers to confirm site-specific fit.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://northwhidbeyrvpark.com/",
+          "publisher": "North Whidbey RV Park",
+          "source_family": "operator",
+          "evidence": "Current source material does not publish one campground-wide RV maximum; the page directs travelers to confirm site-specific fit."
+        }
+      ]
+    },
+    {
+      "slug": "north-whidbey-rv-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed hookups value and qualifications preserved in the canonical record.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://northwhidbeyrvpark.com/",
+          "publisher": "North Whidbey RV Park",
+          "source_family": "operator",
+          "evidence": "Current source material supports the reviewed hookups value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "packwood-rv-park-campground",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed operating status value and qualifications preserved in the canonical record.",
+      "proposed_value": "active campground with current visitor information",
+      "sources": [
+        {
+          "url": "https://packwoodrvpark.com/contact",
+          "publisher": "Packwood RV Park & Campground",
+          "source_family": "operator",
+          "evidence": "Current source material supports the reviewed operating status value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "packwood-rv-park-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed rv access value and qualifications preserved in the canonical record.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://packwoodrvpark.com/contact",
+          "publisher": "Packwood RV Park & Campground",
+          "source_family": "operator",
+          "evidence": "Current source material supports the reviewed rv access value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "packwood-rv-park-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed reservation method value and qualifications preserved in the canonical record.",
+      "proposed_value": "Reservations available through the operator's CampLife booking link",
+      "sources": [
+        {
+          "url": "https://packwoodrvpark.com/contact",
+          "publisher": "Packwood RV Park & Campground",
+          "source_family": "operator",
+          "evidence": "Current source material supports the reviewed reservation method value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "packwood-rv-park-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed max rv length value and qualifications preserved in the canonical record.",
+      "proposed_value": 40,
+      "sources": [
+        {
+          "url": "https://packwoodrvpark.com/contact",
+          "publisher": "Packwood RV Park & Campground",
+          "source_family": "operator",
+          "evidence": "Current source material supports the reviewed max rv length value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "packwood-rv-park-campground",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed hookups value and qualifications preserved in the canonical record.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://packwoodrvpark.com/contact",
+          "publisher": "Packwood RV Park & Campground",
+          "source_family": "operator",
+          "evidence": "Current source material supports the reviewed hookups value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "pine-village-koa-holiday",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed operating status value and qualifications preserved in the canonical record.",
+      "proposed_value": "active campground with current visitor information",
+      "sources": [
+        {
+          "url": "https://koa.com/campgrounds/leavenworth/general-information/",
+          "publisher": "Kampgrounds of America",
+          "source_family": "koa",
+          "evidence": "Current source material supports the reviewed operating status value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "pine-village-koa-holiday",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed rv access value and qualifications preserved in the canonical record.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://koa.com/campgrounds/leavenworth/general-information/",
+          "publisher": "Kampgrounds of America",
+          "source_family": "koa",
+          "evidence": "Current source material supports the reviewed rv access value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "pine-village-koa-holiday",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed reservation method value and qualifications preserved in the canonical record.",
+      "proposed_value": "Reservations available online or by phone; summer and festival dates can fill well ahead",
+      "sources": [
+        {
+          "url": "https://koa.com/campgrounds/leavenworth/general-information/",
+          "publisher": "Kampgrounds of America",
+          "source_family": "koa",
+          "evidence": "Current source material supports the reviewed reservation method value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "pine-village-koa-holiday",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material does not publish one campground-wide RV maximum; the page directs travelers to confirm site-specific fit.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://koa.com/campgrounds/leavenworth/general-information/",
+          "publisher": "Kampgrounds of America",
+          "source_family": "koa",
+          "evidence": "Current source material does not publish one campground-wide RV maximum; the page directs travelers to confirm site-specific fit."
+        }
+      ]
+    },
+    {
+      "slug": "pine-village-koa-holiday",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed hookups value and qualifications preserved in the canonical record.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://koa.com/campgrounds/leavenworth/general-information/",
+          "publisher": "Kampgrounds of America",
+          "source_family": "koa",
+          "evidence": "Current source material supports the reviewed hookups value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "sunnyside-rv-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed operating status value and qualifications preserved in the canonical record.",
+      "proposed_value": "active campground with current visitor information",
+      "sources": [
+        {
+          "url": "https://www.goodsam.com/campgrounds-rv-parks/washington/sunnyside/sunnyside-rv-park/cgid-201820823",
+          "publisher": "Good Sam Campgrounds",
+          "source_family": "current-campground-directory",
+          "evidence": "Current source material supports the reviewed operating status value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "sunnyside-rv-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed rv access value and qualifications preserved in the canonical record.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.goodsam.com/campgrounds-rv-parks/washington/sunnyside/sunnyside-rv-park/cgid-201820823",
+          "publisher": "Good Sam Campgrounds",
+          "source_family": "current-campground-directory",
+          "evidence": "Current source material supports the reviewed rv access value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "sunnyside-rv-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed reservation method value and qualifications preserved in the canonical record.",
+      "proposed_value": "Reservations accepted; contact the park or use its current booking channel for availability",
+      "sources": [
+        {
+          "url": "https://www.goodsam.com/campgrounds-rv-parks/washington/sunnyside/sunnyside-rv-park/cgid-201820823",
+          "publisher": "Good Sam Campgrounds",
+          "source_family": "current-campground-directory",
+          "evidence": "Current source material supports the reviewed reservation method value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "sunnyside-rv-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed max rv length value and qualifications preserved in the canonical record.",
+      "proposed_value": 65,
+      "sources": [
+        {
+          "url": "https://www.goodsam.com/campgrounds-rv-parks/washington/sunnyside/sunnyside-rv-park/cgid-201820823",
+          "publisher": "Good Sam Campgrounds",
+          "source_family": "current-campground-directory",
+          "evidence": "Current source material supports the reviewed max rv length value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "sunnyside-rv-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed hookups value and qualifications preserved in the canonical record.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://www.goodsam.com/campgrounds-rv-parks/washington/sunnyside/sunnyside-rv-park/cgid-201820823",
+          "publisher": "Good Sam Campgrounds",
+          "source_family": "current-campground-directory",
+          "evidence": "Current source material supports the reviewed hookups value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "tall-chief-rv-park-campground",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed operating status value and qualifications preserved in the canonical record.",
+      "proposed_value": "active campground with current visitor information",
+      "sources": [
+        {
+          "url": "https://thousandtrails.com/washington/tall-chief-rv-camping-resort/",
+          "publisher": "Thousand Trails",
+          "source_family": "thousand-trails",
+          "evidence": "Current source material supports the reviewed operating status value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "tall-chief-rv-park-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed rv access value and qualifications preserved in the canonical record.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://thousandtrails.com/washington/tall-chief-rv-camping-resort/",
+          "publisher": "Thousand Trails",
+          "source_family": "thousand-trails",
+          "evidence": "Current source material supports the reviewed rv access value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "tall-chief-rv-park-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed reservation method value and qualifications preserved in the canonical record.",
+      "proposed_value": "Public reservations available without membership; RV sites are back-in and chosen first-come after arrival",
+      "sources": [
+        {
+          "url": "https://thousandtrails.com/washington/tall-chief-rv-camping-resort/",
+          "publisher": "Thousand Trails",
+          "source_family": "thousand-trails",
+          "evidence": "Current source material supports the reviewed reservation method value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "tall-chief-rv-park-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material does not publish one campground-wide RV maximum; the page directs travelers to confirm site-specific fit.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://thousandtrails.com/washington/tall-chief-rv-camping-resort/",
+          "publisher": "Thousand Trails",
+          "source_family": "thousand-trails",
+          "evidence": "Current source material does not publish one campground-wide RV maximum; the page directs travelers to confirm site-specific fit."
+        }
+      ]
+    },
+    {
+      "slug": "tall-chief-rv-park-campground",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed hookups value and qualifications preserved in the canonical record.",
+      "proposed_value": 2,
+      "sources": [
+        {
+          "url": "https://thousandtrails.com/washington/tall-chief-rv-camping-resort/",
+          "publisher": "Thousand Trails",
+          "source_family": "thousand-trails",
+          "evidence": "Current source material supports the reviewed hookups value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "thousand-trails-leavenworth",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed operating status value and qualifications preserved in the canonical record.",
+      "proposed_value": "active campground with current visitor information",
+      "sources": [
+        {
+          "url": "https://www.rvonthego.com/washington/leavenworth-rv-campground/directions",
+          "publisher": "RVontheGo / Thousand Trails",
+          "source_family": "thousand-trails",
+          "evidence": "Current source material supports the reviewed operating status value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "thousand-trails-leavenworth",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed rv access value and qualifications preserved in the canonical record.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.rvonthego.com/washington/leavenworth-rv-campground/directions",
+          "publisher": "RVontheGo / Thousand Trails",
+          "source_family": "thousand-trails",
+          "evidence": "Current source material supports the reviewed rv access value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "thousand-trails-leavenworth",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed reservation method value and qualifications preserved in the canonical record.",
+      "proposed_value": "Public reservations available; membership is optional. Check current dates, site types, and stay limits in the booking system",
+      "sources": [
+        {
+          "url": "https://www.rvonthego.com/washington/leavenworth-rv-campground/directions",
+          "publisher": "RVontheGo / Thousand Trails",
+          "source_family": "thousand-trails",
+          "evidence": "Current source material supports the reviewed reservation method value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "thousand-trails-leavenworth",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material does not publish one campground-wide RV maximum; the page directs travelers to confirm site-specific fit.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://www.rvonthego.com/washington/leavenworth-rv-campground/directions",
+          "publisher": "RVontheGo / Thousand Trails",
+          "source_family": "thousand-trails",
+          "evidence": "Current source material does not publish one campground-wide RV maximum; the page directs travelers to confirm site-specific fit."
+        }
+      ]
+    },
+    {
+      "slug": "thousand-trails-leavenworth",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed hookups value and qualifications preserved in the canonical record.",
+      "proposed_value": 2,
+      "sources": [
+        {
+          "url": "https://www.rvonthego.com/washington/leavenworth-rv-campground/directions",
+          "publisher": "RVontheGo / Thousand Trails",
+          "source_family": "thousand-trails",
+          "evidence": "Current source material supports the reviewed hookups value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "whidbey-island-fairgrounds-campground",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed operating status value and qualifications preserved in the canonical record.",
+      "proposed_value": "active campground with current visitor information",
+      "sources": [
+        {
+          "url": "https://portofsouthwhidbey.com/facilities/fairgrounds-campground-south-whidbey/",
+          "publisher": "Port of South Whidbey",
+          "source_family": "port-of-south-whidbey",
+          "evidence": "Current source material supports the reviewed operating status value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "whidbey-island-fairgrounds-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed rv access value and qualifications preserved in the canonical record.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://portofsouthwhidbey.com/facilities/fairgrounds-campground-south-whidbey/",
+          "publisher": "Port of South Whidbey",
+          "source_family": "port-of-south-whidbey",
+          "evidence": "Current source material supports the reviewed rv access value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "whidbey-island-fairgrounds-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed reservation method value and qualifications preserved in the canonical record.",
+      "proposed_value": "Reserve online or claim an empty site on arrival; open year-round with limited water service November through March",
+      "sources": [
+        {
+          "url": "https://portofsouthwhidbey.com/facilities/fairgrounds-campground-south-whidbey/",
+          "publisher": "Port of South Whidbey",
+          "source_family": "port-of-south-whidbey",
+          "evidence": "Current source material supports the reviewed reservation method value and qualifications preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "whidbey-island-fairgrounds-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material does not publish one campground-wide RV maximum; the page directs travelers to confirm site-specific fit.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://portofsouthwhidbey.com/facilities/fairgrounds-campground-south-whidbey/",
+          "publisher": "Port of South Whidbey",
+          "source_family": "port-of-south-whidbey",
+          "evidence": "Current source material does not publish one campground-wide RV maximum; the page directs travelers to confirm site-specific fit."
+        }
+      ]
+    },
+    {
+      "slug": "whidbey-island-fairgrounds-campground",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "Current source material supports the reviewed hookups value and qualifications preserved in the canonical record.",
+      "proposed_value": 2,
+      "sources": [
+        {
+          "url": "https://portofsouthwhidbey.com/facilities/fairgrounds-campground-south-whidbey/",
+          "publisher": "Port of South Whidbey",
+          "source_family": "port-of-south-whidbey",
+          "evidence": "Current source material supports the reviewed hookups value and qualifications preserved in the canonical record."
+        }
+      ]
     }
   ]
 }
