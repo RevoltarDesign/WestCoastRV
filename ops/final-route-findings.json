@@ -1,0 +1,37 @@
+{
+  "checked_on": "2026-09-13",
+  "scope": "Final 17 campground Seattle-route reviews",
+  "route_estimates_reviewed": 17,
+  "route_estimates_corrected": 17,
+  "route_estimates_remaining": 0,
+  "route_method": "OSRM driving baseline from central Seattle to the reviewed campground point, followed by a conservative public estimate that adds towing, traffic, pass, ferry, and local-road margin as applicable.",
+  "route_adjacent_factual_groups_corrected": 7,
+  "route_adjacent_factual_groups": [
+    "Ohanapecosh: 2026 full developed-area closure, unavailable services, and stale on-site activity invitations",
+    "White River: current reopening, first-come operation, 88-site count, equipment limits, road qualification, and fire restriction",
+    "Newhalem Creek: 107-site count and current loop closure schedule",
+    "Goodell Creek: primitive off-season access and unavailable water and trash service",
+    "Colonial Creek South: September 14 vehicle-campground closure and tent-only off-season inventory",
+    "Colonial Creek North: September 14 seasonal closure",
+    "Shared inaccessible-listing template: route actions and structured hasMap links are suppressed while access is unavailable"
+  ],
+  "records": [
+    {"slug": "ohanapecosh-campground", "prior_minutes": 140, "observed_minutes": 147, "published_minutes": 180},
+    {"slug": "white-river-campground", "prior_minutes": 105, "observed_minutes": 135, "published_minutes": 150},
+    {"slug": "newhalem-creek-campground", "prior_minutes": 145, "observed_minutes": 166, "published_minutes": 180},
+    {"slug": "goodell-creek-campground", "prior_minutes": 145, "observed_minutes": 164, "published_minutes": 180},
+    {"slug": "colonial-creek-south-campground", "prior_minutes": 165, "observed_minutes": 182, "published_minutes": 210},
+    {"slug": "colonial-creek-north-campground", "prior_minutes": 165, "observed_minutes": 182, "published_minutes": 210},
+    {"slug": "eightmile-campground", "prior_minutes": 135, "observed_minutes": 176, "published_minutes": 195},
+    {"slug": "bonaparte-lake-campground", "prior_minutes": 270, "observed_minutes": 374, "published_minutes": 405},
+    {"slug": "east-sullivan-campground", "prior_minutes": 330, "observed_minutes": 465, "published_minutes": 495},
+    {"slug": "takhlakh-lake-campground", "prior_minutes": 195, "observed_minutes": 235, "published_minutes": 270},
+    {"slug": "walupt-lake-campground", "prior_minutes": 210, "observed_minutes": 217, "published_minutes": 240},
+    {"slug": "denny-creek-campground", "prior_minutes": 46, "observed_minutes": 66, "published_minutes": 75},
+    {"slug": "salmon-la-sac-campground", "prior_minutes": 120, "observed_minutes": 134, "published_minutes": 150},
+    {"slug": "bumping-lake-campground", "prior_minutes": 150, "observed_minutes": 192, "published_minutes": 225},
+    {"slug": "la-wis-wis-campground", "prior_minutes": 150, "observed_minutes": 159, "published_minutes": 180},
+    {"slug": "lower-falls-campground", "prior_minutes": 180, "observed_minutes": 267, "published_minutes": 300},
+    {"slug": "panorama-point-campground", "prior_minutes": 120, "observed_minutes": 149, "published_minutes": 165}
+  ]
+}

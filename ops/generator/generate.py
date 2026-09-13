@@ -453,7 +453,7 @@ def build_faq_json(row):
         (f"Does {name} have hookups?",
          hook_ans),
         (f"What is the maximum RV length at {name}?",
-         f'RVs and trailers are not allowed at {name}.' if row.get('RV Access') == 'no' else f"Reported maximum RV length at {name} is {max_length} feet; confirm the individual site and vehicle rules." if max_length
+         f'Vehicle access to {name} is currently unavailable. Check the official access guidance before travel.' if row.get('RV Access') == 'no' else f"Reported maximum RV length at {name} is {max_length} feet; confirm the individual site and vehicle rules." if max_length
          else f"Contact {name} for current RV length restrictions."),
         (f"How far is {name} from Seattle?",
          drive_ans),
@@ -545,7 +545,8 @@ def build_campground_json(row):
         except: pass
     if lat and lng:
         schema["geo"]    = {"@type":"GeoCoordinates","latitude":float(lat),"longitude":float(lng)}
-        schema["hasMap"] = maps_url
+        if row.get('RV Access') != 'no':
+            schema["hasMap"] = maps_url
     if street:
         schema["address"] = {"@type":"PostalAddress","streetAddress":street,
                              "addressLocality":city,"addressRegion":state,
@@ -639,7 +640,7 @@ def generate_page(row, slug_lookup, template):
 
     fcfs = 'first-come' in reservation.lower()
     reserve_label = 'Closure details' if closed else 'Camping rules' if fcfs else 'Booking details'
-    access_closed = row.get('RV Access') == 'no' and bool(re.search(r'\b(?:currently|remains)\s+closed\b', row.get('Short Description', ''), re.I))
+    access_closed = row.get('RV Access') == 'no'
     maps_href = h(directions_url(row))
     directions_action = (
         '<span class="btn btn-outline" aria-disabled="true">Vehicle access closed</span>'
@@ -700,7 +701,7 @@ def generate_page(row, slug_lookup, template):
         '{{state_map}}':                state_map,
         '{{google_maps}}':              directions_url(row),
         '{{map_region}}':               h(f'{city}, WA' if city else 'Washington State'),
-        '{{specs_grid_html}}':          '<p>RVs and trailers are not allowed. See the official access guidance above.</p>' if row.get('RV Access') == 'no' else build_specs_grid(row),
+        '{{specs_grid_html}}':          '<p>Vehicle access is currently unavailable. See the official access guidance above.</p>' if row.get('RV Access') == 'no' else build_specs_grid(row),
         '{{activities_title}}':         h(f'Activities at {name}'),
         '{{activity_pills}}':           build_activity_pills(row),
         '{{activity_list_html}}':       build_activity_list(row),

@@ -11157,6 +11157,278 @@
           "evidence": "Current source material supports the reviewed hookups value and qualifications preserved in the canonical record."
         }
       ]
+    },
+    {
+      "slug": "ohanapecosh-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-13",
+      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
+      "proposed_value": false,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/mora/planyourvisit/park-construction-faqs.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
+        }
+      ]
+    },
+    {
+      "slug": "white-river-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-13",
+      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/mora/planyourvisit/campgrounds.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
+        }
+      ]
+    },
+    {
+      "slug": "newhalem-creek-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-13",
+      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
+        }
+      ]
+    },
+    {
+      "slug": "goodell-creek-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-13",
+      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
+        }
+      ]
+    },
+    {
+      "slug": "colonial-creek-south-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-13",
+      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
+        }
+      ]
+    },
+    {
+      "slug": "colonial-creek-north-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-13",
+      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
+        }
+      ]
+    },
+    {
+      "slug": "eightmile-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-13",
+      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/121440",
+          "publisher": "U.S. Forest Service / Recreation.gov",
+          "source_family": "federal-operator",
+          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
+        }
+      ]
+    },
+    {
+      "slug": "bonaparte-lake-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-13",
+      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.fs.usda.gov/r06/colville/recreation/bonaparte-lake",
+          "publisher": "U.S. Forest Service / Recreation.gov",
+          "source_family": "federal-operator",
+          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
+        }
+      ]
+    },
+    {
+      "slug": "east-sullivan-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-13",
+      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/231987",
+          "publisher": "U.S. Forest Service / Recreation.gov",
+          "source_family": "federal-operator",
+          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
+        }
+      ]
+    },
+    {
+      "slug": "takhlakh-lake-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-13",
+      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232861",
+          "publisher": "U.S. Forest Service / Recreation.gov",
+          "source_family": "federal-operator",
+          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
+        }
+      ]
+    },
+    {
+      "slug": "walupt-lake-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-13",
+      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232860",
+          "publisher": "U.S. Forest Service / Recreation.gov",
+          "source_family": "federal-operator",
+          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
+        }
+      ]
+    },
+    {
+      "slug": "denny-creek-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-13",
+      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232035",
+          "publisher": "U.S. Forest Service / Recreation.gov",
+          "source_family": "federal-operator",
+          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
+        }
+      ]
+    },
+    {
+      "slug": "salmon-la-sac-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-13",
+      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232094",
+          "publisher": "U.S. Forest Service / Recreation.gov",
+          "source_family": "federal-operator",
+          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
+        }
+      ]
+    },
+    {
+      "slug": "bumping-lake-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-13",
+      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232356",
+          "publisher": "U.S. Forest Service / Recreation.gov",
+          "source_family": "federal-operator",
+          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
+        }
+      ]
+    },
+    {
+      "slug": "la-wis-wis-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-13",
+      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/233877",
+          "publisher": "U.S. Forest Service / Recreation.gov",
+          "source_family": "federal-operator",
+          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
+        }
+      ]
+    },
+    {
+      "slug": "lower-falls-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-13",
+      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/250032",
+          "publisher": "U.S. Forest Service / Recreation.gov",
+          "source_family": "federal-operator",
+          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
+        }
+      ]
+    },
+    {
+      "slug": "panorama-point-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-13",
+      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232081",
+          "publisher": "U.S. Forest Service / Recreation.gov",
+          "source_family": "federal-operator",
+          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
+        }
+      ]
     }
   ]
 }

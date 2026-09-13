@@ -34,7 +34,9 @@ class PublicLocationBatchTests(unittest.TestCase):
             self.assertIn("closed", row["Reservation window"].lower())
             page = (ROOT / "campground" / f"{slug}.html").read_text(encoding="utf-8")
             self.assertIn("Vehicle access closed", page)
-            self.assertNotIn(">Get Directions</a>", page)
+            self.assertNotIn("Get Directions", page)
+            self.assertNotIn("Open in Google Maps", page)
+            self.assertNotIn('"hasMap"', page)
 
     def test_stale_coastal_addresses_were_replaced(self):
         self.assertEqual(self.rows["twin-harbors-state-park"]["Address"], "3120 WA-105, Westport, WA 98595")
