@@ -1,0 +1,102 @@
+{
+  "checked_on": "2026-09-12",
+  "method": "Campground-specific points were matched to current operator maps and pages. Washington State Parks general locate points were replaced with named campground areas where the campground is distinct. Seattle route baselines use OSRM from central Seattle; public estimates round upward for towing, traffic, and local-road variation. Hozomeen's computed route is retained only as an audit baseline because current NPS closures prohibit completing the trip by vehicle.",
+  "reviews": [
+    {
+      "slug": "hozomeen-campground",
+      "address": "Silver Skagit Road, Ross Lake National Recreation Area, WA (usual road approach is through Hope, BC)",
+      "latitude": 48.9845763,
+      "longitude": -121.0712384,
+      "coordinate_source": "Named Hozomeen Campground point corroborated by the NPS Hozomeen area description and Hozomeen Camp SNOTEL location",
+      "precision": "named campground point",
+      "observed_route_minutes": 358,
+      "distance_miles": 199.9,
+      "display_minutes": 390,
+      "route_note": "Routing baseline follows the usual Canada approach. It is not a currently drivable itinerary: the NPS says the Hozomeen border gate is closed, cross-border vehicle and foot traffic are prohibited, and the entire Hozomeen area is currently closed for the Border 2 Fire."
+    },
+    {
+      "slug": "big-creek-campground",
+      "address": "North Lake Cushman Road / Forest Road 24, Hoodsport, WA 98548",
+      "latitude": 47.4945356,
+      "longitude": -123.2107155,
+      "coordinate_source": "USGS GNIS named Big Creek Campground point corroborated by Olympic National Forest facility locations and directions",
+      "precision": "named campground point",
+      "observed_route_minutes": 144,
+      "distance_miles": 105.5,
+      "display_minutes": 165,
+      "route_note": "No-ferry I-5, US 101, WA 119, and North Lake Cushman Road route. Public estimate adds a towing, traffic, and forest-road margin."
+    },
+    {
+      "slug": "twin-harbors-state-park",
+      "address": "3120 WA-105, Westport, WA 98595",
+      "latitude": 46.85735,
+      "longitude": -124.10726,
+      "coordinate_source": "Named Twin Harbors Eastside Campground point corroborated by the current Washington State Parks campground map and address",
+      "precision": "named campground point",
+      "observed_route_minutes": 177,
+      "distance_miles": 128.1,
+      "display_minutes": 195,
+      "route_note": "Fastest normal I-5, US 101, WA 8, US 12, and WA 105 route at review time; public estimate rounds up for towing and traffic variation."
+    },
+    {
+      "slug": "grayland-beach-state-park",
+      "address": "925 Cranberry Beach Road, Grayland, WA 98547",
+      "latitude": 46.7940511,
+      "longitude": -124.0941813,
+      "coordinate_source": "Washington State Parks published locate point matched to the campground, current address, and campground map",
+      "precision": "campground entrance/address point",
+      "observed_route_minutes": 185,
+      "distance_miles": 132.9,
+      "display_minutes": 210,
+      "route_note": "Fastest normal I-5, US 101, WA 8, US 12, and WA 105 route at review time; public estimate adds a towing and coastal-traffic margin."
+    },
+    {
+      "slug": "cape-disappointment-state-park",
+      "address": "244 Robert Gray Drive, Ilwaco, WA 98624",
+      "latitude": 46.2918993,
+      "longitude": -124.073772,
+      "coordinate_source": "Named Cape Disappointment campground point corroborated by the Washington State Parks campsite map and park address",
+      "precision": "named campground point",
+      "observed_route_minutes": 247,
+      "distance_miles": 173.9,
+      "display_minutes": 270,
+      "route_note": "Fastest normal I-5, US 30, and US 101 route at review time. Public estimate rounds up for towing and traffic. The campground remains closed for construction, so this is a planning baseline rather than a currently usable arrival route."
+    },
+    {
+      "slug": "silver-lake-park",
+      "address": "9006 Silver Lake Road, Maple Falls, WA 98266",
+      "latitude": 48.96840297,
+      "longitude": -122.07183241,
+      "coordinate_source": "Named Silver Lake Park campground point matched to Whatcom County's current park address and campground map",
+      "precision": "campground entrance/address point",
+      "observed_route_minutes": 153,
+      "distance_miles": 108.5,
+      "display_minutes": 180,
+      "route_note": "Fastest normal I-5, WA 542, and Silver Lake Road route at review time; public estimate adds a towing, traffic, and foothill-road margin."
+    },
+    {
+      "slug": "dosewallips-state-park",
+      "address": "306996 Highway 101, Brinnon, WA 98320",
+      "latitude": 47.6898145,
+      "longitude": -122.9012705,
+      "coordinate_source": "Named Dosewallips State Park Campground point corroborated by the current Washington State Parks campground map and address",
+      "precision": "named campground point",
+      "observed_route_minutes": 159,
+      "distance_miles": 117.8,
+      "display_minutes": 180,
+      "route_note": "Uses the stable no-ferry I-5, Tacoma Narrows, and US 101 route; public estimate adds a towing and traffic margin."
+    },
+    {
+      "slug": "fort-flagler-historical-state-park",
+      "address": "10541 Flagler Road, Nordland, WA 98358",
+      "latitude": 48.09487,
+      "longitude": -122.72063,
+      "coordinate_source": "Named Fort Flagler Lower Campground point corroborated by the current Washington State Parks campground map and address",
+      "precision": "named lower campground point",
+      "observed_route_minutes": 163,
+      "distance_miles": 113.7,
+      "display_minutes": 180,
+      "route_note": "Uses the stable no-ferry I-5, Tacoma Narrows, and WA 116 route; public estimate adds a towing and traffic margin."
+    }
+  ]
+}

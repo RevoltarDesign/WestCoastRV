@@ -438,7 +438,7 @@ def build_faq_json(row):
     miles_str = ''  # Drive Time Minutes is not a distance.
     drive_ans = f"{name} is approximately {drive_time.replace(' from Seattle','')}{miles_str} from Seattle."
 
-    if re.search(r'^(campground\s+)?closed\b', reservation, re.I):
+    if re.search(r'^(campground\s+)?closed\b|\b(?:currently\s+closed|campground\s+loops?\s+.*closed|entire\s+.*closed|all\s+.*closed)\b', reservation, re.I):
         res_ans = f"{name} is currently closed. Check the official closure details before travel."
     elif 'recreation.gov' in (reserve_url or '').lower():
         res_ans = f"{name} accepts reservations through Recreation.gov. {reservation}."
@@ -626,7 +626,7 @@ def generate_page(row, slug_lookup, template):
     og_title = f"{name} — {park_type} | WA RV Camping"
     og_desc  = (f"{rv_str+'-site ' if rv_str else ''}{park_type} campground, "
                 f"{len_str}{hookup_phrase}. {drive_time} from Seattle.")[:200]
-    closed = bool(re.search(r'^(campground\s+)?closed\b', reservation, re.I))
+    closed = bool(re.search(r'^(campground\s+)?closed\b|\b(?:currently\s+closed|campground\s+loops?\s+.*closed|entire\s+.*closed|all\s+.*closed)\b', reservation, re.I))
     if closed:
         og_desc = row.get('Short Description', '')[:200]
 
@@ -639,6 +639,22 @@ def generate_page(row, slug_lookup, template):
 
     fcfs = 'first-come' in reservation.lower()
     reserve_label = 'Closure details' if closed else 'Camping rules' if fcfs else 'Booking details'
+    access_closed = row.get('RV Access') == 'no' and bool(re.search(r'\b(?:currently|remains)\s+closed\b', row.get('Short Description', ''), re.I))
+    maps_href = h(directions_url(row))
+    directions_action = (
+        '<span class="btn btn-outline" aria-disabled="true">Vehicle access closed</span>'
+        if access_closed else
+        f'<a href="{maps_href}" target="_blank" rel="noopener" class="btn btn-outline">'
+        '<svg width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="7.5" cy="6" r="2.5"/><path d="M7.5 1.5C5 1.5 3 3.5 3 6c0 3.9 4.5 7.5 4.5 7.5S12 9.9 12 6c0-2.5-2-4.5-4.5-4.5Z"/></svg>'
+        'Get Directions</a>'
+    )
+    map_directions_action = (
+        '<span aria-disabled="true">Vehicle access closed</span>'
+        if access_closed else
+        f'<a href="{maps_href}" target="_blank" rel="noopener">'
+        '<svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6.5" cy="5.5" r="2.2"/><path d="M6.5 1.5C4.3 1.5 2.5 3.3 2.5 5.5c0 3.4 4 6.5 4 6.5s4-3.1 4-6.5c0-2.2-1.8-4-4-4z"/></svg>'
+        'Open in Google Maps</a>'
+    )
     access_notice = ''
     if (row.get('RV Access') == 'no' or closed) and row.get('Access note'):
         access_notice = ('<aside style="padding:100px 24px 24px;background:#fff1d6;color:#352d1b;text-align:center" aria-label="Campground access restriction">'
@@ -647,6 +663,8 @@ def generate_page(row, slug_lookup, template):
                          + ' · Checked ' + h(row.get('Access checked', '')) + '</aside>')
     tokens = {
         '{{reserve_label}}': reserve_label,
+        '{{directions_action}}': directions_action,
+        '{{map_directions_action}}': map_directions_action,
         '{{nav_mode}}': 'data-access-restricted' if row.get('RV Access') == 'no' or closed else 'data-nav-transparent',
         '{{access_notice}}': access_notice,
         '{{page_title}}':               page_title,

@@ -47,38 +47,6 @@
       ]
     },
     {
-      "slug": "big-creek-campground",
-      "field": "reservation_method",
-      "status": "corrected_locally",
-      "checked_on": "2026-09-06",
-      "summary": "Olympic National Forest Big Creek is first-come; the former URL led to an unrelated Indiana campground.",
-      "proposed_value": "first-come, first-served",
-      "sources": [
-        {
-          "url": "https://www.fs.usda.gov/recarea/olympic/recreation/camping-cabins/recarea/?actid=29&recid=79317",
-          "publisher": "USDA Forest Service",
-          "source_family": "usfs-olympic",
-          "evidence": "Current operator listing identifies the 64-unit Big Creek campground near Hoodsport."
-        }
-      ]
-    },
-    {
-      "slug": "big-creek-campground",
-      "field": "max_rv_length",
-      "status": "unknown",
-      "checked_on": "2026-09-06",
-      "summary": "The current operator web listing confirms RV access but does not publish one campground-wide maximum.",
-      "proposed_value": null,
-      "sources": [
-        {
-          "url": "https://www.fs.usda.gov/recarea/olympic/recreation/camping-cabins/recarea/?actid=29&recid=79317",
-          "publisher": "USDA Forest Service",
-          "source_family": "usfs-olympic",
-          "evidence": "Current Big Creek listing accepts RVs but gives no maximum length."
-        }
-      ]
-    },
-    {
       "slug": "swan-lake-campground",
       "field": "reservation_method",
       "status": "corrected_locally",
@@ -123,264 +91,6 @@
           "publisher": "Recreation.gov",
           "source_family": "recreation-gov-salmon-la-sac",
           "evidence": "Site 20 publishes a 127-foot RV and trailer maximum."
-        }
-      ]
-    },
-    {
-      "slug": "silver-lake-park",
-      "field": "operating_status",
-      "status": "supported",
-      "checked_on": "2026-09-06",
-      "summary": "Whatcom County publishes an active 2026 camping season from April 10 through October 26.",
-      "proposed_value": "seasonal campground",
-      "sources": [
-        {
-          "url": "https://www.whatcomcounty.us/3517/Silver-Lake-Park",
-          "publisher": "Whatcom County Parks & Recreation",
-          "source_family": "whatcom-county-silver-lake",
-          "evidence": "Current park page lists the 2026 camping season and reservation information."
-        }
-      ]
-    },
-    {
-      "slug": "silver-lake-park",
-      "field": "rv_access",
-      "status": "supported",
-      "checked_on": "2026-09-06",
-      "summary": "Maple Creek and Red Mountain accept RVs; Cedar is not recommended for RVs and caps vehicles at 25 feet.",
-      "proposed_value": true,
-      "sources": [
-        {
-          "url": "https://www.whatcomcounty.us/3518/Camping-at-Silver-Lake-Park/messages",
-          "publisher": "Whatcom County Parks & Recreation",
-          "source_family": "whatcom-county-silver-lake",
-          "evidence": "Campground details explicitly identify the two RV campgrounds and Cedar's restriction."
-        }
-      ]
-    },
-    {
-      "slug": "silver-lake-park",
-      "field": "max_rv_length",
-      "status": "unknown",
-      "checked_on": "2026-09-06",
-      "summary": "The current official campground details do not publish one park-wide RV maximum; Cedar's 25-foot rule does not apply to the RV campgrounds.",
-      "proposed_value": null,
-      "sources": [
-        {
-          "url": "https://www.whatcomcounty.us/3518/Camping-at-Silver-Lake-Park/messages",
-          "publisher": "Whatcom County Parks & Recreation",
-          "source_family": "whatcom-county-silver-lake",
-          "evidence": "Current page describes equipment types and Cedar's limit but gives no park-wide maximum for Maple Creek or Red Mountain."
-        }
-      ]
-    },
-    {
-      "slug": "silver-lake-park",
-      "field": "hookups",
-      "status": "supported",
-      "checked_on": "2026-09-06",
-      "summary": "Both RV campgrounds provide water and electric hookups; the official page does not claim sewer at sites.",
-      "proposed_value": 2,
-      "sources": [
-        {
-          "url": "https://www.whatcomcounty.us/3518/Camping-at-Silver-Lake-Park/messages",
-          "publisher": "Whatcom County Parks & Recreation",
-          "source_family": "whatcom-county-silver-lake",
-          "evidence": "Maple Creek and Red Mountain details list water and electric service and amp ranges."
-        }
-      ]
-    },
-    {
-      "slug": "silver-lake-park",
-      "field": "reservation_method",
-      "status": "supported",
-      "checked_on": "2026-09-06",
-      "summary": "Reservations for the next calendar year open on the first business day of December, with limited first-come sites.",
-      "proposed_value": "Reservations for the next calendar year open the first business day of December",
-      "sources": [
-        {
-          "url": "https://www.whatcomcounty.us/3517/Silver-Lake-Park",
-          "publisher": "Whatcom County Parks & Recreation",
-          "source_family": "whatcom-county-silver-lake",
-          "evidence": "Current reservation information gives the annual December opening and notes limited first-come availability."
-        }
-      ]
-    },
-    {
-      "slug": "dosewallips-state-park",
-      "field": "operating_status",
-      "status": "supported",
-      "checked_on": "2026-09-06",
-      "summary": "The official park page describes a year-round camping park and publishes current 2026 alerts.",
-      "proposed_value": "open with seasonal service changes",
-      "sources": [
-        {
-          "url": "https://parks.wa.gov/find-parks/state-parks/dosewallips-state-park",
-          "publisher": "Washington State Parks",
-          "source_family": "washington-state-parks-dosewallips",
-          "evidence": "Current park page describes year-round camping, winterized services, and current alerts."
-        }
-      ]
-    },
-    {
-      "slug": "dosewallips-state-park",
-      "field": "rv_access",
-      "status": "supported",
-      "checked_on": "2026-09-06",
-      "summary": "The operator explicitly accepts RVs and combinations up to 40 feet.",
-      "proposed_value": true,
-      "sources": [
-        {
-          "url": "https://parks.wa.gov/find-parks/state-parks/dosewallips-state-park",
-          "publisher": "Washington State Parks",
-          "source_family": "washington-state-parks-dosewallips",
-          "evidence": "Camping section says RVs and combinations of 40 feet or less are accommodated."
-        }
-      ]
-    },
-    {
-      "slug": "dosewallips-state-park",
-      "field": "max_rv_length",
-      "status": "supported",
-      "checked_on": "2026-09-06",
-      "summary": "The published park-wide maximum is 40 feet; individual pads still vary.",
-      "proposed_value": 40,
-      "sources": [
-        {
-          "url": "https://parks.wa.gov/find-parks/state-parks/dosewallips-state-park",
-          "publisher": "Washington State Parks",
-          "source_family": "washington-state-parks-dosewallips",
-          "evidence": "Camping section states a 40-foot maximum for RVs and combinations."
-        }
-      ]
-    },
-    {
-      "slug": "dosewallips-state-park",
-      "field": "hookups",
-      "status": "supported",
-      "checked_on": "2026-09-06",
-      "summary": "The current campground map identifies full-hookup and water/electric site ranges.",
-      "proposed_value": 3,
-      "sources": [
-        {
-          "url": "https://parks.wa.gov/sites/default/files/2024-11/Dosewallips%20Campground%20Map%2010-24-24.pdf",
-          "publisher": "Washington State Parks",
-          "source_family": "washington-state-parks-dosewallips",
-          "evidence": "Map labels full-hookup sites and separate water/electric ranges."
-        }
-      ]
-    },
-    {
-      "slug": "dosewallips-state-park",
-      "field": "reservation_method",
-      "status": "supported",
-      "checked_on": "2026-09-06",
-      "summary": "Individual campsites are reservable and the statewide booking window is nine months.",
-      "proposed_value": "Reservable up to 9 months in advance",
-      "sources": [
-        {
-          "url": "https://parks.wa.gov/passes-permits/reservations/making-reservations",
-          "publisher": "Washington State Parks",
-          "source_family": "washington-state-parks-reservations",
-          "evidence": "Statewide instructions specify a rolling nine-month reservation window."
-        },
-        {
-          "url": "https://parks.wa.gov/passes-permits/reservations/reservation-parks",
-          "publisher": "Washington State Parks",
-          "source_family": "washington-state-parks-reservations",
-          "evidence": "Dosewallips is listed for reservable individual campsites."
-        }
-      ]
-    },
-    {
-      "slug": "fort-flagler-historical-state-park",
-      "field": "operating_status",
-      "status": "supported",
-      "checked_on": "2026-09-06",
-      "summary": "The official park page and 2026 camping notice show active camping, with seasonal loop changes.",
-      "proposed_value": "open with seasonal loop changes",
-      "sources": [
-        {
-          "url": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park",
-          "publisher": "Washington State Parks",
-          "source_family": "washington-state-parks-fort-flagler",
-          "evidence": "Current park page describes both active campgrounds and 2026 alerts."
-        },
-        {
-          "url": "https://parks.wa.gov/news/2025/book-beach-all-year-long-fort-flagler-historical-state-park",
-          "publisher": "Washington State Parks",
-          "source_family": "washington-state-parks-fort-flagler",
-          "evidence": "Operator announces year-round reservations for the lower campground beginning January 2026."
-        }
-      ]
-    },
-    {
-      "slug": "fort-flagler-historical-state-park",
-      "field": "rv_access",
-      "status": "supported",
-      "checked_on": "2026-09-06",
-      "summary": "The operator describes standard, partial, and full-hookup RV camping in two campgrounds.",
-      "proposed_value": true,
-      "sources": [
-        {
-          "url": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park",
-          "publisher": "Washington State Parks",
-          "source_family": "washington-state-parks-fort-flagler",
-          "evidence": "Camping section describes level, spacious standard, partial, and full-hookup sites."
-        }
-      ]
-    },
-    {
-      "slug": "fort-flagler-historical-state-park",
-      "field": "max_rv_length",
-      "status": "supported",
-      "checked_on": "2026-09-06",
-      "summary": "The official park brochure reports RV accommodation up to 50 feet.",
-      "proposed_value": 50,
-      "sources": [
-        {
-          "url": "https://parks.wa.gov/sites/default/files/2023-07/Fort%20Flagler%20State%20Park%20Brochure%2005-22-20%20Final%20Web%20SFS.pdf",
-          "publisher": "Washington State Parks",
-          "source_family": "washington-state-parks-fort-flagler",
-          "evidence": "Official brochure states that full-hookup sites accommodate RVs up to 50 feet."
-        }
-      ]
-    },
-    {
-      "slug": "fort-flagler-historical-state-park",
-      "field": "hookups",
-      "status": "supported",
-      "checked_on": "2026-09-06",
-      "summary": "The official page lists partial and full-hookup sites in the lower campground.",
-      "proposed_value": 3,
-      "sources": [
-        {
-          "url": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park",
-          "publisher": "Washington State Parks",
-          "source_family": "washington-state-parks-fort-flagler",
-          "evidence": "Camping section explicitly lists standard, partial, and full-hookup sites."
-        }
-      ]
-    },
-    {
-      "slug": "fort-flagler-historical-state-park",
-      "field": "reservation_method",
-      "status": "supported",
-      "checked_on": "2026-09-06",
-      "summary": "Individual campsites are reservable, and the lower campground accepts year-round reservations in 2026.",
-      "proposed_value": "Reservable up to 9 months in advance",
-      "sources": [
-        {
-          "url": "https://parks.wa.gov/passes-permits/reservations/making-reservations",
-          "publisher": "Washington State Parks",
-          "source_family": "washington-state-parks-reservations",
-          "evidence": "Statewide instructions specify a rolling nine-month window."
-        },
-        {
-          "url": "https://parks.wa.gov/news/2025/book-beach-all-year-long-fort-flagler-historical-state-park",
-          "publisher": "Washington State Parks",
-          "source_family": "washington-state-parks-fort-flagler",
-          "evidence": "Lower campground reservations became year-round January 1, 2026."
         }
       ]
     },
@@ -10005,6 +9715,646 @@
           "publisher": "Cascade Views RV Resort",
           "source_family": "snohomish-private-review",
           "evidence": "Operator publishes pad lengths and amenities but does not state utility hookup level."
+        }
+      ]
+    },
+    {
+      "slug": "big-creek-campground",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed operating status value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": "site open",
+      "sources": [
+        {
+          "url": "https://www.fs.usda.gov/r06/olympic/recreation/big-creek-campground",
+          "publisher": "U.S. Forest Service",
+          "source_family": "usfs",
+          "evidence": "The current operator material supports the reviewed operating status value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "big-creek-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed rv access value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.fs.usda.gov/r06/olympic/recreation/big-creek-campground",
+          "publisher": "U.S. Forest Service",
+          "source_family": "usfs",
+          "evidence": "The current operator material supports the reviewed rv access value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "big-creek-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed reservation method value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": "First-come, first-served",
+      "sources": [
+        {
+          "url": "https://www.fs.usda.gov/r06/olympic/recreation/big-creek-campground",
+          "publisher": "U.S. Forest Service",
+          "source_family": "usfs",
+          "evidence": "The current operator material supports the reviewed reservation method value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "big-creek-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed max rv length value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://www.fs.usda.gov/r06/olympic/recreation/big-creek-campground",
+          "publisher": "U.S. Forest Service",
+          "source_family": "usfs",
+          "evidence": "The current operator material supports the reviewed max rv length value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "big-creek-campground",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed hookups value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.fs.usda.gov/r06/olympic/recreation/big-creek-campground",
+          "publisher": "U.S. Forest Service",
+          "source_family": "usfs",
+          "evidence": "The current operator material supports the reviewed hookups value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "cape-disappointment-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed operating status value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": "all campground loops currently closed for construction",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/cape-disappointment-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed operating status value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "cape-disappointment-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed rv access value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": false,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/cape-disappointment-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed rv access value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "cape-disappointment-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed reservation method value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": "All campground loops currently closed for construction; reopening timing depends on project progress and current park alerts",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/cape-disappointment-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed reservation method value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "cape-disappointment-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed max rv length value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": 45,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/cape-disappointment-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed max rv length value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "cape-disappointment-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed hookups value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/cape-disappointment-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed hookups value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "dosewallips-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed operating status value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": "year-round camping park",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/dosewallips-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed operating status value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "dosewallips-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed rv access value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/dosewallips-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed rv access value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "dosewallips-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed reservation method value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": "Reservable up to 9 months in advance",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/dosewallips-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed reservation method value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "dosewallips-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed max rv length value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": 40,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/dosewallips-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed max rv length value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "dosewallips-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed hookups value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/dosewallips-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed hookups value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "fort-flagler-historical-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed operating status value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": "active campground with year-round Lower Campground reservations",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed operating status value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "fort-flagler-historical-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed rv access value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed rv access value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "fort-flagler-historical-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed reservation method value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": "Reservable up to 9 months in advance",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed reservation method value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "fort-flagler-historical-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed max rv length value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": 50,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed max rv length value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "fort-flagler-historical-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed hookups value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/fort-flagler-historical-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed hookups value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "grayland-beach-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed operating status value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": "open year-round with seasonal flooding impacts",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/grayland-beach-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed operating status value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "grayland-beach-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed rv access value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/grayland-beach-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed rv access value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "grayland-beach-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed reservation method value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": "Reservations available year-round; 50+ flood-prone sites are first-come November 1\u2013April 15 and should be inspected on arrival",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/grayland-beach-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed reservation method value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "grayland-beach-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed max rv length value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": 60,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/grayland-beach-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed max rv length value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "grayland-beach-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed hookups value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/grayland-beach-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed hookups value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "hozomeen-campground",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed operating status value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": "entire area currently closed for the Border 2 Fire; border gate closed until further notice",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/hozomeen.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps",
+          "evidence": "The current operator material supports the reviewed operating status value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "hozomeen-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed rv access value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": false,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/hozomeen.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps",
+          "evidence": "The current operator material supports the reviewed rv access value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "hozomeen-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed reservation method value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": "Entire Hozomeen area currently closed for the Border 2 Fire; border gate also closed until further notice",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/hozomeen.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps",
+          "evidence": "The current operator material supports the reviewed reservation method value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "hozomeen-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed max rv length value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/hozomeen.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps",
+          "evidence": "The current operator material supports the reviewed max rv length value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "hozomeen-campground",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed hookups value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/hozomeen.htm",
+          "publisher": "National Park Service",
+          "source_family": "nps",
+          "evidence": "The current operator material supports the reviewed hookups value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "silver-lake-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed operating status value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": "2026 camping season April 10 through October 26",
+      "sources": [
+        {
+          "url": "https://www.whatcomcounty.us/3518/Camping-at-Silver-Lake-Park",
+          "publisher": "Whatcom County Parks & Recreation",
+          "source_family": "whatcom-county",
+          "evidence": "The current operator material supports the reviewed operating status value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "silver-lake-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed rv access value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.whatcomcounty.us/3518/Camping-at-Silver-Lake-Park",
+          "publisher": "Whatcom County Parks & Recreation",
+          "source_family": "whatcom-county",
+          "evidence": "The current operator material supports the reviewed rv access value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "silver-lake-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed reservation method value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": "Camping season April 10\u2013October 26, 2026; reservations recommended, with limited first-come sites. Following-year reservations open the first business day of December",
+      "sources": [
+        {
+          "url": "https://www.whatcomcounty.us/3518/Camping-at-Silver-Lake-Park",
+          "publisher": "Whatcom County Parks & Recreation",
+          "source_family": "whatcom-county",
+          "evidence": "The current operator material supports the reviewed reservation method value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "silver-lake-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed max rv length value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": null,
+      "sources": [
+        {
+          "url": "https://www.whatcomcounty.us/3518/Camping-at-Silver-Lake-Park",
+          "publisher": "Whatcom County Parks & Recreation",
+          "source_family": "whatcom-county",
+          "evidence": "The current operator material supports the reviewed max rv length value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "silver-lake-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed hookups value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": 2,
+      "sources": [
+        {
+          "url": "https://www.whatcomcounty.us/3518/Camping-at-Silver-Lake-Park",
+          "publisher": "Whatcom County Parks & Recreation",
+          "source_family": "whatcom-county",
+          "evidence": "The current operator material supports the reviewed hookups value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "twin-harbors-state-park",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed operating status value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": "open with seasonal campground-loop closures",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/twin-harbors-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed operating status value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "twin-harbors-state-park",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed rv access value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/twin-harbors-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed rv access value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "twin-harbors-state-park",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed reservation method value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": "Main-season reservations available; Eastside loop and Westside sites 232\u2013299 close November\u2013May 31, and remaining sites shift to first-come during parts of the shoulder season",
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/twin-harbors-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed reservation method value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "twin-harbors-state-park",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed max rv length value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": 35,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/twin-harbors-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed max rv length value and any closure or seasonal qualification preserved in the canonical record."
+        }
+      ]
+    },
+    {
+      "slug": "twin-harbors-state-park",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-12",
+      "summary": "The current operator material supports the reviewed hookups value and any closure or seasonal qualification preserved in the canonical record.",
+      "proposed_value": 3,
+      "sources": [
+        {
+          "url": "https://parks.wa.gov/find-parks/state-parks/twin-harbors-state-park",
+          "publisher": "Washington State Parks",
+          "source_family": "washington-state-parks",
+          "evidence": "The current operator material supports the reviewed hookups value and any closure or seasonal qualification preserved in the canonical record."
         }
       ]
     }
