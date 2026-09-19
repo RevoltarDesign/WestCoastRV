@@ -1,0 +1,15 @@
+{
+  "checked_on": "2026-09-19",
+  "records_reviewed": 7,
+  "critical_observations_added_or_refreshed": 35,
+  "material_factual_groups_corrected": 6,
+  "findings": [
+    "Goodell Creek's official RV and trailer maximum is 20 feet, not 38 feet.",
+    "Colonial Creek North closed to vehicle camping for the season on September 14, 2026.",
+    "Colonial Creek South closed to vehicles September 14; only ten walk-in tent-only sites remain.",
+    "Newhalem Loop C closed September 14 while Loops A and B remain first-come through September 27.",
+    "The 107-site Newhalem figure is total campground inventory, not 107 confirmed RV sites.",
+    "Cougar Rock's 2026 dump and fill station closure and current campfire ban were missing from the public summary."
+  ],
+  "result": "All five critical trust fields are now supported for the seven reviewed national-park records."
+}

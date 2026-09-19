@@ -31,22 +31,6 @@
   ],
   "observations": [
     {
-      "slug": "ohanapecosh-campground",
-      "field": "operating_status",
-      "status": "corrected_locally",
-      "checked_on": "2026-09-06",
-      "summary": "The entire developed area is closed for the 2026 season during construction.",
-      "proposed_value": "closed for 2026",
-      "sources": [
-        {
-          "url": "https://www.nps.gov/mora/planyourvisit/park-construction-faqs.htm",
-          "publisher": "National Park Service",
-          "source_family": "nps-mount-rainier-construction",
-          "evidence": "Current FAQ states no camping or visitor access in 2026 and an expected summer 2027 reopening."
-        }
-      ]
-    },
-    {
       "slug": "swan-lake-campground",
       "field": "reservation_method",
       "status": "corrected_locally",
@@ -11159,102 +11143,6 @@
       ]
     },
     {
-      "slug": "ohanapecosh-campground",
-      "field": "rv_access",
-      "status": "corrected_locally",
-      "checked_on": "2026-09-13",
-      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
-      "proposed_value": false,
-      "sources": [
-        {
-          "url": "https://www.nps.gov/mora/planyourvisit/park-construction-faqs.htm",
-          "publisher": "National Park Service",
-          "source_family": "federal-operator",
-          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
-        }
-      ]
-    },
-    {
-      "slug": "white-river-campground",
-      "field": "rv_access",
-      "status": "corrected_locally",
-      "checked_on": "2026-09-13",
-      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
-      "proposed_value": true,
-      "sources": [
-        {
-          "url": "https://www.nps.gov/mora/planyourvisit/campgrounds.htm",
-          "publisher": "National Park Service",
-          "source_family": "federal-operator",
-          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
-        }
-      ]
-    },
-    {
-      "slug": "newhalem-creek-campground",
-      "field": "rv_access",
-      "status": "corrected_locally",
-      "checked_on": "2026-09-13",
-      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
-      "proposed_value": true,
-      "sources": [
-        {
-          "url": "https://www.nps.gov/noca/planyourvisit/camping.htm",
-          "publisher": "National Park Service",
-          "source_family": "federal-operator",
-          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
-        }
-      ]
-    },
-    {
-      "slug": "goodell-creek-campground",
-      "field": "rv_access",
-      "status": "corrected_locally",
-      "checked_on": "2026-09-13",
-      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
-      "proposed_value": true,
-      "sources": [
-        {
-          "url": "https://www.nps.gov/noca/planyourvisit/camping.htm",
-          "publisher": "National Park Service",
-          "source_family": "federal-operator",
-          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
-        }
-      ]
-    },
-    {
-      "slug": "colonial-creek-south-campground",
-      "field": "rv_access",
-      "status": "corrected_locally",
-      "checked_on": "2026-09-13",
-      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
-      "proposed_value": true,
-      "sources": [
-        {
-          "url": "https://www.nps.gov/noca/planyourvisit/camping.htm",
-          "publisher": "National Park Service",
-          "source_family": "federal-operator",
-          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
-        }
-      ]
-    },
-    {
-      "slug": "colonial-creek-north-campground",
-      "field": "rv_access",
-      "status": "corrected_locally",
-      "checked_on": "2026-09-13",
-      "summary": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing.",
-      "proposed_value": true,
-      "sources": [
-        {
-          "url": "https://www.nps.gov/noca/planyourvisit/camping.htm",
-          "publisher": "National Park Service",
-          "source_family": "federal-operator",
-          "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
-        }
-      ]
-    },
-    {
       "slug": "eightmile-campground",
       "field": "rv_access",
       "status": "corrected_locally",
@@ -11427,6 +11315,566 @@
           "publisher": "U.S. Forest Service / Recreation.gov",
           "source_family": "federal-operator",
           "evidence": "Current operator material supports RV access and the seasonal or closure qualification recorded on the listing."
+        }
+      ]
+    },
+    {
+      "slug": "cougar-rock-campground",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "NPS lists Cougar Rock as open.",
+      "proposed_value": "open for the 2026 season",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/mora/planyourvisit/campgrounds.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "NPS lists Cougar Rock as open."
+        }
+      ]
+    },
+    {
+      "slug": "cougar-rock-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "Recreation.gov permits one RV and tow vehicle per individual site when both fit.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232466",
+          "publisher": "Recreation.gov",
+          "source_family": "federal-operator",
+          "evidence": "Recreation.gov permits one RV and tow vehicle per individual site when both fit."
+        }
+      ]
+    },
+    {
+      "slug": "cougar-rock-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "NPS lists Recreation.gov reservations and first-come availability.",
+      "proposed_value": "Recreation.gov reservations plus limited first-come sites",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/mora/planyourvisit/campgrounds.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "NPS lists Recreation.gov reservations and first-come availability."
+        }
+      ]
+    },
+    {
+      "slug": "cougar-rock-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "Motorhomes over 35 feet and trailers over 27 feet may not enter.",
+      "proposed_value": 35,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232466",
+          "publisher": "Recreation.gov",
+          "source_family": "federal-operator",
+          "evidence": "Motorhomes over 35 feet and trailers over 27 feet may not enter."
+        }
+      ]
+    },
+    {
+      "slug": "cougar-rock-campground",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "Individual sites have no electric, water, or sewer hookups.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.recreation.gov/camping/campgrounds/232466",
+          "publisher": "Recreation.gov",
+          "source_family": "federal-operator",
+          "evidence": "Individual sites have no electric, water, or sewer hookups."
+        }
+      ]
+    },
+    {
+      "slug": "ohanapecosh-campground",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "The developed area has no camping or visitor access during 2026 construction.",
+      "proposed_value": "closed for all of 2026",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/mora/planyourvisit/park-construction-faqs.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "The developed area has no camping or visitor access during 2026 construction."
+        }
+      ]
+    },
+    {
+      "slug": "ohanapecosh-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "No vehicle, camping, or day-use access is available in 2026.",
+      "proposed_value": false,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/mora/planyourvisit/park-construction-faqs.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "No vehicle, camping, or day-use access is available in 2026."
+        }
+      ]
+    },
+    {
+      "slug": "ohanapecosh-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "NPS expects 2027 reservations to reopen on Recreation.gov in December 2026.",
+      "proposed_value": "closed for 2026; 2027 reservations expected in December 2026",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/mora/planyourvisit/park-construction-faqs.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "NPS expects 2027 reservations to reopen on Recreation.gov in December 2026."
+        }
+      ]
+    },
+    {
+      "slug": "ohanapecosh-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "NPS lists a usual 32-foot RV maximum and confirms the 2026 closure.",
+      "proposed_value": "32 feet when open; no access in 2026",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/mora/planyourvisit/campgrounds.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "NPS lists a usual 32-foot RV maximum and confirms the 2026 closure."
+        }
+      ]
+    },
+    {
+      "slug": "ohanapecosh-campground",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "NPS states that its developed campgrounds have no utility hookups.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/mora/planyourvisit/campgrounds.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "NPS states that its developed campgrounds have no utility hookups."
+        }
+      ]
+    },
+    {
+      "slug": "white-river-campground",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "NPS lists White River as open with an exact closing date still to be determined.",
+      "proposed_value": "open until early October 2026, weather permitting",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/mora/planyourvisit/campgrounds.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "NPS lists White River as open with an exact closing date still to be determined."
+        }
+      ]
+    },
+    {
+      "slug": "white-river-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "NPS lists RV access with a 27-foot maximum.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/mora/planyourvisit/campgrounds.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "NPS lists RV access with a 27-foot maximum."
+        }
+      ]
+    },
+    {
+      "slug": "white-river-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "NPS describes first-come-only payment through the Recreation.gov app or cashless kiosk.",
+      "proposed_value": "first-come only; Scan and Pay after selecting a site",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/mora/planyourvisit/campgrounds.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "NPS describes first-come-only payment through the Recreation.gov app or cashless kiosk."
+        }
+      ]
+    },
+    {
+      "slug": "white-river-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "NPS lists 27 feet for RVs and 18 feet for trailers.",
+      "proposed_value": 27,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/mora/planyourvisit/campgrounds.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "NPS lists 27 feet for RVs and 18 feet for trailers."
+        }
+      ]
+    },
+    {
+      "slug": "white-river-campground",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "NPS states that its developed campgrounds have no utility hookups.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/mora/planyourvisit/campgrounds.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "NPS states that its developed campgrounds have no utility hookups."
+        }
+      ]
+    },
+    {
+      "slug": "newhalem-creek-campground",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "The current seasonal notice gives the 2026 loop closure dates.",
+      "proposed_value": "Loops A and B open through September 27; Loop C closed",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "The current seasonal notice gives the 2026 loop closure dates."
+        }
+      ]
+    },
+    {
+      "slug": "newhalem-creek-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "NPS says many RV and trailer sites are available.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/newhalem-creek-campground.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "NPS says many RV and trailer sites are available."
+        }
+      ]
+    },
+    {
+      "slug": "newhalem-creek-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "NPS states reservations are not required after September 7, 2026.",
+      "proposed_value": "first-come after September 7 until seasonal closure",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "NPS states reservations are not required after September 7, 2026."
+        }
+      ]
+    },
+    {
+      "slug": "newhalem-creek-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "NPS lists a 50-foot maximum for RVs and trailers.",
+      "proposed_value": 50,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/newhalem-creek-campground.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "NPS lists a 50-foot maximum for RVs and trailers."
+        }
+      ]
+    },
+    {
+      "slug": "newhalem-creek-campground",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "The NPS facility record lists zero electric hookups and explicitly says there are no hookups.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/newhalem-creek-campground.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "The NPS facility record lists zero electric hookups and explicitly says there are no hookups."
+        }
+      ]
+    },
+    {
+      "slug": "goodell-creek-campground",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "NPS lists year-round operation with vault toilets and no off-season water or trash service.",
+      "proposed_value": "open year-round with primitive off-season service",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/goodell-creek-campground.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "NPS lists year-round operation with vault toilets and no off-season water or trash service."
+        }
+      ]
+    },
+    {
+      "slug": "goodell-creek-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "NPS says small RVs and trailers fit in some sites.",
+      "proposed_value": true,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/goodell-creek-campground.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "NPS says small RVs and trailers fit in some sites."
+        }
+      ]
+    },
+    {
+      "slug": "goodell-creek-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "NPS lists peak-season reservations and first-come winter camping.",
+      "proposed_value": "reservations in peak season; first-come outside it",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/goodell-creek-campground.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "NPS lists peak-season reservations and first-come winter camping."
+        }
+      ]
+    },
+    {
+      "slug": "goodell-creek-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "NPS lists a 20-foot maximum for both RVs and trailers.",
+      "proposed_value": 20,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/goodell-creek-campground.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "NPS lists a 20-foot maximum for both RVs and trailers."
+        }
+      ]
+    },
+    {
+      "slug": "goodell-creek-campground",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "The NPS facility record lists zero electric hookups and no dump station.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/goodell-creek-campground.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "The NPS facility record lists zero electric hookups and no dump station."
+        }
+      ]
+    },
+    {
+      "slug": "colonial-creek-south-campground",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "NPS closed the vehicle campground September 14, 2026 and retains ten tent-only sites.",
+      "proposed_value": "vehicle campground closed; ten walk-in tent sites remain",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "NPS closed the vehicle campground September 14, 2026 and retains ten tent-only sites."
+        }
+      ]
+    },
+    {
+      "slug": "colonial-creek-south-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "Only walk-in tent-only sites remain outside the operating season.",
+      "proposed_value": false,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "Only walk-in tent-only sites remain outside the operating season."
+        }
+      ]
+    },
+    {
+      "slug": "colonial-creek-south-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "NPS uses reservations in season and first-come access only for the remaining tent sites.",
+      "proposed_value": "seasonal reservations; current remaining sites are first-come",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "NPS uses reservations in season and first-come access only for the remaining tent sites."
+        }
+      ]
+    },
+    {
+      "slug": "colonial-creek-south-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "NPS lists a 36-foot operating-season maximum for RVs and trailers.",
+      "proposed_value": 36,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/colonial-creek-south-campground.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "NPS lists a 36-foot operating-season maximum for RVs and trailers."
+        }
+      ]
+    },
+    {
+      "slug": "colonial-creek-south-campground",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "The NPS facility record lists zero electric hookups.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/colonial-creek-south-campground.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "The NPS facility record lists zero electric hookups."
+        }
+      ]
+    },
+    {
+      "slug": "colonial-creek-north-campground",
+      "field": "operating_status",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "The current NPS seasonal notice lists the closure date.",
+      "proposed_value": "closed for the season September 14, 2026",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "The current NPS seasonal notice lists the closure date."
+        }
+      ]
+    },
+    {
+      "slug": "colonial-creek-north-campground",
+      "field": "rv_access",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "The vehicle campground is closed for the season.",
+      "proposed_value": false,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/camping.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "The vehicle campground is closed for the season."
+        }
+      ]
+    },
+    {
+      "slug": "colonial-creek-north-campground",
+      "field": "reservation_method",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "NPS requires reservations during peak season before the annual closure.",
+      "proposed_value": "seasonal Recreation.gov reservations",
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/colonial-creek-north-campground.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "NPS requires reservations during peak season before the annual closure."
+        }
+      ]
+    },
+    {
+      "slug": "colonial-creek-north-campground",
+      "field": "max_rv_length",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "NPS lists a 25-foot maximum for RVs and trailers.",
+      "proposed_value": 25,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/colonial-creek-north-campground.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "NPS lists a 25-foot maximum for RVs and trailers."
+        }
+      ]
+    },
+    {
+      "slug": "colonial-creek-north-campground",
+      "field": "hookups",
+      "status": "corrected_locally",
+      "checked_on": "2026-09-19",
+      "summary": "The NPS facility record lists zero electric hookups.",
+      "proposed_value": 0,
+      "sources": [
+        {
+          "url": "https://www.nps.gov/noca/planyourvisit/colonial-creek-north-campground.htm",
+          "publisher": "National Park Service",
+          "source_family": "federal-operator",
+          "evidence": "The NPS facility record lists zero electric hookups."
         }
       ]
     }

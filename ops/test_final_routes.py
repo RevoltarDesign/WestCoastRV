@@ -1,6 +1,7 @@
 import csv
 import json
 import unittest
+from datetime import date
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -25,7 +26,7 @@ class FinalRouteTests(unittest.TestCase):
                 self.assertEqual(row["Drive time origin"], "Seattle, Washington")
                 self.assertTrue(row["Drive time source"].startswith("https://router.project-osrm.org/"))
                 self.assertGreaterEqual(int(row["Drive Time Minutes"]), int(row["Drive route minutes"]))
-                self.assertEqual(row["Access checked"], "2026-09-13")
+                self.assertGreaterEqual(date.fromisoformat(row["Access checked"]), date(2026, 9, 13))
                 self.assertIn(row["RV Access"], {"yes", "no"})
 
     def test_ohanapecosh_closure_suppresses_directions(self):
@@ -53,7 +54,7 @@ class FinalRouteTests(unittest.TestCase):
     def test_current_national_park_season_details(self):
         self.assertEqual(self.rows["white-river-campground"]["Number of RV campsites"], "88")
         self.assertIn("first-come", self.rows["white-river-campground"]["Reservation window"].lower())
-        self.assertIn("september 14", self.rows["colonial-creek-north-campground"]["Reservation window"].lower())
+        self.assertIn("closed", self.rows["colonial-creek-north-campground"]["Reservation window"].lower())
         self.assertIn("september 27", self.rows["newhalem-creek-campground"]["Reservation window"].lower())
 
 if __name__ == "__main__": unittest.main()
